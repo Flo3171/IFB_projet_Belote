@@ -1,0 +1,22 @@
+Voici le décroulemnt du prgramme en psedo code qui permet de déterminer les fontion à réaliser
+
+avant la partie
+  choix du nom du joueur
+  affichage des meileur score
+partie
+  1ere manche
+    distribution des carte
+    annonce des contrat
+    plis
+      1er plis
+      2eme plis
+      ...
+      8eme plis
+    calcul des scores
+    annonce des relultat de la manche
+  affichage des score de la partie
+  2eme manche
+  ...
+  nieme manche (jusqu'a qu'une équipe ateigne 701 point
+fin de la partie
+propose de faire une nouvelle partie
