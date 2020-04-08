@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1585567434 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\acquisition.c
+	"acquisition.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+
+1585565724 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\acquisition.h
+
+1585050083 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\tableau.c
+	"tableau.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1585048287 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\tableau.h
+

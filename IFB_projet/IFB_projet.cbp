@@ -31,9 +31,22 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="acquisition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="acquisition.h" />
+		<Unit filename="gestionCarte.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gestionCarte.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="main.h" />
+		<Unit filename="tableau.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tableau.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
