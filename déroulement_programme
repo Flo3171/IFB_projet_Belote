@@ -1,22 +1,59 @@
-Voici le décroulemnt du prgramme en psedo code qui permet de déterminer les fontion à réaliser
+Voici le décroulement du prgramme en pseudo code qui permet de déterminer les fontion à réaliser
 
-avant la partie
+lancement du programme 
   choix du nom du joueur
-  affichage des meileur score
+    acquisition du pseudo par l'utilisateur (controle de saisie)
+    
+affichage menu d'accueil 
+  1-nouvelle partie
+  2-tableau des score
+  3-stats perso
+  4-changer d'utilisateur
+  5-paramètres (changer le nom des IA)
+  6-quitter 
+  
 partie
   1ere manche
     distribution des carte
     annonce des contrat
+    
     plis
       1er plis
+        affiche les cartes que le joueur a dans la main 
+         le premier joueur joue(par le joueur ayant gagné le pli précédent ou celui à gauche du dealer)
+          si c'est le tour du joueur demande quelle carte jouer
+          si c'est le tour de l'ordi l'IA choisi une carte à jouer
+          verification si on a le droit de poser la carte selectionnée
+          pose la carte sur la table 
+          modifie les différents tableaux (celui qui contient les cartes du joueur, celui qui contient les carte jouées)
+          
+         le 2-ème joueur joue
+            ...
+         le 3-ème joueur joue
+            ...
+         le 4-ème joueur joue
+            ...
+         on cherche le vainqueur du pli
+        ajout des points pour l'equipe gagnante (belote, rebelote, tierce ...)
+        
       2eme plis
       ...
       8eme plis
-    calcul des scores
+      ...
+    calcul du score de la manche(contrat rempli ?) 
     annonce des relultat de la manche
-  affichage des score de la partie
+    ajout du score de la manche au score de la partie pour chaque équipe
+    affichage des score de la partie
+    
   2eme manche
   ...
-  nieme manche (jusqu'a qu'une équipe ateigne 701 point
+  
+  n-ieme manche (jusqu'une équipe ateigne 701 point)
+  
+  affichage des scores finals de chaque équive + anonce vainceur
+  si nouveau nouveau joueur ecriture d'un nouveau profil joueur 
+  écriture sur le fichier des meilleurs scores
+  afichage des meilleurs scores + position 
+  
 fin de la partie
-propose de faire une nouvelle partie
+affichage menu d'accueil 
