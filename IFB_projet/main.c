@@ -1,9 +1,8 @@
 #include "main.h"
 
-int main()
+int main(int argc, char *argv[])
 {
     printf("Voici notre magifique jeu de belote !!\n");
-    printf("j'ai envoye un mauvais mail\n");
-    affichMenuPrinc();
+    afficheMenuPrincipal();
     return 0;
 }

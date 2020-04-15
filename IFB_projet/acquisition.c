@@ -1,7 +1,4 @@
-#include "acquisition.h"
-#include <conio.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 int acquisitionEntierAvecMessage(int min, int max){
     int valeur;
@@ -38,7 +35,7 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
 {
     int valeur;
     do{
-        printf("%s\n", consigne);
+        printf("%s ", consigne);
         scanf("%d", &valeur);
     }while (valeur < min || valeur > max);
     return valeur;
