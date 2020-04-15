@@ -15,3 +15,39 @@
 
 1585048287 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\tableau.h
 
+1586380524 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\acquisition.c
+	"acquisition.h"
+	<conio.h>
+	<stdio.h>
+	<stdlib.h>
+
+1586956411 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\acquisition.h
+
+1586956692 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.c
+	"affichage.h"
+	<stdio.h>
+	<stdlib.h>
+	"acquisition.h"
+
+1586956411 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.h
+
+1586380524 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\gestioncarte.c
+
+1586380524 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\tableau.c
+	"tableau.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1586380524 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\tableau.h
+
+1586961445 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\main.c
+	"main.h"
+
+1586956411 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\main.h
+	<stdio.h>
+	<stdlib.h>
+	"tableau.h"
+	"acquisition.h"
+	"affichage.h"
+

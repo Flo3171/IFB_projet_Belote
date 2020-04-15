@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="acquisition.h" />
+		<Unit filename="affichage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="affichage.h" />
 		<Unit filename="gestionCarte.c">
 			<Option compilerVar="CC" />
 		</Unit>

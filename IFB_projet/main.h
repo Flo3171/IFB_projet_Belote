@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "tableau.h"
 #include "acquisition.h"
+#include "affichage.h"
 
 
 #endif // _MAIN_H_

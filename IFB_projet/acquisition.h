@@ -2,7 +2,7 @@
 #define ACQUISITION_H_INCLUDED
 
 
-/** \brief revois au progammme un entier saisi par l'utilisateur avec message d'erreur entre 2 entiers
+/** \brief renvois au progammme un entier saisi par l'utilisateur avec message d'erreur entre 2 entiers
  *
  * \param min : borne inférieur de l'ensemble dans lequel la valeur saisi doit ce trouver
  * \param max : borne superieur de l'ensemble dans lequel la valeur saisi doit ce trouver
