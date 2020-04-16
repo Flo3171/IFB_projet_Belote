@@ -9,10 +9,22 @@
 
 
 /* Structure */
+
+typedef enum Couleur
+{
+    COEUR = 0, PIQUE = 1, CAREAU = 2, TREFLE = 3
+
+}Couleur;
+
+typedef enum Valeur
+{
+    AS = 1, VALLET = 11, DAME = 12, ROI = 13
+}Valeur;
+
 typedef struct Carte
 {
-    char couleur[15];
-    char valeur[2];
+    Couleur couleur;
+    Valeur valeur;
 }Carte;
 
 typedef struct Contrat
@@ -30,6 +42,7 @@ typedef struct Contrat
 #include <conio.h>
 #include <math.h>
 #include <time.h>
+#include <string.h>
 
 /* Fontions créée dans le cardre du projet */
 #include "tableau.h"

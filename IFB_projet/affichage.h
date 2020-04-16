@@ -9,6 +9,8 @@
 
 int afficheMenuPrincipal();
 
+
+
 /** \brief affiche l'interface de jeu durant un pli
  *
  * \param Carte dernierPli[] : tableau contenant les 4 cartes du dernier plis
@@ -20,7 +22,29 @@ int afficheMenuPrincipal();
  * \return int : valeur choisie par l'utilisateur
  *
  */
+
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[]);
+
+
+/** \brief transphorme une chaine de caractère de longeur inconue en une chaine de caratère fixé de tel sorte que le texte soit centré
+ *
+ * \param char chaineInitial : chaine a modifier
+ * \param char chaineFinal : pointeur vers la variable qui stocke la chainne final
+ * \param int longeurChaine : longeur de la chaine final
+ * \return int : 0 si tout va bien, 1 si la chaine est Initiale test plus longue que la longeur désirée
+ *
+ */
+int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine);
+
+
+/** \brief transforme une chaine de cararactère en sa vertion centrée
+ *
+ * \param char chaine : chaine a modifier
+ * \param int longeurChaine
+ * \return int : 0 si tout c'est bien passé
+ *
+ */
+int centreModifieChaine(char chaine[], int longeurChaine);
 
 
 #endif
