@@ -6,6 +6,7 @@
 /* Constante */
 #define TAILLE_MAXI_PESEUDO 20
 #define TAILLE_MAXI_COULEUR 8
+#define NB_JOUEUR 4
 
 
 /* Structure */

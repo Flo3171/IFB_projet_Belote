@@ -13,49 +13,55 @@ int afficheMenuPrincipal()
 
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[])
 {
+    char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
+    for (int i = 0; i < NB_JOUEUR; i++){
+        centreChaine(pseudo[i], pseudoCentre[i], TAILLE_MAXI_PESEUDO);
+    }
+
+
 
     system("cls");
-    printf(" _______________________________________________________________________________________\n");
-    printf("|************************************Belote coinchee************************************|\n");
-    printf("| ______________________					 ______________________ |\n");
-    printf("||Dernier pli :		|	      Antony Philipe		|Contrat :	       ||\n");
-    printf("||	   10 Tr	|		 _______		| Antony Philipe       ||\n");
-    printf("||  V Pi	  9 Co	|		|   V	|		| 80 point	       ||\n");
-    printf("||	   R Ca		|		|	|		| Atout : Pique	       ||\n");
-    printf("||Vainqueur : Tutu	|		| Pique	|		| Coinché	       ||\n");
-    printf("||______________________|		|_______|		|______________________||\n");
-    printf("|											|\n");
-    printf("|	   Tutu								  Gilou		|\n");
-    printf("|	 _______							 _______	|\n");
-    printf("|	|  10	|							|   As	|	|\n");
-    printf("|	|	|							|	|	|\n");
-    printf("|	|Trephle|							|Carreau|	|\n");
-    printf("|	|_______|							|_______|	|\n");
-    printf("|											|\n");
-    printf("|					 _______					|\n");
-    printf("|					|   7	|					|\n");
-    printf("|					|	|					|\n");
-    printf("|					| Coeur	|					|\n");
-    printf("|					|_______|					|\n");
-    printf("|					   						|\n");
-    printf("|					 Pseudo						|\n");
-    printf("|											|\n");
-    printf("|Votre main :										|\n");
-    printf("|      _______    _______    _______    _______    _______    _______    _______	|\n");
-    printf("|     |       |  |       |  |       |  |       |  |       |  |       |  |       |	|\n");
-    printf("|     |       |  |       |  |       |  |       |  |       |  |       |  |       |	|\n");
-    printf("|     |       |  |       |  |       |  |       |  |       |  |       |  |       |	|\n");
-    printf("|     |_______|  |_______|  |_______|  |_______|  |_______|  |_______|  |_______|	|\n");
-    printf("|											|\n");
-    printf("|	 (1)        (2)        (3)        (4)        (5)        (6)        (7)		|\n");
-    printf("|Quelle carte voulez vous jouer :							|\n");
-    printf("|											|\n");
-    printf("|	 _______________________________________________________________________	|\n");
-    printf("|	|									|      	|\n");
-    printf("|	|		       Antony Philipe remporte le pli 			|      	|\n");
-    printf("|	|									|	|\n");
-    printf("|	|_______________________________________________________________________|	|\n");
-    printf("|_______________________________________________________________________________________|\n");
+    printf(" ________________________________________________________________________________________\n");
+    printf("|************************************Belote coinchee*************************************|\n");
+    printf("| ______________________					 _______________________ |\n");
+    printf("||Dernier pli :		|	   %s 	|Contrat :	        ||\n", pseudoCentre[0]);
+    printf("||	   10 Tr	|		 _______		| Antony Philipe        ||\n");
+    printf("||  V Pi	  9 Co	|		|   V	|		| 80 point	        ||\n");
+    printf("||	   R Ca		|		|	|		| Atout : Pique	        ||\n");
+    printf("||Vainqueur : Tutu	|		| Pique	|		| Coinche	        ||\n");
+    printf("||______________________|		|_______|		|_______________________||\n");
+    printf("|											 |\n");
+    printf("| %s 						   %s  |\n", pseudoCentre[3], pseudoCentre[1]);
+    printf("|	 _______							 _______	 |\n");
+    printf("|	|  10	|							|   As	|	 |\n");
+    printf("|	|	|							|	|	 |\n");
+    printf("|	|Trephle|							|Carreau|	 |\n");
+    printf("|	|_______|							|_______|	 |\n");
+    printf("|											 |\n");
+    printf("|					 _______					 |\n");
+    printf("|					|   7	|					 |\n");
+    printf("|					|	|					 |\n");
+    printf("|					| Coeur	|					 |\n");
+    printf("|					|_______|					 |\n");
+    printf("|					   						 |\n");
+    printf("|		                   %s            	           	 |\n", pseudoCentre[2]);
+    printf("|											 |\n");
+    printf("|Votre main :										 |\n");
+    printf("|  _______    _______    _______    _______    _______    _______    _______    _______  |\n");
+    printf("| |       |  |       |  |       |  |       |  |       |  |       |  |       |  |       | |\n");
+    printf("| |       |  |       |  |       |  |       |  |       |  |       |  |       |  |       | |\n");
+    printf("| |       |  |       |  |       |  |       |  |       |  |       |  |       |  |       | |\n");
+    printf("| |_______|  |_______|  |_______|  |_______|  |_______|  |_______|  |_______|  |_______| |\n");
+    printf("|											 |\n");
+    printf("|    (1)        (2)        (3)        (4)        (5)        (6)        (7)        (8)    |\n");
+    printf("|Quelle carte voulez vous jouer :							 |\n");
+    printf("|											 |\n");
+    printf("|	 ________________________________________________________________________	 |\n");
+    printf("|	|									 |       |\n");
+    printf("|	|		       Antony Philipe remporte le pli 			 |       |\n");
+    printf("|	|									 |	 |\n");
+    printf("|	|________________________________________________________________________|	 |\n");
+    printf("|________________________________________________________________________________________|\n");
 
     return 0;
 }
