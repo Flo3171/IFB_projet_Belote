@@ -7,6 +7,7 @@
 #define TAILLE_MAXI_PESEUDO 20
 #define TAILLE_MAXI_COULEUR 8
 #define NB_JOUEUR 4
+#define TAILLE_MAXI_MESSAGE 200
 
 
 /* Structure */
@@ -50,6 +51,7 @@ typedef struct Contrat
 #include "acquisition.h"
 #include "affichage.h"
 #include "gestionCarte.h"
+#include "general.h"
 
 
 

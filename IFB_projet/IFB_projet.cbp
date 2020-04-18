@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="affichage.h" />
+		<Unit filename="general.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="general.h" />
 		<Unit filename="gestionCarte.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -14,9 +14,15 @@ int afficheMenuPrincipal()
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[])
 {
     char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
+    char *messageCentre[3], messageCentre1[71], messageCentre2[71], messageCentre3[71];
+    messageCentre[0] = &messageCentre1;
+    messageCentre[1] = &messageCentre2;
+    messageCentre[2] = &messageCentre3;
+
     for (int i = 0; i < NB_JOUEUR; i++){
         centreChaine(pseudo[i], pseudoCentre[i], TAILLE_MAXI_PESEUDO);
     }
+    decoupeChaine(message, messageCentre, 70, 3);
 
 
 
@@ -57,9 +63,9 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|Quelle carte voulez vous jouer :							 |\n");
     printf("|											 |\n");
     printf("|	 ________________________________________________________________________	 |\n");
-    printf("|	|									 |       |\n");
-    printf("|	|		       Antony Philipe remporte le pli 			 |       |\n");
-    printf("|	|									 |	 |\n");
+    printf("|	| %s |       |\n", messageCentre[0]);
+    printf("|	| %s |       |\n", messageCentre[1]);
+    printf("|	| %s |       |\n", messageCentre[2]);
     printf("|	|________________________________________________________________________|	 |\n");
     printf("|________________________________________________________________________________________|\n");
 
@@ -70,38 +76,27 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
 
 int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
 {
+    int retour = 0;
     if (strlen(chaineInitial) >= longeurChaine){
         for (int i = 0; i < longeurChaine; i++){
             chaineFinal[i] = chaineInitial[i];
         }
         chaineFinal[longeurChaine] = 0;
-        return 1;
+        retour = 1;
     }
     else{
         char devant[100], deriere[100];
         if ((longeurChaine - strlen(chaineInitial)) % 2 == 0){
-            for (int i = 0; i < ((longeurChaine - strlen(chaineInitial)) / 2); i++){
-                devant[i] = ' ';
-                deriere[i] = ' ';
-            }
-            devant[((longeurChaine - strlen(chaineInitial)) / 2)] = 0;
-            deriere[((longeurChaine - strlen(chaineInitial)) / 2)] = 0;
-
+            rempliEspace(devant, ((longeurChaine - strlen(chaineInitial)) / 2));
+            rempliEspace(deriere, ((longeurChaine - strlen(chaineInitial)) / 2));
         }
         else{
-            for (int i = 0; i < ((longeurChaine - strlen(chaineInitial)) / 2); i++){
-                devant[i] = ' ';
-            }
-            for (int i = 0; i < ((longeurChaine - strlen(chaineInitial)) / 2)+1; i++){
-                deriere[i] = ' ';
-            }
-            devant[((longeurChaine - strlen(chaineInitial)) / 2)] = 0;
-            deriere[((longeurChaine - strlen(chaineInitial)) / 2)+1] = 0;
+            rempliEspace(devant, ((longeurChaine - strlen(chaineInitial)) / 2));
+            rempliEspace(deriere, ((longeurChaine - strlen(chaineInitial)) / 2) + 1);
         }
         sprintf(chaineFinal,"%s%s%s", devant, chaineInitial, deriere);
-        return 0;
     }
-
+    return retour;
 }
 
 int centreModifieChaine(char chaine[], int longeurChaine)
@@ -113,4 +108,60 @@ int centreModifieChaine(char chaine[], int longeurChaine)
     free(chaineCentre);
     return 0;
 }
+
+void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
+{
+    char comande[100];
+    sprintf(comande, "mode con LINES=%d COLS=%d", nbLigneFenetre, nbColloneFentre);
+    system(comande);
+
+}
+
+int decoupeChaine(char chaineInitiale[], char *chaineFinale[],int tailleLigne,int nbLigne)
+{
+    int tailleChaine = strlen(chaineInitiale), retour = 0;
+    for(int i = 0; i < nbLigne; i++){
+        rempliEspace(chaineFinale[i], tailleLigne);
+    }
+
+    if (tailleChaine <= tailleLigne){
+        strcpy(chaineFinale[nbLigne/2], chaineInitiale);
+        centreModifieChaine(chaineFinale[nbLigne/2], tailleLigne);
+    }
+    else {
+            printf("ici");
+            int i = 0, ip = 0;
+            for (int j = 0; j < nbLigne; j++){
+                while ((i < tailleChaine) && (i-ip < tailleLigne)){
+                    i++;
+                }
+                while ((chaineInitiale[i-1] != ' ') && (chaineInitiale[i] != 0)){
+                    i--;
+                }
+                if(chaineInitiale[i] == 0){
+                    i++;
+                }
+                for (int k = 0; k <  i - ip - 1; k++ ){
+                    *(chaineFinale[j] + k) = chaineInitiale[k+ip];
+                }
+                *(chaineFinale[j] +  i-ip -1) = 0;
+                centreModifieChaine(chaineFinale[j], tailleLigne);
+                ip = i;
+            }
+
+    }
+
+
+    return retour;
+}
+
+void rempliEspace(char *chaine,int nbEspace)
+{
+    for (int i = 0; i < nbEspace; i++){
+        *(chaine+i) = ' ';
+    }
+    *(chaine + nbEspace) = 0;
+}
+
+
 

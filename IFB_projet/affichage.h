@@ -47,5 +47,35 @@ int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine);
 int centreModifieChaine(char chaine[], int longeurChaine);
 
 
+/** \brief modifie la taille de la fenetre dans laquel le programme s'execute
+ *
+ * \param nbLingeFenetre : nombre de ligne de la fenetre
+ * \param nbColloneFenetre : nombre de collone de la fenetre
+ * \return void
+ *
+ */
+void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre);
+
+/** \brief fontion qui permet de découper une chaine de caracère en plusieur chaine de taille fixée en coupant sur un espace
+ *
+ * \param chaineInitiale[] : chaine a decouper
+ * \param chaineFinale[][] : tableau contenant les chaine un fois découpé
+ * \param tailleLigne : nobre de caracète maximun par ligne
+ * \param nbLinge : nombre maximun de ligne
+ * \return 0 si tout va bien 1 si la chaine est trop longue
+ *
+ */
+int decoupeChaine(char chaineInitiale[], char *chaineFinale[],int tailleLigne,int nbLigne);
+
+/** \brief rempli une chaine de caractère de nbEspace caractère espace ' '
+ *
+ * \param chaine[] : chaine a remplir;
+ * \param nbEspace[] : nombre d'espaca a placer dans la chaine
+ * \return void
+ *
+ */
+void rempliEspace(char *chaine,int nbEspace);
+
+
 #endif
 
