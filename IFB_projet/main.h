@@ -52,6 +52,7 @@ typedef struct Contrat
 #include "affichage.h"
 #include "gestionCarte.h"
 #include "general.h"
+#include "formatageChaine.h"
 
 
 

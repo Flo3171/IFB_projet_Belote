@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="affichage.h" />
+		<Unit filename="formatageChaine.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="formatageChaine.h" />
 		<Unit filename="general.c">
 			<Option compilerVar="CC" />
 		</Unit>
