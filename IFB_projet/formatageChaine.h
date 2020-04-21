@@ -31,7 +31,7 @@ int centreModifieChaine(char chaine[], int longeurChaine);
  * \return 0 si tout va bien 1 si la chaine est trop longue
  *
  */
-int decoupeChaine(char chaineInitiale[], char *chaineFinale[],int tailleLigne,int nbLigne);
+int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int nbLigne);
 
 /** \brief rempli une chaine de caractère de nbEspace caractère espace ' '
  *
@@ -52,7 +52,55 @@ void rempliEspace(char *chaine,int nbEspace);
  * \return void
  *
  */
-void formateCarte(Carte carte[], char *chaineFinale[], int nbCarte, int tailleChaine, int version);
+void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version);
+
+
+/** \brief met dans une chaine de caractèr le valeur et la couleur d'une carte
+ *
+ * \param carte : variable de type carte qui contien t la carte a afficher
+ * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la veleur et le couleur si mode court)
+ * \param couleur : pointeur vers la chaine  qui stocke la couleur
+ * \param vesion : 0 si c'est la version courte et 1 pour la version longue
+ * \param tailleChaine : taille de la chaine de caratère dans laquel on écrit
+ * \return void
+ *
+ */
+void stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine);
+
+/** \brief stocke dans une chaine de caractère le pseudo d'un des joueur
+ *
+ * \param Joueur joueur : joueur dont on veut afficher le pseudo
+ * \param char *pseudo[] : tableau contennant les pseudo des joueur
+ * \param int tailleChaine : taille de la chaine final
+ * \param char chaineFinal[] : chaine final ou est stocké le pseudo
+ * \param int varsion : 1 pour la version ou la chaine finale est centrée 0 pour l'aligné a gauche
+ * \return void
+ *
+ */
+void formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version);
+
+/** \brief stocke dans des chaine de caractère les info du contrat
+ *
+ * \param Contrat contrat : contrat a afficher
+ * \param char *chainefinal : chaine final ou  on enregistre les info du contrat
+ * \param int tailleLigne : taille d'une ligne
+ * \param char *pseudo[] : tableau qui contient les pseudo des joueur
+ * \return void
+ *
+ */
+void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]);
+
+/** \brief transforme une chaine de cararactère en sa vertion aligné a gauche
+ *
+ * \param char chaine : chaine a modifier
+ * \param int longeurChaine
+ * \return int : 0 si tout c'est bien passé
+ *
+ */
+int aligneModifieChaine(char chaine[], int longeurChaine);
+
+
+
 
 
 

@@ -9,19 +9,48 @@
 #define NB_JOUEUR 4
 #define TAILLE_MAXI_MESSAGE 200
 
-
 /* Structure */
 
 typedef enum Couleur
 {
-    COEUR = 0, PIQUE = 1, CAREAU = 2, TREFLE = 3
+    SANS_COULEUR = 0,
+    COEUR        = 1,
+    PIQUE        = 2,
+    CARREAU      = 3,
+    TREFLE       = 4,
+    TOUT_ATOUT   = 5,
+    SANS_ATOUT   = 6
 
 }Couleur;
 
 typedef enum Valeur
 {
-    AS = 1, VALLET = 11, DAME = 12, ROI = 13
+    SANS_VALEUR = 0,
+    AS          = 1,
+    VALET       = 11,
+    DAME        = 12,
+    ROI         = 13,
+    SEPT        = 7,
+    HUIT        = 8,
+    NEUF        = 9,
+    DIX         = 10
 }Valeur;
+
+typedef enum Joueur
+{
+    SANS_JOUEUR = 0,
+    NORD        = 1,
+    EST         = 2,
+    SUD         = 3,
+    OUEST       = 4
+}Joueur;
+
+typedef enum Coinche
+{
+    NORMAL     = 0,
+    COINCHE    = 1,
+    SURCOINCHE = 2
+}Coinche;
 
 typedef struct Carte
 {
@@ -31,10 +60,10 @@ typedef struct Carte
 
 typedef struct Contrat
 {
-    char preneur[TAILLE_MAXI_PESEUDO];
+    Joueur preneur;
     int nbPoint;
-    char atout[TAILLE_MAXI_COULEUR];
-    char coinche[20];
+    Couleur atout;
+    Coinche coinche;
 
 }Contrat;
 
