@@ -3,11 +3,12 @@
 
 /** \brief affiche  le logo du jeu puis le menu principal
  *
+ * \param type: quel type de menu est souhaité
  * \return la valeur de l'action que l'utilisateur decide de faire
  *
  */
 
-int afficheMenuPrincipal();
+int afficheMenuPrincipal(int type);
 
 
 
@@ -35,8 +36,13 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
  */
 void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre);
 
-
-
+/** \brief affiche les différents sous menus
+ *
+ * \param phrase phrase correspondant au sous menu choisi
+ * \return void
+ *
+ */
+void afficheSousMenus(char phrase[],char intitule[]);
 
 #endif
 

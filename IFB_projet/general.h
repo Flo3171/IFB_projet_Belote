@@ -10,7 +10,14 @@
  */
 void initialisation(int nbLigneFenetre, int nbColloneFenetre);
 
-
+/** \brief fonction qui gère le debut de la partie
+ *
+ * \param *pseudo[] : tableau de pointeurs qui renvoie vers le nom des différents joueurs
+ *
+ * \return void
+ *
+ */
+void debutDePartie(char *pseudo[]);
 
 
 

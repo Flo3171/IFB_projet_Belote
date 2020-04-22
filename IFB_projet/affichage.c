@@ -1,16 +1,57 @@
 #include "main.h"
 
-int afficheMenuPrincipal()
+int afficheMenuPrincipal(int type)
 {
-    printf("	 ______________________\n	|%c}##{____________}##{%c|\n	|$|<>~#~#~#~~#~#~#~<>|$|\n	|#|><><><></%c><><><><|#|\n	|$|<><><></  %c><><><>|$|\n	|#|><><></    %c><><><|#|\n	|$|<><></      %c><><>|$|\n	|#|><></        %c><><|#|\n	|$|<></  Belote  %c><>|$|\n	|$|<><%c COINCH%cE /><>|$|\n	|#|><><%c        /><><|#|\n	|$|<><><%c      /><><>|$|\n	|#|><><><%c    /><><><|#|\n	|$|<><><><%c  /><><><>|$|\n	|#|><><><><%c/><><><><|#|\n	|$|<>~#~#~#~~#~#~#~<>|$|\n	|%c?#?}============{?#?%c|\n	!!!!!!!!!!!!!!!!!!!!!!!!\n\nappuyez sur n'importe quelle touche pour commencer\n",245,245,92,92,92,92,92,92,92,144,92,92,92,92,92,245,245);
-    getch();
-    system("cls");
+    if (type == 0){
+        system("cls");
 
-    printf("	 ______________________\n	|%c}##{____________}##{%c|\n	|$|<>Menu Principal<>|$|\n	|#|                  |#|\n	|$| 1-nouvelle partie|$|\n	|#|                  |#|\n	|$| 2-leaderboard    |$|\n	|#|                  |#|\n	|$| 3-statistiques   |$|\n	|$|                  |$|\n	|#| 4-changement     |#|\n	|$|   d%cutilisateur  |$|\n	|#| 5-param%ctres     |#|\n	|$|                  |$|\n	|#| 6-quitter        |#|\n	|$|<>~#~#~~#~#~#~#~<>|$|\n	|%c?#?}============{?#?%c|\n	!!!!!!!!!!!!!!!!!!!!!!!!\n",245,245,39,138,245,245);
+        printf("\t\t ______________________\n");
+        printf("\t\t|¤}##{____________}##{¤|\n");
+        printf("\t\t|$|<>~#~#~#~~#~#~#~<>|$|\n");
+        printf("\t\t|#|><><><></\\><><><><|#|\n");
+        printf("\t\t|$|<><><></  \\><><><>|$|\n");
+        printf("\t\t|#|><><></    \\><><><|#|\n");
+        printf("\t\t|$|<><></      \\><><>|$|\n");
+        printf("\t\t|#|><></        \\><><|#|\n");
+        printf("\t\t|$|<></  Belote  \\><>|$|\n");
+        printf("\t\t|$|<><\\ COINCHÉE /><>|$|\n");
+        printf("\t\t|#|><><\\        /><><|#|\n");
+        printf("\t\t|$|<><><\\      /><><>|$|\n");
+        printf("\t\t|#|><><><\\    /><><><|#|\n");
+        printf("\t\t|$|<><><><\\  /><><><>|$|\n");
+        printf("\t\t|#|><><><><\\/><><><><|#|\n");
+        printf("\t\t|$|<>~#~#~#~~#~#~#~<>|$|\n");
+        printf("\t\t|¤?#?}============{?#?¤|\n");
+        printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n\n");
+        printf("\t\t appuyez pour continuer");
 
-    return acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        getch();
+    }
+
+    if (type == 1){
+        system("cls");
+        printf("\t\t ______________________ \n");
+        printf("\t\t|¤}##{____________}##{¤|\n");
+        printf("\t\t|$|<>Menu Principal<>|$|\n");
+        printf("\t\t|#|                  |#|\n");
+        printf("\t\t|$| 1-nouvelle partie|$|\n");
+        printf("\t\t|#|                  |#|\n");
+        printf("\t\t|$| 2-leaderboard    |$|\n");
+        printf("\t\t|#|                  |#|\n");
+        printf("\t\t|$| 3-statistiques   |$|\n");
+        printf("\t\t|$|                  |$|\n");
+        printf("\t\t|#| 4-changement     |#|\n");
+        printf("\t\t|$|   d'utilisateur  |$|\n");
+        printf("\t\t|#| 5-paramètres     |#|\n");
+        printf("\t\t|$|                  |$|\n");
+        printf("\t\t|#| 6-quitter        |#|\n");
+        printf("\t\t|$|<>~#~#~~#~#~#~#~<>|$|\n");
+        printf("\t\t|¤?#?}============{?#?¤|\n");
+        printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n");
+
+        return acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+    }
 }
-
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */
@@ -107,6 +148,36 @@ void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
 }
 
 
+void afficheSousMenus(char phrase[],char intitule [])
+{
+    /**< contrôle le centrage du titre du sous-menu */
+    char titre[15];
+    centreChaine(intitule,titre,14);
 
+    /**< découpe la phrase pour pouvoir l'afficher  */
+    char messageCentre[10][17];
+    char *pMessageCentre = &messageCentre[0][0];
+    decoupeChaine(phrase, pMessageCentre, 16, 10);
 
+    /**<efface l'écran et affiche le sous-menu avec le texte correspondant */
+    system("cls");
+    printf("\t\t ______________________ \n");
+    printf("\t\t|¤}##{____________}##{¤|\n");
+    printf("\t\t|$|<>%s<>|$|\n",titre);
+    printf("\t\t|#|                  |#|\n");
+    printf("\t\t|$| %s |$|\n",messageCentre[0]);
+    printf("\t\t|#| %s |#|\n",messageCentre[1]);
+    printf("\t\t|$| %s |$|\n",messageCentre[2]);
+    printf("\t\t|#| %s |#|\n",messageCentre[3]);
+    printf("\t\t|$| %s |$|\n",messageCentre[4]);
+    printf("\t\t|$| %s |$|\n",messageCentre[5]);
+    printf("\t\t|#| %s |#|\n",messageCentre[6]);
+    printf("\t\t|$| %s |$|\n",messageCentre[7]);
+    printf("\t\t|#| %s |#|\n",messageCentre[8]);
+    printf("\t\t|$| %s |$|\n",messageCentre[9]);
+    printf("\t\t|#|                  |#|\n");
+    printf("\t\t|$|<>~#~#~~#~#~#~#~<>|$|\n");
+    printf("\t\t|¤?#?}============{?#?¤|\n");
+    printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n");
+}
 

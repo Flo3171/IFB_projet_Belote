@@ -43,7 +43,14 @@ int acquisitionEntierSansMessage(int min, int max);
 
 int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[]);
 
+/** \brief acquisition d'un pseudo saisi par l'utilisateur avec message d'erreur
+ *
+ * \param PPseudo pointeur renvoyant vers le premier carractère du pseudo saisi
+ *
+ * \return void
+ *
+ */
 
-
+void acquisitionPseudoAvecMessage();
 #endif // ACQUISITION_H_INCLUDED
 
