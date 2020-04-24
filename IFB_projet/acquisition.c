@@ -40,6 +40,7 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
     }while (valeur < min || valeur > max);
     return valeur;
 }
+
  void acquisitionPseudoAvecMessage()
  {
     char pseudo[100];
