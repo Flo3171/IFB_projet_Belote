@@ -50,9 +50,12 @@ int afficheMenuPrincipal(int type)
         printf("\t\t|¤?#?}============{?#?¤|\n");
         printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
-        return acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        int retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        return retour;
     }
 }
+
+
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */

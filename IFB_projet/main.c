@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
-    nouvellePartie(pseudo);
+    menuPrincipal();
 
 
 

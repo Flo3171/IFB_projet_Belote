@@ -8,26 +8,29 @@ void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 void menuPrincipal()
 {
     int choix, sortie=1;
+    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
     afficheMenuPrincipal(0);
+
     acquisitionPseudoAvecMessage();
     do{
-        afficheMenuPrincipal(1);
-        scanf("%d",&choix);
+        choix = afficheMenuPrincipal(1);
         /* contrôle d'acquisition avec réaffichage de l'interfface */
         switch(choix){
-            case 1 : /*executer la fonction nouvelle partie */;
+            case 1 : /*executer la fonction nouvelle partie */
+                nouvellePartie(pseudo);
                 break;
-            case 2 : /*executer la fonction leaderboard */;
+            case 2 : /*executer la fonction leaderboard */
                 break;
-            case 3 : /*executer la fonction statistiques */;
+            case 3 : /*executer la fonction statistiques */
                 break;
-            case 4 : /*executer la fonction changement d'utilisateur */;
+            case 4 : /*executer la fonction changement d'utilisateur */
                 break;
-            case 5 : /*executer la fonction paramètres */;
+            case 5 : /*executer la fonction paramètres */
                 break;
-            default : /*executer la fonction quitter*/;
+            default : /*executer la fonction quitter*/
+                sortie = 0;
+                break;
         }
-
     }while (sortie);
 }
 
@@ -41,7 +44,9 @@ void nouvellePartie(char *pseudo[])
     Joueur dealer = nbAleatoire(1, 4);
 
     do{
-        /**< Lancement de la fontion manche */
+        manche(pseudo, score, dealer);
+        dealer = joueurSuivant(dealer);
+        score[SUD - 1] = 800;
 
     }while ((score[NORD-1] + score[SUD-1] < 701) && (score[EST-1] + score[OUEST-1] < 701));
     char messages[TAILLE_MAXI_MESSAGE];
@@ -60,7 +65,10 @@ void nouvellePartie(char *pseudo[])
 
     printf("\nPressez une touche pour revenir au menu\n");
     getch();
+}
 
 
+void manche(char *pseudo[], int score[], Joueur dealer)
+{
 
 }

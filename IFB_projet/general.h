@@ -26,5 +26,17 @@ void menuPrincipal ();
 void nouvellePartie(char *pseudo[]);
 
 
+/** \brief lancement d'une manche
+ *
+ * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
+ * \param int score[] : tableau contenant les scores des joueur
+ * \param Joueur dealer : joueur qui distibue les cartes
+ * \return void
+ *
+ */
+
+void manche(char *pseudo[], int score[], Joueur dealer);
+
+
 
 #endif // _GENERAL_H_
