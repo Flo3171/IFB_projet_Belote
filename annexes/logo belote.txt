@@ -31,14 +31,60 @@
 |#| 5-paramètres     |#|
 |$|                  |$|
 |#| 6-quitter        |#|
-|$|<>~#~#~~#~#~#~#~<>|$|
+|$|<>~#~#~#~~#~#~#~<>|$|
 |¤?#?}============{?#?¤|
 !!!!!!!!!!!!!!!!!!!!!!!!
 
-en programme:
-"	 ______________________\n	|%c}##{____________}##{%c|\n	|$|<>~#~#~#~~#~#~#~<>|$|\n	|#|><><><></%c><><><><|#|\n	|$|<><><></  %c><><><>|$|\n	|#|><><></    %c><><><|#|\n	|$|<><></      %c><><>|$|\n	|#|><></        %c><><|#|\n	|$|<></  Belote  %c><>|$|\n	|$|<><%c COINCH%cE /><>|$|\n	|#|><><%c        /><><|#|\n	|$|<><><%c      /><><>|$|\n	|#|><><><%c    /><><><|#|\n	|$|<><><><%c  /><><><>|$|\n	|#|><><><><%c/><><><><|#|\n	|$|<>~#~#~#~~#~#~#~<>|$|\n	|%c?#?}============{?#?%c|\n	!!!!!!!!!!!!!!!!!!!!!!!!\n",245,245,92,92,92,92,92,92,92,144,92,92,92,92,92,245,245
+printf("\t ____________________________________\n");
+printf("\t|¤}--\/?##?{______________}?##?\/--{¤|\n");
+printf("\t|$|<>/      Menu Principal      \<>|$|\n");
+printf("\t|#|_/                            \_|#|\n");
+printf("\t|$| %s |$|\n",messageCentre[0]);
+printf("\t|#| %s |#|\n",messageCentre[1]);
+printf("\t|$| %s |$|\n",messageCentre[2]);
+printf("\t|#| %s |#|\n",messageCentre[3]);
+printf("\t|$| %s |$|\n",messageCentre[4]);
+printf("\t|#| %s |#|\n",messageCentre[5]);
+printf("\t|$| %s |$|\n",messageCentre[6]);
+printf("\t|#| %s |#|\n",messageCentre[7]);
+printf("\t|$| %s |$|\n",messageCentre[8]);
+printf("\t|$| %s |$|\n",messageCentre[9]);
+printf("\t|#| %s |#|\n",messageCentre[10]);
+printf("\t|$| %s |$|\n",messageCentre[11]);
+printf("\t|#| %s |#|\n",messageCentre[12]);
+printf("\t|$| %s |$|\n",messageCentre[13]);
+printf("\t|#| %s |#|\n",messageCentre[14]);
+printf("\t|$| %s |$|\n",messageCentre[15]);
+printf("\t|#| %s |#|\n",messageCentre[16]);
+printf("\t|$| %s |$|\n",messageCentre[17]);
+printf("\t|#|                                |#|\n");
+printf("\t|$|<__>~?#?~?#?~?#~~#?~?#?~?#?~<__>|$|\n");
+printf("\t|\¤?#?#?}}=======----======={{?#?#?¤/|\n");
+printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
-"	 ______________________\n	|%c}##{____________}##{%c|\n	|$|<>Menu Principal<>|$|\n	|#|                  |#|\n	|$| 1-nouvelle partie|$|\n	|#|                  |#|\n	|$| 2-leaderboard    |$|\n	|#|                  |#|\n	|$| 3-statistiques   |$|\n	|$|                  |$|\n	|#| 4-changement     |#|\n	|$|   d%cutilisateur  |$|\n	|#| 5-param%ctres     |#|\n	|$|                  |$|\n	|#| 6-quitter        |#|\n	|$|<>~#~#~~#~#~#~#~<>|$|\n	|%c?#?}============{?#?%c|\n	!!!!!!!!!!!!!!!!!!!!!!!!\n",245,245,39,138,245,245
-
-printf("	 ______________________\n	|%c}##{____________}##{%c|\n	|$|<>Menu Principal<>|$|\n	|#|                  |#|\n	|$| 1-nouvelle partie|$|\n	|#|                  |#|\n	|$| 2-leaderboard    |$|\n	|#|                  |#|\n	|$| 3-statistiques   |$|\n	|$|                  |$|\n	|#| 4-changement     |#|\n	|$|   d%cutilisateur  |$|\n	|#| 5-param%ctres     |#|\n	|$|                  |$|\n	|#| 6-quitter        |#|\n	|$|<>~#~#~~#~#~#~#~<>|$|\n	|%c?#?}============{?#?%c|\n	!!!!!!!!!!!!!!!!!!!!!!!!\n",245,245,39,138,245,245);
- 
+printf("\t ____________________________________\n");
+printf("\t|¤}--\/?##?{______________}?##?\/--{¤|\n");
+printf("\t|$|<>/      Menu Principal      \<>|$|\n");
+printf("\t|#|_/                            \_|#|\n");
+printf("\t|$| %s |$|\n",messageCentre[0]);
+printf("\t|#| %s |#|\n",messageCentre[1]);
+printf("\t|$| %s |$|\n",messageCentre[2]);
+printf("\t|#| %s |#|\n",messageCentre[3]);
+printf("\t|$| %s |$|\n",messageCentre[4]);
+printf("\t|#| %s |#|\n",messageCentre[5]);
+printf("\t|$| %s |$|\n",messageCentre[6]);
+printf("\t|#| %s |#|\n",messageCentre[7]);
+printf("\t|$| %s |$|\n",messageCentre[8]);
+printf("\t|$| %s |$|\n",messageCentre[9]);
+printf("\t|#| %s |#|\n",messageCentre[10]);
+printf("\t|$| %s |$|\n",messageCentre[11]);
+printf("\t|#| %s |#|\n",messageCentre[12]);
+printf("\t|$| %s |$|\n",messageCentre[13]);
+printf("\t|#| %s |#|\n",messageCentre[14]);
+printf("\t|$| %s |$|\n",messageCentre[15]);
+printf("\t|#| %s |#|\n",messageCentre[16]);
+printf("\t|$| %s |$|\n",messageCentre[17]);
+printf("\t|#|                                |#|\n");
+printf("\t|$|<__>~?#?~?#?~?#~~#?~?#?~?#?~<__>|$|\n");
+printf("\t|\¤?#?#?}}=======----======={{?#?#?¤/|\n");
+printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");

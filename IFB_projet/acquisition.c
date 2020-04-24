@@ -43,28 +43,28 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
  void acquisitionPseudoAvecMessage()
  {
     char pseudo[100];
-    int controle=2;
+    int controle=0;
     afficheSousMenus("Choisisez votre pseudo:","pseudo");
 
     do{
-        controle=0;
+        controle=0 ;
         fgets(pseudo,99,stdin);
-        for(int i=0; i<100;i++){
-            if ((pseudo[i]<48 && pseudo[i]>57) || (pseudo[i]<65 && pseudo[i]>90) || (pseudo[i]<97 && pseudo[i]>122) ){
+        for(int i=0; i< strlen(pseudo)-1 && i < TAILLE_MAXI_PESEUDO ;i++){
+            if ((pseudo[i]<'0' || pseudo[i]>'9') && (pseudo[i]<'A' || pseudo[i]>'Z') && (pseudo[i]<'a' || pseudo[i]>'z') ){
                 controle=1;
             }
         }
-        if (strlen(pseudo)>=20){
+
+        if (strlen(pseudo)> TAILLE_MAXI_PESEUDO+1){
             controle = controle +2;
         }
         switch (controle)
         {
-            case 1 : afficheSousMenus("Votre pseudo possede des carractères interdis.Choisisez votre pseudo:","pseudo");
+            case 1 : afficheSousMenus("Votre pseudo possede des carracteres interdis. Choisisez votre pseudo:","pseudo");
                 break;
             case 2 : afficheSousMenus("Votre pseudo est trop long. Choisisez votre pseudo:","pseudo");
                 break;
-            case 3 : afficheSousMenus("Votre pseudo ne respecte pas les critères. Choisisez votre pseudo:","pseudo");
+            case 3 : afficheSousMenus("Votre pseudo ne respecte pas les criteres. Choisisez votre pseudo:","pseudo");
         }
     }while(controle != 0);
-    puts(pseudo);
  }

@@ -1,6 +1,7 @@
 Voici le décroulement du prgramme en pseudo code qui permet de déterminer les fontion à réaliser
 
 lancement du programme 
+  affichage du logo
   choix du nom du joueur
     acquisition du pseudo par l'utilisateur (controle de saisie)
     
