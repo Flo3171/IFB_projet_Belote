@@ -17,6 +17,14 @@ void initialisation(int nbLigneFenetre, int nbColloneFenetre);
  */
 void menuPrincipal ();
 
+/** \brief lancement d'une nouvel partie
+ *
+ * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
+ * \return void
+ *
+ */
+void nouvellePartie(char *pseudo[]);
+
 
 
 #endif // _GENERAL_H_

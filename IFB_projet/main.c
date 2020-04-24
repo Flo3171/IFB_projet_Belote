@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
     /* DEBUG ET TEST DES FONTIONS */
 
 
-    afficheMenuPrincipal(0);
+    /*afficheMenuPrincipal(0);*/
     Carte pli[4];
     pli[0].couleur = COEUR;
     pli[0].valeur = 9;
@@ -43,14 +43,19 @@ int main(int argc, char *argv[])
     contrat.coinche = SURCOINCHE;
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+
+    nouvellePartie(pseudo);
+
+
+
     char message[TAILLE_MAXI_MESSAGE] = "Tutu gagne le plis quel champion il est trop fort";
     int noCarteJouee;
-    noCarteJouee = afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, message, OUEST);
-    printf("Vous jouez la carte %d", noCarteJouee);
+    /*noCarteJouee = afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, message, OUEST);
+    printf("Vous jouez la carte %d", noCarteJouee);*/
 
-    afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");
+    /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
-    acquisitionPseudoAvecMessage();
+    /*acquisitionPseudoAvecMessage();*/
     /*Pour voir la liste des caracère que on peut utliser
     for (int i = -127; i <=127; i++){
         printf(" %d-->%c\n", i,i);
