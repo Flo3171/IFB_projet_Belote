@@ -38,7 +38,7 @@ int centreModifieChaine(char chaine[], int longeurChaine)
 int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int nbLigne)
 {
     int tailleChaine = strlen(chaineInitiale), retour = 0;
-    printf("%d\n", tailleChaine);
+    int nbLigneRemplie = 0;
     for(int i = 0; i < nbLigne; i++){
         rempliEspace((chaineFinale + (tailleLigne + 1)*i), tailleLigne);
     }
@@ -46,30 +46,40 @@ int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int 
     if (tailleChaine <= tailleLigne){
         strcpy((chaineFinale + ((tailleLigne + 1)*(nbLigne/2))), chaineInitiale);
         centreModifieChaine((chaineFinale + ((tailleLigne + 1)*(nbLigne/2))), tailleLigne);
+        nbLigneRemplie = 1;
     }
     else {
-            int i = 0, ip = 0;
-            for (int j = 0; j < nbLigne; j++){
-                while ((i < tailleChaine) && (i-ip < tailleLigne)){
-                    i++;
-                }
-                while ((chaineInitiale[i-1] != ' ') && (chaineInitiale[i] != 0)){
-                    i--;
-                }
-                if(chaineInitiale[i] == 0){
-                    i++;
-                }
-                for (int k = 0; k <  i - ip - 1; k++ ){
-                    *(chaineFinale + j*(tailleLigne + 1) + k) = chaineInitiale[k+ip];
-                }
-                *(chaineFinale+ j*(tailleLigne + 1) +  i-ip -1) = 0;
-                centreModifieChaine(chaineFinale+ j*(tailleLigne + 1), tailleLigne);
-                ip = i;
+        int i = 0, ip = 0;
+        for (int j = 0; j < nbLigne; j++){
+            while ((i < tailleChaine) && (i-ip < tailleLigne)){
+                i++;
             }
+            while ((chaineInitiale[i-1] != ' ') && (chaineInitiale[i] != 0)){
+                i--;
+            }
+            if(chaineInitiale[i] == 0){
+                i++;
+            }
+            for (int k = 0; k <  i - ip - 1; k++ ){
+                *(chaineFinale + j*(tailleLigne + 1) + k) = chaineInitiale[k+ip];
+            }
+            *(chaineFinale+ j*(tailleLigne + 1) +  i-ip -1) = 0;
+            centreModifieChaine(chaineFinale+ j*(tailleLigne + 1), tailleLigne);
+            if (ip != i - 1){
+                nbLigneRemplie ++;
+            }
+            ip = i;
+        }
+        /**< Centrage verticale */
+        for (int j = nbLigneRemplie; j >= 0; j--){
+            strcpy(chaineFinale+ ((nbLigne - nbLigneRemplie)/2 +j)*(tailleLigne + 1), chaineFinale+ j*(tailleLigne + 1));
+        }
+        for (int j = (nbLigne-nbLigneRemplie)/2 -1; j >= 0; j--){
+            rempliEspace((chaineFinale + (tailleLigne + 1)*j), tailleLigne);
+        }
+
 
     }
-
-
     return retour;
 }
 
