@@ -37,6 +37,26 @@ void nouvellePartie(char *pseudo[]);
 
 void manche(char *pseudo[], int score[], Joueur dealer);
 
+/** \brief gere l'anoce et la surenchère des contat par les joueur
+ *
+ * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
+ * \param Joueur dealer : joueur qui distibue les cartes
+ * \return Contrat : contrat final qui a ete choisi pour la partie
+ *
+ */
+
+Contrat annonceContrat(char *pseudo[], Joueur dealer);
+
+/** \brief proposistion d'un contrat par un joueur
+ *
+ * \param Contrat dernierContrat : dernier contrat proposé
+ * \param Joueur parle : joueur qui parle
+ * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
+ * \return Contrat : nouveau contrat proposé par le joueur
+ *
+ */
+ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[]);
+
 
 
 #endif // _GENERAL_H_

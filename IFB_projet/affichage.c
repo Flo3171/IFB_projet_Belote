@@ -2,6 +2,7 @@
 
 int afficheMenuPrincipal(int type)
 {
+    int retour;
     if (type == 0){
         system("cls");
 
@@ -26,7 +27,7 @@ int afficheMenuPrincipal(int type)
         printf("\t\t appuyez pour continuer");
 
         getch();
-        return 0;
+        retour = 0;
     }
 
     if (type == 1){
@@ -50,9 +51,10 @@ int afficheMenuPrincipal(int type)
         printf("\t\t|¤?#?}============{?#?¤|\n");
         printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n");
 
-        int retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
         return retour;
     }
+    return retour;
 }
 
 
@@ -193,3 +195,37 @@ void afficheSousMenus(char phrase[],char intitule [])
     printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
 }
 
+void afficheMain(Carte carte[])
+{
+    char carteEnMainFormate[8][2][8];
+    char *pCarteEnMainFormate = &carteEnMainFormate[0][0][0];
+    formateCarte(carte, pCarteEnMainFormate, 8, 7, 1);
+    printf(" ________________________________________________________________________________________\n");
+    printf("|Votre main :										 |\n");
+    printf("|  _______    _______    _______    _______    _______    _______    _______    _______  |\n");
+    printf("| |%s|  |%s|  |%s|  |%s|  |%s|  |%s|  |%s|  |%s| |\n", carteEnMainFormate[0][1], carteEnMainFormate[1][1], carteEnMainFormate[2][1], carteEnMainFormate[3][1], carteEnMainFormate[4][1], carteEnMainFormate[5][1], carteEnMainFormate[6][1], carteEnMainFormate[7][1]);
+    printf("| |       |  |       |  |       |  |       |  |       |  |       |  |       |  |       | |\n");
+    printf("| |%s|  |%s|  |%s|  |%s|  |%s|  |%s|  |%s|  |%s| |\n", carteEnMainFormate[0][0], carteEnMainFormate[1][0], carteEnMainFormate[2][0], carteEnMainFormate[3][0], carteEnMainFormate[4][0], carteEnMainFormate[5][0], carteEnMainFormate[6][0], carteEnMainFormate[7][0]);
+    printf("| |_______|  |_______|  |_______|  |_______|  |_______|  |_______|  |_______|  |_______| |\n");
+    printf("|											 |\n");
+    printf("|    (1)        (2)        (3)        (4)        (5)        (6)        (7)        (8)    |\n");
+    printf("|											 |\n");
+    printf("|________________________________________________________________________________________|\n");
+
+}
+
+
+void afficheContrat(Contrat contrat, char *pseudo[])
+{
+    char contratActuelFormate[4][TAILLE_MAXI_PESEUDO + 1];
+    char *pContratActuelFormate = &contratActuelFormate[0][0];
+    formateContrat(contrat, pContratActuelFormate, TAILLE_MAXI_PESEUDO, pseudo);
+
+    printf(" ______________________ \n");
+    printf("|Contrat :	       |\n");
+    printf("| %s |\n", contratActuelFormate[0]);
+    printf("| %s |\n", contratActuelFormate[1]);
+    printf("| Atout: %s|\n", contratActuelFormate[2]);
+    printf("| %s |\n", contratActuelFormate[3]);
+    printf("|______________________|\n");
+}

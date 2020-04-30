@@ -34,28 +34,49 @@ int main(int argc, char *argv[])
     carteMain[7].couleur = CARREAU;
     carteMain[7].valeur = AS;
 
+    /*afficheMain(carteMain);
+    supprimeCarte(carteMain, 8, 2);
+    afficheMain(carteMain);*/
 
+    /*Carte mainJoueur[4][8] = {0};
+    Carte *pMainJoueur;
+    pMainJoueur = &mainJoueur[0][0];
+    distribueCarte(pMainJoueur);
+    afficheMain(mainJoueur[0]);
+    afficheMain(mainJoueur[1]);
+    afficheMain(mainJoueur[2]);
+    afficheMain(mainJoueur[3]);*/
+    /**< victor a tord */
+    /**for (Joueur parle = dealer; parle != dealer; joueurSuivant(parle)){
+
+    }*/
 
     Contrat contrat;
     contrat.preneur = NORD;
     contrat.nbPoint = 80;
-    contrat.atout = COEUR;
+    contrat.atout = TOUT_ATOUT;
     contrat.coinche = SURCOINCHE;
+    setContrat(&contrat, SUD, 110, PIQUE, NORMAL);
+
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
+    afficheContrat(contrat, pseudo);
+
     /*menuPrincipal();*/
+    annonceContrat(pseudo, OUEST);
 
 
-    char message[TAILLE_MAXI_MESSAGE] = "Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points";
+    /*char message[TAILLE_MAXI_MESSAGE] = "Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points";
     int noCarteJouee;
 
     char messageFormate[9][31];
     char *pMessageFormate = &messageFormate[0][0];
     decoupeChaine(message, pMessageFormate, 30, 9);
     printf("________\n|%s|\n|%s|\n|%s|\n|%s|\n|%s|\n|%s|\n|%s|\n|%s|\n|%s|\n_______\n", messageFormate[0], messageFormate[1], messageFormate[2], messageFormate[3], messageFormate[4], messageFormate[5], messageFormate[6], messageFormate[7], messageFormate[8]);
+    */
+    /*afficheSousMenus("Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points", "coucou");*/
 
-    afficheSousMenus("Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points", "coucou");
    /* noCarteJouee = afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, message, OUEST);
     printf("Vous jouez la carte %d", noCarteJouee);*/
 
@@ -71,6 +92,13 @@ int main(int argc, char *argv[])
     pc = &c;
     rempliEspace(pc, 4);
     printf("|%s|\n", pc);*/
+
+    /*Carte mainJoueur[4][8];
+    Carte *pMainJoueur = &mainJoueur[0][0];
+    distribueCarte(pMainJoueur);*/
+
+
+
 
 
     /*CODDE VRAIMENT UTLILE (ne pas supprimer)*/
