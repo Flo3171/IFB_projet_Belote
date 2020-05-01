@@ -56,14 +56,14 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
             }
         }
 
-        if (strlen(pseudo)> TAILLE_MAXI_PESEUDO+1){
+        if (strlen(pseudo)> TAILLE_MAXI_PESEUDO+1 || strlen(pseudo)< 2){
             controle = controle +2;
         }
         switch (controle)
         {
             case 1 : afficheSousMenus("Votre pseudo possede des carracteres interdis. Choisisez votre pseudo:","pseudo");
                 break;
-            case 2 : afficheSousMenus("Votre pseudo est trop long. Choisisez votre pseudo:","pseudo");
+            case 2 : afficheSousMenus("Votre pseudo n'as pas le nombre de carracteres recquis. Choisisez votre pseudo:","pseudo");
                 break;
             case 3 : afficheSousMenus("Votre pseudo ne respecte pas les criteres. Choisisez votre pseudo:","pseudo");
         }
