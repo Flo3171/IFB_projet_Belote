@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 
 
 
-    /*menuPrincipal();*/
+    menuPrincipal();
     int score[4] = {0};
     manche(pseudo, score, SUD);
 

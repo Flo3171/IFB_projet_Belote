@@ -18,7 +18,7 @@ Joueur joueurSuivant(Joueur joueur);
  */
 int nbAleatoire(int mini, int maxi);
 
-/** \brief définin un contrat
+/** \brief définit un contrat
  *
  * \param Contat *contrat : pointeur sur le contrat a modifier
  * \param Joueur preneur : preneur du contrat

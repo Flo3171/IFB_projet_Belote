@@ -113,7 +113,7 @@ void stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int 
             strcpy(couleur, "Carreau");
             break;
         case TREFLE :
-            strcpy(couleur, "Trephle");
+            strcpy(couleur, "Trefle");
             break;
         default:
             strcpy(couleur, " ");

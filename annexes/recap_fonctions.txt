@@ -1,0 +1,52 @@
+Récapitulatif des fonction du projet :
+
+general :
+
+initialisation (Florian) : fonction a lancer a l'exécution du progrmame change la taille de la fenètre
+menuPrincipal (Florian) : fonction qui gère le lancement du programme
+nouvellePartie (Florian) : lancement d'une nouvelle partie
+manche (Florian) : lancement d'une manche
+annonceContrat (Florian) : Fonction qui gère l'anonce des contrat
+prposecontrat (Florian) : proposition d'un contrat par un joueur
+
+gestionCarte :
+
+distibueCarte (Florian) : distribue les cartes aux différent joueurs
+setCarte (Florian) : donne une valeur et une couleur a une carte
+supprimeCarte (Florian) : supprime une carte d'un tableau
+
+affichage : 
+
+afficheMenuPrincipal (Carlo) : affiche le menu principal du jeu
+afficheInterfacePli (Florian) : affiche l'interface de jeu durant un pli
+modifieTailleFenetre (Florian) : modifie la taille de la fenetre dans laquelle je programme s'affiche
+afficheSousMenus (Carlo) : affiche les différent sous menus
+afficheMain (Florian) : affiche les carte qu'un joueur a en main
+afficheContrat (Florian) : affiche un contrat
+
+formatageChaine : 
+
+centreChaine (Florian) : copie une chaine dans une autre en la centrant
+centreModifieChaine (Florian) : centre une chaine de caractère
+decoupeChaine (Florian) : decoupe une chaine pour obtenir plusieur chaine d'une longeur donné ou les mot ne sont pas coupé
+rempliEspace (Florian): remplit une chaine d'espace
+formateCarte (Florian): formate les chaine de caracère qui affiche une carte
+stockeInfoCarte (Florian) : met dans une chaine de caractère la valeur et la couleur d'une carte
+formatePseudo (Florian) : stocke dans une chaine de caractère le pseudo d'un des joueur
+formateContrat (Florian) : stocke dans des chaine de caractère les information d'un contrat
+alligneModifieChaine (Florian) : rajoute des espace a la fin d'une chaine de caractère pour qu'elle ait une taille voulue
+
+autre : 
+
+joueurSuivant (Florian) : passe au joueur suivant
+nbAleatoire (Florian) : renvoie un nombre aléatoire entre deux bornes
+setContrat (Florian) : definit un contrat	
+
+acquisition : 
+
+acquisitionEntierAvecMessage (Florian)
+acquisitionEntierSansMessage (Florian)
+acquisitionOuiNonSansMessage (Florian)
+acquisitionEntierSansMessageAvecConsigne (Florian)
+acquisitionPseudoAvecMessage (Carlo)
+
