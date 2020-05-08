@@ -102,3 +102,56 @@
 1588286064 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\ia.c
 	"main.h"
 
+1587372287 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\gestioncarte.c
+	"main.h"
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\main.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<math.h>
+	<time.h>
+	<string.h>
+	"tableau.h"
+	"acquisition.h"
+	"affichage.h"
+	"gestionCarte.h"
+	"general.h"
+	"formatageChaine.h"
+	"autre.h"
+
+1586381046 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\tableau.h
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\acquisition.h
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\affichage.h
+
+1586381046 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\gestioncarte.h
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\general.h
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\formatagechaine.h
+
+1588235820 c:\users\valen\desktop\ifb_projet_belote\ifb_projet\autre.h
+
+1587372287 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\tableau.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\acquisition.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\affichage.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\autre.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\formatagechaine.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\general.c
+	"main.h"
+
+1588235820 source:c:\users\valen\desktop\ifb_projet_belote\ifb_projet\main.c
+	"main.h"
+
