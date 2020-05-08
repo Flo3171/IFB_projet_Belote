@@ -18,6 +18,18 @@ Joueur joueurSuivant(Joueur joueur);
  */
 int nbAleatoire(int mini, int maxi);
 
+/** \brief définin un contrat
+ *
+ * \param Contat *contrat : pointeur sur le contrat a modifier
+ * \param Joueur preneur : preneur du contrat
+ * \param int nbPoint : nombre de point
+ * \param Couleur atout : couleur de l'aout
+ * \param Coinche coinche : normal, coinché , surcoinché
+ * \return void
+ *
+ */
+void setContrat(Contrat *contrat, Joueur preneur, int nbPoint,Couleur atout, Coinche coinche);
+
 
 
 

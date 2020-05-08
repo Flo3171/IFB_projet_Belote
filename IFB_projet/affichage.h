@@ -16,7 +16,7 @@ int afficheMenuPrincipal(int type);
  *
  * \param Carte dernierPli[] : tableau contenant les 4 cartes du dernier plis
  * \param Carte pli[] : tableau contenant les cartes du pli en cours, mettre 0, 0 si il n'y a pas de carte
- * \param char pseudo[] : tableau contenant les pseudo des 4 joueur
+ * \param char *pseudo[] : tableau contenant les pseudo des 4 joueur
  * \param Carte cartesEnMain[] : tableau contenant les carte dans la main de l'utilisateur
  * \param Contrat contratActuel : contrat qui est en cour dans cette manche
  * \param char message[500]
@@ -43,6 +43,23 @@ void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre);
  *
  */
 void afficheSousMenus(char phrase[],char intitule[]);
+
+/** \brief affiche les carte qu'un joueur a en main
+ *
+ * \param Carte carte[] : tableau contanant les carte
+ * \return void
+ *
+ */
+void afficheMain(Carte carte[]);
+
+/** \brief affiche un contrat
+ *
+ * \param Contrat contrat : contrat a afficher
+ * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
+ * \return void
+ *
+ */
+void afficheContrat(Contrat contrat, char *pseudo[]);
 
 #endif
 

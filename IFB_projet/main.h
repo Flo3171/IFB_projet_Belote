@@ -7,7 +7,8 @@
 #define TAILLE_MAXI_PESEUDO 20
 #define TAILLE_MAXI_COULEUR 8
 #define NB_JOUEUR 4
-#define TAILLE_MAXI_MESSAGE 200
+#define TAILLE_MAXI_MESSAGE 500
+#define NB_TOATAL_CARTE 32
 
 /* Structure */
 

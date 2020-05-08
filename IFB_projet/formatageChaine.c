@@ -283,7 +283,7 @@ void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *p
         strcpy(chaineFinal + 3*(tailleLigne+1), "Surcoinche");
         break;
     default:
-        strcpy(chaineFinal + 3*(tailleLigne+1), "??");
+        strcpy(chaineFinal + 3*(tailleLigne+1), " ");
         break;
     }
     aligneModifieChaine(chaineFinal + 3*(tailleLigne+1), tailleLigne);
