@@ -56,15 +56,15 @@ int main(int argc, char *argv[])
     contrat.nbPoint = 80;
     contrat.atout = TOUT_ATOUT;
     contrat.coinche = SURCOINCHE;
-    setContrat(&contrat, SUD, 110, PIQUE, NORMAL);
 
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
-    afficheContrat(contrat, pseudo);
+
 
     /*menuPrincipal();*/
-    annonceContrat(pseudo, OUEST);
+    int score[4] = {0};
+    manche(pseudo, score, SUD);
 
 
     /*char message[TAILLE_MAXI_MESSAGE] = "Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points";

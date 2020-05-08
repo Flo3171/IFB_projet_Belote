@@ -76,46 +76,93 @@ void manche(char *pseudo[], int score[], Joueur dealer)
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
-    afficheMain(mainJoueur[SUD - 1]);
 
     /**< anonce des contrat */
+    annonceContrat(pseudo, dealer, pMainJoueur);
 
 
 }
 
-Contrat annonceContrat(char *pseudo[], Joueur dealer)
+Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
 {
     int nbPasse = 0;
     Joueur parle = joueurSuivant(dealer);
     Contrat contratPropose, nouveauContrat;
     contratPropose.nbPoint = 0;
-    printf(" Debut de la phase d'anonce ds contrat \n");
-    while (nbPasse < 3){
-        nouveauContrat = proposeContrat(contratPropose, parle, pseudo);
+    printf(" Debut de la phase d'anonce des contrat \n");
+    while (nbPasse <= 3){
+        nouveauContrat = proposeContrat(contratPropose, parle, pseudo, pCarteMain);
         if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche){
             contratPropose = nouveauContrat;
-            printf("%s propose le contrat suivant\n", pseudo[parle]);
+            printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
             afficheContrat(contratPropose, pseudo);
         }
         else{
             nbPasse ++;
         }
+        parle = joueurSuivant(parle);
 
     }
     return  contratPropose;
 }
 
-Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[])
+Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain)
 {
     Contrat nouveauContrat;
     nouveauContrat.nbPoint = 0;
     if (parle == SUD){
         /**< acquisition par l'utilisateur */
+        afficheMain(pCarteMain + (SUD - 1)*8);
+        printf("\nQue voulez vous anoncer :\n");
+        printf("1 : Passer\n2 : Encherir\n3 : Coinche\n");
+        int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
+        Couleur atoutEnchere;
+        switch(choix)
+        {
+        case 1 :
+            setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
+            break;
+        case 2 :
+            system("cls");
+            afficheMain(pCarteMain + (SUD - 1)*8);
+            printf("\nQuel atout voulez vous choisir :\n1 : Coeur\n2 : Pique\n3 : Carreau\n4 : Trefle\n5 : Tout atout\n6 : Sans atout\n");
+            choixCouleur = acquisitionEntierSansMessageAvecConsigne(1, 6, "");
+            switch(choixCouleur)
+            {
+            case 1 :
+                atoutEnchere = COEUR;
+                break;
+            case 2 :
+                atoutEnchere = PIQUE;
+                break;
+            case 3 :
+                atoutEnchere = CARREAU;
+                break;
+            case 4 :
+                atoutEnchere = TREFLE;
+                break;
+            case 5 :
+                atoutEnchere = TOUT_ATOUT;
+                break;
+            case 6 :
+                atoutEnchere = SANS_ATOUT;
+                break;
+
+            }
+            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(80, 170, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 160 pour un caopot et 170 pour une generale:")/10),atoutEnchere,NORMAL);
+            break;
+        case 3 :
+            break;
+        default :
+            break;
+
+        }
 
 
     }
     else{
         /**< choix par l'ia d'un contrat */
+        setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
     }
     return nouveauContrat;
 }

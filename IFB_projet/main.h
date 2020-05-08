@@ -53,6 +53,20 @@ typedef enum Coinche
     SURCOINCHE = 2
 }Coinche;
 
+typedef enum NbPoint
+{
+    QUATRE_VINGT = 80,
+    QUATRE_VINGT_DIX = 90,
+    CENT = 100,
+    CENT_DIX = 110,
+    CENT_VINGT = 120,
+    CENT_TRENTE = 130,
+    CENT_QUARANTE = 140,
+    CENT_CINQUANTE = 150,
+    CAPOT = 160,
+    GENERALE = 170
+}NbPoint;
+
 typedef struct Carte
 {
     Couleur couleur;
@@ -62,7 +76,7 @@ typedef struct Carte
 typedef struct Contrat
 {
     Joueur preneur;
-    int nbPoint;
+    NbPoint nbPoint;
     Couleur atout;
     Coinche coinche;
 
