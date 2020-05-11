@@ -98,7 +98,7 @@ typedef struct Contrat
 #include "general.h"
 #include "formatageChaine.h"
 #include "autre.h"
-
+#include "sous-menus.h"
 
 
 
