@@ -48,8 +48,8 @@ void nouvellePartie(char *pseudo[])
 {
     system("cls");
     char message[TAILLE_MAXI_MESSAGE];
-    sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche. Votre alie est %s et vaus ennemis sont %s et %s. Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
-    afficheSousMenus(message, "Debut de la partie");
+    sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche.;Votre allie est %s et vos ennemis sont %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
+    afficheMenuSelection("Debut de la partie",message ,1);
     printf("appyer sur une touche pour continuer");
     getch();
 

@@ -14,10 +14,10 @@
 
 1589204349 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\acquisition.h
 
-1589224932 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.c
+1589282729 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.c
 	"main.h"
 
-1589224781 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.h
+1589283382 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\affichage.h
 
 1588341127 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\gestioncarte.c
 	"main.h"
@@ -27,7 +27,7 @@
 
 1588341127 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\tableau.h
 
-1589225921 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\main.c
+1589281078 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\main.c
 	"main.h"
 
 1589209114 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\main.h
@@ -93,7 +93,7 @@
 1589188629 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\formatagechaine.c
 	"main.h"
 
-1589225921 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\general.c
+1589283382 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\general.c
 	"main.h"
 
 1588287715 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\autre.h
@@ -167,6 +167,6 @@
 
 1589225921 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\sous-menus.h
 
-1589225934 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\sous-menus.c
+1589283382 source:c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\sous-menus.c
 	"main.h"
 

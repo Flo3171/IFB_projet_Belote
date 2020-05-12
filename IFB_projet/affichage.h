@@ -68,7 +68,7 @@ void afficheContrat(Contrat contrat, char *pseudo[]);
  * \return
  *
  */
-void afficheMenuSelection(char intitule [],char phrase[]);
+void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne);
 
 #endif
 

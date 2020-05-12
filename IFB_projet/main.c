@@ -72,6 +72,7 @@ int main(int argc, char *argv[])
     puts(pseudo[3]);*/
 
     menuPrincipal();
+
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*/
     int score[4] = {0};
     /*manche(pseudo, score, SUD);*/

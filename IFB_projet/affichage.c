@@ -31,7 +31,7 @@ int afficheMenuPrincipal(int type)
     }
 
     if (type == 1){
-        afficheMenuSelection("<>Menu Principal<>","1-nouvelle partie;2-leaderboard;3-statistiques;4-changement d'utilisateur;5-paramètres;6-quitter");
+        afficheMenuSelection("<>Menu Principal<>","1-nouvelle partie;2-leaderboard;3-statistiques;4-changement d'utilisateur;5-parametres;6-quitter",2);
 
         retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
         return retour;
@@ -212,16 +212,23 @@ void afficheContrat(Contrat contrat, char *pseudo[])
     printf("|______________________|\n");
 }
 
-void afficheMenuSelection(char intitule [],char phrase[])
+void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
 {
     int nbMenu=1;
     /**< contrôle le centrage du titre du sous-menu */
     char titre[27];
     centreChaine(intitule,titre,26);
 
+
     char selection[18][200];
     int ligne=0,colonne=0;
-
+    /**< effacement de la chaine de carrateres */
+    for(int w=0;w<18;w++){
+        for(int k=0;k<200;k++){
+            selection[w][k]=" ";
+        }
+    }
+    /**< decoupage de la chaine en entrée au niveau des ';' est remplacement par des '\0' */
     for(int i=0;i<strlen(phrase);i++){
         if (phrase[i]==';'){
             selection[ligne][colonne]='\0';
@@ -234,19 +241,19 @@ void afficheMenuSelection(char intitule [],char phrase[])
         }
     }
 
-    /**< découpe la phrase pour pouvoir l'afficher  */
+    /**< découpe des morceaux de phrase pour pouvoir les afficher  */
+
     char messageCentre[18][31];
     char *pMessageCentre = &messageCentre[0][0];
     int decalage=0;
     ligne = 0;
     for(int j=0;j<nbMenu;j++){
         decalage= (strlen(selection[j])/30+1);
-        printf("%d",decalage);
         decoupeChaine(selection[j], pMessageCentre, 30,decalage);
         pMessageCentre = pMessageCentre+(decalage*31);
-        decoupeChaine("", pMessageCentre, 30,2);
+        decoupeChaine("", pMessageCentre, 30,sautDeLigne);
         ligne=ligne + decalage;
-        pMessageCentre = pMessageCentre+2*31;
+        pMessageCentre = pMessageCentre+sautDeLigne*31;
     }
     decoupeChaine("", pMessageCentre, 30, 18-ligne);
 
