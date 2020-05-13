@@ -8,16 +8,26 @@ void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 void menuPrincipal()
 {
     int choix, sortie=1;
-    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+
+    char pseudo[4][TAILLE_MAXI_PESEUDO+1];
+    strcpy(pseudo[0],"A_Philipe");
+    strcpy(pseudo[1],"Gilou");
+    strcpy(pseudo[3],"Tutu");
+
     afficheMenuPrincipal(0);
 
-    acquisitionPseudoAvecMessage();
+    acquisitionPseudoAvecMessage(pseudo[2],"Choisisez votre pseudo:");
+    char *pPseudo[4];
+    for(int i=0;i<4;i++){
+        pPseudo[i] = &pseudo[i][0];
+    }
+
     do{
         choix = afficheMenuPrincipal(1);
         /* contrôle d'acquisition avec réaffichage de l'interfface */
         switch(choix){
             case 1 : /*executer la fonction nouvelle partie */
-                nouvellePartie(pseudo);
+                nouvellePartie(pPseudo);
                 break;
             case 2 : /*executer la fonction leaderboard */
                 break;
@@ -25,7 +35,7 @@ void menuPrincipal()
                 break;
             case 4 : /*executer la fonction changement d'utilisateur */
                 break;
-            case 5 : /*executer la fonction paramètres */
+            case 5 : parametre(pPseudo);
                 break;
             default : /*executer la fonction quitter*/
                 sortie = 0;
@@ -38,8 +48,8 @@ void nouvellePartie(char *pseudo[])
 {
     system("cls");
     char message[TAILLE_MAXI_MESSAGE];
-    sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche. Votre alie est %s et vaus ennemis sont %s et %s. Bonne chance", pseudo[SUD-1], pseudo[NORD-1], pseudo[EST-1], pseudo[OUEST-1]);
-    afficheSousMenus(message, "Debut de la partie");
+    sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche.;Votre allie est %s et vos ennemis sont %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
+    afficheMenuSelection("Debut de la partie",message ,1);
     printf("appyer sur une touche pour continuer");
     getch();
 

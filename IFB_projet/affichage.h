@@ -61,5 +61,14 @@ void afficheMain(Carte carte[]);
  */
 void afficheContrat(Contrat contrat, char *pseudo[]);
 
+/** \brief
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne);
+
 #endif
 

@@ -1,7 +1,6 @@
 #include "main.h"
 
-Joueur joueurSuivant(Joueur joueur)
-{
+Joueur joueurSuivant(Joueur joueur){
     if (joueur == OUEST){
         return NORD;
     }

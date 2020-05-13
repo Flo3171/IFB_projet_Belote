@@ -59,14 +59,27 @@ int main(int argc, char *argv[])
 
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
-
-
+    /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
+    strcpy(pseudo[0],"A_Philipe");
+    strcpy(pseudo[1],"Gilou");
+    strcpy(pseudo[2],"Utilisateur");
+    strcpy(pseudo[3],"Tutu");
+    getch();
+    acquisitionPseudoAvecMessage(pseudo[2],"Choisisez votre pseudo:");
+    puts(pseudo[0]);
+    puts(pseudo[1]);
+    puts(pseudo[2]);
+    puts(pseudo[3]);*/
 
     /*menuPrincipal();*/
     int score[4] = {0};
     manche(pseudo, score, NORD);
 
+    menuPrincipal();
 
+    /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*/
+    int score[4] = {0};
+    /*manche(pseudo, score, SUD);*/
 
     /*char message[TAILLE_MAXI_MESSAGE] = "Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points";
     int noCarteJouee;

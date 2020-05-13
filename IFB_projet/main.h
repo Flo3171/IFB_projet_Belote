@@ -100,7 +100,7 @@ typedef struct Contrat
 #include "formatageChaine.h"
 #include "autre.h"
 #include "ia.h"
-
+#include "sous-menus.h"
 
 
 

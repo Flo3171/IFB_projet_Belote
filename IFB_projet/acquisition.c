@@ -41,11 +41,11 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
     return valeur;
 }
 
- void acquisitionPseudoAvecMessage()
+ void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction [])
  {
     char pseudo[100];
     int controle=0;
-    afficheSousMenus("Choisisez votre pseudo:","pseudo");
+    afficheSousMenus(instruction,"pseudo");
 
     do{
         controle=0 ;
@@ -68,4 +68,13 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
             case 3 : afficheSousMenus("Votre pseudo ne respecte pas les criteres. Choisisez votre pseudo:","pseudo");
         }
     }while(controle != 0);
+
+    for (int j=0;j<strlen(pseudo);j++){
+        if(j==strlen(pseudo)-1){
+           *(pointeurPseudo+j)='\0';
+        }else{
+            *(pointeurPseudo+j)=pseudo[j];
+        }
+
+    }
  }
