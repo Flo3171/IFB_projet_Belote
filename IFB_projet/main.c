@@ -62,9 +62,10 @@ int main(int argc, char *argv[])
 
 
 
-    menuPrincipal();
+    /*menuPrincipal();*/
     int score[4] = {0};
-    manche(pseudo, score, SUD);
+    manche(pseudo, score, NORD);
+
 
 
     /*char message[TAILLE_MAXI_MESSAGE] = "Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points";

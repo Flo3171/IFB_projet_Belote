@@ -47,12 +47,16 @@ void nouvellePartie(char *pseudo[])
     int score[4] = {0};
     Joueur dealer = nbAleatoire(1, 4);
 
+
     do{
         manche(pseudo, score, dealer);
         dealer = joueurSuivant(dealer);
         score[SUD - 1] = 800;/**< a suprimer une fois de debug fini */
 
     }while ((score[NORD-1] + score[SUD-1] < 701) && (score[EST-1] + score[OUEST-1] < 701));
+
+    /**< Fin de partie */
+    /**< affichage des resultat */
     if (score[NORD-1] + score[SUD-1] > 701){
         /**< L'utilisatuer et nord gagnent */
         sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1] + score[SUD-1], score[EST-1] + score[OUEST-1]);
@@ -74,13 +78,14 @@ void nouvellePartie(char *pseudo[])
 void manche(char *pseudo[], int score[], Joueur dealer)
 {
     Carte mainJoueur[4][8];
+    Contrat contrat;
 
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
     /**< anonce des contrat */
-    annonceContrat(pseudo, dealer, pMainJoueur);
+    contrat  = annonceContrat(pseudo, dealer, pMainJoueur);
 
 
 }
@@ -90,14 +95,25 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
     int nbPasse = 0;
     Joueur parle = joueurSuivant(dealer);
     Contrat contratPropose, nouveauContrat;
-    contratPropose.nbPoint = 0;
+    setContrat(&contratPropose, SANS_JOUEUR, ZERO, SANS_COULEUR, NORMAL);
+    system("cls");
     printf(" Debut de la phase d'anonce des contrat \n");
-    while (nbPasse <= 3){
+    while (nbPasse < 3){
         nouveauContrat = proposeContrat(contratPropose, parle, pseudo, pCarteMain);
+
+        /**< Affichage du choix du joueur */
+        if (nouveauContrat.nbPoint > 0){
+                printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
+            afficheContrat(nouveauContrat, pseudo);
+            }
+            else{
+                printf("\n%s passe\n", pseudo[parle - 1]);
+            }
+
+        /**< Si un nouveau contrat est proposé alors il devient le cotrat proposé sinon on incrémemnt nbPasse*/
         if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche){
             contratPropose = nouveauContrat;
-            printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
-            afficheContrat(contratPropose, pseudo);
+            nbPasse = 0;
         }
         else{
             nbPasse ++;
@@ -105,18 +121,33 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
         parle = joueurSuivant(parle);
 
     }
+    if (contratPropose.nbPoint == 0){
+        printf("\nTout les joueur on passe, une nouvelle manche va recomencer dans quelque instants\n");
+
+    }
+    else{
+        printf("\nLe contrat suivant a ete choisi pour la manche\n");
+        afficheContrat(contratPropose, pseudo);
+    }
     return  contratPropose;
 }
 
 Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain)
 {
     Contrat nouveauContrat;
-    nouveauContrat.nbPoint = 0;
+    setContrat(&nouveauContrat, SANS_JOUEUR, ZERO, SANS_COULEUR, NORMAL);
     if (parle == SUD){
         /**< acquisition par l'utilisateur */
         afficheMain(pCarteMain + (SUD - 1)*8);
         printf("\nQue voulez vous anoncer :\n");
-        printf("1 : Passer\n2 : Encherir\n3 : Coinche\n");
+        printf("1 : Passer\n2 : Encherir\n");
+        if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle)))){
+           printf("3 : coincher\n");
+        }
+        if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle))){
+           printf("3 : surcoinche\n");
+        }
+
         int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
         Couleur atoutEnchere;
         switch(choix)
@@ -164,7 +195,7 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
     }
     else{
         /**< choix par l'ia d'un contrat */
-        setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
+        nouveauContrat = proposeContratIa(parle, pCarteMain + (parle - 1)*8, dernierContrat);
     }
     return nouveauContrat;
 }

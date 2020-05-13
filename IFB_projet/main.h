@@ -55,6 +55,7 @@ typedef enum Coinche
 
 typedef enum NbPoint
 {
+    ZERO = 0,
     QUATRE_VINGT = 80,
     QUATRE_VINGT_DIX = 90,
     CENT = 100,
@@ -98,6 +99,7 @@ typedef struct Contrat
 #include "general.h"
 #include "formatageChaine.h"
 #include "autre.h"
+#include "ia.h"
 
 
 
