@@ -1,5 +1,5 @@
-#ifndef _SOUS-MENUS_H_
-#define _SOUS-MENUS_H_
+#ifndef _SOUS_MENUS_H_
+#define _SOUS_MENUS_H_
 
 /** \brief
  *
@@ -9,4 +9,5 @@
  *
  */
 void parametre(char *pseudo[]);
+
 #endif

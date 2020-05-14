@@ -224,7 +224,7 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
     int ligne=0,colonne=0;
     /**< effacement de la chaine de carrateres */
     for(int w=0;w<18;w++){
-        for(int k=0;k<200;k++){
+        for(int k = 0; k < 200; k++){
             selection[w][k]=" ";
         }
     }

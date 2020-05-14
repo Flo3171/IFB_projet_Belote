@@ -112,13 +112,19 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
         nouveauContrat = proposeContrat(contratPropose, parle, pseudo, pCarteMain);
 
         /**< Affichage du choix du joueur */
-        if (nouveauContrat.nbPoint > 0){
-                printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
+        if (nouveauContrat.nbPoint > 0 && nouveauContrat.coinche == NORMAL){
+            printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
             afficheContrat(nouveauContrat, pseudo);
-            }
-            else{
-                printf("\n%s passe\n", pseudo[parle - 1]);
-            }
+        }
+        else if(nouveauContrat.coinche == COINCHE){
+            printf("%s COINCHE !!\n", pseudo[parle - 1]);
+        }
+        else if(nouveauContrat.coinche == SURCOINCHE){
+            printf("%s SURCOINCHE !!!!\n", pseudo[parle - 1]);
+        }
+        else{
+            printf("\n%s passe\n", pseudo[parle - 1]);
+        }
 
         /**< Si un nouveau contrat est proposé alors il devient le cotrat proposé sinon on incrémemnt nbPasse*/
         if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche){
@@ -151,10 +157,10 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
         afficheMain(pCarteMain + (SUD - 1)*8);
         printf("\nQue voulez vous anoncer :\n");
         printf("1 : Passer\n2 : Encherir\n");
-        if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle)))){
+        if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
            printf("3 : coincher\n");
         }
-        if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle))){
+        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
            printf("3 : surcoinche\n");
         }
 
@@ -192,9 +198,19 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
                 break;
 
             }
-            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(80, 170, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 160 pour un caopot et 170 pour une generale:")/10),atoutEnchere,NORMAL);
+            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(dernierContrat.nbPoint+1, 170, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 160 pour un caopot et 170 pour une generale:")/10),atoutEnchere,NORMAL);
             break;
         case 3 :
+            if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
+           setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, COINCHE);
+        }
+        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
+            setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, SURCOINCHE);
+        }
+        else{
+            printf("Vous ne pouvez pas coincher ou surcoincher");
+        }
+
             break;
         default :
             break;
