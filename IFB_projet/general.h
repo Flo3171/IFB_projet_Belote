@@ -60,5 +60,21 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain);
  Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain);
 
 
+ /** \brief fonction qui gère un pli
+  *
+  * \param Contrat contrat : contrat qui a été choisipour cette manche
+  * \param Joueur parle : joueur qui parle (le premier a jouer)
+  * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
+  * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
+  * \param int pointManche [] : tableau contenant les point de chaque joueur dans la manche
+  * \param Carte cartePli[] : tableau contenant les 4 carte du pli
+  * \param Carte carteAncienPli[] : tableau contenant les carte du pli précédent
+  * \param Joueur dernierVainceur : vainceur du dernnier pli
+  * \return Joueur :  le vainceur du pli
+  *
+  */
+
+Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur);
+
 
 #endif // _GENERAL_H_

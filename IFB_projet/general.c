@@ -89,6 +89,7 @@ void manche(char *pseudo[], int score[], Joueur dealer)
 {
     Carte mainJoueur[4][8];
     Contrat contrat;
+    int pointManche[4] = {0};
 
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
@@ -96,6 +97,25 @@ void manche(char *pseudo[], int score[], Joueur dealer)
 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur);
+
+    /**<plis */
+    Joueur parle = joueurSuivant(dealer);
+    if (contrat.nbPoint != 0){
+        Joueur vainceurPli = SANS_JOUEUR;
+        Carte cartePli[4], carteDernierPli[4];
+        for (int i = 0; i < 4; i++){
+            setCarte(&carteDernierPli[i], SANS_VALEUR, SANS_COULEUR);
+        }
+        for (int i = 0; i < 8; i++){
+            for (int i = 0; i < 4; i++){
+                setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
+            }
+            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli);
+            for (int i = 0; i < 4; i++){
+                setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
+            }
+        }
+    }
 
 
 }
@@ -224,4 +244,22 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
         nouveauContrat = proposeContratIa(parle, pCarteMain + (parle - 1)*8, dernierContrat);
     }
     return nouveauContrat;
+}
+
+
+Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur)
+{
+    Joueur vainceur = SANS_JOUEUR;
+    for (int i = 0; i < 4; i++){
+        if (parle == SUD){
+            /**< interface de pli Utilisateur */
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur);
+        }
+        else{
+            /**< interface de pli ordinateur */
+
+        }
+        parle = joueurSuivant(parle);
+    }
+    return vainceur;
 }
