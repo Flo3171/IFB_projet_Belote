@@ -52,3 +52,25 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
     }
     setCarte(&carte[nbCarte -1], SANS_VALEUR, SANS_COULEUR);
 }
+
+Joueur vainqueurPli(int couleur, int valeur)
+/< je ne sais pas si je dois utiliser "int" en type de variable... */
+{
+    Couleur joueurNord_c, joueurEst_c, joueurSud-c, joueurOuest_c;
+    Valeur joueurNord_v, joueurEst_v, joueurSud_v, joueurOuest_v;
+    /< Il y a sûrement une meilleure facon de nommer les variables, voir d'utiliser une autre structure */
+
+    Carte tableauDeCarte[4];
+
+
+    tableauDeCarte[0].Valeur = joueurNord_v;
+    tableauDeCarte[0].Couleur = joueurNord_c;
+    tableauDeCarte[1].Valeur = joueurEst_v;
+    tableauDeCarte[1].Couleur = joueurEst_c;
+    tableauDeCarte[2].Valeur = joueurSud_v;
+    tableauDeCarte[2].Couleur = joueurSud_c;
+    tableauDeCarte[3].Valeur = joueurOuest_v;
+    tableauDeCarte[3].Couleur = joueurOuest_c;
+    /**< PAS FINI Ensuite j'applique la fonction forceCarte pour déterminer qui remporte le pli */
+
+}

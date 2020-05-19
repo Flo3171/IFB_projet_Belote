@@ -31,6 +31,16 @@ void setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte);
  */
 void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer);
 
+/** \brief
+ *
+ * \param
+ * \param
+ * \return
+ *
+ */
+
+Joueur vainqueurPli(int couleur, int valeur);
+
 
 
 #endif // _GESTION_CARTE_H_
