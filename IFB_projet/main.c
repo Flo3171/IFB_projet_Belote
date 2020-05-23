@@ -16,6 +16,8 @@ int main(int argc, char *argv[])
     pli[3].couleur = CARREAU;
     pli[3].valeur = ROI;
 
+    printf("%d\n", rechercherCarte(pli, 4, PIQUE, SANS_VALEUR,  1));
+
     Carte carteMain[8];
     carteMain[0].couleur = COEUR;
     carteMain[0].valeur = 7;
@@ -33,6 +35,8 @@ int main(int argc, char *argv[])
     carteMain[6].valeur = ROI;
     carteMain[7].couleur = CARREAU;
     carteMain[7].valeur = AS;
+
+
 
     /*afficheMain(carteMain);
     supprimeCarte(carteMain, 8, 2);
@@ -73,7 +77,7 @@ int main(int argc, char *argv[])
 
     /*menuPrincipal();*/
     int score[4] = {0};
-    manche(pseudo, score, NORD);
+    /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
 

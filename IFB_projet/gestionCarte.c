@@ -54,23 +54,49 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
 }
 
 Joueur vainqueurPli(int couleur, int valeur)
-/< je ne sais pas si je dois utiliser "int" en type de variable... */
+/*< je ne sais pas si je dois utiliser "int" en type de variable... */
 {
-    Couleur joueurNord_c, joueurEst_c, joueurSud-c, joueurOuest_c;
+    Couleur joueurNord_c, joueurEst_c, joueurSud_c, joueurOuest_c;
     Valeur joueurNord_v, joueurEst_v, joueurSud_v, joueurOuest_v;
-    /< Il y a sûrement une meilleure facon de nommer les variables, voir d'utiliser une autre structure */
+    /*< Il y a sûrement une meilleure facon de nommer les variables, voir d'utiliser une autre structure */
 
     Carte tableauDeCarte[4];
 
 
-    tableauDeCarte[0].Valeur = joueurNord_v;
-    tableauDeCarte[0].Couleur = joueurNord_c;
-    tableauDeCarte[1].Valeur = joueurEst_v;
-    tableauDeCarte[1].Couleur = joueurEst_c;
-    tableauDeCarte[2].Valeur = joueurSud_v;
-    tableauDeCarte[2].Couleur = joueurSud_c;
-    tableauDeCarte[3].Valeur = joueurOuest_v;
-    tableauDeCarte[3].Couleur = joueurOuest_c;
+    tableauDeCarte[0].valeur = joueurNord_v;
+    tableauDeCarte[0].couleur = joueurNord_c;
+    tableauDeCarte[1].valeur = joueurEst_v;
+    tableauDeCarte[1].couleur = joueurEst_c;
+    tableauDeCarte[2].valeur = joueurSud_v;
+    tableauDeCarte[2].couleur = joueurSud_c;
+    tableauDeCarte[3].valeur = joueurOuest_v;
+    tableauDeCarte[3].couleur = joueurOuest_c;
     /**< PAS FINI Ensuite j'applique la fonction forceCarte pour déterminer qui remporte le pli */
 
+}
+
+
+char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer)
+{
+    /**< Fonction faite a partir de l'oranigrame qui montre comment déterminer si une carte est valide a partir des règle*/
+    char valide = 0;
+
+    return valide;
+}
+
+char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche, int version)
+{
+    char trouve = 0;
+    if (version == 1){
+        for(int i = 0; i < nbCarte; i++){
+            if (((*(pCarte + i)).couleur == couleurCherche || couleurCherche == SANS_COULEUR) && ((*(pCarte + i)).valeur == valeurCherche || valeurCherche == SANS_VALEUR)){
+                trouve = 1;
+            }
+        }
+    }
+    else if (version == 0){
+        /**< si la force d'une carte est suppérieur a la force de la carte recherché */
+    }
+
+    return trouve;
 }
