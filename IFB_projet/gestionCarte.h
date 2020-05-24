@@ -48,11 +48,12 @@ Joueur vainqueurPli(int couleur, int valeur);
  * \param Couleur atout : couleur de l'atout
  * \param Carte *pCarteMainJoueur pointeur sur un tableau de 8 carte contenent les cartes dans la main du joueur
  * \param Joueur premierAJouer : premeier joueur a jouer dans le pli
+ * \param Joueur parle : joueur en train de jouer
  * \return char 1 si la carte est valide 0 sinon
  *
  */
 
-char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer);
+char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle);
 
 /** \brief cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux
  *
