@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
     carteMain[7].couleur = PIQUE;
     carteMain[7].valeur = AS;
 
-    printf("Le vainceur est %d\n", vainqueurPli(pli, TOUT_ATOUT, EST));
+    printf("%d\n",rechercherCarteSuperieur(carteMain, 8, pli [3], TOUT_ATOUT, CARREAU));
 
 
 

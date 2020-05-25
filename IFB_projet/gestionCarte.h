@@ -74,12 +74,24 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
  * \param int nbCarte : nombre de carte dans le tableau
  * \param Couleur couleurCherche : couleur que l'on veut chercher dans le tableau (mettre SANS_COULEUR pour rechercher toutes les couleur)
  * \param Valeur valeurCherche : valeur que l'on cherche dans le tableau (mettre SANS_VALEUR pour chercher toutes les valeur
- * \param int version : 1 pour la version ou la recherche de la valeur est strictement égale et 2 pour la version ou on recherche des carte de valeur supérieur
  * \return char 1 si on a trouvé une carte qui correspond au critère 0 sinon
  *
  */
 
-char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche, int version);
+char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche);
+
+/** \brief cherche dans un tableau de carte si il y a une carte d'une force suppérieur a carteCherche
+ *
+ * \param Carte *pCarte : pointeur sur un tableau de carte
+ * \param int nbCarte : nombre de carte dans le tableau
+ * \param Carte carteCherche : carte a laquele on veut que la carte cherchée soit supérieur
+ * \param Couleur atout : couleur de l'atout dans la manche
+ * \param Couleur entame : couleur de l'entame dans la manche
+ * \return char 1 si on a trouvé une carte qui correspond au critère 0 sinon
+ *
+ */
+
+char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame);
 
 
 
