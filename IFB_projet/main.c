@@ -1,7 +1,7 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-    initialisation(50, 91); /* definit la taille de la fennetre a 44 lignes et 91 colones */
+    initialisation(50, 91); /* definit la taille de la fennetre a 50 lignes et 91 colones */
     /* DEBUG ET TEST DES FONTIONS */
 
 
@@ -15,8 +15,6 @@ int main(int argc, char *argv[])
     pli[2].valeur = DAME;
     pli[3].couleur = CARREAU;
     pli[3].valeur = ROI;
-
-    printf("%d\n", rechercherCarte(pli, 4, PIQUE, SANS_VALEUR,  1));
 
     Carte carteMain[8];
     carteMain[0].couleur = COEUR;
@@ -33,8 +31,10 @@ int main(int argc, char *argv[])
     carteMain[5].valeur = DAME;
     carteMain[6].couleur = PIQUE;
     carteMain[6].valeur = ROI;
-    carteMain[7].couleur = CARREAU;
+    carteMain[7].couleur = PIQUE;
     carteMain[7].valeur = AS;
+
+    printf("Le vainceur est %d\n", vainqueurPli(pli, TOUT_ATOUT, EST));
 
 
 
@@ -118,7 +118,7 @@ int main(int argc, char *argv[])
 
 
 
-    /*CODDE VRAIMENT UTLILE (ne pas supprimer)*/
+    /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
 
     return 0;
 }

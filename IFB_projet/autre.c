@@ -11,7 +11,6 @@ Joueur joueurSuivant(Joueur joueur){
 
 int nbAleatoire(int mini, int maxi)
 {
-    srand(time(0));
     return (rand()%(maxi - mini + 1)) + mini;
 }
 

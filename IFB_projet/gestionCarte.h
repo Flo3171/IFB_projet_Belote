@@ -31,15 +31,28 @@ void setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte);
  */
 void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer);
 
-/** \brief
+/** \brief donne le vainquer d'un pli
  *
- * \param
- * \param
- * \return
+ * \param Carte pli[] : tableau contenant les carte du pli
+ * \param Couleur atout : couleur de l'atout durant cette manche
+ * \param Joueur premierAJouer : joueur qui pose la première carte du pli
+ * \return Joueur : le jouer qui a gagné le pli
  *
  */
 
-Joueur vainqueurPli(int couleur, int valeur);
+Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer);
+
+/** \brief calcul la force d'une carte, en faisant la probabilitée qu'elle a de gagné contre toutes les autres cartes
+ *
+ * \param Carte carteACalculer : carte dont on veut connaitre la force
+ * \param Couleur atout : couleur de l'atout durant la partie
+ * \param Couleur entame : couleur de l'entame durant la partie
+ * \return float : probabilitée de victoir de la carte
+ *
+ */
+
+float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame);
+
 
 /** \brief ddétermine si une carte peut etre posé par un joueur
  *

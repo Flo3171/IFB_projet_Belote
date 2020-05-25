@@ -53,28 +53,204 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
     setCarte(&carte[nbCarte -1], SANS_VALEUR, SANS_COULEUR);
 }
 
-Joueur vainqueurPli(int couleur, int valeur)
-/*< je ne sais pas si je dois utiliser "int" en type de variable... */
+Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
 {
-    Couleur joueurNord_c, joueurEst_c, joueurSud_c, joueurOuest_c;
-    Valeur joueurNord_v, joueurEst_v, joueurSud_v, joueurOuest_v;
-    /*< Il y a sûrement une meilleure facon de nommer les variables, voir d'utiliser une autre structure */
+    Joueur vainqueur = SANS_JOUEUR;
+    float probabiliteVictoireMax = 0;
+    Couleur entame = pli[premierAJouer - 1].couleur;
+    for (Joueur joueurTest = NORD; joueurTest <= OUEST; joueurTest ++){
+        printf("%d   %f\n", joueurTest, forceCarte(pli[joueurTest - 1], atout, entame));
+        if (forceCarte(pli[joueurTest - 1], atout, entame) > probabiliteVictoireMax){/**< La carte du joueur que l'on test est plus forte que la meilleur actuelle alors ca devient la meilleure */
+            probabiliteVictoireMax = forceCarte(pli[joueurTest - 1], atout, entame);
+            vainqueur = joueurTest;
+        }
+    }
 
-    Carte tableauDeCarte[4];
-
-
-    tableauDeCarte[0].valeur = joueurNord_v;
-    tableauDeCarte[0].couleur = joueurNord_c;
-    tableauDeCarte[1].valeur = joueurEst_v;
-    tableauDeCarte[1].couleur = joueurEst_c;
-    tableauDeCarte[2].valeur = joueurSud_v;
-    tableauDeCarte[2].couleur = joueurSud_c;
-    tableauDeCarte[3].valeur = joueurOuest_v;
-    tableauDeCarte[3].couleur = joueurOuest_c;
-    /**< PAS FINI Ensuite j'applique la fonction forceCarte pour déterminer qui remporte le pli */
-
+    return vainqueur;
 }
 
+
+float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+{
+    int nbCatreBatue = 0;
+
+    if (carteACalculer.couleur == atout || (atout == TOUT_ATOUT && carteACalculer.couleur == entame)){/**< la carte est un atout ou que la manche se joue en tout atout */
+
+        switch(carteACalculer.valeur)
+        {
+        case VALET :
+            nbCatreBatue = 31;
+            break;
+        case NEUF :
+            nbCatreBatue = 30;
+            break;
+        case AS :
+            nbCatreBatue = 29;
+            break;
+        case DIX :
+            nbCatreBatue = 28;
+            break;
+        case ROI :
+            nbCatreBatue = 27;
+            break;
+        case DAME :
+            nbCatreBatue = 26;
+            break;
+        case HUIT :
+            nbCatreBatue = 25;
+            break;
+        case SEPT :
+            nbCatreBatue = 24;
+            break;
+        default:
+            nbCatreBatue = 0;
+            break;
+        }
+
+    }
+    else if (atout == TOUT_ATOUT){/**< si on est en tout atout mais que la couleur de la carte n'est pa la couleur de l'entame alors la carte sera plus faible que toutes les cartees dans la bonne couleur */
+
+        switch(carteACalculer.valeur)
+        {
+        case VALET :
+            nbCatreBatue = 7;
+            break;
+        case NEUF :
+            nbCatreBatue = 6;
+            break;
+        case AS :
+            nbCatreBatue = 5;
+            break;
+        case DIX :
+            nbCatreBatue = 4;
+            break;
+        case ROI :
+            nbCatreBatue = 3;
+            break;
+        case DAME :
+            nbCatreBatue = 2;
+            break;
+        case HUIT :
+            nbCatreBatue = 1;
+            break;
+        case SEPT :
+            nbCatreBatue = 0;
+            break;
+        default:
+            nbCatreBatue = 0;
+            break;
+        }
+    }
+    else if(carteACalculer.couleur == entame && atout == SANS_ATOUT){/**< la manche est en sans atout et la carte est dans la couleur de l'entame */
+
+        switch(carteACalculer.valeur)
+        {
+        case AS :
+            nbCatreBatue = 31;
+            break;
+        case DIX :
+            nbCatreBatue = 30;
+            break;
+        case ROI :
+            nbCatreBatue = 29;
+            break;
+        case DAME :
+            nbCatreBatue = 28;
+            break;
+        case VALET :
+            nbCatreBatue = 27;
+            break;
+        case NEUF :
+            nbCatreBatue = 26;
+            break;
+        case HUIT :
+            nbCatreBatue = 25;
+            break;
+        case SEPT :
+            nbCatreBatue = 24;
+            break;
+        default:
+            nbCatreBatue = 0;
+            break;
+        }
+
+
+    }
+    else{/**< on est en atout d'une certaine couleur ou en sans atoutavec une couleur différente de l'entame */
+        if (carteACalculer.couleur == entame){
+
+            switch(carteACalculer.valeur)
+            {
+            case AS :
+                nbCatreBatue = 23;
+                break;
+            case DIX :
+                nbCatreBatue = 22;
+                break;
+            case ROI :
+                nbCatreBatue = 21;
+                break;
+            case DAME :
+                nbCatreBatue = 20;
+                break;
+            case VALET :
+                nbCatreBatue = 19;
+                break;
+            case NEUF :
+                nbCatreBatue = 18;
+                break;
+            case HUIT :
+                nbCatreBatue = 17;
+                break;
+            case SEPT :
+                nbCatreBatue = 16;
+                break;
+            default:
+                nbCatreBatue = 0;
+                break;
+            }
+        }
+        else{/**< quand l'entame est différent de la couleur de la carte et que ce n'est pas un atout alor on pert a chaque fois */
+
+                        switch(carteACalculer.valeur)
+            {
+            case AS :
+                nbCatreBatue = 7;
+                break;
+            case DIX :
+                nbCatreBatue = 6;
+                break;
+            case ROI :
+                nbCatreBatue = 5;
+                break;
+            case DAME :
+                nbCatreBatue = 4;
+                break;
+            case VALET :
+                nbCatreBatue = 3;
+                break;
+            case NEUF :
+                nbCatreBatue = 2;
+                break;
+            case HUIT :
+                nbCatreBatue = 1;
+                break;
+            case SEPT :
+                nbCatreBatue = 0;
+                break;
+            default:
+                nbCatreBatue = 0;
+                break;
+            }
+
+        }
+
+    }
+
+
+    return (float)nbCatreBatue/(NB_TOATAL_CARTE -1);
+
+}
 
 char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
 {
