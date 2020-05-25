@@ -30,7 +30,14 @@ int nbAleatoire(int mini, int maxi);
  */
 void setContrat(Contrat *contrat, Joueur preneur, int nbPoint,Couleur atout, Coinche coinche);
 
-
+/** \brief compte le nombre de points d'un pli
+ *
+ * \param Carte pli []: tableau des cartes possées dont on doit faire la somme des points
+ * \param Couleur atout: couleur de l'atout joué dans la manche
+ * \return points
+ *
+ */
+int pointPli(Carte pli[], Couleur atout);
 
 
 

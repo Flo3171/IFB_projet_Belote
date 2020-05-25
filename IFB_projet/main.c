@@ -1,28 +1,28 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-    initialisation(50, 91); /* definit la taille de la fennetre a 44 lignes et 91 colones */
+    initialisation(50, 91); /* definit la taille de la fennetre a 50 lignes et 91 colones */
     /* DEBUG ET TEST DES FONTIONS */
 
 
     /*afficheMenuPrincipal(0);*/
     Carte pli[4];
-    pli[0].couleur = COEUR;
+    pli[0].couleur = CARREAU;
     pli[0].valeur = 9;
     pli[1].couleur = PIQUE;
     pli[1].valeur = AS;
     pli[2].couleur = TREFLE;
     pli[2].valeur = DAME;
-    pli[3].couleur = CARREAU;
-    pli[3].valeur = ROI;
+    pli[3].couleur = SANS_COULEUR;
+    pli[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
     carteMain[0].couleur = COEUR;
     carteMain[0].valeur = 7;
-    carteMain[1].couleur = TREFLE;
-    carteMain[1].valeur = 8;
+    carteMain[1].couleur = CARREAU;
+    carteMain[1].valeur = 10;
     carteMain[2].couleur = CARREAU;
-    carteMain[2].valeur = 9;
+    carteMain[2].valeur = VALET;
     carteMain[3].couleur = PIQUE;
     carteMain[3].valeur = 10;
     carteMain[4].couleur = COEUR;
@@ -31,8 +31,9 @@ int main(int argc, char *argv[])
     carteMain[5].valeur = DAME;
     carteMain[6].couleur = PIQUE;
     carteMain[6].valeur = ROI;
-    carteMain[7].couleur = CARREAU;
+    carteMain[7].couleur = PIQUE;
     carteMain[7].valeur = AS;
+
 
     /*afficheMain(carteMain);
     supprimeCarte(carteMain, 8, 2);
@@ -59,6 +60,13 @@ int main(int argc, char *argv[])
 
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+
+    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
+    for (int i = 0; i < 8; i++){
+        printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
+    }
+
+
     /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
     strcpy(pseudo[1],"Gilou");
@@ -73,7 +81,7 @@ int main(int argc, char *argv[])
 
     /*menuPrincipal();*/
     int score[4] = {0};
-    manche(pseudo, score, NORD);
+    /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
 
@@ -90,8 +98,7 @@ int main(int argc, char *argv[])
     */
     /*afficheSousMenus("Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points", "coucou");*/
 
-   /* noCarteJouee = afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, message, OUEST);
-    printf("Vous jouez la carte %d", noCarteJouee);*/
+    /*printf("Vous jouez la carte %d", noCarteJouee);*/
 
     /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
@@ -110,11 +117,15 @@ int main(int argc, char *argv[])
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);*/
 
+    /** essais pour compter les points**/
+    /*printf("|%d|",pointPli(pli,TOUT_ATOUT));
+    printf("|%d|",pointPli(pli,SANS_ATOUT));
+    printf("|%d|",pointPli(pli,COEUR));
+    printf("|%d|",pointPli(pli,PIQUE));
+    printf("|%d|",pointPli(pli,TREFLE));
+    printf("|%d|",pointPli(pli,CARREAU));*/
 
-
-
-
-    /*CODDE VRAIMENT UTLILE (ne pas supprimer)*/
+    /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
 
     return 0;
 }

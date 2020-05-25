@@ -2,6 +2,7 @@
 
 void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 {
+    srand(time(0));
     modifieTailleFenetre(nbLigneFenetre, nbColloneFenetre);
 }
 
