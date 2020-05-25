@@ -261,9 +261,9 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
     }
     else{
         if (rechercherCarte(pCarteMainJoueur, 8, pli[premierAJouer-1].couleur, SANS_VALEUR)){/**< Le joueur posède il la couleur demandée ? */
-            if (pli[premierAJouer - 1].couleur == atout){/**< l'entame est en atout */
-                if (1/**<rechercherCarte(atout de valeur supérieur)*/){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
-                    if (1/**< forceCarte(cartePose) > foreCarte(pli[vainceur du pli - 1]) */){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
+            if (pli[premierAJouer - 1].couleur == atout || atout == TOUT_ATOUT){/**< l'entame est en atout */
+                if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
+                    if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
                         valide = 1;
                     }
                     else{
@@ -284,14 +284,14 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
             }
         }
         else{
-            if(1/**< vainqueur pli == joueurSuivant(joueurSuivant(parle))*/){/**< Le partemenaire est maitre ? */
+            if( vainqueurPli(pli, atout, premierAJouer) == joueurSuivant(joueurSuivant(parle))){/**< Le partemenaire est maitre ? */
                 valide = 1;
             }
             else{
                 if (rechercherCarte(pCarteMainJoueur, 8, atout, SANS_VALEUR)){/**< Le joueur a il un atout ? */
                     if (rechercherCarte(pli, 4, atout, SANS_VALEUR)){/**< il y a deja un ajout de posé */
-                        if (1/**<rechercherCarte(atout de valeur supérieur)*/){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
-                            if (1/**< forceCarte(cartePose) > foreCarte(pli[vainceur du pli - 1]) */){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
+                        if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
+                            if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
                                 valide = 1;
                             }
                             else{

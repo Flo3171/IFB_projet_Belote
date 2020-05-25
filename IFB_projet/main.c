@@ -7,22 +7,22 @@ int main(int argc, char *argv[])
 
     /*afficheMenuPrincipal(0);*/
     Carte pli[4];
-    pli[0].couleur = COEUR;
+    pli[0].couleur = CARREAU;
     pli[0].valeur = 9;
     pli[1].couleur = PIQUE;
     pli[1].valeur = AS;
     pli[2].couleur = TREFLE;
     pli[2].valeur = DAME;
-    pli[3].couleur = CARREAU;
-    pli[3].valeur = ROI;
+    pli[3].couleur = SANS_COULEUR;
+    pli[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
     carteMain[0].couleur = COEUR;
     carteMain[0].valeur = 7;
-    carteMain[1].couleur = TREFLE;
-    carteMain[1].valeur = 8;
+    carteMain[1].couleur = CARREAU;
+    carteMain[1].valeur = 10;
     carteMain[2].couleur = CARREAU;
-    carteMain[2].valeur = 9;
+    carteMain[2].valeur = VALET;
     carteMain[3].couleur = PIQUE;
     carteMain[3].valeur = 10;
     carteMain[4].couleur = COEUR;
@@ -33,9 +33,6 @@ int main(int argc, char *argv[])
     carteMain[6].valeur = ROI;
     carteMain[7].couleur = PIQUE;
     carteMain[7].valeur = AS;
-
-    printf("%d\n",rechercherCarteSuperieur(carteMain, 8, pli [3], TOUT_ATOUT, CARREAU));
-
 
 
     /*afficheMain(carteMain);
@@ -63,6 +60,13 @@ int main(int argc, char *argv[])
 
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+
+    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
+    for (int i = 0; i < 8; i++){
+        printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
+    }
+
+
     /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
     strcpy(pseudo[1],"Gilou");
@@ -94,8 +98,7 @@ int main(int argc, char *argv[])
     */
     /*afficheSousMenus("Felicitation vous remportezaaa la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d points", "coucou");*/
 
-   /* noCarteJouee = afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, message, OUEST);
-    printf("Vous jouez la carte %d", noCarteJouee);*/
+    /*printf("Vous jouez la carte %d", noCarteJouee);*/
 
     /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
