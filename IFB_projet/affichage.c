@@ -40,7 +40,7 @@ int afficheMenuPrincipal(int type)
 }
 
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur)
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur,int type)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */
     char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
@@ -74,7 +74,7 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
      char *pContratActuelFormate = &contratActuelFormate[0][0];
      formateContrat(contratActuel, pContratActuelFormate, TAILLE_MAXI_PESEUDO, pseudo);
 
-    int retour = 0;
+    int carteSelection = 0,retour=0;
 
 
 
@@ -122,9 +122,25 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	|________________________________________________________________________|	 |\n");
     printf("|________________________________________________________________________________________|\n");
 
-
-    retour  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
-    return retour;
+    Carte carteAJouer;
+    Carte *pCarteEnMain = &cartesEnMain[0];
+    Couleur atout=contratActuel.atout;
+    Joueur joueurCommence=0;
+    if(dernierVainqueur == SANS_JOUEUR){
+        joueurCommence == dernierVainqueur;
+    }else{
+        joueurCommence == contratActuel.preneur;
+    }
+    if(type == 0){
+        do{
+            carteSelection  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
+            carteAJouer =  *(pCarteEnMain + carteSelection-1);
+            retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate,/*joueurCommence*/SUD,SUD);
+        }while (retour == 0);
+        return carteSelection;
+    }else{
+        getch();
+    }
 }
 
 void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)

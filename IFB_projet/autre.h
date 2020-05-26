@@ -34,10 +34,11 @@ void setContrat(Contrat *contrat, Joueur preneur, int nbPoint,Couleur atout, Coi
  *
  * \param Carte pli []: tableau des cartes possées dont on doit faire la somme des points
  * \param Couleur atout: couleur de l'atout joué dans la manche
+ * \param nbCarte: nombre de carte à compter
  * \return points
  *
  */
-int pointPli(Carte pli[], Couleur atout);
+int pointPli(Carte pli[], Couleur atout, int nbCarte);
 
 
 

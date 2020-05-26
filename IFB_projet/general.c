@@ -111,7 +111,7 @@ void manche(char *pseudo[], int score[], Joueur dealer)
             for (int i = 0; i < 4; i++){
                 setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
             }
-            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli);
+            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli,i);
             for (int i = 0; i < 4; i++){
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
             }
@@ -248,13 +248,16 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
 }
 
 
-Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur)
+Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur,int numPli)
 {
     Joueur vainceur = SANS_JOUEUR;
+    int numCarte=0;
     for (int i = 0; i < 4; i++){
         if (parle == SUD){
             /**< interface de pli Utilisateur */
-            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur);
+            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,0);
+            poseCarte(SUD,numCarte,pCarteMain+ 8*(SUD -1),cartePli,i,8-numPli);
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,1);
         }
         else{
             /**< interface de pli ordinateur */
@@ -263,4 +266,22 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
         parle = joueurSuivant(parle);
     }
     return vainceur;
+}
+
+int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int cartePosee,int carteRestante)
+{
+    int retour=NULL;
+    Carte carteAJouer;
+    carteAJouer =  *((numCarte-1)+ pMainJoueurs);
+    afficheMain(pMainJoueurs);
+
+    supprimeCarte(pMainJoueurs,carteRestante,numCarte-1);
+    setCarte(pli+joueur-1,carteAJouer.valeur,carteAJouer.couleur);
+    retour=1;
+
+    afficheMain(pMainJoueurs),
+    afficheMain(pli);
+    printf("\n\n\n\n");
+    getch();
+    return retour;
 }

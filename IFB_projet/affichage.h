@@ -25,7 +25,7 @@ int afficheMenuPrincipal(int type);
  *
  */
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur);
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur,int type);
 
 /** \brief modifie la taille de la fenetre dans laquel le programme s'execute
  *

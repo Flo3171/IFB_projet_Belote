@@ -60,7 +60,7 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame);
  * \param Carte pli[] : tableau contenet les carte du pli
  * \param Couleur atout : couleur de l'atout
  * \param Carte *pCarteMainJoueur pointeur sur un tableau de 8 carte contenent les cartes dans la main du joueur
- * \param Joueur premierAJouer : premeier joueur a jouer dans le pli
+ * \param Joueur premierAJouer : premier joueur a jouer dans le pli
  * \param Joueur parle : joueur en train de jouer
  * \return char 1 si la carte est valide 0 sinon
  *
