@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
     /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
     /*acquisitionPseudoAvecMessage();*/
-    /*Pour voir la liste des caracère que on peut utliser
+    /*Pour voir la liste des caracÃ¨re que on peut utliser
     for (int i = -127; i <=127; i++){
         printf(" %d-->%c\n", i,i);
     }*/
@@ -117,10 +117,15 @@ int main(int argc, char *argv[])
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);*/
 
-
-
-
-
+    /** essais pour compter les points**/
+    /*printf("|%d|",pointPli(pli,TOUT_ATOUT));
+    printf("|%d|",pointPli(pli,SANS_ATOUT));
+    printf("|%d|",pointPli(pli,COEUR));
+    printf("|%d|",pointPli(pli,PIQUE));
+    printf("|%d|",pointPli(pli,TREFLE));
+    printf("|%d|",pointPli(pli,CARREAU));*/
+  
+  
     /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
 
     return 0;
