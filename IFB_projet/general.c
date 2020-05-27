@@ -102,7 +102,7 @@ void manche(char *pseudo[], int score[], Joueur dealer)
     /**<plis */
     Joueur parle = joueurSuivant(dealer);
     if (contrat.nbPoint != 0){
-        Joueur vainceurPli = SANS_JOUEUR;
+        Joueur vainqueurPli = SANS_JOUEUR;
         Carte cartePli[4], carteDernierPli[4];
         for (int i = 0; i < 4; i++){
             setCarte(&carteDernierPli[i], SANS_VALEUR, SANS_COULEUR);
@@ -111,7 +111,7 @@ void manche(char *pseudo[], int score[], Joueur dealer)
             for (int i = 0; i < 4; i++){
                 setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
             }
-            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli);
+            vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli);
             for (int i = 0; i < 4; i++){
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
             }

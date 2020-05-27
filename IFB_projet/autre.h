@@ -39,6 +39,19 @@ void setContrat(Contrat *contrat, Joueur preneur, int nbPoint,Couleur atout, Coi
  */
 int pointPli(Carte pli[], Couleur atout);
 
+/** \brief met a l'echelle la valeur d'une variable comprise entre deux bornes pour que la variable de retour soit compris entre deux autres bornes
+ *
+ * \param float valeur : valeur a mettre à l'echelle
+ * \param float entreMin : valeur minimum que peut prendre l'entrée
+ * \param float entreMax : valeur maximum que peut prendre l'entrée
+ * \param float sortieMin : valeur minimum que peut prendre la sortie
+ * \param float sortieMax : valeur maximum que peut prendre la sortie
+ * \return float : la valeur de valeur une fois mise a l'echelle
+ *
+ */
+
+float ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax);
+
 
 
 #endif // _AUTRE_H_

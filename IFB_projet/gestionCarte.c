@@ -338,3 +338,21 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
     return trouve;
 }
+
+
+float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+{
+    float somme = 0, pireTA = 196.0/31.0, meilleurTA = 244.0/31.0, pire = 135.0/31, meilleur = 220.0/31;
+    for(int i = 0; i< nbCarte; i++){
+        somme = somme + forceCarte(*(tableauCarte + i), atout, (*(tableauCarte+i)).couleur);
+    }
+    if (atout == TOUT_ATOUT || atout == SANS_ATOUT){
+        somme = ajusteEchelle(somme, pireTA, meilleurTA, 0, 1);
+    }
+    else {
+        somme = ajusteEchelle(somme, pire, meilleur, 0, 1);
+    }
+
+    return somme;
+
+}
