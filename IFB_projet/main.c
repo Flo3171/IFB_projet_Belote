@@ -1,7 +1,9 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-    /*initialisation(50, 91);  definit la taille de la fennetre a 50 lignes et 91 colones */
+
+    initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+
     /* DEBUG ET TEST DES FONTIONS */
 
 
@@ -17,21 +19,21 @@ int main(int argc, char *argv[])
     pli[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
-    carteMain[0].couleur = COEUR;
-    carteMain[0].valeur = 7;
-    carteMain[1].couleur = CARREAU;
-    carteMain[1].valeur = 10;
-    carteMain[2].couleur = CARREAU;
-    carteMain[2].valeur = VALET;
-    carteMain[3].couleur = PIQUE;
-    carteMain[3].valeur = 10;
-    carteMain[4].couleur = COEUR;
-    carteMain[4].valeur = VALET;
-    carteMain[5].couleur = TREFLE;
-    carteMain[5].valeur = DAME;
-    carteMain[6].couleur = PIQUE;
-    carteMain[6].valeur = ROI;
-    carteMain[7].couleur = PIQUE;
+    carteMain[0].couleur = PIQUE;
+    carteMain[0].valeur = DIX;
+    carteMain[1].couleur = PIQUE;
+    carteMain[1].valeur = AS;
+    carteMain[2].couleur = TREFLE;
+    carteMain[2].valeur = DIX;
+    carteMain[3].couleur = TREFLE;
+    carteMain[3].valeur = AS;
+    carteMain[4].couleur = CARREAU;
+    carteMain[4].valeur = DIX;
+    carteMain[5].couleur = CARREAU;
+    carteMain[5].valeur = AS;
+    carteMain[6].couleur = COEUR;
+    carteMain[6].valeur = DIX;
+    carteMain[7].couleur = COEUR;
     carteMain[7].valeur = AS;
 
 
@@ -61,11 +63,24 @@ int main(int argc, char *argv[])
 
     /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
-    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
+    /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
     for (int i = 0; i < 8; i++){
         printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
     }*/
 
+    Carte mainJoueur[4][8];
+    Carte *pMainJoueur = &mainJoueur[0][0];
+    distribueCarte(pMainJoueur);
+
+
+    Contrat contratIA;
+    contratIA = proposeContratIa(NORD, pMainJoueur, contrat);
+    afficheContrat(contratIA, pseudo);
+
+    /*afficheMain(pMainJoueur);
+    for (Couleur atout = 1; atout < 7; atout ++){
+        printf("%d %f\n",atout,  sommeForceCarte(pMainJoueur, 8, atout));
+    }*/
 
     /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
@@ -103,7 +118,7 @@ int main(int argc, char *argv[])
     /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
     /*acquisitionPseudoAvecMessage();*/
-    /*Pour voir la liste des caracère que on peut utliser
+    /*Pour voir la liste des caracÃ¨re que on peut utliser
     for (int i = -127; i <=127; i++){
         printf(" %d-->%c\n", i,i);
     }*/
@@ -125,9 +140,8 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,TREFLE));
     printf("|%d|",pointPli(pli,CARREAU));*/
 
-<<<<<<< Updated upstream
-=======
-    Carte mainJoueur[4][8];
+
+    /*Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
@@ -148,8 +162,9 @@ int main(int argc, char *argv[])
             poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
         }*/
     getch();
-    menuPrincipal();
->>>>>>> Stashed changes
+    menuPrincipal();*/
+
+
     /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
 
     return 0;

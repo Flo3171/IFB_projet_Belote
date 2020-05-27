@@ -1,6 +1,7 @@
 #include "main.h"
 
-Joueur joueurSuivant(Joueur joueur){
+Joueur joueurSuivant(Joueur joueur)
+{
     if (joueur == OUEST){
         return NORD;
     }
@@ -132,4 +133,10 @@ int pointPli(Carte pli[], Couleur atout,int nbCarte)
         }
     }
     return point;
+}
+
+
+float ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+{
+    return (valeur - entreMin)*(sortieMax - sortieMin)/(entreMax - entreMin) + sortieMin;
 }

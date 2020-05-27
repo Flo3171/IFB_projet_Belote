@@ -25,7 +25,7 @@ void menuPrincipal()
 
     do{
         choix = afficheMenuPrincipal(1);
-        /* contrôle d'acquisition avec réaffichage de l'interfface */
+        /* contrÃ´le d'acquisition avec rÃ©affichage de l'interfface */
         switch(choix){
             case 1 : /*executer la fonction nouvelle partie */
                 nouvellePartie(pPseudo);
@@ -54,7 +54,7 @@ void nouvellePartie(char *pseudo[])
     printf("appyer sur une touche pour continuer");
     getch();
 
-    /**< Création des variable  */
+    /**< CrÃ©ation des variable  */
     int score[4] = {0};
     Joueur dealer = nbAleatoire(1, 4);
 
@@ -79,7 +79,7 @@ void nouvellePartie(char *pseudo[])
         afficheSousMenus(message, "Defaite");
     }
 
-    /**< Lancement de la fonction qui écrit les score et me a jour les stat */
+    /**< Lancement de la fonction qui Ã©crit les score et me a jour les stat */
 
     printf("\nPressez une touche pour revenir au menu\n");
     getch();
@@ -102,7 +102,7 @@ void manche(char *pseudo[], int score[], Joueur dealer)
     /**<plis */
     Joueur parle = joueurSuivant(dealer);
     if (contrat.nbPoint != 0){
-        Joueur vainceurPli = SANS_JOUEUR;
+        Joueur vainqueurPli = SANS_JOUEUR;
         Carte cartePli[4], carteDernierPli[4];
         for (int i = 0; i < 4; i++){
             setCarte(&carteDernierPli[i], SANS_VALEUR, SANS_COULEUR);
@@ -111,7 +111,8 @@ void manche(char *pseudo[], int score[], Joueur dealer)
             for (int i = 0; i < 4; i++){
                 setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
             }
-            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli,i);
+            vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli);
+          
             for (int i = 0; i < 4; i++){
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
             }
@@ -147,7 +148,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
             printf("\n%s passe\n", pseudo[parle - 1]);
         }
 
-        /**< Si un nouveau contrat est proposé alors il devient le cotrat proposé sinon on incrémemnt nbPasse*/
+        /**< Si un nouveau contrat est proposÃ© alors il devient le cotrat proposÃ© sinon on incrÃ©memnt nbPasse*/
         if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche){
             contratPropose = nouveauContrat;
             nbPasse = 0;

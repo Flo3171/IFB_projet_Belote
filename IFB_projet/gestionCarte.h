@@ -94,6 +94,19 @@ char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur 
 char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame);
 
 
+/** \brief calucule la somme force des carte dans un tableau
+ *
+ * \param Carte tableauCarte : tableau de carte sur lequel on veut travailler
+ * \param int nbCarte : nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout sur la manche
+ * \return float : la valeur de lla somme des force des carte
+ *
+ */
+
+ float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout);
+
+
+
 
 
 #endif // _GESTION_CARTE_H_
