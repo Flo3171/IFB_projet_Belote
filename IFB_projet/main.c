@@ -1,7 +1,9 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
+
     initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+
     /* DEBUG ET TEST DES FONTIONS */
 
 
@@ -59,7 +61,7 @@ int main(int argc, char *argv[])
     contrat.coinche = SURCOINCHE;
 
 
-    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+    /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
     /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
     for (int i = 0; i < 8; i++){
@@ -79,7 +81,6 @@ int main(int argc, char *argv[])
     for (Couleur atout = 1; atout < 7; atout ++){
         printf("%d %f\n",atout,  sommeForceCarte(pMainJoueur, 8, atout));
     }*/
-
 
     /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
@@ -138,6 +139,30 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,PIQUE));
     printf("|%d|",pointPli(pli,TREFLE));
     printf("|%d|",pointPli(pli,CARREAU));*/
+
+
+    /*Carte mainJoueur[4][8];
+
+    Carte *pMainJoueur = &mainJoueur[0][0];
+    distribueCarte(pMainJoueur);
+
+    Carte pliVide[4];
+    pliVide[0].couleur = COEUR;
+    pliVide[0].valeur = ROI;
+    pliVide[1].couleur = COEUR;
+    pliVide[1].valeur = DIX;
+    pliVide[2].couleur = SANS_COULEUR;
+    pliVide[2].valeur = SANS_VALEUR;
+    pliVide[3].couleur = SANS_COULEUR;
+    pliVide[3].valeur = SANS_VALEUR;
+
+    /*for(int j=0;j<21;j++){
+        distribueCarte(pMainJoueur);
+        for(int i=1;i<5;i++){
+            poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
+        }*/
+    getch();
+    menuPrincipal();*/
 
 
     /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/

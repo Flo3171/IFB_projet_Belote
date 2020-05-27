@@ -23,11 +23,11 @@ void setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Co
     (*contrat).coinche = coinche;
 }
 
-int pointPli(Carte pli[], Couleur atout)
+int pointPli(Carte pli[], Couleur atout,int nbCarte)
 {
     int point=0;
 
-    for(int i=0;i<4;i++){
+    for(int i=0;i<nbCarte;i++){
         switch(atout){
             case TOUT_ATOUT:
                     {

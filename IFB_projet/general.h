@@ -74,7 +74,18 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain);
   *
   */
 
-Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur);
+Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur, int numPli);
 
+/** \brief fonction qui verifie la validité d'une carte est la pose
+ *
+ * \param joueur: variable qui defini la position du joueur qui effectue l'action
+ * \param numCarte: variable qui defini la carte choisie par le joueur
+ * \param pMainJoueurs : pointeur qui renvoie vers le tableau de la main de tous les joueurs
+ * \param pPli : pointeur qui renvoie vers le tableau des carte jouées dans le pli
+ * \return
+ *
+ */
+
+int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int cartePosee,int carteRestante);
 
 #endif // _GENERAL_H_
