@@ -1,10 +1,10 @@
 #ifndef _GENERAL_H_
 #define _GENERAL_H_
 
-/** \brief fonction qui gerère l'initialitation et le lancement du programe
+/** \brief fonction qui gère l'initialitation et le lancement du programme
  *
- * \param nbLigneFenetre : taille vertical de la fenetre
- * \param nbColloneFenetre : taille horizonotal de la fenetre
+ * \param nbLigneFenetre : taille verticale de la fenêtre
+ * \param nbColloneFenetre : taille horizonotale de la fenêtre
  * \return void
  *
  */
@@ -17,9 +17,9 @@ void initialisation(int nbLigneFenetre, int nbColloneFenetre);
  */
 void menuPrincipal ();
 
-/** \brief lancement d'une nouvel partie
+/** \brief lancement d'une nouvelle partie
  *
- * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
+ * \param char *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return void
  *
@@ -29,7 +29,7 @@ void nouvellePartie(char *pseudo[], Joueur utilisateur);
 
 /** \brief lancement d'une manche
  *
- * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
+ * \param char *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs
  * \param int score[] : tableau contenant les scores des joueur
  * \param Joueur dealer : joueur qui distibue les cartes
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
@@ -39,11 +39,11 @@ void nouvellePartie(char *pseudo[], Joueur utilisateur);
 
 void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur);
 
-/** \brief gere l'anoce et la surenchère des contat par les joueur
+/** \brief gère l'annonce et la surenchère des contats par les joueurs
  *
- * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
+ * \param char *pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs
  * \param Joueur dealer : joueur qui distibue les cartes
- * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
+ * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueur
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return Contrat : contrat final qui a ete choisi pour la partie
  *
@@ -51,12 +51,12 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur);
 
 Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur);
 
-/** \brief proposistion d'un contrat par un joueur
+/** \brief proposition d'un contrat par un joueur
  *
  * \param Contrat dernierContrat : dernier contrat proposé
  * \param Joueur parle : joueur qui parle
- * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
- * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
+ * \param char *pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs
+ * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueurs
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return Contrat : nouveau contrat proposé par le joueur
  *
