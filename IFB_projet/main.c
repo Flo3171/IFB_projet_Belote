@@ -1,8 +1,9 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
+    srand(time(NULL));
 
-    initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+    /*initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
 
     /* DEBUG ET TEST DES FONTIONS */
 
@@ -61,21 +62,21 @@ int main(int argc, char *argv[])
     contrat.coinche = SURCOINCHE;
 
 
-    /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
     /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
     for (int i = 0; i < 8; i++){
         printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
     }*/
 
-    Carte mainJoueur[4][8];
+    /*Carte mainJoueur[4][8];
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
 
     Contrat contratIA;
     contratIA = proposeContratIa(NORD, pMainJoueur, contrat);
-    afficheContrat(contratIA, pseudo);
+    afficheContrat(contratIA, pseudo);*/
 
     /*afficheMain(pMainJoueur);
     for (Couleur atout = 1; atout < 7; atout ++){
@@ -99,6 +100,8 @@ int main(int argc, char *argv[])
     /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
+
+    nouvellePartie(pseudo, SANS_JOUEUR);
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*
     manche(pseudo, score, SUD);*/
@@ -154,13 +157,13 @@ int main(int argc, char *argv[])
     pliVide[2].couleur = SANS_COULEUR;
     pliVide[2].valeur = SANS_VALEUR;
     pliVide[3].couleur = SANS_COULEUR;
-    pliVide[3].valeur = SANS_VALEUR;
+    pliVide[3].valeur = SANS_VALEUR;*/
 
     /*for(int j=0;j<21;j++){
         distribueCarte(pMainJoueur);
         for(int i=1;i<5;i++){
             poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
-        }*/
+        }
     getch();
     menuPrincipal();*/
 

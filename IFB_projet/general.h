@@ -20,10 +20,11 @@ void menuPrincipal ();
 /** \brief lancement d'une nouvel partie
  *
  * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
+ * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return void
  *
  */
-void nouvellePartie(char *pseudo[]);
+void nouvellePartie(char *pseudo[], Joueur utilisateur);
 
 
 /** \brief lancement d'une manche
@@ -31,22 +32,24 @@ void nouvellePartie(char *pseudo[]);
  * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
  * \param int score[] : tableau contenant les scores des joueur
  * \param Joueur dealer : joueur qui distibue les cartes
+ * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return void
  *
  */
 
-void manche(char *pseudo[], int score[], Joueur dealer);
+void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur);
 
 /** \brief gere l'anoce et la surenchère des contat par les joueur
  *
  * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
  * \param Joueur dealer : joueur qui distibue les cartes
  * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
+ * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return Contrat : contrat final qui a ete choisi pour la partie
  *
  */
 
-Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain);
+Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur);
 
 /** \brief proposistion d'un contrat par un joueur
  *
@@ -54,10 +57,11 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain);
  * \param Joueur parle : joueur qui parle
  * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
  * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
+ * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return Contrat : nouveau contrat proposé par le joueur
  *
  */
- Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain);
+ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur);
 
 
  /** \brief fonction qui gère un pli
@@ -74,7 +78,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain);
   *
   */
 
-Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur, int numPli);
+Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur, int numPli, Joueur utilisateur);
 
 /** \brief fonction qui verifie la validité d'une carte est la pose
  *
@@ -86,6 +90,6 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
  *
  */
 
-int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int cartePosee,int carteRestante);
+int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int cartePosee, int carteRestante);
 
 #endif // _GENERAL_H_

@@ -55,10 +55,10 @@ void rempliEspace(char *chaine,int nbEspace);
 void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version);
 
 
-/** \brief met dans une chaine de caractèr le valeur et la couleur d'une carte
+/** \brief met dans une chaine de caractère la valeur et la couleur d'une carte
  *
- * \param carte : variable de type carte qui contien t la carte a afficher
- * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la veleur et le couleur si mode court)
+ * \param carte : variable de type carte qui contient la carte a afficher
+ * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la valeur et la couleur si mode court)
  * \param couleur : pointeur vers la chaine  qui stocke la couleur
  * \param vesion : 0 si c'est la version courte et 1 pour la version longue
  * \param tailleChaine : taille de la chaine de caratère dans laquel on écrit

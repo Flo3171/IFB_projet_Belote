@@ -56,10 +56,12 @@ void afficheMain(Carte carte[]);
  *
  * \param Contrat contrat : contrat a afficher
  * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
+ * \param int version : 1 pour la version belle et de grande taille et 2 pour la version courte
  * \return void
  *
  */
-void afficheContrat(Contrat contrat, char *pseudo[]);
+
+void afficheContrat(Contrat contrat, char *pseudo[], int version);
 
 /** \brief
  *
@@ -69,6 +71,20 @@ void afficheContrat(Contrat contrat, char *pseudo[]);
  *
  */
 void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne);
+
+/** \brief gère le choix du contrat par l'utilisateur
+ *
+ * \param Contrat dernierContrat : dernier contrat proposé
+ * \param Joueur parle : joueur qui parle
+ * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main du joueur
+ * \return Contrat : nouveau contrat proposé par le joueur
+ * \param
+ * \return
+ *
+ */
+
+Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain);
+
 
 #endif
 
