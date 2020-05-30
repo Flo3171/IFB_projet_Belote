@@ -120,7 +120,6 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur, utilisateur);
-    getch();
 
     /**<plis */
     Joueur parle = joueurSuivant(dealer);
@@ -135,7 +134,6 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
             for (int j = 0; j < 4; j++){
                 setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
             }
-
             vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli, i+1, utilisateur);
 
 
@@ -240,6 +238,8 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
         }
         else{
             /**< interface de pli ordinateur */
+            numCarte  = choixCarteIA(parle, pCarteMain+ 8*(utilisateur -1), cartePli, dernierVainceur, contrat.atout, 8-numPli);
+            poseCarte(parle, numCarte, pCarteMain+ 8*(utilisateur -1), cartePli, 8-numPli);
 
         }
         parle = joueurSuivant(parle);

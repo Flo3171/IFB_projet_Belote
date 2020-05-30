@@ -3,7 +3,7 @@ int main(int argc, char *argv[])
 {
     srand(time(NULL));
 
-    /*initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+    /*initialisation(50, 91);*/ /**< definit la taille de la fennetre a 50 lignes et 91 colones */
 
     /* DEBUG ET TEST DES FONTIONS */
 
@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,CARREAU));*/
 
 
-    Carte mainJoueur[4][8];
+    /*Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
@@ -168,7 +168,7 @@ int main(int argc, char *argv[])
     for(int i=1; i<5;i++){
 
         choixCarteIA(NORD+i-1,pMainJoueur+8*(i-1),pliVide,NORD,COEUR,8);
-    }
+    }*/
 
     /*for(int j=0;j<21;j++){
         distribueCarte(pMainJoueur);
@@ -176,7 +176,7 @@ int main(int argc, char *argv[])
             poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
         }
     getch();
-    menuPrincipal();
+    menuPrincipal();*/
 
 
     /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
