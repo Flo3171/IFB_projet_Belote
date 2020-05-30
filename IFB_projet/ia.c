@@ -44,7 +44,7 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierV
         }while (retour == 0);
 
 
-    poseCarte(joueur, numCarte, pMainJoueur, pli,carteRestante);
+    poseCarte(joueur, numCarte, pMainJoueur, pli, carteRestante);
     afficheMain(pMainJoueur);
     afficheMain(pli);
     printf("\n\n\n\n");

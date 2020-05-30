@@ -132,15 +132,7 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
         do{
             carteSelection  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
             carteAJouer =  *(pCarteEnMain + carteSelection-1);
-<<<<<<< Updated upstream
             retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate, dernierVainqueur,SUD);
-=======
-<<<<<<< HEAD
-            retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate,/*dernierVainqueur*/SUD,SUD);
-=======
-            retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate, dernierVainqueur,SUD);
->>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
->>>>>>> Stashed changes
         }while (retour == 0);
     }else{
         carteSelection = 0 ;

@@ -90,14 +90,7 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
  *
  */
 
-<<<<<<< Updated upstream
-int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int cartePosee, int carteRestante);
-=======
-<<<<<<< HEAD
-int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int carteRestante);
-=======
-int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int cartePosee, int carteRestante);
->>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
->>>>>>> Stashed changes
+int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante);
+
 
 #endif // _GENERAL_H_

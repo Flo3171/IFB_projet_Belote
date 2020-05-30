@@ -69,30 +69,21 @@ int main(int argc, char *argv[])
         printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
     }*/
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
     /*Carte mainJoueur[4][8];
     Carte *pMainJoueur = &mainJoueur[0][0];
-    distribueCarte(pMainJoueur);
->>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+    distribueCarte(pMainJoueur);*/
+
 
 
     /*
     Contrat contratIA;
     contratIA = proposeContratIa(NORD, pMainJoueur, contrat);
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
     afficheContrat(contratIA, pseudo);
     */
-=======
->>>>>>> Stashed changes
+    /*
     afficheContrat(contratIA, pseudo);*/
 
->>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+
     /*afficheMain(pMainJoueur);
     for (Couleur atout = 1; atout < 7; atout ++){
         printf("%d %f\n",atout,  sommeForceCarte(pMainJoueur, 8, atout));
@@ -172,26 +163,18 @@ int main(int argc, char *argv[])
     pliVide[2].couleur = SANS_COULEUR;
     pliVide[2].valeur = SANS_VALEUR;
     pliVide[3].couleur = SANS_COULEUR;
-    pliVide[3].valeur = SANS_VALEUR;*/
-<<<<<<< Updated upstream
-=======
+    pliVide[3].valeur = SANS_VALEUR;
 
-<<<<<<< HEAD
     for(int i=1; i<5;i++){
->>>>>>> Stashed changes
 
         choixCarteIA(NORD+i-1,pMainJoueur+8*(i-1),pliVide,NORD,COEUR,8);
     }
-=======
+
     /*for(int j=0;j<21;j++){
         distribueCarte(pMainJoueur);
         for(int i=1;i<5;i++){
             poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
         }
-<<<<<<< Updated upstream
-=======
->>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
->>>>>>> Stashed changes
     getch();
     menuPrincipal();
 
