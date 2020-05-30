@@ -36,18 +36,11 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierV
 {
     int retour=NULL, numCarte=0;
     Carte carteAJouer;
-    afficheMain(pMainJoueur);
     do{
             numCarte=numCarte+1;
             carteAJouer =  *(pMainJoueur + numCarte-1);
             retour = carteValide(carteAJouer, pli, atout, pMainJoueur, dernierVainqueur,joueur);
         }while (retour == 0);
-
-
-    poseCarte(joueur, numCarte, pMainJoueur, pli, carteRestante);
-    afficheMain(pMainJoueur);
-    afficheMain(pli);
-    printf("\n\n\n\n");
 
     return numCarte;
 }

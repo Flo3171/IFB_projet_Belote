@@ -107,7 +107,7 @@ int main(int argc, char *argv[])
 
     /*menuPrincipal();*/
 
-    nouvellePartie(pseudo, SANS_JOUEUR);
+    /*nouvellePartie(pseudo, SANS_JOUEUR);*/
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*
     manche(pseudo, score, SUD);*/
@@ -165,9 +165,12 @@ int main(int argc, char *argv[])
     pliVide[3].couleur = SANS_COULEUR;
     pliVide[3].valeur = SANS_VALEUR;
 
+    int r=0;
+
     for(int i=1; i<5;i++){
 
-        choixCarteIA(NORD+i-1,pMainJoueur+8*(i-1),pliVide,NORD,COEUR,8);
+        r=choixCarteIA(NORD+i-1,pMainJoueur+8*(i-1),pliVide,NORD,COEUR,8);
+        printf("%d",r);
     }*/
 
     /*for(int j=0;j<21;j++){
