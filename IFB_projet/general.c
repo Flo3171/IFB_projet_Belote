@@ -125,7 +125,14 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
     /**<plis */
     Joueur parle = joueurSuivant(dealer);
     if (contrat.nbPoint != 0){
+<<<<<<< Updated upstream
         /**< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche */
+=======
+<<<<<<< HEAD
+=======
+        /**< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche */
+>>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+>>>>>>> Stashed changes
         Joueur vainqueurPli = dealer;
         Carte cartePli[4], carteDernierPli[4];
         for (int i = 0; i < 4; i++){
@@ -135,7 +142,15 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
             for (int j = 0; j < 4; j++){
                 setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
             }
+<<<<<<< Updated upstream
             vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli, i+1, utilisateur);
+=======
+<<<<<<< HEAD
+            vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli,1);
+=======
+            vainqueurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainqueurPli, i+1, utilisateur);
+>>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+>>>>>>> Stashed changes
 
             for (int i = 0; i < 4; i++){
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
@@ -232,9 +247,21 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
     for (int i = 0; i < 4; i++){
         if (parle == utilisateur){
             /**< interface de pli Utilisateur */
+<<<<<<< Updated upstream
             numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,0);
             poseCarte(SUD,numCarte,pCarteMain+ 8*(utilisateur -1),cartePli,i,8-numPli);
             afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,1);
+=======
+<<<<<<< HEAD
+            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,0);
+            poseCarte(SUD,numCarte,pCarteMain+ 8*(SUD -1),i,8-numPli);
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,1);
+=======
+            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,0);
+            poseCarte(SUD,numCarte,pCarteMain+ 8*(utilisateur -1),cartePli,i,8-numPli);
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,1);
+>>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+>>>>>>> Stashed changes
         }
         else{
             /**< interface de pli ordinateur */
@@ -245,7 +272,7 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
     return vainceur;
 }
 
-int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int cartePosee,int carteRestante)
+int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int carteRestante)
 {
     int retour=NULL;
     Carte carteAJouer;
@@ -255,5 +282,12 @@ int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int 
     setCarte(pli+joueur-1,carteAJouer.valeur,carteAJouer.couleur);
     retour=1;
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    getch();
+=======
+>>>>>>> 3ee8ff38cdce5d3080ca1eabf523ee8265217b1c
+>>>>>>> Stashed changes
     return retour;
 }
