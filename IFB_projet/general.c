@@ -2,7 +2,6 @@
 
 void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 {
-    srand(time(0));
     modifieTailleFenetre(nbLigneFenetre, nbColloneFenetre);
 }
 
@@ -232,15 +231,18 @@ Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int
     for (int i = 0; i < 4; i++){
         if (parle == utilisateur){
             /**< interface de pli Utilisateur */
-            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,0);
-            poseCarte(SUD,numCarte,pCarteMain+ 8*(utilisateur -1),cartePli,8-numPli);
-            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, " ", dernierVainceur,1);
+            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, " ", dernierVainceur,0);
+            poseCarte(parle,numCarte,pCarteMain+ 8*(parle -1),cartePli,8-numPli);
         }
         else{
             /**< interface de pli ordinateur */
-            numCarte  = choixCarteIA(parle, pCarteMain+ 8*(utilisateur -1), cartePli, dernierVainceur, contrat.atout, 8-numPli);
-            poseCarte(parle, numCarte, pCarteMain+ 8*(utilisateur -1), cartePli, 8-numPli);
+            numCarte  = choixCarteIA(parle, pCarteMain+ 8*(parle -1), cartePli, dernierVainceur, contrat.atout,8-numPli);
+            poseCarte(parle, numCarte, pCarteMain+ 8*(parle -1), cartePli, 8-numPli);
 
+        }
+        if (utilisateur != SANS_JOUEUR){
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, "Presser une touche pour continuer", dernierVainceur,1);
+            getch();
         }
         parle = joueurSuivant(parle);
     }

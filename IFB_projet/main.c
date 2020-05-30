@@ -101,13 +101,26 @@ int main(int argc, char *argv[])
     puts(pseudo[2]);
     puts(pseudo[3]);*/
 
+    Carte pliVide[4];
+    pliVide[0].couleur = SANS_COULEUR;
+    pliVide[0].valeur = SANS_VALEUR;
+    pliVide[1].couleur = SANS_COULEUR;
+    pliVide[1].valeur = SANS_VALEUR;
+    pliVide[2].couleur = SANS_COULEUR;
+    pliVide[2].valeur = SANS_VALEUR;
+    pliVide[3].couleur = SANS_COULEUR;
+    pliVide[3].valeur = SANS_VALEUR;
+
     /*menuPrincipal();*/
     int score[4] = {0};
     /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
+    /*afficheMain(carteMain);
+    afficheMain(pli);
+    printf("Le joueur joue la carte :%d\n", choixCarteIA(OUEST, carteMain, pli, NORD, COEUR, 8));*/
 
-    /*nouvellePartie(pseudo, SANS_JOUEUR);*/
+    nouvellePartie(pseudo, SANS_JOUEUR);
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*
     manche(pseudo, score, SUD);*/
@@ -155,15 +168,7 @@ int main(int argc, char *argv[])
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
-    Carte pliVide[4];
-    pliVide[0].couleur = SANS_COULEUR;
-    pliVide[0].valeur = SANS_VALEUR;
-    pliVide[1].couleur = SANS_COULEUR;
-    pliVide[1].valeur = SANS_VALEUR;
-    pliVide[2].couleur = SANS_COULEUR;
-    pliVide[2].valeur = SANS_VALEUR;
-    pliVide[3].couleur = SANS_COULEUR;
-    pliVide[3].valeur = SANS_VALEUR;
+
 
     int r=0;
 
