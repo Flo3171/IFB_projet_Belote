@@ -57,7 +57,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
  * \param Joueur parle : joueur qui parle
  * \param char *pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs
  * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueurs
- * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return Contrat : nouveau contrat proposé par le joueur
  *
  */
@@ -67,18 +67,18 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
  /** \brief fonction qui gère un pli
   *
   * \param Contrat contrat : contrat qui a été choisipour cette manche
-  * \param Joueur parle : joueur qui parle (le premier a jouer)
+  * \param Joueur premierAjouer :  premier joueur a jouer dans le pli
   * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
   * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
   * \param int pointManche [] : tableau contenant les point de chaque joueur dans la manche
   * \param Carte cartePli[] : tableau contenant les 4 carte du pli
   * \param Carte carteAncienPli[] : tableau contenant les carte du pli précédent
-  * \param Joueur dernierVainceur : vainceur du dernnier pli
+  * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
   * \return Joueur :  le vainceur du pli
   *
   */
 
-Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur, int numPli, Joueur utilisateur);
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli);
 
 /** \brief fonction qui verifie la validité d'une carte est la pose
  *

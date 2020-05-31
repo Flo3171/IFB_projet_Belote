@@ -84,6 +84,18 @@ typedef struct Contrat
 
 }Contrat;
 
+typedef enum TypeMessage
+{
+    SANS_MESSAGE,
+    POSE_CARTE,
+    RESULTAT_PLI,
+    RESULTAT_MANCHE,
+    RESULTAT_PARTIE,
+    PROPOSE_CONTRAT,
+    CONTRAT_FINAL
+
+}TypeMessage;
+
 /* Fontions standard*/
 #include <stdio.h>
 #include <stdlib.h>

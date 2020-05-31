@@ -47,7 +47,7 @@
 	"ia.h"
 	"sous-menus.h"
 
-1590846825 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\affichage.c
+1590858880 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\affichage.c
 	"main.h"
 
 1590663155 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\affichage.h
@@ -55,10 +55,10 @@
 1590623524 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\gestioncarte.c
 	"main.h"
 
-1590855343 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\main.c
+1590862479 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\main.c
 	"main.h"
 
-1590854723 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\main.h
+1590857218 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\main.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -77,14 +77,14 @@
 
 1590623827 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\gestioncarte.h
 
-1590851795 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\general.h
+1590971454 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\general.h
 
-1590855157 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\general.c
+1590972908 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\general.c
 	"main.h"
 
-1590659918 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\formatagechaine.h
+1590969087 c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\formatagechaine.h
 
-1588953695 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\formatagechaine.c
+1590968564 source:c:\users\flocl\onedrive - universite de technologie de belfort-montbeliard\utbm\tc-02\ifb\projet belote\ifb_projet_belote\ifb_projet\formatagechaine.c
 	"main.h"
 
 1590846684 c:\users\carst\desktop\cours\uv\p20\ifb\projet\ifb_projet_belote\ifb_projet\gestioncarte.h

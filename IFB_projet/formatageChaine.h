@@ -99,6 +99,19 @@ void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *p
  */
 int aligneModifieChaine(char chaine[], int longeurChaine);
 
+/** \brief génere un message et l'enregistre dans une chaine de caractère
+ *
+ * \param char message[] : tableau de char ou on enregistre le message
+ * \param Joueur parle : joueur qui pose une carte
+ * \param char *pseudo[] : tableau qui contient les pseudo des joueur
+ * \param Carte carteJoue : carte qui vine d'être jouée
+ * \param int score : score a afficher
+ * \param TypeMessage typeMessage : permet de savoir quelle message on veux afficher
+ * \return void
+ *
+ */
+
+void genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage);
 
 
 

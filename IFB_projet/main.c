@@ -120,6 +120,10 @@ int main(int argc, char *argv[])
     afficheMain(pli);
     printf("Le joueur joue la carte :%d\n", choixCarteIA(OUEST, carteMain, pli, NORD, COEUR, 8));*/
 
+    /*char message[TAILLE_MAXI_MESSAGE];
+    genereMessage(message, SUD, pseudo, carteMain[1], POSE_CARTE);
+    printf("%s\n", message);*/
+
     nouvellePartie(pseudo, SANS_JOUEUR);
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*

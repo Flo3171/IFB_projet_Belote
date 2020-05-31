@@ -132,7 +132,7 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
         do{
             carteSelection  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
             carteAJouer =  *(pCarteEnMain + carteSelection-1);
-            retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate, dernierVainqueur,SUD);
+            retour = carteValide(carteAJouer,pli,atout,cartesEnMain, dernierVainqueur,SUD);
         }while (retour == 0);
     }else{
         carteSelection = 0 ;
@@ -375,7 +375,7 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
 
         }
 
-
+        return nouveauContrat;
 
 
 }
