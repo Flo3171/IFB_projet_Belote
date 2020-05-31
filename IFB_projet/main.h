@@ -9,7 +9,7 @@
 #define NB_JOUEUR 4
 #define TAILLE_MAXI_MESSAGE 500
 #define NB_TOATAL_CARTE 32
-#define NIVEAU_IA 1
+#define NIVEAU_IA 2
 
 /* Structure */
 

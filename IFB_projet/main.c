@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     /*afficheMenuPrincipal(0);*/
     Carte pli[4];
     pli[0].couleur = CARREAU;
-    pli[0].valeur = 9;
+    pli[0].valeur = AS;
     pli[1].couleur = PIQUE;
     pli[1].valeur = AS;
     pli[2].couleur = TREFLE;
@@ -31,9 +31,9 @@ int main(int argc, char *argv[])
     carteMain[4].couleur = CARREAU;
     carteMain[4].valeur = DIX;
     carteMain[5].couleur = CARREAU;
-    carteMain[5].valeur = AS;
-    carteMain[6].couleur = COEUR;
-    carteMain[6].valeur = DIX;
+    carteMain[5].valeur = 9;
+    carteMain[6].couleur = CARREAU;
+    carteMain[6].valeur = DAME;
     carteMain[7].couleur = COEUR;
     carteMain[7].valeur = AS;
 
@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     afficheMain(mainJoueur[1]);
     afficheMain(mainJoueur[2]);
     afficheMain(mainJoueur[3]);*/
-    /**< victor a tord */
+    /**< victor a thor */
     /**for (Joueur parle = dealer; parle != dealer; joueurSuivant(parle)){
 
     }*/
@@ -120,11 +120,14 @@ int main(int argc, char *argv[])
     afficheMain(pli);
     printf("Le joueur joue la carte :%d\n", choixCarteIA(OUEST, carteMain, pli, NORD, COEUR, 8));*/
 
+
     /*char message[TAILLE_MAXI_MESSAGE];
     genereMessage(message, SUD, pseudo, carteMain[1], POSE_CARTE);
     printf("%s\n", message);*/
 
     nouvellePartie(pseudo, SANS_JOUEUR);
+    /*nouvellePartie(pseudo, SANS_JOUEUR);*/
+
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*
     manche(pseudo, score, SUD);*/
@@ -158,7 +161,8 @@ int main(int argc, char *argv[])
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);*/
 
-    /** essais pour compter les points**/
+    /**< ZONNE DÉBUG SALE DE CARLO**/
+
     /*printf("|%d|",pointPli(pli,TOUT_ATOUT));
     printf("|%d|",pointPli(pli,SANS_ATOUT));
     printf("|%d|",pointPli(pli,COEUR));
@@ -167,11 +171,13 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,CARREAU));*/
 
 
-    /*Carte mainJoueur[4][8];
+    Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
+    Carte *pCarteMain = &carteMain[0];
+    /*
 
 
     int r=0;
@@ -189,9 +195,12 @@ int main(int argc, char *argv[])
         }
     getch();
     menuPrincipal();*/
-
-
-    /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
+    /*
+    afficheMain(pMainJoueur);
+    afficheMain(pMainJoueur+3*8+5);
+    printf("%d",choixCarteIA(OUEST,pMainJoueur,pMainJoueur+3*8+5,NORD,COEUR,8));
+    */
+    /**< FIN ZONNE SÉCIALE DÉBUG SALE*/
 
     return 0;
 }
