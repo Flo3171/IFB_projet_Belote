@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="gestionCarte.h" />
+		<Unit filename="gestionFichier.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="gestionFichier.h" />
 		<Unit filename="ia.c">
 			<Option compilerVar="CC" />
 		</Unit>

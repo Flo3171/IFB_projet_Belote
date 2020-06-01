@@ -102,7 +102,6 @@ void nouvellePartie(char *pseudo[], Joueur utilisateur)
     /**< Lancement de la fonction qui écrit les score et me a jour les stat */
 
     printf("\nPartie finie \nPressez une touche pour continuer\n");
-    getch();
 }
 
 
@@ -111,6 +110,9 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
     Carte mainJoueur[4][8];
     Contrat contrat;
     int pointManche[4] = {0};
+    int pointAnonce[4] = {0};
+    int pointBelote[4] = {0};
+    char contratRempli = 0;
 
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
@@ -132,14 +134,16 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
             for (int j = 0; j < 4; j++){
                 setCarte(&cartePli[j], SANS_VALEUR, SANS_COULEUR);
             }
-            vainqueurPli = pli(contrat, vainqueurPli, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, utilisateur, i);
+            vainqueurPli = pli(contrat, vainqueurPli, pseudo, pMainJoueur, pointManche, pointAnonce, pointBelote, cartePli, carteDernierPli, utilisateur, i);
 
 
             for (int i = 0; i < 4; i++){
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
             }
-            printf("%d, %d, %d, %d, total : %d\n", pointManche[0], pointManche[1], pointManche[2], pointManche[3], pointManche[0]+ pointManche[1]+ pointManche[2]+ pointManche[3] );
         }
+
+        printf("%d, %d, %d, %d, total : %d\n", pointManche[0], pointManche[1], pointManche[2], pointManche[3], pointManche[0]+ pointManche[1]+ pointManche[2]+ pointManche[3] );
+        contratRempli = calculPointManche(contrat, pointManche, pointAnonce, pointBelote, score);
     }
 
 
@@ -224,7 +228,7 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
 }
 
 
-Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli)
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[],int pointAnonce[],int pliBelote, Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli)
 {
     Joueur vainceur = SANS_JOUEUR, parle = premierAJouer;
     char message[TAILLE_MAXI_MESSAGE];
@@ -259,15 +263,20 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
     int pointDuPli = pointPli(cartePli, contrat.atout, 4);
     pointManche[vainceur -1] += pointDuPli;
 
-    genereMessage(message, vainceur, pseudo, cartePli[parle-1], pointDuPli, RESULTAT_PLI);
-        if (utilisateur != SANS_JOUEUR){
-            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, premierAJouer,1);
-            getch();
-        }
-        else{
-            printf("%s\n\n", message);
+    /**< 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli */
+    if (numPli == 7){
+        pointManche[vainceur -1] += 10;
+    }
 
-        }
+    genereMessage(message, vainceur, pseudo, cartePli[parle-1], pointDuPli, RESULTAT_PLI);
+    if (utilisateur != SANS_JOUEUR){
+        afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, premierAJouer,1);
+        getch();
+    }
+    else{
+        printf("%s\n\n", message);
+
+    }
 
 
     return vainceur;
@@ -283,4 +292,74 @@ int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int 
     setCarte(pli+joueur-1,carteAJouer.valeur,carteAJouer.couleur);
     retour=1;
     return retour;
+}
+
+
+char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int pointBelote[], int score[])
+{
+    char contratRempli = 0;
+    int pointPreneur = pointManche[contrat.preneur-1] + pointManche[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+    int pointAnoncePreneur = pointAnonce[contrat.preneur-1] + pointAnonce[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+    int pointBelotePreneur = pointBelote[contrat.preneur-1] + pointBelote[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+
+    int pointDefendant = pointManche[joueurSuivant(contrat.preneur)-1] + pointManche[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+    int pointAnonceDefendant = pointAnonce[joueurSuivant(contrat.preneur)-1] + pointAnonce[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+    int pointBeloteDefendant = pointBelote[joueurSuivant(contrat.preneur)-1] + pointBelote[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+
+    int totalPointPreneur = 0;
+    int totalPointDefandant = 0;
+
+    /**< On reche si le contrat est rampli */
+    if (contrat.nbPoint == 170){/**< cas ou un des joueur a pris un capot */
+        if (pointPreneur == 162){
+            contratRempli = 1;
+        }
+    }
+    else if (contrat.nbPoint == 180){/**< cas ou un des joueur a pris une générale */
+        if (pointManche[contrat.preneur-1] == 162){
+            contratRempli = 1;
+        }
+    }
+    else{
+        if(pointPreneur >= 82 && pointPreneur + pointAnoncePreneur >= contrat.nbPoint){/**< Le contrat est rempli si le les point de l'équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces */
+            contratRempli = 1;
+        }
+
+    }
+
+    /**< on donne les point a chaque équipe en dans chaque cas */
+    if (contratRempli){
+        totalPointPreneur = pointPreneur + pointAnoncePreneur + pointBelotePreneur + contrat.nbPoint;
+        totalPointDefandant = pointDefendant + pointAnoncePreneur + pointBeloteDefendant;
+        if (contrat.coinche == COINCHE){
+            totalPointPreneur *= 2;
+            totalPointPreneur += pointAnonceDefendant;
+            totalPointDefandant = pointBeloteDefendant;
+
+        }
+        else if (contrat.coinche == SURCOINCHE){
+            totalPointPreneur *= 4;
+            totalPointPreneur += pointAnonceDefendant;
+            totalPointDefandant = pointBeloteDefendant;
+        }
+
+    }
+    else{
+        totalPointPreneur = pointBelotePreneur;
+        totalPointDefandant = 162 + contrat.nbPoint + pointAnonceDefendant + pointAnoncePreneur + pointBeloteDefendant;
+         if (contrat.coinche == COINCHE){
+            totalPointDefandant *= 2;
+        }
+        else if (contrat.coinche == SURCOINCHE){
+            totalPointDefandant *= 4;
+        }
+
+    }
+    score[contrat.preneur - 1] += totalPointPreneur;
+    score[joueurSuivant(joueurSuivant(contrat.preneur)) - 1] += totalPointPreneur;
+    score[joueurSuivant(contrat.preneur)-1] += totalPointDefandant;
+    score[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1] += totalPointDefandant;
+
+
+    return contratRempli;
 }

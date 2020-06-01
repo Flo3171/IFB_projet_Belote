@@ -114,6 +114,7 @@ typedef enum TypeMessage
 #include "autre.h"
 #include "ia.h"
 #include "sous-menus.h"
+#include "gestionFichier.h"
 
 
 

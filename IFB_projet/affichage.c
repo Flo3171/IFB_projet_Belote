@@ -356,7 +356,7 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
                 break;
 
             }
-            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(dernierContrat.nbPoint+1, 170, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 160 pour un caopot et 170 pour une generale:")/10),atoutEnchere,NORMAL);
+            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(dernierContrat.nbPoint+1, 180, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 170 pour un caopot et 180 pour une generale:")/10),atoutEnchere,NORMAL);
             break;
         case 3 :
             if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){

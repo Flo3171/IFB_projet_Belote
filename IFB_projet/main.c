@@ -199,6 +199,7 @@ int main(int argc, char *argv[])
     afficheMain(pMainJoueur);
     afficheMain(pMainJoueur+3*8+5);
     printf("%d",choixCarteIA(OUEST,pMainJoueur,pMainJoueur+3*8+5,NORD,COEUR,8));
+
     */
     /**< FIN ZONNE SÉCIALE DÉBUG SALE*/
 
