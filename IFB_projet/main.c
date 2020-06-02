@@ -1,17 +1,20 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
+    /**< CODE FINAL */
     srand(time(NULL));
     if(!DEBUG_MODE){
             initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
+    menuPrincipal();
+    /**< FIN CODE FINAL */
 
 
     /* DEBUG ET TEST DES FONTIONS */
 
 
     /*afficheMenuPrincipal(0);*/
-    Carte pli[4];
+    /*Carte pli[4];
     pli[0].couleur = CARREAU;
     pli[0].valeur = AS;
     pli[1].couleur = PIQUE;
@@ -37,7 +40,7 @@ int main(int argc, char *argv[])
     carteMain[6].couleur = CARREAU;
     carteMain[6].valeur = DAME;
     carteMain[7].couleur = COEUR;
-    carteMain[7].valeur = AS;
+    carteMain[7].valeur = AS;*/
 
 
     /*afficheMain(carteMain);
@@ -56,15 +59,15 @@ int main(int argc, char *argv[])
     /**for (Joueur parle = dealer; parle != dealer; joueurSuivant(parle)){
 
     }*/
-
+    /*
     Contrat contrat;
     contrat.preneur = NORD;
     contrat.nbPoint = 80;
     contrat.atout = TOUT_ATOUT;
-    contrat.coinche = SURCOINCHE;
+    contrat.coinche = SURCOINCHE;*/
 
 
-    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+    /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};*/
 
     /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
     for (int i = 0; i < 8; i++){
@@ -103,7 +106,7 @@ int main(int argc, char *argv[])
     puts(pseudo[2]);
     puts(pseudo[3]);*/
 
-    Carte pliVide[4];
+    /*Carte pliVide[4];
     pliVide[0].couleur = SANS_COULEUR;
     pliVide[0].valeur = SANS_VALEUR;
     pliVide[1].couleur = SANS_COULEUR;
@@ -111,10 +114,10 @@ int main(int argc, char *argv[])
     pliVide[2].couleur = SANS_COULEUR;
     pliVide[2].valeur = SANS_VALEUR;
     pliVide[3].couleur = SANS_COULEUR;
-    pliVide[3].valeur = SANS_VALEUR;
+    pliVide[3].valeur = SANS_VALEUR;*/
 
     /*menuPrincipal();*/
-    int score[4] = {0};
+    /*int score[4] = {0};*/
     /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
@@ -127,7 +130,7 @@ int main(int argc, char *argv[])
     genereMessage(message, SUD, pseudo, carteMain[1], POSE_CARTE);
     printf("%s\n", message);*/
 
-    nouvellePartie(pseudo, SUD);
+    /*nouvellePartie(pseudo, SUD);*/
     /*nouvellePartie(pseudo, SANS_JOUEUR);*/
 
 
@@ -173,12 +176,12 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,CARREAU));*/
 
 
-    Carte mainJoueur[4][8];
+    /*Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
-    Carte *pCarteMain = &carteMain[0];
+    Carte *pCarteMain = &carteMain[0];*/
     /*
 
 
