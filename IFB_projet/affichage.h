@@ -65,11 +65,12 @@ void afficheMain(Carte carte[]);
 
 void afficheContrat(Contrat contrat, char *pseudo[], int version);
 
-/** \brief
+/** \brief affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d'elles
  *
- * \param
- * \param
- * \return
+ * \param char intitule []: titre du du cadre
+ * \param char phrase[] : les chaines de carractère séparés par des points virgules
+ * \param int sautDeLigne : nombre de lignes à sauter entre chaque chaine de carractères
+ * \return void
  *
  */
 void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne);

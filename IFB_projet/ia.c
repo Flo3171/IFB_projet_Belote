@@ -79,6 +79,7 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur premierJ
             }
         }else{
             numCarte = numCarteValide[nbCarteValide-1];
+            offset=-1;
         }
 
         /** debug
@@ -103,7 +104,7 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur premierJ
             carteAJouer = *pCarteGagante;
             numCarte= numCarteGagnante[0];
             for(int i=1; i<offset;i++){
-                if (rechercherCarteSuperieur(pCarteGagante+i,offset,carteAJouer,atout,pli[premierJoueur-1].couleur)==1){
+                if (rechercherCarteSuperieur(pCarteGagante+i,offset,carteAJouer,atout,pli[premierJoueur-1].couleur)==0){
                     carteAJouer = *(pCarteGagante + i);
                     numCarte = numCarteGagnante[i];
                     /*printf("%d|%d\n",carteAJouer.valeur,carteAJouer.couleur);*/
