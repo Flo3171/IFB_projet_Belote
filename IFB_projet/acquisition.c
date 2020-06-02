@@ -41,15 +41,18 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
     return valeur;
 }
 
- void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction [])
+ void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction [],int type)
  {
     char pseudo[100];
     int controle=0;
     afficheSousMenus(instruction,"pseudo");
-
-    do{
-        controle=0 ;
+    if(type==1){
         fgets(pseudo,99,stdin);
+    }
+    do{
+        fgets(pseudo,99,stdin);
+        controle=0 ;
+
         for(int i=0; i< strlen(pseudo)-1 && i < TAILLE_MAXI_PESEUDO ;i++){
             if ((pseudo[i]<'0' || pseudo[i]>'9') && (pseudo[i]<'A' || pseudo[i]>'Z') && (pseudo[i]<'a' || pseudo[i]>'z') ){
                 controle=1;
