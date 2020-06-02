@@ -16,7 +16,7 @@ Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat
         }
     }
     if(forceMeilleurCouleur > seuilMinPrise){
-        int enchereMax = 10*floor(ajusteEchelle(forceMeilleurCouleur, seuilMinPrise, seuilMaxPrise, 8, 17));
+        int enchereMax = 10*floor(ajusteEchelle(forceMeilleurCouleur, seuilMinPrise, seuilMaxPrise, 8, 18));
         if (dernierContrat.nbPoint < enchereMax){
             setContrat(&nouveauContrat, parle, enchereMax, meilleurCouleur, NORMAL);
         }

@@ -70,7 +70,9 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
   * \param Joueur premierAjouer :  premier joueur a jouer dans le pli
   * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
   * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
-  * \param int pointManche [] : tableau contenant les point de chaque joueur dans la manche
+  * \param int pointManche[] : tableau contenant les point de chaque joueur dans la manche
+  * \param int pointAnonce[] : tableau contenant les point d'anonce de chaque joueur
+  * \param int pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur
   * \param Carte cartePli[] : tableau contenant les 4 carte du pli
   * \param Carte carteAncienPli[] : tableau contenant les carte du pli précédent
   * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
@@ -78,7 +80,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
   *
   */
 
-Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli);
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[],int pointAnonce[],int pliBelote, Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli);
 
 /** \brief fonction qui verifie la validité d'une carte est la pose
  *
@@ -91,6 +93,21 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
  */
 
 int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante);
+
+/** \brief compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie
+ *
+ * \param Contrat contrat : contrat qui a été choisi durant la manche
+ * \param int pointManche[] : tableau qui contient les points de la manche
+ * \param int pointAnonce[] : tableau qui contient les points d'anonce de la manche
+ * \param int pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur
+ * \param int score[] : tableau qui contient les score de la partie
+ * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
+ * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \return char : 1 si le contrtat a été réussi et 0 si le contrat a échoué
+ *
+ */
+
+char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int pointBelote[], int score[],char *pseudo[], Joueur utilisateur);
 
 
 #endif // _GENERAL_H_

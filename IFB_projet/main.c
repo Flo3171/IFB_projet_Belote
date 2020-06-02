@@ -2,8 +2,10 @@
 int main(int argc, char *argv[])
 {
     srand(time(NULL));
+    if(!DEBUG_MODE){
+            initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+    }
 
-    /*initialisation(50, 91);*/ /**< definit la taille de la fennetre a 50 lignes et 91 colones */
 
     /* DEBUG ET TEST DES FONTIONS */
 
@@ -125,7 +127,7 @@ int main(int argc, char *argv[])
     genereMessage(message, SUD, pseudo, carteMain[1], POSE_CARTE);
     printf("%s\n", message);*/
 
-    nouvellePartie(pseudo, SANS_JOUEUR);
+    nouvellePartie(pseudo, SUD);
     /*nouvellePartie(pseudo, SANS_JOUEUR);*/
 
 
@@ -199,6 +201,7 @@ int main(int argc, char *argv[])
     afficheMain(pMainJoueur);
     afficheMain(pMainJoueur+3*8+5);
     printf("%d",choixCarteIA(OUEST,pMainJoueur,pMainJoueur+3*8+5,NORD,COEUR,8));
+
     */
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 
