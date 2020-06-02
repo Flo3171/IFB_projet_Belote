@@ -9,11 +9,11 @@ void parametre(char *pseudo[])
     retour=acquisitionEntierSansMessageAvecConsigne(1,4,"Choisisez une action :");
 
     switch(retour){
-        case 1 : acquisitionPseudoAvecMessage(pseudo[NORD-1],"choisisez un nouveau nom pour le joueur NORD");
+        case 1 : acquisitionPseudoAvecMessage(pseudo[NORD-1],"choisisez un nouveau nom pour le joueur NORD",1);
             break;
-        case 2 : acquisitionPseudoAvecMessage(pseudo[EST-1],"choisisez un nouveau nom pour le joueur EST");
+        case 2 : acquisitionPseudoAvecMessage(pseudo[EST-1],"choisisez un nouveau nom pour le joueur EST",1);
             break;
-        case 3 : acquisitionPseudoAvecMessage(pseudo[OUEST-1],"choisisez un nouveau nom pour le joueur OUEST");
+        case 3 : acquisitionPseudoAvecMessage(pseudo[OUEST-1],"choisisez un nouveau nom pour le joueur OUEST",1);
             break;
         case 4 : sortie=1;
             break;

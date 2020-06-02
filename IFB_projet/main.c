@@ -8,8 +8,7 @@ int main(int argc, char *argv[])
 
 
     /* DEBUG ET TEST DES FONTIONS */
-
-
+    menuPrincipal();
     /*afficheMenuPrincipal(0);*/
     Carte pli[4];
     pli[0].couleur = CARREAU;

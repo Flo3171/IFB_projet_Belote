@@ -16,7 +16,7 @@ void menuPrincipal()
 
     afficheMenuPrincipal(0);
 
-    acquisitionPseudoAvecMessage(pseudo[2],"Choisisez votre pseudo:");
+    acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez votre pseudo:",0);
     char *pPseudo[4];
     for(int i=0; i<4; i++)
     {

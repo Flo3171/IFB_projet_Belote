@@ -47,10 +47,11 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[]);
  *
  * \param PPseudo: pointeur renvoyant vers le premier carractère du pseudo à modifier
  * \param instruction: phrase à affichier pour donner l'instruction à l'utilisateur
+ * \param type : vaut 1 si la fonction est appelée dans la fonction paramètre
  * \return void
  *
  */
 
-void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction[]);
+void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction[],int type);
 #endif // ACQUISITION_H_INCLUDED
 
