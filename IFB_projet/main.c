@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     /*Carte pli[4];
     pli[0].couleur = SANS_COULEUR;
     pli[0].valeur = SANS_VALEUR;
-    pli[1].couleur = PIQUE;
+    pli[1].couleur = COEUR;
     pli[1].valeur = DIX;
     pli[2].couleur = SANS_COULEUR;
     pli[2].valeur = SANS_VALEUR;
@@ -25,33 +25,33 @@ int main(int argc, char *argv[])
     pli[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
-    carteMain[0].couleur = CARREAU;
-    carteMain[0].valeur = 8;
-    carteMain[1].couleur = CARREAU;
-    carteMain[1].valeur = DAME;
+    carteMain[0].couleur = TREFLE;
+    carteMain[0].valeur = DAME;
+    carteMain[1].couleur = PIQUE;
+    carteMain[1].valeur = 10;
     carteMain[2].couleur = TREFLE;
-    carteMain[2].valeur = VALET;
-    carteMain[3].couleur = TREFLE;
-    carteMain[3].valeur = AS;
-    carteMain[4].couleur = COEUR;
-    carteMain[4].valeur = AS;
-    carteMain[5].couleur = TREFLE;
-    carteMain[5].valeur = ROI;
-    carteMain[6].couleur = TREFLE;
-    carteMain[6].valeur = 8;
-    carteMain[7].couleur = SANS_COULEUR;
-    carteMain[7].valeur = SANS_VALEUR;
+    carteMain[2].valeur = 8;
+    carteMain[3].couleur = PIQUE;
+    carteMain[3].valeur = 9;
+    carteMain[4].couleur = PIQUE;
+    carteMain[4].valeur = ROI;
+    carteMain[5].couleur = COEUR;
+    carteMain[5].valeur = DAME;
+    carteMain[6].couleur = PIQUE;
+    carteMain[6].valeur = 7;
+    carteMain[7].couleur = CARREAU;
+    carteMain[7].valeur = AS;
 
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
 
     Contrat contrat;
-    contrat.preneur = SUD;
-    contrat.nbPoint = 100;
-    contrat.atout = TREFLE;
+    contrat.preneur = EST;
+    contrat.nbPoint = 90;
+    contrat.atout = TOUT_ATOUT;
     contrat.coinche = NORMAL;
 
-    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate",SUD, OUEST, 1);
+    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate",SUD, EST, 1);
     for (int i = 0; i < 8; i++){
         printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, EST, SUD));
     }*/

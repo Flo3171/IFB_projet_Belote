@@ -271,7 +271,13 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
                     }
                 }
                 else{
-                    valide = 1;
+                    if(cartePose.couleur == atout || (atout == TOUT_ATOUT && cartePose.couleur == pli[premierAJouer - 1].couleur)){/**< Si la carte est un atout */
+                        valide = 1;
+                    }
+                    else{
+                        valide = 0;
+                    }
+
                 }
             }
             else{
