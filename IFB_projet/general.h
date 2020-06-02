@@ -101,11 +101,13 @@ int poseCarte (Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], in
  * \param int pointAnonce[] : tableau qui contient les points d'anonce de la manche
  * \param int pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur
  * \param int score[] : tableau qui contient les score de la partie
+ * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur
+ * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \return char : 1 si le contrtat a été réussi et 0 si le contrat a échoué
  *
  */
 
-char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int pointBelote[], int score[]);
+char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int pointBelote[], int score[],char *pseudo[], Joueur utilisateur);
 
 
 #endif // _GENERAL_H_
