@@ -277,7 +277,6 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
     return nouveauContrat;
 }
 
-
 Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[],int pointAnonce[],int pliBelote, Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli)
 {
     Joueur vainceur = SANS_JOUEUR, parle = premierAJouer;
@@ -433,12 +432,12 @@ char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int 
     char message[TAILLE_MAXI_MESSAGE];
     if (contratRempli)
     {
-        sprintf(message, "%s rempporte son contrat et gagne %d points ses adversaires gagnent %d points", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant);
+        sprintf(message, "%s rempporte son contrat et gagne %d ;points ses adversaires gagnent %d points", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant);
 
     }
     else
     {
-        sprintf(message, "%s echoue son contrat et gagne %d points ses adversaires gagnent %d points", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant);
+        sprintf(message, "%s echoue son contrat et gagne %d ;points ses adversaires gagnent %d points", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant);
     }
     if (utilisateur != SANS_JOUEUR)
     {

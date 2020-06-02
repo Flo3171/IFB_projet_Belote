@@ -272,8 +272,8 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
         }
     }
     /**< decoupage de la chaine en entrée au niveau des ';' est remplacement par des '\0' */
-    for(int i=0;i<strlen(phrase);i++){
-        if (phrase[i]==';'){
+    for(int i=0;i<strlen(phrase)+1;i++){
+        if (phrase[i]==';' || phrase[i]=='\0' ){
             selection[ligne][colonne]='\0';
             ligne = ligne+1;
             colonne =0;

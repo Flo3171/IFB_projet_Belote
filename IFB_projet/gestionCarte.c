@@ -302,6 +302,14 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
                             valide = 1;
                         }
                     }
+                    else{
+                        if(cartePose.couleur == atout){/**< Si la carte est un atout alors elle est valide */
+                            valide = 1;
+                        }
+                        else{
+                            valide = 0;
+                        }
+                    }
                 }
                 else{
                     valide = 1;
