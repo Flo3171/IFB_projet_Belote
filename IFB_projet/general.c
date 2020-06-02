@@ -122,6 +122,9 @@ void nouvellePartie(char *pseudo[], Joueur utilisateur)
 
 void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
 {
+    if(utilisateur != SANS_JOUEUR){
+        system("cls");
+    }
     printf("\n*****DEBUT DE LA MANCHE*****\n");
     Carte mainJoueur[4][8];
     Contrat contrat;
@@ -137,6 +140,11 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur, utilisateur);
+
+    if (utilisateur != SANS_JOUEUR){
+        printf("Appuyer sur une touche pour continuer\n");
+        getch();
+    }
 
     /**<plis */
     if (contrat.nbPoint != 0)
@@ -165,8 +173,10 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur)
         /**< Fin de manche et calcul des score */
         /*printf("%d, %d, %d, %d, total : %d\n", pointManche[0], pointManche[1], pointManche[2], pointManche[3], pointManche[0]+ pointManche[1]+ pointManche[2]+ pointManche[3] );*/
         contratRempli = calculPointManche(contrat, pointManche, pointAnonce, pointBelote, score, pseudo, utilisateur);
-
-        char message[TAILLE_MAXI_MESSAGE];
+        if (utilisateur != SANS_JOUEUR){
+            printf("Appuyer sur une touche pour continuer\n");
+            getch();
+        }
 
     }
 
@@ -278,7 +288,7 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
         if (parle == utilisateur)
         {
             /**< interface de pli Utilisateur */
-            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, " ", premierAJouer,0);
+            numCarte = afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, "Entrer le numero de la carte que vous voulez jouer", utilisateur, premierAJouer,0);
         }
         else
         {
@@ -293,7 +303,7 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
         genereMessage(message, parle, pseudo, cartePli[parle-1], 0, POSE_CARTE);
         if (utilisateur != SANS_JOUEUR)
         {
-            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, premierAJouer,1);
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, utilisateur, premierAJouer,1);
         }
         else
         {
@@ -317,8 +327,7 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
     genereMessage(message, vainceur, pseudo, cartePli[parle-1], pointDuPli, RESULTAT_PLI);
     if (utilisateur != SANS_JOUEUR)
     {
-        afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, premierAJouer,1);
-        getch();
+        afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message,utilisateur, premierAJouer,1);
     }
     else
     {

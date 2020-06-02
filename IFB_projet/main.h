@@ -10,6 +10,7 @@
 #define TAILLE_MAXI_MESSAGE 500
 #define NB_TOATAL_CARTE 32
 #define NIVEAU_IA 2
+#define DEBUG_MODE 1 /**< 0 pour le mode normal, 1 pour le mode débug */
 
 /* Structure */
 

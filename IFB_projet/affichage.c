@@ -40,7 +40,7 @@ int afficheMenuPrincipal(int type)
 }
 
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur,int type)
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int type)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */
     char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
@@ -80,6 +80,19 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
 
 
     system("cls");
+
+    if(DEBUG_MODE && utilisteur == SUD){
+        printf("Main de %s\n", pseudo[NORD-1]);
+        afficheMain(cartesEnMain - 8*2);
+        printf("Main de %s\n", pseudo[EST-1]);
+        afficheMain(cartesEnMain - 8*1);
+        printf("Main de %s\n", pseudo[SUD-1]);
+        afficheMain(cartesEnMain);
+        printf("Main de %s\n", pseudo[OUEST-1]);
+        afficheMain(cartesEnMain + 8);
+
+
+    }
     printf(" ________________________________________________________________________________________\n");
     printf("|************************************Belote coinchee*************************************|\n");
     printf("| ______________________					 _______________________ |\n");
@@ -119,6 +132,7 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	| %s |       |\n", messageCentre[0]);
     printf("|	| %s |       |\n", messageCentre[1]);
     printf("|	| %s |       |\n", messageCentre[2]);
+    printf("|	|                   Pressez une touche pour continuer                    |       |\n");
     printf("|	|________________________________________________________________________|	 |\n");
     printf("|________________________________________________________________________________________|\n");
 
@@ -331,7 +345,7 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
             break;
         case 2 :
             system("cls");
-            afficheMain(pCarteMain + (SUD - 1)*8);
+            afficheMain(pCarteMain);
             printf("\nQuel atout voulez vous choisir :\n1 : Coeur\n2 : Pique\n3 : Carreau\n4 : Trefle\n5 : Tout atout\n6 : Sans atout\n");
             choixCouleur = acquisitionEntierSansMessageAvecConsigne(1, 6, "");
             switch(choixCouleur)
