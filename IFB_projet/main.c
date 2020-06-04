@@ -6,10 +6,10 @@ int main(int argc, char *argv[])
     if(!DEBUG_MODE){
             initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
-    /*menuPrincipal();*/
+    menuPrincipal();
     /**< FIN CODE FINAL */
 
-    joue1000Partie(1000);
+    /*joue1000Partie(1000);*/
 
 
     /* DEBUG ET TEST DES FONTIONS */
@@ -217,7 +217,7 @@ int main(int argc, char *argv[])
 
     afficheMenuSelection("Resultat manche", message, 2);
     */
-    FILE *fichier=NULL;
+    /*FILE *fichier=NULL;
     int ligne=0;
     char pseudo[21]="sroyce";
     char *pPseudo=&pseudo[0];
@@ -233,7 +233,7 @@ int main(int argc, char *argv[])
         ecrireStatistique(fichier,ligne,10050,2);
         ecrireStatistique(fichier,ligne,80,3);
     }
-    fclose(fichier);
+    fclose(fichier);*/
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 
     return 0;

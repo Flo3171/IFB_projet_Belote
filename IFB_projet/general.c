@@ -158,7 +158,6 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur, utilisateur);
 
-    *(pStatistique + 1*4 + contrat.preneur-1) +=1;
 
     if (utilisateur != SANS_JOUEUR){
         printf("Appuyer sur une touche pour continuer\n");
@@ -168,6 +167,7 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     /**<plis */
     if (contrat.nbPoint != 0)
     {
+        *(pStatistique + 4 + contrat.preneur - 1) +=1;
         /**< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche */
         Joueur vainqueurPli = joueurSuivant(dealer);
         Carte cartePli[4], carteDernierPli[4];
