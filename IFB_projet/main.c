@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
     /* DEBUG ET TEST DES FONTIONS */
 
     /*menuPrincipal();*/
+
     /*afficheMenuPrincipal(0);*/
     /*Carte pli[4];
     pli[0].couleur = SANS_COULEUR;
@@ -212,11 +213,30 @@ int main(int argc, char *argv[])
 
     */
     /*char message[TAILLE_MAXI_MESSAGE];
-    sprintf(message, "%s rempporte son contrat et gagne %d ;points ses adversaires gagnent %d points;", "NORD", 800, 500);
+    sprintf(message, ";%s rempporte son contrat et gagne %d ;points ses adversaires gagnent %d points", "NORD", 800, 500);
 
-    afficheMenuSelection("Resultat manche", message, 5);
+    afficheMenuSelection("Resultat manche", message, 2);
     */
+    FILE *fichier=NULL;
+    int ligne=0;
+    char pseudo[21]="sroyce";
+    char *pPseudo=&pseudo[0];
+
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
+
+    if (fichier == NULL){
+        printf("ptn c'est la merde!!!");
+    }else{
+        ligne=ecriturePseudo(pPseudo,fichier);
+        printf("%d",ligne);
+        ecrireStatistique(fichier,ligne,1010,1);
+        ecrireStatistique(fichier,ligne,10050,2);
+        ecrireStatistique(fichier,ligne,80,3);
+    }
+    fclose(fichier);
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 
     return 0;
 }
+
+
