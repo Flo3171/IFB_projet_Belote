@@ -20,14 +20,16 @@ int afficheMenuPrincipal(int type);
  * \param Carte cartesEnMain[] : tableau contenant les carte dans la main de l'utilisateur
  * \param Contrat contratActuel : contrat qui est en cour dans cette manche
  * \param char message[500]
- * \param Joueur dernierVainqueur : joueur aylant gagné le dernier pli
  * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \param Joueur dernierVainqueur : joueur aylant gagné le dernier pli
+ * \param int score[] : tableau qui contient les score de la partie
+ * \param int pointManche[] : tableau qui contient les points de la manche
  * \param int type : version de la fonction : 0 pour un affichage et une acquisition et 1 pour l'acquisition seulle
  * \return int : valeur choisie par l'utilisateur
  *
  */
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int type);
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int score[], int pointManche[], int type);
 
 /** \brief modifie la taille de la fenetre dans laquel le programme s'execute
  *

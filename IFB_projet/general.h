@@ -21,10 +21,11 @@ void menuPrincipal ();
  *
  * \param char *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
- * \return void
+ * \param int *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur
+ * \return int : nombre de manche jusqu'a la victoir d'une équipe
  *
  */
-void nouvellePartie(char *pseudo[], Joueur utilisateur);
+int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique);
 
 
 /** \brief lancement d'une manche
@@ -33,11 +34,12 @@ void nouvellePartie(char *pseudo[], Joueur utilisateur);
  * \param int score[] : tableau contenant les scores des joueur
  * \param Joueur dealer : joueur qui distibue les cartes
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \param int *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur
  * \return void
  *
  */
 
-void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur);
+void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique);
 
 /** \brief gère l'annonce et la surenchère des contats par les joueurs
  *
@@ -75,12 +77,13 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
   * \param int pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur
   * \param Carte cartePli[] : tableau contenant les 4 carte du pli
   * \param Carte carteAncienPli[] : tableau contenant les carte du pli précédent
+  * \param int score[] : tableau qui contient les score de la partie
   * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
   * \return Joueur :  le vainceur du pli
   *
   */
 
-Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[],int pointAnonce[],int pliBelote, Carte cartePli[], Carte carteAncienPli[], Joueur utilisateur, int numPli);
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], int pointBelote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli);
 
 /** \brief fonction qui verifie la validité d'une carte est la pose
  *

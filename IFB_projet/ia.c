@@ -4,6 +4,14 @@ Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat
 {
     float seuilMinPrise = 0.6, seuilMaxPrise = 1;
 
+    if (parle == NORD || parle == SUD){
+        seuilMinPrise = 0.7;
+    }
+    else{
+        seuilMinPrise = 0.6;
+
+    }
+
     Contrat nouveauContrat;
     setContrat(&nouveauContrat, parle, ZERO, SANS_COULEUR, NORMAL);
     Couleur meilleurCouleur = SANS_COULEUR;

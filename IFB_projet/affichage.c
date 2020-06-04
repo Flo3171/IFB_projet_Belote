@@ -16,12 +16,12 @@ int afficheMenuPrincipal(int type)
         printf("\t|#|<><><><><></        \\><><><><><>|#|\n");
         printf("\t|$|><><><><></          \\><><><><><|$|\n");
         printf("\t|#|<><><><></            \\><><><><>|#|\n");
-        printf("\t|$|><><><></  \& BELOTE \&  \\><><><><|$|\n");
-        printf("\t|#|<><><></  \& COINCHEE \&  \\><><><>|#|\n");
+        printf("\t|$|><><><></  & BELOTE &  \\><><><><|$|\n");
+        printf("\t|#|<><><></  & COINCHEE &  \\><><><>|#|\n");
         printf("\t|$|><><></                  \\><><><|$|\n");
         printf("\t|$|><><><\\        BY        /><><><|$|\n");
         printf("\t|#|<><><><\\    FLORIAN     /><><><>|#|\n");
-        printf("\t|$|><><><><\\      \&\&      /><><><><|$|\n");
+        printf("\t|$|><><><><\\      &&      /><><><><|$|\n");
         printf("\t|#|<><><><><\\    CARLO   /><><><><>|#|\n");
         printf("\t|$|><><><><><\\          /><><><><><|$|\n");
         printf("\t|#|<><><><><><\\        /><><><><><>|#|\n");
@@ -48,7 +48,7 @@ int afficheMenuPrincipal(int type)
 }
 
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int type)
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int score[], int pointManche[], int type)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */
     char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
@@ -119,13 +119,14 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	|%s|							|%s|	 |\n", pliFormate[3][0], pliFormate[1][0]);
     printf("|	|_______|							|_______|	 |\n");
     printf("|											 |\n");
-    printf("|					 _______					 |\n");
-    printf("|					|%s|					 |\n", pliFormate[2][1]);
-    printf("|					|	|					 |\n");
-    printf("|					|%s|					 |\n", pliFormate[2][0]);
-    printf("|					|_______|					 |\n");
-    printf("|					   						 |\n");
-    printf("|		                   %s            	           	 |\n", pseudoCentre[2]);
+    printf("| _________________________              _______               _________________________ |\n");
+    printf("||Score :                  |            |%s|             |Point dans la manche :   ||\n", pliFormate[2][1]);
+    printf("||_________________________|            |       |             |_________________________||\n");
+    printf("||   Equipe   |   Equipe   |            |%s|             |   Equipe   |   Equipe   ||\n", pliFormate[2][0]);
+    printf("||  Latitude: | Longitude: |            |_______|             |  Latitude: | Longitude: ||\n");
+    printf("||            |            |                                  |            |            ||\n");
+    printf("||%4d points |%4d points |       %s       | %3d points | %3d points ||\n",score[SUD-1], score[EST-1], pseudoCentre[2], pointManche[NORD-1]+ pointManche[SUD-1], pointManche[EST-1]+pointManche[OUEST-1]);
+    printf("||____________|____________|                                  |____________|____________||\n");
     printf("|											 |\n");
     printf("|Votre main :										 |\n");
     printf("|  _______    _______    _______    _______    _______    _______    _______    _______  |\n");
@@ -147,7 +148,6 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     Carte carteAJouer;
     Carte *pCarteEnMain = &cartesEnMain[0];
     Couleur atout=contratActuel.atout;
-    Joueur joueurCommence=0;
 
 
     if(type == 0){
@@ -266,11 +266,15 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
     char selection[18][200];
     int ligne=0,colonne=0;
     /**< effacement de la chaine de carrateres */
-    for(int w=0;w<18;w++){
+    /*for(int w=0; w < 18; w++){
         for(int k = 0; k < 200; k++){
             selection[w][k]=" ";
         }
+    }*/
+    for (int i = 0; i < 18; i++){
+        rempliEspace(selection[i], 199);
     }
+
     /**< decoupage de la chaine en entrée au niveau des ';' est remplacement par des '\0' */
     for(int i=0;i<strlen(phrase)+1;i++){
         if (phrase[i]==';' || phrase[i]=='\0' ){
@@ -335,6 +339,11 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
     Contrat nouveauContrat;
     setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
     afficheMain(pCarteMain);
+    int miniContrat = 80;
+    if (dernierContrat.nbPoint >= 80){
+        miniContrat = dernierContrat.nbPoint +10;
+    }
+    char message[TAILLE_MAXI_MESSAGE];
         printf("\nQue voulez vous anoncer :\n");
         printf("1 : Passer\n2 : Encherir\n");
         if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
@@ -378,7 +387,8 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
                 break;
 
             }
-            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(dernierContrat.nbPoint+1, 180, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 170 pour un caopot et 180 pour une generale:")/10),atoutEnchere,NORMAL);
+            sprintf(message, "\nA combien de points voulez vous encherir (entre %d et 160) \nEntrer 170 pour un caopot et 180 pour une generale:", miniContrat);
+            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(miniContrat, 180, message)/10),atoutEnchere,NORMAL);
             break;
         case 3 :
             if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){

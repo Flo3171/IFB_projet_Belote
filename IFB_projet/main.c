@@ -6,12 +6,15 @@ int main(int argc, char *argv[])
     if(!DEBUG_MODE){
             initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
-    menuPrincipal();
+    /*menuPrincipal();*/
     /**< FIN CODE FINAL */
+
+    joue1000Partie(1000);
 
 
     /* DEBUG ET TEST DES FONTIONS */
-    menuPrincipal();
+
+    /*menuPrincipal();*/
     /*afficheMenuPrincipal(0);*/
     /*Carte pli[4];
     pli[0].couleur = SANS_COULEUR;

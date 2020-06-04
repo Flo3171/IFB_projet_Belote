@@ -54,5 +54,15 @@ int pointPli(Carte pli[], Couleur atout, int nbCarte);
 float ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax);
 
 
+/** \brief joue n partie aves uniquement des ia pour controler si tout ce passe bien et reuceillir des statistique
+ *
+ * \param int nbPartie nombre de partie que l'on veut jouer
+ * \return voir
+ *
+ */
+
+void joue1000Partie(int nbPartie);
+
+
 
 #endif // _AUTRE_H_
