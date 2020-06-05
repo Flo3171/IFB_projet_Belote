@@ -37,6 +37,7 @@ void menuPrincipal()
         case 2 : /*executer la fonction leaderboard */
             break;
         case 3 : /*executer la fonction statistiques */
+            joue1000Partie(1000);
             break;
         case 4 : /*executer la fonction changement d'utilisateur */
             break;
@@ -78,9 +79,11 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 
     do
     {
-        manche(pseudo, score, dealer, utilisateur, pStatistique);
-        dealer = joueurSuivant(dealer);
-        nbManche ++;
+        if(manche(pseudo, score, dealer, utilisateur, pStatistique)){
+            dealer = joueurSuivant(dealer);
+            nbManche ++;
+        }
+
         /*score[SUD - 1] = 800;*//**< a suprimer une fois de debug fini*/
 
     }
@@ -132,8 +135,9 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 }
 
 
-void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
 {
+    char mancheJouee = 0;
     if(utilisateur != SANS_JOUEUR){
         system("cls");
     }
@@ -167,6 +171,7 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     /**<plis */
     if (contrat.nbPoint != 0)
     {
+        mancheJouee = 1;
         *(pStatistique + 4 + contrat.preneur - 1) +=1;
         /**< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche */
         Joueur vainqueurPli = joueurSuivant(dealer);
@@ -207,6 +212,7 @@ void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
         }
 
     }
+    return mancheJouee;
 
 
 }

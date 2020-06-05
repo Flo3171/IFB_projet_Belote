@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     if(!DEBUG_MODE){
             initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
-    menuPrincipal();
+    /*menuPrincipal();*/
     /**< FIN CODE FINAL */
 
     /*joue1000Partie(1000);*/
@@ -64,12 +64,15 @@ int main(int argc, char *argv[])
     supprimeCarte(carteMain, 8, 2);
     afficheMain(carteMain);*/
 
-    /*Carte mainJoueur[4][8] = {0};
+    Carte mainJoueur[4][8] = {0};
     Carte *pMainJoueur;
     pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
+
     afficheMain(mainJoueur[0]);
-    afficheMain(mainJoueur[1]);
+    trieCarte(mainJoueur[0], 8, COEUR);
+    afficheMain(mainJoueur[0]);
+    /*afficheMain(mainJoueur[1]);
     afficheMain(mainJoueur[2]);
     afficheMain(mainJoueur[3]);*/
     /**< victor a thor */

@@ -35,11 +35,11 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique);
  * \param Joueur dealer : joueur qui distibue les cartes
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \param int *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur
- * \return void
+ * \return char : 0 si tout le monde passe, 1 si la manche a bien lieu
  *
  */
 
-void manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique);
+char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique);
 
 /** \brief gère l'annonce et la surenchère des contats par les joueurs
  *

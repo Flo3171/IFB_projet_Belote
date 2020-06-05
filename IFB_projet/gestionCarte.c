@@ -375,3 +375,20 @@ float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
     return somme;
 
 }
+
+void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+{
+    Carte tampon;
+    setCarte(&tampon, SANS_VALEUR, SANS_COULEUR);
+
+    /**< On réalise un tri a bulle pour mettre atout du plus fort au moin fort au début de la main puis les carte par famille */
+    for (int iterationCarte = 0; iterationCarte < nbCarte; iterationCarte++){
+        for (int iterationCompare = iterationCarte +1; iterationCompare < nbCarte; iterationCompare ++ ){
+            if(forceCarte(tableauCarte[iterationCompare], atout, SANS_COULEUR) > forceCarte(tableauCarte[iterationCarte], atout, SANS_COULEUR)){/**< Si la carte dois aller devant dans le tableau */
+                tampon = tableauCarte[iterationCarte];
+                tableauCarte[iterationCarte] = tableauCarte[iterationCompare];
+                tableauCarte[iterationCompare] = tampon;
+            }
+        }
+    }
+}

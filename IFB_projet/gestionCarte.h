@@ -105,6 +105,18 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
  float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout);
 
+/** \brief trie un tableau de cartes
+ *
+ * \param Carte tableauCarte[] : tableau contenant les cartes a trier
+ * \param int nbCarte nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout dans la manche
+ * \return void
+ *
+ */
+
+ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout);
+
+
 
 
 
