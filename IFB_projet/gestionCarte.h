@@ -132,5 +132,29 @@ char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout);
 
 
 
+/** \brief calucule la somme force des carte dans un tableau
+ *
+ * \param Carte tableauCarte : tableau de carte sur lequel on veut travailler
+ * \param int nbCarte : nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout sur la manche
+ * \return float : la valeur de lla somme des force des carte
+ *
+ */
+
+ float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout);
+
+/** \brief trie un tableau de cartes
+ *
+ * \param Carte tableauCarte[] : tableau contenant les cartes a trier
+ * \param int nbCarte nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout dans la manche
+ * \return void
+ *
+ */
+
+ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout);
+
+
+
 
 #endif // _GESTION_CARTE_H_

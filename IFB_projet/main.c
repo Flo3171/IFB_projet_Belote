@@ -67,7 +67,16 @@ int main(int argc, char *argv[])
     /*Carte mainJoueur[4][8] = {0};
     Carte *pMainJoueur;
     pMainJoueur = &mainJoueur[0][0];
-    distribueCarte(pMainJoueur);*/
+    distribueCarte(pMainJoueur);
+
+    afficheMain(mainJoueur[0]);
+    trieCarte(mainJoueur[0], 8, COEUR);
+    afficheMain(mainJoueur[0]);*/
+    /*afficheMain(mainJoueur[1]);
+    afficheMain(mainJoueur[2]);
+    afficheMain(mainJoueur[3]);*/
+    /**< victor a tord */
+
 
 
     /**< victor a thor */
@@ -189,6 +198,7 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,CARREAU));*/
 
 
+
     /*Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
@@ -224,23 +234,39 @@ int main(int argc, char *argv[])
 
     afficheMenuSelection("Resultat manche", message, 2);
     */
-    /*FILE *fichier=NULL;
+
+    /*FILE *fichier=NULL, *fichier2=NULL;
+    FILE *fichier=NULL;
     int ligne=0;
     char pseudo[21]="sroyce";
     char *pPseudo=&pseudo[0];
 
     fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
+    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
 
     if (fichier == NULL){
-        printf("ptn c'est la merde!!!");
+        printf("ptn c'est la merde!");
     }else{
         ligne=ecriturePseudo(pPseudo,fichier);
-        printf("%d",ligne);
+        printf("%d\n",ligne);
         ecrireStatistique(fichier,ligne,1010,1);
+        printf("fin1\n");
         ecrireStatistique(fichier,ligne,10050,2);
+        printf("fin2\n");
         ecrireStatistique(fichier,ligne,80,3);
+        printf("fin3\n");
     }
-    fclose(fichier);*/
+
+    fclose(fichier);
+
+    if (fichier2 == NULL){
+        printf("ptn c'est la merde!!!");
+    }else{
+        ecrireLeaderboard(fichier2,pPseudo,11);
+    }
+    fclose(fichier2);
+
+
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 
     return 0;

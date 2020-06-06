@@ -53,7 +53,6 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
     setCarte(&carte[nbCarte -1], SANS_VALEUR, SANS_COULEUR);
 }
 
-
 Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
 {
     Joueur vainqueur = SANS_JOUEUR;
@@ -385,6 +384,7 @@ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
     for (int iterationCarte = 0; iterationCarte < nbCarte; iterationCarte++){
         for (int iterationCompare = iterationCarte +1; iterationCompare < nbCarte; iterationCompare ++ ){
             if(cartePlaceAvant(tableauCarte[iterationCarte], tableauCarte[iterationCompare], atout)){/**< Si la carte dois aller devant dans le tableau */
+
                 tampon = tableauCarte[iterationCarte];
                 tableauCarte[iterationCarte] = tableauCarte[iterationCompare];
                 tableauCarte[iterationCompare] = tampon;

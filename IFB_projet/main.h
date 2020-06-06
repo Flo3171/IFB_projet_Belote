@@ -1,4 +1,4 @@
-/*on regroupe dans ce ficher les include des bibliothèque et la declaration des constante*/
+/*on regroupe dans ce ficher les include des bibliothÃ¨que et la declaration des constante*/
 
 #ifndef _MAIN_H_
 #define _MAIN_H_
@@ -14,7 +14,9 @@
 #define POSITION_NB_VICTOIRE 21
 #define POSITION_SCORE_MAX 25
 #define POSITION_NB_MANCHES_POUR_GAGNER 30
-#define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
+#define NB_CARRACTERE_LEADERBOARD 26
+#define POSITION_RECORD_VICTOIRE 21
+#define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode dÃ©bug */
 
 /* Structure */
 
@@ -109,7 +111,7 @@ typedef enum TypeMessage
 #include <time.h>
 #include <string.h>
 
-/* Fontions créée dans le cardre du projet */
+/* Fontions crÃ©Ã©e dans le cardre du projet */
 #include "tableau.h"
 #include "acquisition.h"
 #include "affichage.h"

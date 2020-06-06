@@ -83,7 +83,6 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
             dealer = joueurSuivant(dealer);
             nbManche ++;
         }
-
         /*score[SUD - 1] = 800;*//**< a suprimer une fois de debug fini*/
 
     }
@@ -139,7 +138,6 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
     return nbManche;
 }
 
-
 char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
 {
     char mancheJouee = 0;
@@ -178,6 +176,7 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
         printf("Appuyer sur une touche pour continuer\n");
         getch();
         trieCarte(mainJoueur[utilisateur-1], 8, contrat.atout);
+
     }
 
     /**<plis */

@@ -69,3 +69,64 @@ int ecrireStatistique(FILE *fichier,int ligne, int statAModifier, int type)
     }
     return 0;
 }
+
+int ecrireLeaderboard(FILE *fichier,char *pseudo,int scoreJ)
+{
+    char pseudoRecup[TAILLE_MAXI_PESEUDO+1];
+    int score=0,stop=0,ligne=0;
+
+    while(stop!=1 && ligne<=9){
+        fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+        fscanf(fichier,"%20s",pseudoRecup);
+        if(strcmp(pseudo,pseudoRecup)==0){
+            ligne-=2;
+            stop=1;
+        }
+        ligne++;
+    }
+
+    stop=0;
+    while( stop!=1 && ligne>=0){
+        fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+        aligneModifieChaine(pseudoRecup,TAILLE_MAXI_PESEUDO);
+        fscanf(fichier,"%20s",pseudoRecup);
+        printf("%6s|",pseudoRecup);
+
+        fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
+        fscanf(fichier,"%3d",&score);
+        printf("%3d\n",score);
+
+        if(scoreJ > score && ligne<9 ){
+            fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+            aligneModifieChaine(pseudoRecup,TAILLE_MAXI_PESEUDO);
+            fprintf(fichier,"%20s;",pseudoRecup);
+
+            fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
+            fprintf(fichier,"%3d\n",score);
+
+            if ( ligne==0 && scoreJ>=score ){
+                fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+                aligneModifieChaine(pseudo,TAILLE_MAXI_PESEUDO);
+                fprintf(fichier,"%20s;",pseudo);
+
+                fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
+                fprintf(fichier,"%3d\n",scoreJ);
+                stop=1;
+            }
+        }else if (scoreJ<=score){
+            if(ligne<9){
+                fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+                aligneModifieChaine(pseudo,TAILLE_MAXI_PESEUDO);
+                fprintf(fichier,"%20s;",pseudo);
+
+                fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
+                fprintf(fichier,"%3d\n",scoreJ);
+                stop=1;
+            }else if(ligne==9){
+                stop=1;
+            }
+        }
+        ligne-=1;
+    }
+}
+
