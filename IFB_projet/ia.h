@@ -12,4 +12,18 @@
 
 Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat);
 
+/** \brief proposition de la pose d'une carte  par l'IA
+ *
+ * \param Joueur joueur : determine qu'elle IA doit jouer
+ * \param Carte *pMainJoueur : pointeur vers le tableau qui enregistre la main de l'IA
+ * \param Carte pli[] : tableau qui enregistre les cartes jouées pendant le pli
+ * \param Joueur dernierVainqueur : defini quel joueur à posé la première carte
+ * \param Couleur atout : defini quelle couleur est en atout
+ * \param int carteRestante : nombre de cartes resantes en main
+ * \return
+ *
+ */
+
+ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante);
+
 #endif // _IA_H_

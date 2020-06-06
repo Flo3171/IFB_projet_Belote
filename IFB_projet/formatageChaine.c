@@ -258,7 +258,7 @@ void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *p
         strcpy(chaineFinal + 2*(tailleLigne+1), "Carreau");
         break;
     case TREFLE :
-        strcpy(chaineFinal + 2*(tailleLigne+1), "Trephle");
+        strcpy(chaineFinal + 2*(tailleLigne+1), "Trefle");
         break;
     case TOUT_ATOUT :
         strcpy(chaineFinal + 2*(tailleLigne+1), "Tout Atout");
@@ -304,4 +304,32 @@ int aligneModifieChaine(char chaine[], int longeurChaine)
     return retour;
 }
 
+void genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+{
+    switch (typeMessage)
+    {
+    case POSE_CARTE :
+        {
+            char couleurCarteFormate[TAILLE_MAXI_COULEUR+1];
+            char valeurCarteFormate[TAILLE_MAXI_COULEUR+1];
+            stockeInfoCarte(carteJoue, valeurCarteFormate, couleurCarteFormate, 1, TAILLE_MAXI_COULEUR);
+            sprintf(message, "%s joue : %s de %s", pseudo[parle - 1], valeurCarteFormate, couleurCarteFormate);
+        }
+        break;
+    case RESULTAT_PLI :
+        {
+            if (parle != SANS_JOUEUR){
+                sprintf(message, "%s remporte le pli et gagne %d points !", pseudo[parle - 1], score);
+            }
+            else {
+                sprintf(message, "Personne ne remporte le pli");
+            }
 
+        }
+        break;
+
+    default:
+        sprintf(message, " ");
+        break;
+    }
+}

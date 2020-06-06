@@ -55,10 +55,10 @@ void rempliEspace(char *chaine,int nbEspace);
 void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version);
 
 
-/** \brief met dans une chaine de caractèr le valeur et la couleur d'une carte
+/** \brief met dans une chaine de caractère la valeur et la couleur d'une carte
  *
- * \param carte : variable de type carte qui contien t la carte a afficher
- * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la veleur et le couleur si mode court)
+ * \param carte : variable de type carte qui contient la carte a afficher
+ * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la valeur et la couleur si mode court)
  * \param couleur : pointeur vers la chaine  qui stocke la couleur
  * \param vesion : 0 si c'est la version courte et 1 pour la version longue
  * \param tailleChaine : taille de la chaine de caratère dans laquel on écrit
@@ -99,6 +99,19 @@ void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *p
  */
 int aligneModifieChaine(char chaine[], int longeurChaine);
 
+/** \brief génere un message et l'enregistre dans une chaine de caractère
+ *
+ * \param char message[] : tableau de char ou on enregistre le message
+ * \param Joueur parle : joueur qui pose une carte
+ * \param char *pseudo[] : tableau qui contient les pseudo des joueur
+ * \param Carte carteJoue : carte qui vine d'être jouée
+ * \param int score : score a afficher
+ * \param TypeMessage typeMessage : permet de savoir quelle message on veux afficher
+ * \return void
+ *
+ */
+
+void genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage);
 
 
 

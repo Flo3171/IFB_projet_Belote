@@ -94,6 +94,43 @@ char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur 
 char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame);
 
 
+/** \brief calucule la somme force des carte dans un tableau
+ *
+ * \param Carte tableauCarte : tableau de carte sur lequel on veut travailler
+ * \param int nbCarte : nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout sur la manche
+ * \return float : la valeur de lla somme des force des carte
+ *
+ */
+
+ float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout);
+
+/** \brief trie un tableau de cartes
+ *
+ * \param Carte tableauCarte[] : tableau contenant les cartes a trier
+ * \param int nbCarte nombre de carte dans le tableau
+ * \param Couleur atout : couleur de l'atout dans la manche
+ * \return void
+ *
+ */
+
+ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout);
+
+ /** \brief permet de savoir si une carte doit etre placée avant lors du trie des cartes
+  *
+  * \param Carte carteRefference : carte par raport a laquelle on compare
+  * \param Carte carteCompare : carte que l'on compare
+  * \param Couleur atout : couleur de l'atout dans la manche
+  * \return char : renvoie 1 si la catre doit etre placée avant 0 sinon
+  *
+  */
+
+char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout);
+
+
+
+
+
 
 /** \brief calucule la somme force des carte dans un tableau
  *

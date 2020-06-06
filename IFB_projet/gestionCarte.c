@@ -175,7 +175,7 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
 
 
     }
-    else{/**< on est en atout d'une certaine couleur ou en sans atoutavec une couleur différente de l'entame */
+    else{/**< on est en atout d'une certaine couleur ou en sans atoutavec une couleur diffÃ©rente de l'entame */
         if (carteACalculer.couleur == entame){
 
             switch(carteACalculer.valeur)
@@ -209,7 +209,7 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
                 break;
             }
         }
-        else{/**< quand l'entame est différent de la couleur de la carte et que ce n'est pas un atout alor on pert a chaque fois */
+        else{/**< quand l'entame est diffÃ©rent de la couleur de la carte et que ce n'est pas un atout alor on pert a chaque fois */
 
                         switch(carteACalculer.valeur)
             {
@@ -246,70 +246,88 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
 
     }
 
-
     return (float)nbCatreBatue/(NB_TOATAL_CARTE -1);
 
 }
 
 char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
 {
-    /**< Fonction faite a partir de l'oranigrame qui montre comment déterminer si une carte est valide a partir des règle*/
+    /**< Fonction faite a partir de l'oranigrame qui montre comment dÃ©terminer si une carte est valide a partir des rÃ¨gle*/
     char valide = 0;
+    if (cartePose.couleur != SANS_COULEUR || cartePose.valeur != SANS_VALEUR){/**< On verifier que ce n'est pas une carte vide */
+        if (pli[premierAJouer-1].valeur == SANS_VALEUR && pli[premierAJouer - 1].couleur == SANS_COULEUR){/**< premiÃ¨re carte du plis ? */
+            valide = 1;
+        }
+        else{
+            if (rechercherCarte(pCarteMainJoueur, 8, pli[premierAJouer-1].couleur, SANS_VALEUR)){/**< Le joueur posÃ¨de il la couleur demandÃ©e ? */
+                if (pli[premierAJouer - 1].couleur == atout || atout == TOUT_ATOUT){/**< l'entame est en atout */
+                    if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supÃ©rieur au meilleur ajout posÃ© */
+                        if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supÃ©rieur au meilleur atout posÃ© */
+                            valide = 1;
+                        }
+                        else{
+                            valide = 0 ;
+                        }
+                    }
+                    else{
+                        if(cartePose.couleur == atout || (atout == TOUT_ATOUT && cartePose.couleur == pli[premierAJouer - 1].couleur)){/**< Si la carte est un atout */
+                            valide = 1;
+                        }
+                        else{
+                            valide = 0;
+                        }
 
-    if (pli[premierAJouer-1].valeur == SANS_VALEUR && pli[premierAJouer - 1].couleur == SANS_COULEUR){/**< première carte du plis ? */
-        valide = 1;
-    }
-    else{
-        if (rechercherCarte(pCarteMainJoueur, 8, pli[premierAJouer-1].couleur, SANS_VALEUR)){/**< Le joueur posède il la couleur demandée ? */
-            if (pli[premierAJouer - 1].couleur == atout || atout == TOUT_ATOUT){/**< l'entame est en atout */
-                if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
-                    if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
+                    }
+                }
+                else{
+                    if (cartePose.couleur == pli[premierAJouer - 1].couleur){/**< Si la carte est dans la couleur demandÃ©e */
                         valide = 1;
                     }
                     else{
-                        valide = 0 ;
+                        valide = 0;
                     }
                 }
-                else{
-                    valide = 1;
-                }
             }
             else{
-                if (cartePose.couleur == pli[premierAJouer - 1].couleur){/**< Si la carte est dans la couleur demandée */
+                if( vainqueurPli(pli, atout, premierAJouer) == joueurSuivant(joueurSuivant(parle))){/**< Le partemenaire est maitre ? */
                     valide = 1;
                 }
                 else{
-                    valide = 0;
-                }
-            }
-        }
-        else{
-            if( vainqueurPli(pli, atout, premierAJouer) == joueurSuivant(joueurSuivant(parle))){/**< Le partemenaire est maitre ? */
-                valide = 1;
-            }
-            else{
-                if (rechercherCarte(pCarteMainJoueur, 8, atout, SANS_VALEUR)){/**< Le joueur a il un atout ? */
-                    if (rechercherCarte(pli, 4, atout, SANS_VALEUR)){/**< il y a deja un ajout de posé */
-                        if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supérieur au meilleur ajout posé */
-                            if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supérieur au meilleur atout posé */
-                                valide = 1;
+                    if (rechercherCarte(pCarteMainJoueur, 8, atout, SANS_VALEUR)){/**< Le joueur a il un atout ? */
+                        if (rechercherCarte(pli, 4, atout, SANS_VALEUR)){/**< il y a deja un ajout de posÃ© */
+                            if (rechercherCarteSuperieur(pCarteMainJoueur, 8, pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur)){/**< Le joueur a il un ajout de valeur supÃ©rieur au meilleur ajout posÃ© */
+                                if (forceCarte(cartePose, atout, pli[premierAJouer -1].couleur) > forceCarte(pli[vainqueurPli(pli, atout, premierAJouer)-1], atout, pli[premierAJouer -1].couleur) ){/**< si la carte est un ajout le valeur supÃ©rieur au meilleur atout posÃ© */
+                                    valide = 1;
+                                }
+                                else{
+                                    valide = 0 ;
+                                }
                             }
                             else{
-                                valide = 0 ;
+                                valide = 1;
                             }
                         }
                         else{
-                            valide = 1;
+                            if(cartePose.couleur == atout){/**< Si la carte est un atout alors elle est valide */
+                                valide = 1;
+                            }
+                            else{
+                                valide = 0;
+                            }
                         }
                     }
-                }
-                else{
-                    valide = 1;
+                    else{
+                        valide = 1;
+                    }
                 }
             }
-        }
 
+        }
     }
+    else{
+        valide = 0;
+    }
+
 
     return valide;
 }
@@ -365,11 +383,42 @@ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
     /**< On rÃ©alise un tri a bulle pour mettre atout du plus fort au moin fort au dÃ©but de la main puis les carte par famille */
     for (int iterationCarte = 0; iterationCarte < nbCarte; iterationCarte++){
         for (int iterationCompare = iterationCarte +1; iterationCompare < nbCarte; iterationCompare ++ ){
-            if(forceCarte(tableauCarte[iterationCompare], atout, SANS_COULEUR) > forceCarte(tableauCarte[iterationCarte], atout, SANS_COULEUR)){/**< Si la carte dois aller devant dans le tableau */
+            if(cartePlaceAvant(tableauCarte[iterationCarte], tableauCarte[iterationCompare], atout)){/**< Si la carte dois aller devant dans le tableau */
+
                 tampon = tableauCarte[iterationCarte];
                 tableauCarte[iterationCarte] = tableauCarte[iterationCompare];
                 tableauCarte[iterationCompare] = tampon;
             }
         }
     }
+}
+
+char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+{
+    char aPlacerAvant = 0;
+
+    if (carteRefference.couleur == carteCompare.couleur){/**< Les deux carte sont elle de la meme famille */
+        if (forceCarte(carteCompare, atout, carteCompare.couleur) > forceCarte(carteRefference, atout, carteCompare.couleur)){
+            aPlacerAvant = 1;
+        }
+        else{
+            aPlacerAvant = 0;
+        }
+    }
+    else {
+        if (carteCompare.couleur == atout){/**< si carteCompate est un atout */
+            aPlacerAvant = 1;
+        }
+        else{
+            if (carteCompare.couleur < carteRefference.couleur){/**< si la couleur de la carteCompare est devant celle de carteRefference dans l'Ã©numÃ©ration(ordre arbitraire) */
+                aPlacerAvant = 1;
+            }
+            else{
+                aPlacerAvant = 0;
+            }
+        }
+
+    }
+
+    return aPlacerAvant;
 }

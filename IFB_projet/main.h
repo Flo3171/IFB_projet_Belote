@@ -1,9 +1,9 @@
-/*on regroupe dans ce ficher les include des bibliothèque et la declaration des constante*/
+/*on regroupe dans ce ficher les include des bibliothÃ¨que et la declaration des constante*/
 
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/* Constante */
+/* Constantes */
 #define TAILLE_MAXI_PESEUDO 20
 #define TAILLE_MAXI_COULEUR 8
 #define NB_JOUEUR 4
@@ -16,8 +16,7 @@
 #define POSITION_NB_MANCHES_POUR_GAGNER 30
 #define NB_CARRACTERE_LEADERBOARD 26
 #define POSITION_RECORD_VICTOIRE 21
-#define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
-
+#define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode dÃ©bug */
 
 /* Structure */
 
@@ -92,6 +91,18 @@ typedef struct Contrat
 
 }Contrat;
 
+typedef enum TypeMessage
+{
+    SANS_MESSAGE,
+    POSE_CARTE,
+    RESULTAT_PLI,
+    RESULTAT_MANCHE,
+    RESULTAT_PARTIE,
+    PROPOSE_CONTRAT,
+    CONTRAT_FINAL
+
+}TypeMessage;
+
 /* Fontions standard*/
 #include <stdio.h>
 #include <stdlib.h>
@@ -100,7 +111,7 @@ typedef struct Contrat
 #include <time.h>
 #include <string.h>
 
-/* Fontions créée dans le cardre du projet */
+/* Fontions crÃ©Ã©e dans le cardre du projet */
 #include "tableau.h"
 #include "acquisition.h"
 #include "affichage.h"
@@ -110,6 +121,7 @@ typedef struct Contrat
 #include "autre.h"
 #include "ia.h"
 #include "sous-menus.h"
+#include "gestionFichier.h"
 
 
 

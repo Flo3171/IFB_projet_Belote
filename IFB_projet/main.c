@@ -1,13 +1,12 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-
     /**< CODE FINAL */
     srand(time(NULL));
     if(!DEBUG_MODE){
-            initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+            initialisation(48, 90); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
-    /*menuPrincipal();*/
+    menuPrincipal();
     /**< FIN CODE FINAL */
 
     /*joue1000Partie(1000);*/
@@ -15,71 +14,98 @@ int main(int argc, char *argv[])
 
     /* DEBUG ET TEST DES FONTIONS */
 
+    /*menuPrincipal();*/
 
     /*afficheMenuPrincipal(0);*/
-    Carte pli[4];
-    pli[0].couleur = CARREAU;
-    pli[0].valeur = 9;
-    pli[1].couleur = PIQUE;
-    pli[1].valeur = AS;
-    pli[2].couleur = TREFLE;
-    pli[2].valeur = DAME;
-    pli[3].couleur = SANS_COULEUR;
-    pli[3].valeur = SANS_VALEUR;
+    /*Carte pliA[4];
+    pliA[0].couleur = SANS_COULEUR;
+    pliA[0].valeur = SANS_VALEUR;
+    pliA[1].couleur = SANS_COULEUR;
+    pliA[1].valeur = SANS_VALEUR;
+    pliA[2].couleur = SANS_COULEUR;
+    pliA[2].valeur = SANS_VALEUR;
+    pliA[3].couleur = SANS_COULEUR;
+    pliA[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
-    carteMain[0].couleur = COEUR;
-    carteMain[0].valeur = 7;
-    carteMain[1].couleur = CARREAU;
+    carteMain[0].couleur = TREFLE;
+    carteMain[0].valeur = DAME;
+    carteMain[1].couleur = PIQUE;
     carteMain[1].valeur = 10;
-    carteMain[2].couleur = CARREAU;
-    carteMain[2].valeur = VALET;
+    carteMain[2].couleur = TREFLE;
+    carteMain[2].valeur = 8;
     carteMain[3].couleur = PIQUE;
-    carteMain[3].valeur = 10;
-    carteMain[4].couleur = COEUR;
-    carteMain[4].valeur = VALET;
-    carteMain[5].couleur = TREFLE;
+    carteMain[3].valeur = 9;
+    carteMain[4].couleur = PIQUE;
+    carteMain[4].valeur = ROI;
+    carteMain[5].couleur = COEUR;
     carteMain[5].valeur = DAME;
     carteMain[6].couleur = PIQUE;
-    carteMain[6].valeur = ROI;
-    carteMain[7].couleur = PIQUE;
+    carteMain[6].valeur = 7;
+    carteMain[7].couleur = CARREAU;
     carteMain[7].valeur = AS;
+
+    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+
+
+    Contrat contrat;
+    contrat.preneur = EST;
+    contrat.nbPoint = 90;
+    contrat.atout = COEUR;
+    contrat.coinche = NORMAL;*/
+
+    /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate",SUD, EST, 1);
+    for (int i = 0; i < 8; i++){
+        printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, EST, SUD));
+    }*/
 
 
     /*afficheMain(carteMain);
     supprimeCarte(carteMain, 8, 2);
     afficheMain(carteMain);*/
 
-    Carte mainJoueur[4][8] = {0};
+    /*Carte mainJoueur[4][8] = {0};
     Carte *pMainJoueur;
     pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
     afficheMain(mainJoueur[0]);
     trieCarte(mainJoueur[0], 8, COEUR);
-    afficheMain(mainJoueur[0]);
+    afficheMain(mainJoueur[0]);*/
     /*afficheMain(mainJoueur[1]);
     afficheMain(mainJoueur[2]);
     afficheMain(mainJoueur[3]);*/
     /**< victor a tord */
+
+
+
+    /**< victor a thor */
     /**for (Joueur parle = dealer; parle != dealer; joueurSuivant(parle)){
 
     }*/
 
-    Contrat contrat;
-    contrat.preneur = NORD;
-    contrat.nbPoint = 80;
-    contrat.atout = TOUT_ATOUT;
-    contrat.coinche = SURCOINCHE;
 
 
-    /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
 
-    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate", OUEST);
-    for (int i = 0; i < 8; i++){
-        printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, NORD, OUEST));
+    /*Carte mainJoueur[4][8];
+    Carte *pMainJoueur = &mainJoueur[0][0];
+    distribueCarte(pMainJoueur);*/
+
+
+
+    /*
+    Contrat contratIA;
+    contratIA = proposeContratIa(NORD, pMainJoueur, contrat);
+    afficheContrat(contratIA, pseudo);
+    */
+    /*
+    afficheContrat(contratIA, pseudo);*/
+
+
+    /*afficheMain(pMainJoueur);
+    for (Couleur atout = 1; atout < 7; atout ++){
+        printf("%d %f\n",atout,  sommeForceCarte(pMainJoueur, 8, atout));
     }*/
-
 
     /*char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
@@ -93,11 +119,42 @@ int main(int argc, char *argv[])
     puts(pseudo[2]);
     puts(pseudo[3]);*/
 
+    /*Carte pliVide[4];
+    pliVide[0].couleur = SANS_COULEUR;
+    pliVide[0].valeur = SANS_VALEUR;
+    pliVide[1].couleur = SANS_COULEUR;
+    pliVide[1].valeur = SANS_VALEUR;
+    pliVide[2].couleur = SANS_COULEUR;
+    pliVide[2].valeur = SANS_VALEUR;
+    pliVide[3].couleur = SANS_COULEUR;
+    pliVide[3].valeur = SANS_VALEUR;*/
+
     /*menuPrincipal();*/
-    int score[4] = {0};
+    /*int score[4] = {0};*/
     /*manche(pseudo, score, NORD);*/
 
     /*menuPrincipal();*/
+    /*afficheMain(carteMain);
+    afficheMain(pli);
+    printf("Le joueur joue la carte :%d\n", choixCarteIA(OUEST, carteMain, pli, NORD, COEUR, 8));*/
+
+
+    /*afficheMain(mainJoueur[0]);
+    afficheMain(mainJoueur[1]);
+    afficheMain(mainJoueur[2]);
+    afficheMain(mainJoueur[3]);
+    int point[4] = {0};
+    char belote[4] = {0};
+    pli(contrat, SUD, pseudo, pMainJoueur, point, point, belote, pliA, pliA, point, SUD, 0);*/
+
+
+    /*char message[TAILLE_MAXI_MESSAGE];
+    genereMessage(message, SUD, pseudo, carteMain[1], POSE_CARTE);
+    printf("%s\n", message);*/
+
+    /*nouvellePartie(pseudo, SUD);*/
+    /*nouvellePartie(pseudo, SANS_JOUEUR);*/
+
 
     /*afficheMenuSelection("parametre","1-changer le pseudo du joueur;2-changer le pseudo du joueur;3-changer le pseudo du joueur ouest inch ca marche ptn;4-c'est un test; 5-on va bien voir si ca marche ");*
     manche(pseudo, score, SUD);*/
@@ -117,7 +174,7 @@ int main(int argc, char *argv[])
     /*afficheSousMenus("1-nouvelle partie 2-leaderboard 3-statistiques  4-changement d'utilisateur  5-parametres  6-quitter ","pseudo");*/
 
     /*acquisitionPseudoAvecMessage();*/
-    /*Pour voir la liste des carac�re que on peut utliser
+    /*Pour voir la liste des caracère que on peut utliser
     for (int i = -127; i <=127; i++){
         printf(" %d-->%c\n", i,i);
     }*/
@@ -131,7 +188,8 @@ int main(int argc, char *argv[])
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);*/
 
-    /** essais pour compter les points**/
+    /**< ZONE DÉBUG SALE DE CARLO**/
+
     /*printf("|%d|",pointPli(pli,TOUT_ATOUT));
     printf("|%d|",pointPli(pli,SANS_ATOUT));
     printf("|%d|",pointPli(pli,COEUR));
@@ -140,29 +198,30 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,CARREAU));*/
 
 
-    Carte mainJoueur[4][8];
+
+    /*Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
 
-    Carte pliVide[4];
-    pliVide[0].couleur = COEUR;
-    pliVide[0].valeur = ROI;
-    pliVide[1].couleur = COEUR;
-    pliVide[1].valeur = DIX;
-    pliVide[2].couleur = SANS_COULEUR;
-    pliVide[2].valeur = SANS_VALEUR;
-    pliVide[3].couleur = SANS_COULEUR;
-    pliVide[3].valeur = SANS_VALEUR;
+    Carte *pCarteMain = &carteMain[0];*/
+    /*
+
+
+    int r=0;
+
+    for(int i=1; i<5;i++){
+
+        r=choixCarteIA(NORD+i-1,pMainJoueur+8*(i-1),pliVide,NORD,COEUR,8);
+        printf("%d",r);
+    }*/
 
     /*for(int j=0;j<21;j++){
         distribueCarte(pMainJoueur);
         for(int i=1;i<5;i++){
             poseCarte(SUD,1,pMainJoueur,pliVide,0,9-1);
-        }*/
+        }
     getch();
-    menuPrincipal();
-
     menuPrincipal();*/
     /*
     afficheMain(pMainJoueur);
@@ -176,8 +235,8 @@ int main(int argc, char *argv[])
     afficheMenuSelection("Resultat manche", message, 2);
     */
 
-    FILE *fichier=NULL, *fichier2=NULL;
-
+    /*FILE *fichier=NULL, *fichier2=NULL;
+    FILE *fichier=NULL;
     int ligne=0;
     char pseudo[21]="sroyce";
     char *pPseudo=&pseudo[0];
@@ -212,3 +271,5 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+

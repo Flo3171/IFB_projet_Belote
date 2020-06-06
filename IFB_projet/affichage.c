@@ -6,24 +6,32 @@ int afficheMenuPrincipal(int type)
     if (type == 0){
         system("cls");
 
-        printf("\t\t ______________________\n");
-        printf("\t\t|¤}##{____________}##{¤|\n");
-        printf("\t\t|$|<>~#~#~#~~#~#~#~<>|$|\n");
-        printf("\t\t|#|><><><></\\><><><><|#|\n");
-        printf("\t\t|$|<><><></  \\><><><>|$|\n");
-        printf("\t\t|#|><><></    \\><><><|#|\n");
-        printf("\t\t|$|<><></      \\><><>|$|\n");
-        printf("\t\t|#|><></        \\><><|#|\n");
-        printf("\t\t|$|<></  Belote  \\><>|$|\n");
-        printf("\t\t|$|<><\\ COINCHEE /><>|$|\n");
-        printf("\t\t|#|><><\\        /><><|#|\n");
-        printf("\t\t|$|<><><\\      /><><>|$|\n");
-        printf("\t\t|#|><><><\\    /><><><|#|\n");
-        printf("\t\t|$|<><><><\\  /><><><>|$|\n");
-        printf("\t\t|#|><><><><\\/><><><><|#|\n");
-        printf("\t\t|$|<>~#~#~#~~#~#~#~<>|$|\n");
-        printf("\t\t|¤?#?}============{?#?¤|\n");
-        printf("\t\t!!!!!!!!!!!!!!!!!!!!!!!!\n\n");
+        printf("\t ____________________________________ \n");
+        printf("\t|C}--\\/?##?{______________}?##?\\/--{C|\n");
+        printf("\t|$|<>/\\--#~#~#~#~#--#~#~#~#~#--/\\<>|$|\n");
+        printf("\t|#|<><><><><><><></\\><><><><><><><>|#|\n");
+        printf("\t|$|><><><><><><></  \\><><><><><><><|$|\n");
+        printf("\t|#|<><><><><><></    \\><><><><><><>|#|\n");
+        printf("\t|$|><><><><><></      \\><><><><><><|$|\n");
+        printf("\t|#|<><><><><></        \\><><><><><>|#|\n");
+        printf("\t|$|><><><><></          \\><><><><><|$|\n");
+        printf("\t|#|<><><><></            \\><><><><>|#|\n");
+        printf("\t|$|><><><></  & BELOTE &  \\><><><><|$|\n");
+        printf("\t|#|<><><></  & COINCHEE &  \\><><><>|#|\n");
+        printf("\t|$|><><></                  \\><><><|$|\n");
+        printf("\t|$|><><><\\        BY        /><><><|$|\n");
+        printf("\t|#|<><><><\\    FLORIAN     /><><><>|#|\n");
+        printf("\t|$|><><><><\\      &&      /><><><><|$|\n");
+        printf("\t|#|<><><><><\\    CARLO   /><><><><>|#|\n");
+        printf("\t|$|><><><><><\\          /><><><><><|$|\n");
+        printf("\t|#|<><><><><><\\        /><><><><><>|#|\n");
+        printf("\t|$|><><><><><><\\      /><><><><><><|$|\n");
+        printf("\t|#|><><><<><><><\\    /><><><><><><>|#|\n");
+        printf("\t|$|><><><><><><><\\  /><><><><><><><|$|\n");
+        printf("\t|#|<><><><><><><><\\/><><><><><><><>|#|\n");
+        printf("\t|$|<__>~?#?~?#?~?#~~#?~?#?~?#?~<__>|$|\n");
+        printf("\t|\\C?#?#?}}=======----======={{?#?#?C/|\n");
+        printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
         printf("\t\t appuyez pour continuer");
 
         getch();
@@ -33,14 +41,14 @@ int afficheMenuPrincipal(int type)
     if (type == 1){
         afficheMenuSelection("<>Menu Principal<>","1-nouvelle partie;2-leaderboard;3-statistiques;4-changement d'utilisateur;5-parametres;6-quitter",2);
 
-        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisissez une des actions proposees dans le menu:");
         return retour;
     }
     return retour;
 }
 
 
-int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur dernierVainqueur,int type)
+int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int score[], int pointManche[], int type)
 {
     /**< Formatage des chaine de caracère relative aux pseudo */
     char pseudoCentre[4][TAILLE_MAXI_PESEUDO + 1];
@@ -80,6 +88,19 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
 
 
     system("cls");
+
+    if(DEBUG_MODE && utilisteur == SUD){
+        printf("Main de %s\n", pseudo[NORD-1]);
+        afficheMain(cartesEnMain - 8*2);
+        printf("Main de %s\n", pseudo[EST-1]);
+        afficheMain(cartesEnMain - 8*1);
+        printf("Main de %s\n", pseudo[SUD-1]);
+        afficheMain(cartesEnMain);
+        printf("Main de %s\n", pseudo[OUEST-1]);
+        afficheMain(cartesEnMain + 8);
+
+
+    }
     printf(" ________________________________________________________________________________________\n");
     printf("|************************************Belote coinchee*************************************|\n");
     printf("| ______________________					 _______________________ |\n");
@@ -98,13 +119,14 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	|%s|							|%s|	 |\n", pliFormate[3][0], pliFormate[1][0]);
     printf("|	|_______|							|_______|	 |\n");
     printf("|											 |\n");
-    printf("|					 _______					 |\n");
-    printf("|					|%s|					 |\n", pliFormate[2][1]);
-    printf("|					|	|					 |\n");
-    printf("|					|%s|					 |\n", pliFormate[2][0]);
-    printf("|					|_______|					 |\n");
-    printf("|					   						 |\n");
-    printf("|		                   %s            	           	 |\n", pseudoCentre[2]);
+    printf("| _________________________              _______               _________________________ |\n");
+    printf("||Score :                  |            |%s|             |Point dans la manche :   ||\n", pliFormate[2][1]);
+    printf("||_________________________|            |       |             |_________________________||\n");
+    printf("||   Equipe   |   Equipe   |            |%s|             |   Equipe   |   Equipe   ||\n", pliFormate[2][0]);
+    printf("||  Latitude: | Longitude: |            |_______|             |  Latitude: | Longitude: ||\n");
+    printf("||            |            |                                  |            |            ||\n");
+    printf("||%4d points |%4d points |       %s       | %3d points | %3d points ||\n",score[SUD-1], score[EST-1], pseudoCentre[2], pointManche[NORD-1]+ pointManche[SUD-1], pointManche[EST-1]+pointManche[OUEST-1]);
+    printf("||____________|____________|                                  |____________|____________||\n");
     printf("|											 |\n");
     printf("|Votre main :										 |\n");
     printf("|  _______    _______    _______    _______    _______    _______    _______    _______  |\n");
@@ -119,28 +141,29 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	| %s |       |\n", messageCentre[0]);
     printf("|	| %s |       |\n", messageCentre[1]);
     printf("|	| %s |       |\n", messageCentre[2]);
+    printf("|	|                   Pressez une touche pour continuer                    |       |\n");
     printf("|	|________________________________________________________________________|	 |\n");
     printf("|________________________________________________________________________________________|\n");
 
     Carte carteAJouer;
     Carte *pCarteEnMain = &cartesEnMain[0];
     Couleur atout=contratActuel.atout;
-    Joueur joueurCommence=0;
-    if(dernierVainqueur == SANS_JOUEUR){
-        joueurCommence == dernierVainqueur;
-    }else{
-        joueurCommence == contratActuel.preneur;
-    }
+
+
     if(type == 0){
         do{
             carteSelection  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
             carteAJouer =  *(pCarteEnMain + carteSelection-1);
-            retour = carteValide(carteAJouer,pli,atout,pCarteEnMainFormate,/*joueurCommence*/SUD,SUD);
+            retour = carteValide(carteAJouer,pli,atout,cartesEnMain, dernierVainqueur,SUD);
+            if (retour == 0){
+                printf("Les regles vous interdisent de jouer cette carte\n");
+            }
         }while (retour == 0);
-        return carteSelection;
     }else{
+        carteSelection = 0 ;
         getch();
     }
+    return carteSelection;
 }
 
 void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
@@ -213,19 +236,26 @@ void afficheMain(Carte carte[])
 }
 
 
-void afficheContrat(Contrat contrat, char *pseudo[])
+void afficheContrat(Contrat contrat, char *pseudo[], int version)
 {
     char contratActuelFormate[4][TAILLE_MAXI_PESEUDO + 1];
     char *pContratActuelFormate = &contratActuelFormate[0][0];
     formateContrat(contrat, pContratActuelFormate, TAILLE_MAXI_PESEUDO, pseudo);
 
-    printf(" ______________________ \n");
-    printf("|Contrat :	       |\n");
-    printf("| %s |\n", contratActuelFormate[0]);
-    printf("| %s |\n", contratActuelFormate[1]);
-    printf("| Atout: %s|\n", contratActuelFormate[2]);
-    printf("| %s |\n", contratActuelFormate[3]);
-    printf("|______________________|\n");
+    if (version == 1){
+        printf("\n ______________________ \n");
+        printf("|Contrat :	       |\n");
+        printf("| %s |\n", contratActuelFormate[0]);
+        printf("| %s |\n", contratActuelFormate[1]);
+        printf("| Atout: %s|\n", contratActuelFormate[2]);
+        printf("| %s |\n", contratActuelFormate[3]);
+        printf("|______________________|\n\n");
+    }
+    else if (version == 2){
+        printf("%s atout : %s %s\n", contratActuelFormate[1], contratActuelFormate[2], contratActuelFormate[3]);
+    }
+
+
 }
 
 void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
@@ -239,14 +269,18 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
     char selection[18][200];
     int ligne=0,colonne=0;
     /**< effacement de la chaine de carrateres */
-    for(int w=0;w<18;w++){
+    /*for(int w=0; w < 18; w++){
         for(int k = 0; k < 200; k++){
             selection[w][k]=" ";
         }
+    }*/
+    for (int i = 0; i < 18; i++){
+        rempliEspace(selection[i], 199);
     }
+
     /**< decoupage de la chaine en entrée au niveau des ';' est remplacement par des '\0' */
-    for(int i=0;i<strlen(phrase);i++){
-        if (phrase[i]==';'){
+    for(int i=0;i<strlen(phrase)+1;i++){
+        if (phrase[i]==';' || phrase[i]=='\0' ){
             selection[ligne][colonne]='\0';
             ligne = ligne+1;
             colonne =0;
@@ -301,4 +335,82 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
     printf("\t|$|<__>~?#?~?#?~?#~~#?~?#?~?#?~<__>|$|\n");
     printf("\t|\\¤?#?#?}}=======----======={{?#?#?¤/|\n");
     printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");
+}
+
+Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+{
+    Contrat nouveauContrat;
+    setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
+    afficheMain(pCarteMain);
+    int miniContrat = 80;
+    if (dernierContrat.nbPoint >= 80){
+        miniContrat = dernierContrat.nbPoint +10;
+    }
+    char message[TAILLE_MAXI_MESSAGE];
+        printf("\nQue voulez vous anoncer :\n");
+        printf("1 : Passer\n2 : Encherir\n");
+        if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
+           printf("3 : coincher\n");
+        }
+        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
+           printf("3 : surcoinche\n");
+        }
+
+        int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
+        Couleur atoutEnchere;
+        switch(choix)
+        {
+        case 1 :
+            setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
+            break;
+        case 2 :
+            system("cls");
+            afficheMain(pCarteMain);
+            printf("\nQuel atout voulez vous choisir :\n1 : Coeur\n2 : Pique\n3 : Carreau\n4 : Trefle\n5 : Tout atout\n6 : Sans atout\n");
+            choixCouleur = acquisitionEntierSansMessageAvecConsigne(1, 6, "");
+            switch(choixCouleur)
+            {
+            case 1 :
+                atoutEnchere = COEUR;
+                break;
+            case 2 :
+                atoutEnchere = PIQUE;
+                break;
+            case 3 :
+                atoutEnchere = CARREAU;
+                break;
+            case 4 :
+                atoutEnchere = TREFLE;
+                break;
+            case 5 :
+                atoutEnchere = TOUT_ATOUT;
+                break;
+            case 6 :
+                atoutEnchere = SANS_ATOUT;
+                break;
+
+            }
+            sprintf(message, "\nA combien de points voulez vous encherir (entre %d et 160) \nEntrer 170 pour un caopot et 180 pour une generale:", miniContrat);
+            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(miniContrat, 180, message)/10),atoutEnchere,NORMAL);
+            break;
+        case 3 :
+            if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
+           setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, COINCHE);
+        }
+        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
+            setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, SURCOINCHE);
+        }
+        else{
+            printf("Vous ne pouvez pas coincher ou surcoincher");
+        }
+
+            break;
+        default :
+            break;
+
+        }
+
+        return nouveauContrat;
+
+
 }

@@ -2,13 +2,14 @@
 
 void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 {
-    srand(time(0));
     modifieTailleFenetre(nbLigneFenetre, nbColloneFenetre);
 }
 
 void menuPrincipal()
 {
     int choix, sortie=1;
+    int statistique[5][4] = {0};
+    int *pStatistique = &statistique[0][0];
 
     char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
@@ -17,15 +18,16 @@ void menuPrincipal()
 
     afficheMenuPrincipal(0);
 
-    acquisitionPseudoAvecMessage(pseudo[2],"Choisisez votre pseudo:");
+    acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez votre pseudo:",0);
     char *pPseudo[4];
-    for(int i=0;i<4;i++){
+    for(int i=0; i<4; i++)
+    {
         pPseudo[i] = &pseudo[i][0];
     }
 
-    do{
+    do
+    {
         choix = afficheMenuPrincipal(1);
-
         /* contrôle d'acquisition avec réaffichage de l'interfface */
         switch(choix)
         {
@@ -46,19 +48,31 @@ void menuPrincipal()
             sortie = 0;
             break;
         }
-    }while (sortie);
+    }
+    while (sortie);
 }
 
-void nouvellePartie(char *pseudo[])
+int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 {
-    system("cls");
-    char message[TAILLE_MAXI_MESSAGE];
-    sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche.;Votre allie est %s et vos ennemis sont %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
-    afficheMenuSelection("Debut de la partie",message ,1);
-    printf("appyer sur une touche pour continuer");
-    getch();
 
-    /**< Cr�ation des variable  */
+    char message[TAILLE_MAXI_MESSAGE];
+    int nbManche = 0;
+    /**< On change l'affichage pour avoir un affichage plus simple a lire lors d'une partie entre 4 ordinateur */
+    if (utilisateur != SANS_JOUEUR)
+    {
+        system("cls");
+        sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche.;Vous etes dans l'equipe Longitude, votre allie est %s et vous jouez contre l'equipe Latitude qui est composee de %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
+        afficheMenuSelection("Debut de la partie",message,1);
+        printf("appyer sur une touche pour continuer");
+        getch();
+    }
+    else if(DEBUG_MODE == 1)
+    {
+        printf("debut de la partie \n%s et %s contre %s et %s\n", pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1]);
+    }
+
+
+    /**< Création des variable  */
     int score[4] = {0};
     Joueur dealer = nbAleatoire(1, 4);
 
@@ -69,31 +83,60 @@ void nouvellePartie(char *pseudo[])
             dealer = joueurSuivant(dealer);
             nbManche ++;
         }
-
         /*score[SUD - 1] = 800;*//**< a suprimer une fois de debug fini*/
 
-    }while ((score[NORD-1] + score[SUD-1] < 701) && (score[EST-1] + score[OUEST-1] < 701));
+    }
+    while ((score[NORD-1] < 701) && (score[EST-1] < 701));
 
     /**< Fin de partie */
     /**< affichage des resultat */
-    if (score[NORD-1] + score[SUD-1] > 701){
+    if (score[NORD-1] > 701)
+    {
         /**< L'utilisatuer et nord gagnent */
-        sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1] + score[SUD-1], score[EST-1] + score[OUEST-1]);
-        afficheSousMenus(message, "Gagne");
+        *(pStatistique + NORD - 1) += 1;
+        *(pStatistique + SUD - 1) +=1;
+        if (utilisateur != SANS_JOUEUR)
+        {
+            sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
+            afficheSousMenus(message, "Gagne");
+            getch();
+        }
+        else if (DEBUG_MODE == 1)
+        {
+            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[SUD -1], pseudo[NORD-1], score[NORD-1],pseudo[EST - 1], pseudo[OUEST -1], score[EST-1]);
+        }
+
     }
-    else{
+    else
+    {
         /**< est et touest gagnent */
-        sprintf(message, "Domage vous perder la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1] + score[SUD-1], score[EST-1] + score[OUEST-1]);
-        afficheSousMenus(message, "Defaite");
+        *(pStatistique + EST - 1) +=1;
+        *(pStatistique + OUEST - 1) +=1;
+
+        if (utilisateur != SANS_JOUEUR)
+        {
+            sprintf(message, "Domage vous perder la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
+            afficheSousMenus(message, "Defaite");
+            getch();
+        }
+        else if (DEBUG_MODE == 1)
+        {
+            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[EST - 1], pseudo[OUEST -1], score[EST-1],  pseudo[SUD -1], pseudo[NORD-1], score[NORD-1]);
+        }
+
     }
 
-    /**< Lancement de la fonction qui �crit les score et me a jour les stat */
+    /**< Lancement de la fonction qui écrit les score et me a jour les stat */
+    if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+     printf("\nPartie finie \nPressez une touche pour continuer\n");
+     if (utilisateur != SANS_JOUEUR){
+            printf("Appuyer sur une touche pour continuer\n");
+            getch();
+        }
 
-    printf("\nPressez une touche pour revenir au menu\n");
-    getch();
+    }
+    return nbManche;
 }
-
-
 
 char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
 {
@@ -108,10 +151,22 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     Carte mainJoueur[4][8];
     Contrat contrat;
     int pointManche[4] = {0};
+    int pointAnonce[4] = {0};
+    int pointBelote[4] = {0};
+
+    char belote[4] = {0};/**< tableau qui stocke les anonce de chaque joueur, on y ajoute 1 pour le roi d'atout puis 1 pour la dame d'atout */
 
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
+    if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+        printf("\ndistribution des cartes\n");
+    }
+    /**< On trie les carte de l'utilisateur */
+    if(utilisateur != SANS_JOUEUR){
+        trieCarte(mainJoueur[utilisateur-1], 8, TOUT_ATOUT);
+    }
+
 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur, utilisateur);
@@ -120,6 +175,8 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     if (utilisateur != SANS_JOUEUR){
         printf("Appuyer sur une touche pour continuer\n");
         getch();
+        trieCarte(mainJoueur[utilisateur-1], 8, contrat.atout);
+
     }
 
     /**<plis */
@@ -129,146 +186,151 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
         *(pStatistique + 4 + contrat.preneur - 1) +=1;
         /**< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche */
         Joueur vainqueurPli = joueurSuivant(dealer);
-
         Carte cartePli[4], carteDernierPli[4];
-        for (int i = 0; i < 4; i++){
+        for (int i = 0; i < 4; i++)
+        {
             setCarte(&carteDernierPli[i], SANS_VALEUR, SANS_COULEUR);
         }
-        for (int i = 0; i < 8; i++){
-            for (int i = 0; i < 4; i++){
-                setCarte(&cartePli[i], SANS_VALEUR, SANS_COULEUR);
+        for (int i = 0; i < 8; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                setCarte(&cartePli[j], SANS_VALEUR, SANS_COULEUR);
             }
-            vainceurPli = pli(contrat, parle, pseudo, pMainJoueur, pointManche, cartePli, carteDernierPli, vainceurPli,i);
-            for (int i = 0; i < 4; i++){
+            vainqueurPli = pli(contrat, vainqueurPli, pseudo, pMainJoueur, pointManche, pointAnonce, belote, cartePli, carteDernierPli,score, utilisateur, i);
+            *(pStatistique + 3*4 + vainqueurPli - 1) += 1;
+
+            for (int i = 0; i < 4; i++)
+            {
                 setCarte(&carteDernierPli[i], cartePli[i].valeur, cartePli[i].couleur);
             }
         }
+        /**< Fin de manche et calcul des score */
+
+        for (int i = 0; i < 4; i++){/**< si un joueur a fait une belote rebelote il gagne 20 point */
+            if (belote[i] == 2){
+                pointBelote[i] += 20;
+            }
+        }
+        /*printf("%d, %d, %d, %d, total : %d\n", pointManche[0], pointManche[1], pointManche[2], pointManche[3], pointManche[0]+ pointManche[1]+ pointManche[2]+ pointManche[3] );*/
+        if (calculPointManche(contrat, pointManche, pointAnonce, pointBelote, score, pseudo, utilisateur)){
+            *(pStatistique + 4*2 + contrat.preneur - 1) += 1;
+            *(pStatistique + 4*4 + contrat.preneur - 1) += 1;
+            *(pStatistique + 4*4 + joueurSuivant(joueurSuivant(contrat.preneur)) - 1) += 1;
+        }
+        else{
+            *(pStatistique + 4*4 + joueurSuivant(contrat.preneur) - 1) += 1;
+            *(pStatistique + 4*4 + joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur))) - 1) += 1;
+        }
+
+
+        if (utilisateur != SANS_JOUEUR){
+            printf("Appuyer sur une touche pour continuer\n");
+            getch();
+        }
+
     }
     return mancheJouee;
 
 
 }
 
-Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain)
+Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
 {
-    int nbPasse = 0;
+    int nbPasse = -1;
     Joueur parle = joueurSuivant(dealer);
     Contrat contratPropose, nouveauContrat;
     setContrat(&contratPropose, SANS_JOUEUR, ZERO, SANS_COULEUR, NORMAL);
-    system("cls");
-    printf(" Debut de la phase d'anonce des contrat \n");
-    while (nbPasse < 3){
-        nouveauContrat = proposeContrat(contratPropose, parle, pseudo, pCarteMain);
+    if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+        printf("\nDebut de la phase d'anonce des contrat \n");
+    }
+    while (nbPasse < 3)
+    {
+        nouveauContrat = proposeContrat(contratPropose, parle, pseudo, pCarteMain, utilisateur);
 
         /**< Affichage du choix du joueur */
-        if (nouveauContrat.nbPoint > 0 && nouveauContrat.coinche == NORMAL){
-            printf("%s propose le contrat suivant\n", pseudo[parle - 1]);
-            afficheContrat(nouveauContrat, pseudo);
-        }
-        else if(nouveauContrat.coinche == COINCHE){
-            printf("%s COINCHE !!\n", pseudo[parle - 1]);
-        }
-        else if(nouveauContrat.coinche == SURCOINCHE){
-            printf("%s SURCOINCHE !!!!\n", pseudo[parle - 1]);
-        }
-        else{
-            printf("\n%s passe\n", pseudo[parle - 1]);
+        if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+            if (nouveauContrat.nbPoint > 0 && nouveauContrat.coinche == NORMAL){
+                printf("%s propose le contrat suivant : ", pseudo[parle - 1]);
+
+                if (utilisateur != SANS_JOUEUR)
+                {
+                    afficheContrat(nouveauContrat, pseudo, 1);
+                }
+                else
+                {
+                    afficheContrat(nouveauContrat, pseudo, 2);
+                }
+
+            }
+            else if(nouveauContrat.coinche == COINCHE)
+            {
+                printf("%s COINCHE !!\n", pseudo[parle - 1]);
+            }
+            else if(nouveauContrat.coinche == SURCOINCHE)
+            {
+                printf("%s SURCOINCHE !!!!\n", pseudo[parle - 1]);
+            }
+            else
+            {
+                printf("%s passe\n", pseudo[parle - 1]);
+            }
         }
 
-        /**< Si un nouveau contrat est propos� alors il devient le cotrat propos� sinon on incr�memnt nbPasse*/
-        if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche){
+        /**< Si un nouveau contrat est proposé alors il devient le cotrat proposé sinon on incrémemnt nbPasse*/
+        if (nouveauContrat.nbPoint > contratPropose.nbPoint || nouveauContrat.coinche > contratPropose.coinche)
+        {
             contratPropose = nouveauContrat;
             nbPasse = 0;
         }
-        else{
+        else
+        {
             nbPasse ++;
         }
         parle = joueurSuivant(parle);
 
     }
-    if (contratPropose.nbPoint == 0){
-        printf("\nTout les joueur on passe, une nouvelle manche va recomencer dans quelque instants\n");
 
-    }
-    else{
-        printf("\nLe contrat suivant a ete choisi pour la manche\n");
-        afficheContrat(contratPropose, pseudo);
+    if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+        if (contratPropose.nbPoint == 0)
+        {
+            printf("\nTout les joueur on passe, on redistribue les carte\n");
+
+        }
+        else{
+            if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
+                printf("Le contrat suivant a ete choisi pour la manche :");
+                if (DEBUG_MODE == 1){
+                    printf(" %s ", pseudo[contratPropose.preneur -1]);
+                }
+                if (utilisateur != SANS_JOUEUR)
+                {
+                    afficheContrat(contratPropose, pseudo, 1);
+                }
+                else
+                {
+                    afficheContrat(contratPropose, pseudo, 2);
+                }
+                printf("\n");
+            }
+
+        }
     }
     return  contratPropose;
 }
 
-Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain)
+Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
 {
     Contrat nouveauContrat;
     setContrat(&nouveauContrat, SANS_JOUEUR, ZERO, SANS_COULEUR, NORMAL);
-    if (parle == SUD){
+    if (parle == utilisateur)
+    {
         /**< acquisition par l'utilisateur */
-        afficheMain(pCarteMain + (SUD - 1)*8);
-        printf("\nQue voulez vous anoncer :\n");
-        printf("1 : Passer\n2 : Encherir\n");
-        if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
-           printf("3 : coincher\n");
-        }
-        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
-           printf("3 : surcoinche\n");
-        }
-
-        int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
-        Couleur atoutEnchere;
-        switch(choix)
-        {
-        case 1 :
-            setContrat(&nouveauContrat, parle, 0, SANS_COULEUR, NORMAL);
-            break;
-        case 2 :
-            system("cls");
-            afficheMain(pCarteMain + (SUD - 1)*8);
-            printf("\nQuel atout voulez vous choisir :\n1 : Coeur\n2 : Pique\n3 : Carreau\n4 : Trefle\n5 : Tout atout\n6 : Sans atout\n");
-            choixCouleur = acquisitionEntierSansMessageAvecConsigne(1, 6, "");
-            switch(choixCouleur)
-            {
-            case 1 :
-                atoutEnchere = COEUR;
-                break;
-            case 2 :
-                atoutEnchere = PIQUE;
-                break;
-            case 3 :
-                atoutEnchere = CARREAU;
-                break;
-            case 4 :
-                atoutEnchere = TREFLE;
-                break;
-            case 5 :
-                atoutEnchere = TOUT_ATOUT;
-                break;
-            case 6 :
-                atoutEnchere = SANS_ATOUT;
-                break;
-
-            }
-            setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(dernierContrat.nbPoint+1, 170, "\nA combien de points voulez vous encherir (entre 80 et 150) \nEntrer 160 pour un caopot et 170 pour une generale:")/10),atoutEnchere,NORMAL);
-            break;
-        case 3 :
-            if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
-           setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, COINCHE);
-        }
-        else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
-            setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, SURCOINCHE);
-        }
-        else{
-            printf("Vous ne pouvez pas coincher ou surcoincher");
-        }
-
-            break;
-        default :
-            break;
-
-        }
-
+        nouveauContrat = proposeContratUtilisateur(dernierContrat, parle, pCarteMain + (parle -1)*8);
 
     }
-    else{
+    else
+    {
         /**< choix par l'ia d'un contrat */
         nouveauContrat = proposeContratIa(parle, pCarteMain + (parle - 1)*8, dernierContrat);
     }
@@ -276,40 +338,190 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
 }
 
 
-Joueur pli(Contrat contrat, Joueur parle, char *pseudo[], Carte *pCarteMain, int pointManche[], Carte cartePli[], Carte carteAncienPli[], Joueur dernierVainceur,int numPli)
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
 {
-    Joueur vainceur = SANS_JOUEUR;
+    Joueur vainceur = SANS_JOUEUR, parle = premierAJouer;
+    char message[TAILLE_MAXI_MESSAGE];
     int numCarte=0;
-    for (int i = 0; i < 4; i++){
-        if (parle == SUD){
+    for (int i = 0; i < 4; i++)
+    {
+        if (parle == utilisateur)
+        {
             /**< interface de pli Utilisateur */
-            numCarte=afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,0);
-            poseCarte(SUD,numCarte,pCarteMain+ 8*(SUD -1),cartePli,i,8-numPli);
-            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(SUD -1), contrat, "coucou", dernierVainceur,1);
+            numCarte = afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, "Entrer le numero de la carte que vous voulez jouer", utilisateur, premierAJouer, score, pointManche, 0);
         }
-        else{
+        else
+        {
             /**< interface de pli ordinateur */
+            numCarte  = choixCarteIA(parle, pCarteMain+ 8*(parle -1), cartePli, premierAJouer, contrat.atout,8-numPli);
+
+
+        }
+        poseCarte(parle, numCarte, pCarteMain+ 8*(parle -1), cartePli, 8-numPli);
+
+        /**< on regarde si une dame ou un roi d'atout vien d'etre jouer pour ajouter au tableau belote[] */
+
+
+        /**< affichage de la carte qui vien d'etre jouée */
+        genereMessage(message, parle, pseudo, cartePli[parle-1], 0, POSE_CARTE);
+        if ((cartePli[parle-1].couleur == contrat.atout || contrat.atout == TOUT_ATOUT) && (cartePli[parle-1].valeur == DAME ||cartePli[parle-1].valeur == ROI)){
+            belote[parle-1] += 1;
+            if (belote[parle-1]== 1){
+                strcat(message, " et anonce une Belote");
+            }
+            else if (belote[parle-1] == 2){
+                strcat(message, " et anonce une Rebelote");
+            }
+       }
+        if (utilisateur != SANS_JOUEUR)
+        {
+            afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, utilisateur, premierAJouer, score, pointManche, 1);
+        }
+        else if (DEBUG_MODE == 1)
+        {
+            printf("%s\n", message);
 
         }
         parle = joueurSuivant(parle);
+
     }
+    /**< Recherche un vainceur et ajout du nombre de point gagné au score du vainceur du nombre point gagné */
+    vainceur = vainqueurPli(cartePli, contrat.atout, premierAJouer);
+    int pointDuPli = pointPli(cartePli, contrat.atout, 4);
+    pointManche[vainceur -1] += pointDuPli;
+
+    /**< 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli */
+    if (numPli == 7)
+    {
+        pointManche[vainceur -1] += 10;
+    }
+
+    genereMessage(message, vainceur, pseudo, cartePli[parle-1], pointDuPli, RESULTAT_PLI);
+    if (utilisateur != SANS_JOUEUR)
+    {
+        afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message,utilisateur, premierAJouer, score, pointManche, 1);
+    }
+    else if (DEBUG_MODE == 1)
+    {
+        printf("%s\n\n", message);
+
+    }
+
+
     return vainceur;
 }
 
-int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int cartePosee,int carteRestante)
+int poseCarte (Joueur joueur,int numCarte, Carte *pMainJoueurs, Carte pli[],int carteRestante)
 {
     int retour=NULL;
     Carte carteAJouer;
     carteAJouer =  *((numCarte-1)+ pMainJoueurs);
-    afficheMain(pMainJoueurs);
 
     supprimeCarte(pMainJoueurs,carteRestante,numCarte-1);
     setCarte(pli+joueur-1,carteAJouer.valeur,carteAJouer.couleur);
     retour=1;
-
-    afficheMain(pMainJoueurs),
-    afficheMain(pli);
-    printf("\n\n\n\n");
-    getch();
     return retour;
+}
+
+
+char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int pointBelote[], int score[],char *pseudo[], Joueur utilisateur)
+{
+    char contratRempli = 0;
+    int pointPreneur = pointManche[contrat.preneur-1] + pointManche[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+    int pointAnoncePreneur = pointAnonce[contrat.preneur-1] + pointAnonce[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+    int pointBelotePreneur = pointBelote[contrat.preneur-1] + pointBelote[joueurSuivant(joueurSuivant(contrat.preneur))-1];
+
+    int pointDefendant = pointManche[joueurSuivant(contrat.preneur)-1] + pointManche[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+    int pointAnonceDefendant = pointAnonce[joueurSuivant(contrat.preneur)-1] + pointAnonce[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+    int pointBeloteDefendant = pointBelote[joueurSuivant(contrat.preneur)-1] + pointBelote[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1];
+
+    int totalPointPreneur = 0;
+    int totalPointDefandant = 0;
+
+    /**< On reche si le contrat est rampli */
+    if (contrat.nbPoint == 170) /**< cas ou un des joueur a pris un capot */
+    {
+        if (pointPreneur == 162)
+        {
+            contratRempli = 1;
+        }
+    }
+    else if (contrat.nbPoint == 180) /**< cas ou un des joueur a pris une générale */
+    {
+        if (pointManche[contrat.preneur-1] == 162)
+        {
+            contratRempli = 1;
+        }
+    }
+    else
+    {
+        if(pointPreneur >= 82 && pointPreneur + pointAnoncePreneur >= contrat.nbPoint) /**< Le contrat est rempli si le les point de l'équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces */
+        {
+            contratRempli = 1;
+        }
+
+    }
+
+    /**< on donne les point a chaque équipe en dans chaque cas */
+    if (contratRempli)
+    {
+        totalPointPreneur = pointPreneur + pointAnoncePreneur + pointBelotePreneur + contrat.nbPoint;
+        totalPointDefandant = pointDefendant + pointAnoncePreneur + pointBeloteDefendant;
+        if (contrat.coinche == COINCHE)
+        {
+            totalPointPreneur *= 2;
+            totalPointPreneur += pointAnonceDefendant;
+            totalPointDefandant = pointBeloteDefendant;
+
+        }
+        else if (contrat.coinche == SURCOINCHE)
+        {
+            totalPointPreneur *= 4;
+            totalPointPreneur += pointAnonceDefendant;
+            totalPointDefandant = pointBeloteDefendant;
+        }
+
+    }
+    else
+    {
+        totalPointPreneur = pointBelotePreneur;
+        totalPointDefandant = 162 + contrat.nbPoint + pointAnonceDefendant + pointAnoncePreneur + pointBeloteDefendant;
+        if (contrat.coinche == COINCHE)
+        {
+            totalPointDefandant *= 2;
+        }
+        else if (contrat.coinche == SURCOINCHE)
+        {
+            totalPointDefandant *= 4;
+        }
+
+    }
+    score[contrat.preneur - 1] += totalPointPreneur;
+    score[joueurSuivant(joueurSuivant(contrat.preneur)) - 1] += totalPointPreneur;
+    score[joueurSuivant(contrat.preneur)-1] += totalPointDefandant;
+    score[joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur)))-1] += totalPointDefandant;
+
+    /**< on affiche ce qui c'est passé */
+    char message[TAILLE_MAXI_MESSAGE];
+    if (contratRempli)
+    {
+        sprintf(message, "%s rempporte son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
+
+    }
+    else
+    {
+        sprintf(message, "%s echoue son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;4444L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
+    }
+    if (utilisateur != SANS_JOUEUR)
+    {
+        afficheMenuSelection("Resultat manche", message, 1);
+    }
+    else if (DEBUG_MODE == 1)
+    {
+        printf("%s\n", message);
+    }
+
+
+
+    return contratRempli;
 }
