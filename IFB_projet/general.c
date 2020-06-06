@@ -98,13 +98,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
         *(pStatistique + SUD - 1) +=1;
         if (utilisateur != SANS_JOUEUR)
         {
-            sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1] + score[SUD-1], score[EST-1] + score[OUEST-1]);
+            sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
             afficheSousMenus(message, "Gagne");
             getch();
         }
         else if (DEBUG_MODE == 1)
         {
-            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[SUD -1], pseudo[NORD-1], score[NORD-1] + score[SUD-1],pseudo[EST - 1], pseudo[OUEST -1], score[EST-1] + score[OUEST-1]);
+            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[SUD -1], pseudo[NORD-1], score[NORD-1],pseudo[EST - 1], pseudo[OUEST -1], score[EST-1]);
         }
 
     }
@@ -116,13 +116,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 
         if (utilisateur != SANS_JOUEUR)
         {
-            sprintf(message, "Domage vous perder la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1] + score[SUD-1], score[EST-1] + score[OUEST-1]);
+            sprintf(message, "Domage vous perder la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
             afficheSousMenus(message, "Defaite");
             getch();
         }
         else if (DEBUG_MODE == 1)
         {
-            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[EST - 1], pseudo[OUEST -1], score[EST-1] + score[OUEST-1], pseudo[SUD -1], pseudo[NORD-1], score[NORD-1] + score[SUD-1]);
+            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[EST - 1], pseudo[OUEST -1], score[EST-1],  pseudo[SUD -1], pseudo[NORD-1], score[NORD-1]);
         }
 
     }
@@ -130,6 +130,11 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
     /**< Lancement de la fonction qui écrit les score et me a jour les stat */
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
      printf("\nPartie finie \nPressez une touche pour continuer\n");
+     if (utilisateur != SANS_JOUEUR){
+            printf("Appuyer sur une touche pour continuer\n");
+            getch();
+        }
+
     }
     return nbManche;
 }
@@ -151,11 +156,17 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     int pointAnonce[4] = {0};
     int pointBelote[4] = {0};
 
+    char belote[4] = {0};/**< tableau qui stocke les anonce de chaque joueur, on y ajoute 1 pour le roi d'atout puis 1 pour la dame d'atout */
+
     /**< distribution des cartes */
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
         printf("\ndistribution des cartes\n");
+    }
+    /**< On trie les carte de l'utilisateur */
+    if(utilisateur != SANS_JOUEUR){
+        trieCarte(mainJoueur[utilisateur-1], 8, TOUT_ATOUT);
     }
 
 
@@ -166,6 +177,7 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     if (utilisateur != SANS_JOUEUR){
         printf("Appuyer sur une touche pour continuer\n");
         getch();
+        trieCarte(mainJoueur[utilisateur-1], 8, contrat.atout);
     }
 
     /**<plis */
@@ -186,7 +198,7 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
             {
                 setCarte(&cartePli[j], SANS_VALEUR, SANS_COULEUR);
             }
-            vainqueurPli = pli(contrat, vainqueurPli, pseudo, pMainJoueur, pointManche, pointAnonce, pointBelote, cartePli, carteDernierPli,score, utilisateur, i);
+            vainqueurPli = pli(contrat, vainqueurPli, pseudo, pMainJoueur, pointManche, pointAnonce, belote, cartePli, carteDernierPli,score, utilisateur, i);
             *(pStatistique + 3*4 + vainqueurPli - 1) += 1;
 
             for (int i = 0; i < 4; i++)
@@ -195,6 +207,12 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
             }
         }
         /**< Fin de manche et calcul des score */
+
+        for (int i = 0; i < 4; i++){/**< si un joueur a fait une belote rebelote il gagne 20 point */
+            if (belote[i] == 2){
+                pointBelote[i] += 20;
+            }
+        }
         /*printf("%d, %d, %d, %d, total : %d\n", pointManche[0], pointManche[1], pointManche[2], pointManche[3], pointManche[0]+ pointManche[1]+ pointManche[2]+ pointManche[3] );*/
         if (calculPointManche(contrat, pointManche, pointAnonce, pointBelote, score, pseudo, utilisateur)){
             *(pStatistique + 4*2 + contrat.preneur - 1) += 1;
@@ -205,6 +223,7 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
             *(pStatistique + 4*4 + joueurSuivant(contrat.preneur) - 1) += 1;
             *(pStatistique + 4*4 + joueurSuivant(joueurSuivant(joueurSuivant(contrat.preneur))) - 1) += 1;
         }
+
 
         if (utilisateur != SANS_JOUEUR){
             printf("Appuyer sur une touche pour continuer\n");
@@ -281,7 +300,10 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
         }
         else{
             if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
-                printf("Le contrat suivant a ete choisi pour la manche : %s  ", pseudo[contratPropose.preneur -1]);
+                printf("Le contrat suivant a ete choisi pour la manche :");
+                if (DEBUG_MODE == 1){
+                    printf(" %s ", pseudo[contratPropose.preneur -1]);
+                }
                 if (utilisateur != SANS_JOUEUR)
                 {
                     afficheContrat(contratPropose, pseudo, 1);
@@ -317,7 +339,7 @@ Contrat proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Car
 }
 
 
-Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], int pointBelote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
 {
     Joueur vainceur = SANS_JOUEUR, parle = premierAJouer;
     char message[TAILLE_MAXI_MESSAGE];
@@ -338,8 +360,20 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
         }
         poseCarte(parle, numCarte, pCarteMain+ 8*(parle -1), cartePli, 8-numPli);
 
+        /**< on regarde si une dame ou un roi d'atout vien d'etre jouer pour ajouter au tableau belote[] */
+
+
         /**< affichage de la carte qui vien d'etre jouée */
         genereMessage(message, parle, pseudo, cartePli[parle-1], 0, POSE_CARTE);
+        if ((cartePli[parle-1].couleur == contrat.atout || contrat.atout == TOUT_ATOUT) && (cartePli[parle-1].valeur == DAME ||cartePli[parle-1].valeur == ROI)){
+            belote[parle-1] += 1;
+            if (belote[parle-1]== 1){
+                strcat(message, " et anonce une Belote");
+            }
+            else if (belote[parle-1] == 2){
+                strcat(message, " et anonce une Rebelote");
+            }
+       }
         if (utilisateur != SANS_JOUEUR)
         {
             afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(utilisateur -1), contrat, message, utilisateur, premierAJouer, score, pointManche, 1);

@@ -41,7 +41,7 @@ int afficheMenuPrincipal(int type)
     if (type == 1){
         afficheMenuSelection("<>Menu Principal<>","1-nouvelle partie;2-leaderboard;3-statistiques;4-changement d'utilisateur;5-parametres;6-quitter",2);
 
-        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisisez une action :");
+        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisissez une des actions proposees dans le menu:");
         return retour;
     }
     return retour;
@@ -155,6 +155,9 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
             carteSelection  = acquisitionEntierSansMessageAvecConsigne(1, 8, "Quelle carte voulez vous jouer :");
             carteAJouer =  *(pCarteEnMain + carteSelection-1);
             retour = carteValide(carteAJouer,pli,atout,cartesEnMain, dernierVainqueur,SUD);
+            if (retour == 0){
+                printf("Les regles vous interdisent de jouer cette carte\n");
+            }
         }while (retour == 0);
     }else{
         carteSelection = 0 ;

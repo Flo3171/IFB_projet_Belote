@@ -4,9 +4,9 @@ int main(int argc, char *argv[])
     /**< CODE FINAL */
     srand(time(NULL));
     if(!DEBUG_MODE){
-            initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+            initialisation(48, 90); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
     }
-    /*menuPrincipal();*/
+    menuPrincipal();
     /**< FIN CODE FINAL */
 
     /*joue1000Partie(1000);*/
@@ -17,15 +17,15 @@ int main(int argc, char *argv[])
     /*menuPrincipal();*/
 
     /*afficheMenuPrincipal(0);*/
-    /*Carte pli[4];
-    pli[0].couleur = SANS_COULEUR;
-    pli[0].valeur = SANS_VALEUR;
-    pli[1].couleur = COEUR;
-    pli[1].valeur = DIX;
-    pli[2].couleur = SANS_COULEUR;
-    pli[2].valeur = SANS_VALEUR;
-    pli[3].couleur = SANS_COULEUR;
-    pli[3].valeur = SANS_VALEUR;
+    /*Carte pliA[4];
+    pliA[0].couleur = SANS_COULEUR;
+    pliA[0].valeur = SANS_VALEUR;
+    pliA[1].couleur = SANS_COULEUR;
+    pliA[1].valeur = SANS_VALEUR;
+    pliA[2].couleur = SANS_COULEUR;
+    pliA[2].valeur = SANS_VALEUR;
+    pliA[3].couleur = SANS_COULEUR;
+    pliA[3].valeur = SANS_VALEUR;
 
     Carte carteMain[8];
     carteMain[0].couleur = TREFLE;
@@ -51,10 +51,10 @@ int main(int argc, char *argv[])
     Contrat contrat;
     contrat.preneur = EST;
     contrat.nbPoint = 90;
-    contrat.atout = TOUT_ATOUT;
-    contrat.coinche = NORMAL;
+    contrat.atout = COEUR;
+    contrat.coinche = NORMAL;*/
 
-    afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate",SUD, EST, 1);
+    /*afficheInterfacePli(pli, pli, pseudo, carteMain, contrat, "pate",SUD, EST, 1);
     for (int i = 0; i < 8; i++){
         printf("%d\t",carteValide(carteMain[i], pli, contrat.atout, carteMain, EST, SUD));
     }*/
@@ -64,17 +64,12 @@ int main(int argc, char *argv[])
     supprimeCarte(carteMain, 8, 2);
     afficheMain(carteMain);*/
 
-    Carte mainJoueur[4][8] = {0};
+    /*Carte mainJoueur[4][8] = {0};
     Carte *pMainJoueur;
     pMainJoueur = &mainJoueur[0][0];
-    distribueCarte(pMainJoueur);
+    distribueCarte(pMainJoueur);*/
 
-    afficheMain(mainJoueur[0]);
-    trieCarte(mainJoueur[0], 8, COEUR);
-    afficheMain(mainJoueur[0]);
-    /*afficheMain(mainJoueur[1]);
-    afficheMain(mainJoueur[2]);
-    afficheMain(mainJoueur[3]);*/
+
     /**< victor a thor */
     /**for (Joueur parle = dealer; parle != dealer; joueurSuivant(parle)){
 
@@ -133,6 +128,15 @@ int main(int argc, char *argv[])
     /*afficheMain(carteMain);
     afficheMain(pli);
     printf("Le joueur joue la carte :%d\n", choixCarteIA(OUEST, carteMain, pli, NORD, COEUR, 8));*/
+
+
+    /*afficheMain(mainJoueur[0]);
+    afficheMain(mainJoueur[1]);
+    afficheMain(mainJoueur[2]);
+    afficheMain(mainJoueur[3]);
+    int point[4] = {0};
+    char belote[4] = {0};
+    pli(contrat, SUD, pseudo, pMainJoueur, point, point, belote, pliA, pliA, point, SUD, 0);*/
 
 
     /*char message[TAILLE_MAXI_MESSAGE];

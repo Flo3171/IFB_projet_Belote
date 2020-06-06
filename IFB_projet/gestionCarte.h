@@ -116,6 +116,18 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
  void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout);
 
+ /** \brief permet de savoir si une carte doit etre placée avant lors du trie des cartes
+  *
+  * \param Carte carteRefference : carte par raport a laquelle on compare
+  * \param Carte carteCompare : carte que l'on compare
+  * \param Couleur atout : couleur de l'atout dans la manche
+  * \return char : renvoie 1 si la catre doit etre placée avant 0 sinon
+  *
+  */
+
+char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout);
+
+
 
 
 

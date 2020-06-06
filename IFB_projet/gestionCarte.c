@@ -384,11 +384,41 @@ void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
     /**< On réalise un tri a bulle pour mettre atout du plus fort au moin fort au début de la main puis les carte par famille */
     for (int iterationCarte = 0; iterationCarte < nbCarte; iterationCarte++){
         for (int iterationCompare = iterationCarte +1; iterationCompare < nbCarte; iterationCompare ++ ){
-            if(forceCarte(tableauCarte[iterationCompare], atout, SANS_COULEUR) > forceCarte(tableauCarte[iterationCarte], atout, SANS_COULEUR)){/**< Si la carte dois aller devant dans le tableau */
+            if(cartePlaceAvant(tableauCarte[iterationCarte], tableauCarte[iterationCompare], atout)){/**< Si la carte dois aller devant dans le tableau */
                 tampon = tableauCarte[iterationCarte];
                 tableauCarte[iterationCarte] = tableauCarte[iterationCompare];
                 tableauCarte[iterationCompare] = tampon;
             }
         }
     }
+}
+
+char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+{
+    char aPlacerAvant = 0;
+
+    if (carteRefference.couleur == carteCompare.couleur){/**< Les deux carte sont elle de la meme famille */
+        if (forceCarte(carteCompare, atout, carteCompare.couleur) > forceCarte(carteRefference, atout, carteCompare.couleur)){
+            aPlacerAvant = 1;
+        }
+        else{
+            aPlacerAvant = 0;
+        }
+    }
+    else {
+        if (carteCompare.couleur == atout){/**< si carteCompate est un atout */
+            aPlacerAvant = 1;
+        }
+        else{
+            if (carteCompare.couleur < carteRefference.couleur){/**< si la couleur de la carteCompare est devant celle de carteRefference dans l'énumération(ordre arbitraire) */
+                aPlacerAvant = 1;
+            }
+            else{
+                aPlacerAvant = 0;
+            }
+        }
+
+    }
+
+    return aPlacerAvant;
 }

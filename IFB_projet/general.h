@@ -74,7 +74,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
   * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
   * \param int pointManche[] : tableau contenant les point de chaque joueur dans la manche
   * \param int pointAnonce[] : tableau contenant les point d'anonce de chaque joueur
-  * \param int pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur
+  * \param char belote[] : tableau contenant les ancone belote rebelote de chaque joueur
   * \param Carte cartePli[] : tableau contenant les 4 carte du pli
   * \param Carte carteAncienPli[] : tableau contenant les carte du pli précédent
   * \param int score[] : tableau qui contient les score de la partie
@@ -83,7 +83,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
   *
   */
 
-Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], int pointBelote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli);
+Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli);
 
 /** \brief fonction qui verifie la validité d'une carte est la pose
  *
