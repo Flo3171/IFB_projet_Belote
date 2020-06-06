@@ -1,7 +1,18 @@
 #include "main.h"
 int main(int argc, char *argv[])
 {
-    /*initialisation(50, 91);  definit la taille de la fennetre a 50 lignes et 91 colones */
+
+    /**< CODE FINAL */
+    srand(time(NULL));
+    if(!DEBUG_MODE){
+            initialisation(50, 91); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+    }
+    /*menuPrincipal();*/
+    /**< FIN CODE FINAL */
+
+    /*joue1000Partie(1000);*/
+
+
     /* DEBUG ET TEST DES FONTIONS */
 
 
@@ -39,12 +50,15 @@ int main(int argc, char *argv[])
     supprimeCarte(carteMain, 8, 2);
     afficheMain(carteMain);*/
 
-    /*Carte mainJoueur[4][8] = {0};
+    Carte mainJoueur[4][8] = {0};
     Carte *pMainJoueur;
     pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
+
     afficheMain(mainJoueur[0]);
-    afficheMain(mainJoueur[1]);
+    trieCarte(mainJoueur[0], 8, COEUR);
+    afficheMain(mainJoueur[0]);
+    /*afficheMain(mainJoueur[1]);
     afficheMain(mainJoueur[2]);
     afficheMain(mainJoueur[3]);*/
     /**< victor a tord */
@@ -125,8 +139,7 @@ int main(int argc, char *argv[])
     printf("|%d|",pointPli(pli,TREFLE));
     printf("|%d|",pointPli(pli,CARREAU));*/
 
-<<<<<<< Updated upstream
-=======
+
     Carte mainJoueur[4][8];
 
     Carte *pMainJoueur = &mainJoueur[0][0];
@@ -149,8 +162,53 @@ int main(int argc, char *argv[])
         }*/
     getch();
     menuPrincipal();
->>>>>>> Stashed changes
-    /**<CODDE VRAIMENT UTLILE (ne pas supprimer)*/
+
+    menuPrincipal();*/
+    /*
+    afficheMain(pMainJoueur);
+    afficheMain(pMainJoueur+3*8+5);
+    printf("%d",choixCarteIA(OUEST,pMainJoueur,pMainJoueur+3*8+5,NORD,COEUR,8));
+
+    */
+    /*char message[TAILLE_MAXI_MESSAGE];
+    sprintf(message, ";%s rempporte son contrat et gagne %d ;points ses adversaires gagnent %d points", "NORD", 800, 500);
+
+    afficheMenuSelection("Resultat manche", message, 2);
+    */
+
+    FILE *fichier=NULL, *fichier2=NULL;
+
+    int ligne=0;
+    char pseudo[21]="sroyce";
+    char *pPseudo=&pseudo[0];
+
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
+    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
+
+    if (fichier == NULL){
+        printf("ptn c'est la merde!");
+    }else{
+        ligne=ecriturePseudo(pPseudo,fichier);
+        printf("%d\n",ligne);
+        ecrireStatistique(fichier,ligne,1010,1);
+        printf("fin1\n");
+        ecrireStatistique(fichier,ligne,10050,2);
+        printf("fin2\n");
+        ecrireStatistique(fichier,ligne,80,3);
+        printf("fin3\n");
+    }
+
+    fclose(fichier);
+
+    if (fichier2 == NULL){
+        printf("ptn c'est la merde!!!");
+    }else{
+        ecrireLeaderboard(fichier2,pPseudo,11);
+    }
+    fclose(fichier2);
+
+
+    /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 
     return 0;
 }

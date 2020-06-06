@@ -31,11 +31,14 @@ void nouvellePartie(char *pseudo[]);
  * \param char *pseudo[] : tableau de pointeur contenant les pseudo des différent joueurs
  * \param int score[] : tableau contenant les scores des joueur
  * \param Joueur dealer : joueur qui distibue les cartes
- * \return void
+ * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \param int *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur
+ * \return char : 0 si tout le monde passe, 1 si la manche a bien lieu
  *
  */
 
-void manche(char *pseudo[], int score[], Joueur dealer);
+char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique);
+
 
 /** \brief gere l'anoce et la surenchère des contat par les joueur
  *

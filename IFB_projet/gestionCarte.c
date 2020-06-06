@@ -53,14 +53,6 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
     setCarte(&carte[nbCarte -1], SANS_VALEUR, SANS_COULEUR);
 }
 
-<<<<<<< HEAD
-/**Joueur vainqueurPli(int couleur, int valeur)
- je ne sais pas si je dois utiliser "int" en type de variable...
-{
-    Couleur joueurNord_c, joueurEst_c, joueurSud-c, joueurOuest_c;
-    Valeur joueurNord_v, joueurEst_v, joueurSud_v, joueurOuest_v;
-    /< Il y a sûrement une meilleure facon de nommer les variables, voir d'utiliser une autre structure
-=======
 Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
 {
     Joueur vainqueur = SANS_JOUEUR;
@@ -116,7 +108,6 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
 
     }
     else if (atout == TOUT_ATOUT){/**< si on est en tout atout mais que la couleur de la carte n'est pa la couleur de l'entame alors la carte sera plus faible que toutes les cartees dans la bonne couleur */
->>>>>>> be2b24e67843c6c21e82f115a1b7437c77f847b3
 
         switch(carteACalculer.valeur)
         {
@@ -256,19 +247,6 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
     }
 
 
-<<<<<<< HEAD
-    tableauDeCarte[0].Valeur = joueurNord_v;
-    tableauDeCarte[0].Couleur = joueurNord_c;
-    tableauDeCarte[1].Valeur = joueurEst_v;
-    tableauDeCarte[1].Couleur = joueurEst_c;
-    tableauDeCarte[2].Valeur = joueurSud_v;
-    tableauDeCarte[2].Couleur = joueurSud_c;
-    tableauDeCarte[3].Valeur = joueurOuest_v;
-    tableauDeCarte[3].Couleur = joueurOuest_c;
-    PAS FINI Ensuite j'applique la fonction forceCarte pour déterminer qui remporte le pli
-
-} */
-=======
     return (float)nbCatreBatue/(NB_TOATAL_CARTE -1);
 
 }
@@ -360,4 +338,38 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
     return trouve;
 }
->>>>>>> be2b24e67843c6c21e82f115a1b7437c77f847b3
+
+
+float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+{
+    float somme = 0, pireTA = 196.0/31.0, meilleurTA = 244.0/31.0, pire = 135.0/31, meilleur = 220.0/31;
+    for(int i = 0; i< nbCarte; i++){
+        somme = somme + forceCarte(*(tableauCarte + i), atout, (*(tableauCarte+i)).couleur);
+    }
+    if (atout == TOUT_ATOUT || atout == SANS_ATOUT){
+        somme = ajusteEchelle(somme, pireTA, meilleurTA, 0, 1);
+    }
+    else {
+        somme = ajusteEchelle(somme, pire, meilleur, 0, 1);
+    }
+
+    return somme;
+
+}
+
+void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+{
+    Carte tampon;
+    setCarte(&tampon, SANS_VALEUR, SANS_COULEUR);
+
+    /**< On rÃ©alise un tri a bulle pour mettre atout du plus fort au moin fort au dÃ©but de la main puis les carte par famille */
+    for (int iterationCarte = 0; iterationCarte < nbCarte; iterationCarte++){
+        for (int iterationCompare = iterationCarte +1; iterationCompare < nbCarte; iterationCompare ++ ){
+            if(forceCarte(tableauCarte[iterationCompare], atout, SANS_COULEUR) > forceCarte(tableauCarte[iterationCarte], atout, SANS_COULEUR)){/**< Si la carte dois aller devant dans le tableau */
+                tampon = tableauCarte[iterationCarte];
+                tableauCarte[iterationCarte] = tableauCarte[iterationCompare];
+                tableauCarte[iterationCompare] = tampon;
+            }
+        }
+    }
+}
