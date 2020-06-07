@@ -146,10 +146,11 @@ void joue1000Partie(int nbPartie)
 {
     int statisitique[5][4] = {0};
     int *pSatistique = &statisitique[0][0];
+    int infoEcriture[3] = {0};
     char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
     int nbManche = 0;
     for (int noPartie = 1; noPartie <= nbPartie; noPartie ++){
-        nbManche += nouvellePartie(pseudo, SANS_JOUEUR, pSatistique);
+        nbManche += nouvellePartie(pseudo, SANS_JOUEUR, pSatistique, infoEcriture);
     }
     system("cls");
     printf("%d parties viennent d'etre jouees entre 4 ia. \nVoici des statistiques qui permettent de tester les fonctions d'ia \npour determiner lesquelles sont les plus efficaces sur un grand nombre de parties\n", nbPartie);

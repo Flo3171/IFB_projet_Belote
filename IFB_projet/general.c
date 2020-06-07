@@ -15,8 +15,8 @@ void menuPrincipal()
     fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
     fichier2= fopen("sauvegarde/leaderboard.csv","r+");
     if(fichier == NULL || fichier2 == NULL){
-        fichier == NULL;
-        fichier2==NULL;
+        fichier = NULL;
+        fichier2 = NULL;
     }
 
     char pseudo[4][TAILLE_MAXI_PESEUDO+1];
@@ -42,8 +42,14 @@ void menuPrincipal()
         /* contrôle d'acquisition avec réaffichage de l'interfface */
         switch(choix)
         {
-        case 1 : /*executer la fonction nouvelle partie */
-            nouvellePartie(pPseudo, SUD, pStatistique);
+        case 1 :{/*executer la fonction nouvelle partie */
+            int infoEcritureFichier[3] = {0}, nbVictoire = 0;
+            nouvellePartie(pPseudo, SUD, pStatistique, infoEcritureFichier);
+            nbVictoire = ecrireStatistique(fichier,ligne,infoEcritureFichier[2],1);
+                    ecrireStatistique(fichier,ligne,infoEcritureFichier[1],2);
+                    ecrireStatistique(fichier,ligne,infoEcritureFichier[0],3);
+                    ecrireLeaderboard(fichier2,pseudo[SUD-1],nbVictoire);
+        }
             break;
         case 2 : /*executer la fonction leaderboard */
 
@@ -71,7 +77,7 @@ void menuPrincipal()
     while (sortie);
 }
 
-int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
+int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
 {
 
     char message[TAILLE_MAXI_MESSAGE];
@@ -109,11 +115,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 
     /**< Fin de partie */
     /**< affichage des resultat */
+    infoEcritureFicher[2] += score[SUD-1];
     if (score[NORD-1] > 701)
     {
         /**< L'utilisatuer et nord gagnent */
         *(pStatistique + NORD - 1) += 1;
         *(pStatistique + SUD - 1) +=1;
+        infoEcritureFicher[1] += 1;
         if (utilisateur != SANS_JOUEUR)
         {
             sprintf(message, "Felicitations !! Vous remportez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
@@ -153,6 +161,7 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
         }
 
     }
+    infoEcritureFicher[0] = nbManche;
     return nbManche;
 }
 

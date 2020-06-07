@@ -22,10 +22,11 @@ void menuPrincipal ();
  * \param char *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs
  * \param Joueuer utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
  * \param int *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur
+ * \param int infoEcritureFichier[] : tableau contenant les info qui devront etre écrite dans le fichier
  * \return int : nombre de manche jusqu'a la victoir d'une équipe
  *
  */
-int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique);
+int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[]);
 
 
 /** \brief lancement d'une manche

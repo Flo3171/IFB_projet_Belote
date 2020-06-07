@@ -243,7 +243,7 @@ int main(int argc, char *argv[])
     /*fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");*/
     /*fichier2= fopen("sauvegarde/leaderboard.csv","r+");*/
 
-    if (fichier == NULL){
+    /*if (fichier == NULL){
         printf("ptn c'est la merde!");
     }else{
         ligne=ecriturePseudo(pPseudo,fichier);
