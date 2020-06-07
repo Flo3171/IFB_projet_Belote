@@ -331,7 +331,7 @@ void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
     printf("\t|$| %s |$|\n",messageCentre[15]);
     printf("\t|#| %s |#|\n",messageCentre[16]);
     printf("\t|$| %s |$|\n",messageCentre[17]);
-    printf("\t|#|                                |#|\n");
+    printf("\t|#| %s |#|\n",messageCentre[18]);
     printf("\t|$|<__>~?#?~?#?~?#~~#?~?#?~?#?~<__>|$|\n");
     printf("\t|\\¤?#?#?}}=======----======={{?#?#?¤/|\n");
     printf("\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n");

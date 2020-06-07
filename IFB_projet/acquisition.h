@@ -53,5 +53,13 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[]);
  */
 
 void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction[],int type);
+
+/** \brief fonction qui fait l'acquisition securisée d'un nombre
+ *
+ * \return renvoie le nombre saisi par l'utilisateur et -1 si aucun nombre a été saisi
+ *
+ */
+ int acquisitionEntierSecurise();
+
 #endif // ACQUISITION_H_INCLUDED
 

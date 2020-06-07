@@ -35,11 +35,18 @@ void menuPrincipal()
             nouvellePartie(pPseudo, SUD, pStatistique);
             break;
         case 2 : /*executer la fonction leaderboard */
+                leaderboard(NULL);
             break;
         case 3 : /*executer la fonction statistiques */
-            joue1000Partie(1000);
+            if (DEBUG_MODE==0){
+                    joue1000Partie(1000);
+            }else{
+                leaderboard(NULL);
+            }
             break;
         case 4 : /*executer la fonction changement d'utilisateur */
+            acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez un nouveau joueur",1);
+            ecriturePseudo(pseudo[SUD-1],NULL);
             break;
         case 5 :
             parametre(pPseudo);

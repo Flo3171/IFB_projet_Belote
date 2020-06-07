@@ -21,3 +21,48 @@ void parametre(char *pseudo[])
     }while(sortie == 0);
 }
 
+int leaderboard(FILE *fichier)
+{
+    char listeDesScores[300]="\0",pseudo[21]="\0",score[4];
+    int acquisition=0,retour=0;
+
+    for(int ligne=0 ; ligne<10 ; ligne++){
+        strcat(listeDesScores,"#");
+        itoa(ligne+1,score,10);
+        strcat(listeDesScores,score);
+        strcat(listeDesScores," ");
+
+        fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+        fscanf(fichier,"%s",pseudo);
+        strcat(listeDesScores,pseudo);
+
+        strcat(listeDesScores," score: ");
+
+        fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
+        fscanf(fichier,"%s",score);
+        strcat(listeDesScores,score);
+        listeDesScores[strlen(listeDesScores)]=' ;';
+    }
+
+    while(retour !=1){
+        afficheMenuSelection("leaderboard","1-Top 5 des champions ;2-Top 10 des champions ;3-quitter ;;choisissez le classement:",2);
+        acquisition=acquisitionEntierSecurise();
+
+        while(acquisition != 1 && acquisition != 2 && acquisition !=3 ){
+            acquisition=acquisitionEntierSecurise();
+        }
+        switch(acquisition){
+            case 1: afficheMenuSelection("leaderboard",listeDesScores,3);
+                    getch();
+                break;
+            case 2: afficheMenuSelection("leaderboard",listeDesScores,1);
+                    getch();
+                break;
+            default : retour=1;
+                break;
+        }
+    }
+    return 0;
+}
+
+

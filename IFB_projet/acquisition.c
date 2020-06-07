@@ -81,3 +81,20 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
 
     }
  }
+
+ int acquisitionEntierSecurise()
+ {
+     char num[50];
+    int NB=0;
+
+    fgets(num,50,stdin);
+    if(num[0]=='0'){
+        NB=strtol(num,NULL,10);
+    }else{
+        NB=strtol(num,NULL,10);
+        if(NB==0){
+            NB=-1;
+        }
+    }
+    return NB;
+ }
