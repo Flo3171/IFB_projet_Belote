@@ -238,10 +238,10 @@ int main(int argc, char *argv[])
     /*FILE *fichier=NULL, *fichier2=NULL;
     int ligne=0;
     char pseudo[21]="sroyce";
-    char *pPseudo=&pseudo[0];
+    char *pPseudo=&pseudo[0];*/
 
-    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
-    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
+    /*fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");*/
+    /*fichier2= fopen("sauvegarde/leaderboard.csv","r+");*/
 
     if (fichier == NULL){
         printf("ptn c'est la merde!");
@@ -258,8 +258,9 @@ int main(int argc, char *argv[])
     }
 
     fclose(fichier);
+    */
+    /*if (fichier2 == NULL){
 
-    if (fichier2 == NULL){
         printf("ptn c'est la merde!!!");
     }else{
         ecrireLeaderboard(fichier2,pPseudo,17);

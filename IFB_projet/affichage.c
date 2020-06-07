@@ -39,9 +39,9 @@ int afficheMenuPrincipal(int type)
     }
 
     if (type == 1){
-        afficheMenuSelection("<>Menu Principal<>","1-nouvelle partie;2-leaderboard;3-statistiques;4-changement d'utilisateur;5-parametres;6-quitter",2);
+        afficheMenuSelection("<>Menu Principal<>","1-Nouvelle partie;2-Leaderboard;3-Statistiques;4-Jouer 1000 partie;5-Changement d'utilisateur;6-Parametres;7-Quitter",2);
 
-        retour = acquisitionEntierSansMessageAvecConsigne(1,6,"Choisissez une des actions proposees dans le menu:");
+        retour = acquisitionEntierSansMessageAvecConsigne(1,7,"Choisissez une des actions proposees dans le menu:");
         return retour;
     }
     return retour;
@@ -120,7 +120,7 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
     printf("|	|_______|							|_______|	 |\n");
     printf("|											 |\n");
     printf("| _________________________              _______               _________________________ |\n");
-    printf("||Score :                  |            |%s|             |Point dans la manche :   ||\n", pliFormate[2][1]);
+    printf("||Score :                  |            |%s|             |Points dans la manche :  ||\n", pliFormate[2][1]);
     printf("||_________________________|            |       |             |_________________________||\n");
     printf("||   Equipe   |   Equipe   |            |%s|             |   Equipe   |   Equipe   ||\n", pliFormate[2][0]);
     printf("||  Latitude: | Longitude: |            |_______|             |  Latitude: | Longitude: ||\n");
@@ -347,13 +347,13 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
         miniContrat = dernierContrat.nbPoint +10;
     }
     char message[TAILLE_MAXI_MESSAGE];
-        printf("\nQue voulez vous anoncer :\n");
+        printf("\nQue voulez vous annoncer :\n");
         printf("1 : Passer\n2 : Encherir\n");
         if (dernierContrat.nbPoint > 0 && (dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle))))){
-           printf("3 : coincher\n");
+           printf("3 : Coincher\n");
         }
         else if (dernierContrat.nbPoint > 0 && dernierContrat.coinche == COINCHE && (dernierContrat.preneur == parle || dernierContrat.preneur == joueurSuivant(joueurSuivant(parle)))){
-           printf("3 : surcoinche\n");
+           printf("3 : Surcoincher\n");
         }
 
         int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
@@ -390,7 +390,7 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
                 break;
 
             }
-            sprintf(message, "\nA combien de points voulez vous encherir (entre %d et 160) \nEntrer 170 pour un caopot et 180 pour une generale:", miniContrat);
+            sprintf(message, "\nA combien de points voulez vous encherir (entre %d et 160) \nEntrez 170 pour un capot et 180 pour une generale:", miniContrat);
             setContrat(&nouveauContrat, parle,10* (acquisitionEntierSansMessageAvecConsigne(miniContrat, 180, message)/10),atoutEnchere,NORMAL);
             break;
         case 3 :
