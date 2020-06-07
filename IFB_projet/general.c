@@ -43,20 +43,22 @@ void menuPrincipal()
         switch(choix)
         {
         case 1 :{/*executer la fonction nouvelle partie */
-            int infoEcritureFichier[3] = {0}, nbVictoire = 0;
-            nouvellePartie(pPseudo, SUD, pStatistique, infoEcritureFichier);
-            nbVictoire = ecrireStatistique(fichier,ligne,infoEcritureFichier[2],1);
-                    ecrireStatistique(fichier,ligne,infoEcritureFichier[1],2);
+                int infoEcritureFichier[3] = {0}, nbVictoire = 0;
+                nouvellePartie(pPseudo, SUD, pStatistique, infoEcritureFichier);
+                nbVictoire = ecrireStatistique(fichier,ligne,infoEcritureFichier[1],1);
+                ecrireStatistique(fichier,ligne,infoEcritureFichier[2],2);
+                if(infoEcritureFichier[2]==1){
                     ecrireStatistique(fichier,ligne,infoEcritureFichier[0],3);
-                    ecrireLeaderboard(fichier2,pseudo[SUD-1],nbVictoire);
+                }
+                ecrireLeaderboard(fichier2,pseudo[SUD-1],nbVictoire);
         }
             break;
         case 2 : /*executer la fonction leaderboard */
 
-            leaderboard(NULL);
+            leaderboard(fichier2);
             break;
         case 3 : /*executer la fonction statistiques */
-            leaderboard(NULL);
+            statistiqueJoueur(fichier,ligne);
             break;
         case 4 :
             joue1000Partie(1000);
@@ -115,13 +117,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int in
 
     /**< Fin de partie */
     /**< affichage des resultat */
-    infoEcritureFicher[2] += score[SUD-1];
+    infoEcritureFicher[2] = score[SUD-1];
     if (score[NORD-1] > 701)
     {
         /**< L'utilisatuer et nord gagnent */
         *(pStatistique + NORD - 1) += 1;
         *(pStatistique + SUD - 1) +=1;
-        infoEcritureFicher[1] += 1;
+        infoEcritureFicher[1] = 1;
         if (utilisateur != SANS_JOUEUR)
         {
             sprintf(message, "Felicitations !! Vous remportez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
