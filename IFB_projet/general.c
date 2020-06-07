@@ -18,7 +18,7 @@ void menuPrincipal()
 
     afficheMenuPrincipal(0);
 
-    acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez votre pseudo:",0);
+    acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisissez votre pseudo:",0);
     char *pPseudo[4];
     for(int i=0; i<4; i++)
     {
@@ -35,20 +35,19 @@ void menuPrincipal()
             nouvellePartie(pPseudo, SUD, pStatistique);
             break;
         case 2 : /*executer la fonction leaderboard */
-                leaderboard(NULL);
+            leaderboard(NULL);
             break;
         case 3 : /*executer la fonction statistiques */
-            if (DEBUG_MODE==0){
-                    joue1000Partie(1000);
-            }else{
-                leaderboard(NULL);
-            }
+            leaderboard(NULL);
             break;
-        case 4 : /*executer la fonction changement d'utilisateur */
-            acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez un nouveau joueur",1);
+        case 4 :
+            joue1000Partie(1000);
+            break;
+        case 5 : /*executer la fonction changement d'utilisateur */
+            acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisissez un nouveau joueur",1);
             ecriturePseudo(pseudo[SUD-1],NULL);
             break;
-        case 5 :
+        case 6 :
             parametre(pPseudo);
             break;
         default : /*executer la fonction quitter*/
@@ -68,9 +67,9 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
     if (utilisateur != SANS_JOUEUR)
     {
         system("cls");
-        sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinche.;Vous etes dans l'equipe Longitude, votre allie est %s et vous jouez contre l'equipe Latitude qui est composee de %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
+        sprintf(message, "Bonjour %s, vous allez commencer une partie de Belote coinchee.;Vous etes dans l'equipe Longitude, votre allie est %s et vous jouez contre l'equipe Latitude qui est composee de %s et %s.;Bonne chance",pseudo[SUD-1],pseudo[NORD-1],pseudo[EST-1],pseudo[OUEST-1] /*pseudo+(EST-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(NORD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(SUD-1)*(TAILLE_MAXI_PESEUDO+1), pseudo+(OUEST-1)*(TAILLE_MAXI_PESEUDO+1)*/);
         afficheMenuSelection("Debut de la partie",message,1);
-        printf("appyer sur une touche pour continuer");
+        printf("appuyer sur une touche pour continuer");
         getch();
     }
     else if(DEBUG_MODE == 1)
@@ -104,13 +103,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
         *(pStatistique + SUD - 1) +=1;
         if (utilisateur != SANS_JOUEUR)
         {
-            sprintf(message, "Felicitation vous remportez la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
+            sprintf(message, "Felicitations !! Vous remportez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
             afficheSousMenus(message, "Gagne");
             getch();
         }
         else if (DEBUG_MODE == 1)
         {
-            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[SUD -1], pseudo[NORD-1], score[NORD-1],pseudo[EST - 1], pseudo[OUEST -1], score[EST-1]);
+            printf("%s et %s remportent la partie avec %d points et %s et %s perdent avec %d points\n",pseudo[SUD -1], pseudo[NORD-1], score[NORD-1],pseudo[EST - 1], pseudo[OUEST -1], score[EST-1]);
         }
 
     }
@@ -122,13 +121,13 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
 
         if (utilisateur != SANS_JOUEUR)
         {
-            sprintf(message, "Domage vous perder la partie avec %s, vous avez ateint un total de %d point et vos advresaire ont %d point", pseudo[NORD-1], score[NORD-1], score[EST-1]);
+            sprintf(message, "Dommage !! Vous perdez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
             afficheSousMenus(message, "Defaite");
             getch();
         }
         else if (DEBUG_MODE == 1)
         {
-            printf("%s et %s remportent la partie avec %d point et %s et %s perdent avec %d points\n",pseudo[EST - 1], pseudo[OUEST -1], score[EST-1],  pseudo[SUD -1], pseudo[NORD-1], score[NORD-1]);
+            printf("%s et %s remportent la partie avec %d points et %s et %s perdent avec %d points\n",pseudo[EST - 1], pseudo[OUEST -1], score[EST-1],  pseudo[SUD -1], pseudo[NORD-1], score[NORD-1]);
         }
 
     }
@@ -137,7 +136,6 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique)
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
      printf("\nPartie finie \nPressez une touche pour continuer\n");
      if (utilisateur != SANS_JOUEUR){
-            printf("Appuyer sur une touche pour continuer\n");
             getch();
         }
 
@@ -167,7 +165,7 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     Carte *pMainJoueur = &mainJoueur[0][0];
     distribueCarte(pMainJoueur);
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
-        printf("\ndistribution des cartes\n");
+        printf("\nDistribution des cartes\n");
     }
     /**< On trie les carte de l'utilisateur */
     if(utilisateur != SANS_JOUEUR){
@@ -249,7 +247,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
     Contrat contratPropose, nouveauContrat;
     setContrat(&contratPropose, SANS_JOUEUR, ZERO, SANS_COULEUR, NORMAL);
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
-        printf("\nDebut de la phase d'anonce des contrat \n");
+        printf("\nDebut de la phase d'annonce des contrats \n");
     }
     while (nbPasse < 3)
     {
@@ -301,7 +299,7 @@ Contrat annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur 
     if (utilisateur != SANS_JOUEUR || DEBUG_MODE == 1){
         if (contratPropose.nbPoint == 0)
         {
-            printf("\nTout les joueur on passe, on redistribue les carte\n");
+            printf("\nTous les joueurs ont passe, on redistribue les cartes\n");
 
         }
         else{
@@ -355,7 +353,7 @@ Joueur pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteM
         if (parle == utilisateur)
         {
             /**< interface de pli Utilisateur */
-            numCarte = afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, "Entrer le numero de la carte que vous voulez jouer", utilisateur, premierAJouer, score, pointManche, 0);
+            numCarte = afficheInterfacePli(carteAncienPli, cartePli, pseudo, pCarteMain + 8*(parle -1), contrat, "Entrez le numero de la carte que vous voulez jouer", utilisateur, premierAJouer, score, pointManche, 0);
         }
         else
         {
@@ -512,12 +510,12 @@ char calculPointManche(Contrat contrat, int pointManche[],int pointAnonce[],int 
     char message[TAILLE_MAXI_MESSAGE];
     if (contratRempli)
     {
-        sprintf(message, "%s rempporte son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
+        sprintf(message, "%s remporte son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
 
     }
     else
     {
-        sprintf(message, "%s echoue son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;4444L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
+        sprintf(message, "%s echoue son contrat et gagne %d points ;Ses adversaires gagnent %d points. ;L'equipe Longitude a %d points et l'equipe Latitude en a %d", pseudo[contrat.preneur-1], totalPointPreneur, totalPointDefandant, score[NORD -1], score[EST-1]);
     }
     if (utilisateur != SANS_JOUEUR)
     {

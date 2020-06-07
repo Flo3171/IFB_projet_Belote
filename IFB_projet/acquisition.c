@@ -46,6 +46,7 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
     char pseudo[100];
     int controle=0;
     afficheSousMenus(instruction,"pseudo");
+    printf("\t");
     if(type==1){
         fgets(pseudo,99,stdin);
     }

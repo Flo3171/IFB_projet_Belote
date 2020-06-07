@@ -53,9 +53,11 @@ int leaderboard(FILE *fichier)
         }
         switch(acquisition){
             case 1: afficheMenuSelection("leaderboard",listeDesScores,3);
+                    printf("Pressez une touche pour continuer\n");
                     getch();
                 break;
             case 2: afficheMenuSelection("leaderboard",listeDesScores,1);
+                    printf("Pressez une touche pour continuer\n");
                     getch();
                 break;
             default : retour=1;
