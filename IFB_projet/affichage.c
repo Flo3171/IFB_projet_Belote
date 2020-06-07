@@ -357,7 +357,7 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
         }
 
         int choix = acquisitionEntierSansMessageAvecConsigne(1, 3, ""), choixCouleur;
-        Couleur atoutEnchere;
+        Couleur atoutEnchere = SANS_COULEUR;
         switch(choix)
         {
         case 1 :

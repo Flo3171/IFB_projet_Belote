@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
         ecrireLeaderboard(fichier2,pPseudo,13);
         leaderboard(fichier2);
     }
-    fclose(fichier2);
+    fclose(fichier2);*/
 
 
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
