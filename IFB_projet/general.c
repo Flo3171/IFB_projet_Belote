@@ -7,9 +7,17 @@ void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 
 void menuPrincipal()
 {
-    int choix, sortie=1;
+    int choix, sortie=1,ligne=0;
     int statistique[5][4] = {0};
     int *pStatistique = &statistique[0][0];
+
+    FILE *fichier=NULL, *fichier2=NULL;
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
+    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
+    if(fichier == NULL || fichier2 == NULL){
+        fichier == NULL;
+        fichier2==NULL;
+    }
 
     char pseudo[4][TAILLE_MAXI_PESEUDO+1];
     strcpy(pseudo[0],"A_Philipe");
@@ -19,6 +27,8 @@ void menuPrincipal()
     afficheMenuPrincipal(0);
 
     acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez votre pseudo:",0);
+    ligne=ecriturePseudo(pseudo[SUD-1],fichier);
+
     char *pPseudo[4];
     for(int i=0; i<4; i++)
     {
@@ -35,18 +45,18 @@ void menuPrincipal()
             nouvellePartie(pPseudo, SUD, pStatistique);
             break;
         case 2 : /*executer la fonction leaderboard */
-                leaderboard(NULL);
+                leaderboard(fichier2);
             break;
         case 3 : /*executer la fonction statistiques */
-            if (DEBUG_MODE==0){
+            if (DEBUG_MODE==1){
                     joue1000Partie(1000);
             }else{
-                leaderboard(NULL);
+                statistiqueJoueur(fichier,ligne);
             }
             break;
         case 4 : /*executer la fonction changement d'utilisateur */
             acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisisez un nouveau joueur",1);
-            ecriturePseudo(pseudo[SUD-1],NULL);
+            ligne = ecriturePseudo(pseudo[SUD-1],fichier);
             break;
         case 5 :
             parametre(pPseudo);

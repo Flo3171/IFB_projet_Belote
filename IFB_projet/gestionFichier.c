@@ -3,7 +3,7 @@
 int ecriturePseudo (char *pPseudo,FILE *pFichier)
 {
     int ligne=-1, retour=0;
-    char pseudoRecup[TAILLE_MAXI_PESEUDO];
+    char pseudoRecup[TAILLE_MAXI_PESEUDO+1],pseudoJ[TAILLE_MAXI_PESEUDO+1];
 
     if (pFichier == NULL){
         retour=EOF;
@@ -24,9 +24,10 @@ int ecriturePseudo (char *pPseudo,FILE *pFichier)
 
         }
         if(retour==2){
-            aligneModifieChaine(pPseudo,TAILLE_MAXI_PESEUDO);
+            strcpy(pseudoJ,pPseudo);
+            aligneModifieChaine(pseudoJ,TAILLE_MAXI_PESEUDO);
             fseek(pFichier,0,SEEK_END);
-            fprintf(pFichier,"\n%20s;%3d;%4d;%1d",pPseudo,0,0,0);
+            fprintf(pFichier,"\n%20s;%3d;%4d;%1d",pseudoJ,0,0,0);
         }
     }
     return ligne;
@@ -48,6 +49,7 @@ int ecrireStatistique(FILE *fichier,int ligne, int statAModifier, int type)
                         statAModifier=statAModifier+valeurCherchee;
                         fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_NB_VICTOIRE,SEEK_SET);
                         fprintf(fichier,"%3d",statAModifier);
+                        retour=statAModifier;
                     }
                 }
                 break ;
@@ -58,6 +60,9 @@ int ecrireStatistique(FILE *fichier,int ligne, int statAModifier, int type)
                     if(statAModifier > valeurCherchee && statAModifier <= 9999){
                         fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_SCORE_MAX,SEEK_SET);
                         fprintf(fichier,"%4d",statAModifier);
+                        retour=statAModifier;
+                    }else{
+                        retour = valeurCherchee;
                     }
                 }
                 break;
@@ -68,13 +73,15 @@ int ecrireStatistique(FILE *fichier,int ligne, int statAModifier, int type)
                     if(statAModifier < valeurCherchee && statAModifier <= 9){
                         fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_NB_MANCHES_POUR_GAGNER,SEEK_SET);
                         fprintf(fichier,"%1d",statAModifier);
+                        retour=statAModifier;
+                    }else{
+                        retour = valeurCherchee;
                     }
                 }
                 break;
             default:
                 break;
         }
-        retour=0;
     }
     return retour;
 }
@@ -97,7 +104,8 @@ int ecrireLeaderboard(FILE *fichier,char *pseudo,int scoreJ)
             ligne++;
         }
         if(ligne<0){
-            ligne=0;
+            fseek(fichier,POSITION_RECORD_VICTOIRE,SEEK_SET);
+            fprintf(fichier,"%3d",scoreJ);
         }
         stop=0;
         while( stop!=1 && ligne>=0){

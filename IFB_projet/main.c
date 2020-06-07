@@ -235,15 +235,15 @@ int main(int argc, char *argv[])
     afficheMenuSelection("Resultat manche", message, 2);
     */
 
-    FILE *fichier=NULL, *fichier2=NULL;
+    /*FILE *fichier=NULL, *fichier2=NULL;
     int ligne=0;
     char pseudo[21]="sroyce";
     char *pPseudo=&pseudo[0];
 
-    /*fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");*/
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
     fichier2= fopen("sauvegarde/leaderboard.csv","r+");
 
-    /*if (fichier == NULL){
+    if (fichier == NULL){
         printf("ptn c'est la merde!");
     }else{
         ligne=ecriturePseudo(pPseudo,fichier);
@@ -254,18 +254,19 @@ int main(int argc, char *argv[])
         printf("fin2\n");
         ecrireStatistique(fichier,ligne,80,3);
         printf("fin3\n");
+        statistiqueJoueur(fichier,2);
     }
 
     fclose(fichier);
-    */
+
     if (fichier2 == NULL){
         printf("ptn c'est la merde!!!");
     }else{
-        ecrireLeaderboard(fichier2,pPseudo,13);
+        ecrireLeaderboard(fichier2,pPseudo,17);
         leaderboard(fichier2);
     }
-    fclose(fichier2);*/
-
+    fclose(fichier2);
+    */
 
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
 

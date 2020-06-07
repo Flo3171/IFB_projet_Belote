@@ -33,15 +33,22 @@ int leaderboard(FILE *fichier)
         strcat(listeDesScores," ");
 
         fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
-        fscanf(fichier,"%s",pseudo);
-        strcat(listeDesScores,pseudo);
-
-        strcat(listeDesScores," score: ");
+        fscanf(fichier,"%20s",pseudo);
+        if(strlen(pseudo)>14){
+            fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
+            fscanf(fichier,"%14s",pseudo);
+            strcat(listeDesScores,pseudo);
+            strcat(listeDesScores,"...");
+        }else{
+            strcat(listeDesScores,pseudo);
+        }
+        strcat(listeDesScores," score:");
 
         fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
         fscanf(fichier,"%s",score);
         strcat(listeDesScores,score);
-        listeDesScores[strlen(listeDesScores)]=' ;';
+
+        listeDesScores[strlen(listeDesScores)]=';';
     }
 
     while(retour !=1){
@@ -52,10 +59,10 @@ int leaderboard(FILE *fichier)
             acquisition=acquisitionEntierSecurise();
         }
         switch(acquisition){
-            case 1: afficheMenuSelection("leaderboard",listeDesScores,3);
+            case 1: afficheMenuSelection("leaderboard",listeDesScores,1);
                     getch();
                 break;
-            case 2: afficheMenuSelection("leaderboard",listeDesScores,1);
+            case 2: afficheMenuSelection("leaderboard",listeDesScores,3);
                     getch();
                 break;
             default : retour=1;
@@ -65,4 +72,37 @@ int leaderboard(FILE *fichier)
     return 0;
 }
 
+int statistiqueJoueur(FILE *fichier,int ligne)
+{
+    char statistique[150]="pseudo :; ",pseudo[21];
+
+    fseek(fichier,ligne*NB_CARRACTERE_SCORE,SEEK_SET);
+    fscanf(fichier,"%20s",pseudo);
+    strcat(statistique,pseudo);
+
+    strcat(statistique," ;;nombre de victoires :; ");
+
+    fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_NB_VICTOIRE,SEEK_SET);
+    fscanf(fichier,"%3s",pseudo);
+    strcat(statistique,pseudo);
+
+    strcat(statistique," ;;meilleur score :; ");
+
+    fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_SCORE_MAX,SEEK_SET);
+    fscanf(fichier,"%4s",pseudo);
+    strcat(statistique,pseudo);
+
+    strcat(statistique," points ;;partie la plus courte :; ");
+
+    fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_NB_MANCHES_POUR_GAGNER,SEEK_SET);
+    fscanf(fichier,"%1s",pseudo);
+    strcat(statistique,pseudo);
+
+    strcat(statistique," manches gagnantes ;;;appuyez pour continuer ");
+
+    afficheMenuSelection("statistiques",statistique,0);
+    getch();
+
+    return 0;
+}
 

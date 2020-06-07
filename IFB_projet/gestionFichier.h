@@ -17,7 +17,7 @@ int ecriturePseudo (char *pPseudo,FILE *pFichier);
  * \param int ligne : ligne du fichier à laquelle sont sauvegardée les statistiques du joueur
  * \param int statAModifier : la nouvelle statistique à enregistrer
  * \param int type : vaut 1 pour mdifier le nombre de victoires, vaut 2 pour changer le score max, vaut 3 pour changer le nombre de manche min pour une victoire
- * \return controle si l'operation à fonctionné
+ * \return valeur enregistrée
  *
  */
 
