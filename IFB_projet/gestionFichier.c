@@ -128,5 +128,6 @@ int ecrireLeaderboard(FILE *fichier,char *pseudo,int scoreJ)
         }
         ligne-=1;
     }
+    return 0;
 }
 

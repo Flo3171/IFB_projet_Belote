@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
     }else{
         ecrireLeaderboard(fichier2,pPseudo,11);
     }
-    fclose(fichier2);
+    fclose(fichier2);*/
 
 
     /**< FIN ZONE SÉCIALE DÉBUG SALE*/
