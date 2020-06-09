@@ -103,7 +103,7 @@ int statistiqueJoueur(FILE *fichier,int ligne)
     fscanf(fichier,"%1s",pseudo);
     strcat(statistique,pseudo);
 
-    strcat(statistique," manches gagnantes ;;;appuyez pour continuer ");
+    strcat(statistique," manches pour gagner ;;;appuyez pour continuer ");
 
     afficheMenuSelection("statistiques",statistique,0);
     getch();

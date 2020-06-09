@@ -47,7 +47,7 @@ void menuPrincipal()
                 nouvellePartie(pPseudo, SUD, pStatistique, infoEcritureFichier);
                 nbVictoire = ecrireStatistique(fichier,ligne,infoEcritureFichier[1],1);
                 ecrireStatistique(fichier,ligne,infoEcritureFichier[2],2);
-                if(infoEcritureFichier[2]==1){
+                if(infoEcritureFichier[1]==1){
                     ecrireStatistique(fichier,ligne,infoEcritureFichier[0],3);
                 }
                 ecrireLeaderboard(fichier2,pseudo[SUD-1],nbVictoire);
@@ -65,7 +65,7 @@ void menuPrincipal()
             break;
         case 5 : /*executer la fonction changement d'utilisateur */
             acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisissez un nouveau joueur",1);
-            ecriturePseudo(pseudo[SUD-1],NULL);
+            ligne=ecriturePseudo(pseudo[SUD-1],fichier);
 
             break;
         case 6 :
