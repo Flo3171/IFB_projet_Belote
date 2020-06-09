@@ -27,7 +27,7 @@ int ecriturePseudo (char *pPseudo,FILE *pFichier)
             strcpy(pseudoJ,pPseudo);
             aligneModifieChaine(pseudoJ,TAILLE_MAXI_PESEUDO);
             fseek(pFichier,0,SEEK_END);
-            fprintf(pFichier,"\n%20s;%3d;%4d;%1d",pseudoJ,0,0,9);
+            fprintf(pFichier,"\n%20s;%3d;%4d;%1s",pseudoJ,0,0,"/");
         }
     }
     return ligne;

@@ -77,6 +77,7 @@ int leaderboard(FILE *fichier)
 int statistiqueJoueur(FILE *fichier,int ligne)
 {
     char statistique[150]="pseudo :; ",pseudo[21];
+    int score;
 
     fseek(fichier,ligne*NB_CARRACTERE_SCORE,SEEK_SET);
     fscanf(fichier,"%20s",pseudo);
@@ -85,13 +86,15 @@ int statistiqueJoueur(FILE *fichier,int ligne)
     strcat(statistique," ;;nombre de victoires :; ");
 
     fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_NB_VICTOIRE,SEEK_SET);
-    fscanf(fichier,"%3s",pseudo);
+    fscanf(fichier,"%3d",&score);
+    itoa(score,pseudo,10);
     strcat(statistique,pseudo);
 
     strcat(statistique," ;;meilleur score :; ");
 
     fseek(fichier,ligne*NB_CARRACTERE_SCORE+POSITION_SCORE_MAX,SEEK_SET);
-    fscanf(fichier,"%4s",pseudo);
+    fscanf(fichier,"%4d",&score);
+    itoa(score,pseudo,10);
     strcat(statistique,pseudo);
 
     strcat(statistique," points ;;partie la plus courte :; ");
