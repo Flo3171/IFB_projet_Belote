@@ -62,7 +62,7 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur premierJ
                 numCarte=1;
             }
         }else if(difficulte == 2){
-
+        /*
             for(numCarte; numCarte < carteRestante; numCarte++ ){
                 carteAJouer =  *(pMainJoueur + numCarte);
 
@@ -71,6 +71,17 @@ int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur premierJ
                     numCarteValide[nbCarteValide]=numCarte+1;
                     nbCarteValide++;
                 }
+            }
+        */
+            while(numCarte < carteRestante){
+                carteAJouer =  *(pMainJoueur + numCarte);
+
+                if(carteValide(carteAJouer, pli, atout, pMainJoueur, premierJoueur,joueur)==1){
+                    setCarte(pCarteValidee+nbCarteValide,carteAJouer.valeur, carteAJouer.couleur);
+                    numCarteValide[nbCarteValide]=numCarte+1;
+                    nbCarteValide++;
+                }
+                numCarte++;
             }
 
             /** debug
