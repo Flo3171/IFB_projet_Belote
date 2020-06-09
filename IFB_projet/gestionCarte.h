@@ -156,5 +156,17 @@ char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout);
 
 
 
+ /** \brief rechere dans un tableau de cartes qui correspond a la main d'un joureur si il peut faire des anonc, et si oui ajoute les points assacier au tableau dans le tableau des anonce
+ *
+ * \param Carte *pCarteMain : pointeur sur le premier élément du tableau qui cintient les cartes de tout les joueur
+ * \param int pointAnonce[] : tableau contenant les point d'anonce
+ * \param Joueur utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur
+ * \param char *pseudo[] : tableau contenant les pseudo des 4 joueur
+ * \return void
+ *
+ */
+void rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[]);
+
+
 
 #endif // _GESTION_CARTE_H_

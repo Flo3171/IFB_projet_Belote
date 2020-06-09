@@ -200,6 +200,8 @@ char manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int 
     /**< anonce des contrat */
     contrat  = annonceContrat(pseudo, dealer, pMainJoueur, utilisateur);
 
+    /**< On cherche si les joueurs on des anonce a faire */
+    rechercheAnnonce(pMainJoueur, pointAnonce, utilisateur, pseudo);
 
     if (utilisateur != SANS_JOUEUR){
         printf("Appuyer sur une touche pour continuer\n");

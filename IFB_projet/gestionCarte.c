@@ -422,3 +422,139 @@ char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
 
     return aPlacerAvant;
 }
+
+
+void rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+{
+    for (int i = 0;i < 4; i++){
+        /**< on cherche si le joueur a un carré */
+        if (rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET)){
+            pointAnonce[i] += 200;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre de VALET\n", pseudo[i]);
+            }
+        }
+        else if (rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF)){
+            pointAnonce[i] += 150;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre de NEUF\n", pseudo[i]);
+            }
+        }
+        else if (rechercherCarte(pCarteMain + i*8, 8, COEUR, AS) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, AS) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, AS) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, AS)){
+            pointAnonce[i] += 100;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre d'AS\n", pseudo[i]);
+            }
+        }
+        else if (rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX)){
+            pointAnonce[i] += 100;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre de DIX\n", pseudo[i]);
+            }
+        }
+        else if (rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI)){
+            pointAnonce[i] += 100;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre de ROI\n", pseudo[i]);
+            }
+        }
+        else if (rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME)){
+            pointAnonce[i] += 100;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un carre de DAME\n", pseudo[i]);
+            }
+        }
+        /**< on cherche si le joueur à un cent*/
+        else if((rechercherCarte(pCarteMain + i*8, 8, COEUR, SEPT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, AS) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET)) ||
+
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, AS) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET)) ||
+
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, SEPT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, AS) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET)) ||
+
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET)) ||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, AS) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET))){
+            pointAnonce[i] += 100;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un CENT\n", pseudo[i]);
+            }
+        }
+        /**< On cherche si le joueur a une cinquante */
+        else if((rechercherCarte(pCarteMain + i*8, 8, COEUR, SEPT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME) && rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, AS))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, AS))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, SEPT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, AS))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, AS))){
+            pointAnonce[i] += 50;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce un CUIQUANTE\n", pseudo[i]);
+            }
+
+        }
+        /**< On cherche si le joueur a une tierce */
+        else if((rechercherCarte(pCarteMain + i*8, 8, COEUR, SEPT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, HUIT) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, DIX) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, VALET) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, COEUR, ROI) && rechercherCarte(pCarteMain + i*8, 8, COEUR, AS) && rechercherCarte(pCarteMain + i*8, 8, COEUR, DAME))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, DIX) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, VALET) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, TREFLE, ROI) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, AS) && rechercherCarte(pCarteMain + i*8, 8, TREFLE, DAME))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, SEPT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, HUIT) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, DIX) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, VALET) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, CARREAU, ROI) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, AS) && rechercherCarte(pCarteMain + i*8, 8, CARREAU, DAME))||
+
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, SEPT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, HUIT) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, NEUF))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, DIX) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, VALET) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME))||
+                (rechercherCarte(pCarteMain + i*8, 8, PIQUE, ROI) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, AS) && rechercherCarte(pCarteMain + i*8, 8, PIQUE, DAME))){
+            pointAnonce[i] += 20;
+            if (utilisateur != SANS_JOUEUR){
+                printf("%s anonce une TIERCE\n", pseudo[i]);
+            }
+        }
+
+
+
+
+    }
+}

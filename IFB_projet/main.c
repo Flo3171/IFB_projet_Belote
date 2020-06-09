@@ -43,12 +43,12 @@ int main(int argc, char *argv[])
     carteMain[6].couleur = PIQUE;
     carteMain[6].valeur = 7;
     carteMain[7].couleur = CARREAU;
-    carteMain[7].valeur = AS;
+    carteMain[7].valeur = AS;*/
 
-    char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};
+    /*char *pseudo[4] = {"A_Philipe", "Gilou", "Utilisateur", "Tutu"};*/
 
 
-    Contrat contrat;
+    /*Contrat contrat;
     contrat.preneur = EST;
     contrat.nbPoint = 90;
     contrat.atout = COEUR;
@@ -185,8 +185,19 @@ int main(int argc, char *argv[])
     printf("|%s|\n", pc);*/
 
     /*Carte mainJoueur[4][8];
+    int pointAnonce[4] = {0};
     Carte *pMainJoueur = &mainJoueur[0][0];
-    distribueCarte(pMainJoueur);*/
+    distribueCarte(pMainJoueur);
+    trieCarte(mainJoueur[0], 8, SANS_ATOUT);
+    trieCarte(mainJoueur[1], 8, SANS_ATOUT);
+    trieCarte(mainJoueur[2], 8, SANS_ATOUT);
+    trieCarte(mainJoueur[3], 8, SANS_ATOUT);
+    afficheMain(mainJoueur[0]);
+    afficheMain(mainJoueur[1]);
+    afficheMain(mainJoueur[2]);
+    afficheMain(mainJoueur[3]);
+    rechercheAnnonce(pMainJoueur, pointAnonce, SUD, pseudo);
+    printf("%d  %d  %d  %d", pointAnonce[0], pointAnonce[1], pointAnonce[2], pointAnonce[3]);*/
 
     /**< ZONE DÉBUG SALE DE CARLO**/
 
