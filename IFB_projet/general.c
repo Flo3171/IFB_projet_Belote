@@ -110,8 +110,9 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int in
             dealer = joueurSuivant(dealer);
             nbManche ++;
         }
-        /*score[SUD - 1] = 800;*//**< a suprimer une fois de debug fini*/
-
+        if (MODE_1_MANCHE == 1){
+            score[NORD - 1] += 800;/**< a suprimer une fois de debug fini*/
+        }
     }
     while ((score[NORD-1] < 701) && (score[EST-1] < 701));
 
