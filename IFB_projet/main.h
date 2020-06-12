@@ -17,6 +17,7 @@
 #define NB_CARRACTERE_LEADERBOARD 26
 #define POSITION_RECORD_VICTOIRE 21
 #define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
+#define MODE_1_MANCHE 1
 
 /* Structure */
 
