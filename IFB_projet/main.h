@@ -17,9 +17,9 @@
 #define NB_CARRACTERE_LEADERBOARD 26
 #define POSITION_RECORD_VICTOIRE 21
 #define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
-#define MODE_1_MANCHE 1
+#define MODE_1_MANCHE 0 /**< 0 pour le mode normal, 1 pour le mode ou une partie est constitué d'une uique manche */
 
-/* Structure */
+/**< Structure */
 
 typedef enum Couleur
 {
@@ -104,7 +104,7 @@ typedef enum TypeMessage
 
 }TypeMessage;
 
-/* Fontions standard*/
+/**< Fontions standard*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
@@ -112,7 +112,7 @@ typedef enum TypeMessage
 #include <time.h>
 #include <string.h>
 
-/* Fontions créée dans le cardre du projet */
+/**< Fontions créée dans le cardre du projet */
 #include "tableau.h"
 #include "acquisition.h"
 #include "affichage.h"

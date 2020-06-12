@@ -39,10 +39,10 @@ void menuPrincipal()
     do
     {
         choix = afficheMenuPrincipal(1);
-        /* contrôle d'acquisition avec réaffichage de l'interfface */
+        /**< contrôle d'acquisition avec réaffichage de l'interfface */
         switch(choix)
         {
-        case 1 :{/*executer la fonction nouvelle partie */
+        case 1 :{/**<executer la fonction nouvelle partie */
                 int infoEcritureFichier[3] = {0}, nbVictoire = 0;
                 nouvellePartie(pPseudo, SUD, pStatistique, infoEcritureFichier);
                 nbVictoire = ecrireStatistique(fichier,ligne,infoEcritureFichier[1],1);
