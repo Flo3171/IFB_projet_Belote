@@ -1,4 +1,12 @@
 #include "main.h"
+
+/**
+ * \file main.c
+ * \brief ficher contenant la fonction main
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
 int main(int argc, char *argv[])
 {
     /**< CODE FINAL */

@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="gestion_fichier_8h" kind="file" language="C++">
+    <compoundname>gestionFichier.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>gestionFichier.h</label>
+        <link refid="gestion_fichier_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gestion_fichier_8h_1a90d5f557067c87ecf4dd33f4345f5f2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ecriturePseudo</definition>
+        <argsstring>(char *pPseudo, FILE *pFichier)</argsstring>
+        <name>ecriturePseudo</name>
+        <param>
+          <type>char *</type>
+          <declname>pPseudo</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>pFichier</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui recherche dans un fichier si le joueur est deja enregistré au le rajoute à la fin si ce n&apos;est pas le cas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pPseudo: pointeur vers le nom du joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FILE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pFichier : pointeur vers le fichier contenant les statistiques </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>le numero de la ligne dans lequel est noté le pseudo </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" line="12" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" bodystart="3" bodyend="34" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" declline="12" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_fichier_8h_1a72c9b768b73e0805b86215b86a67c8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ecrireStatistique</definition>
+        <argsstring>(FILE *fichier, int ligne, int statAModifier, int type)</argsstring>
+        <name>ecrireStatistique</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fichier</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ligne</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>statAModifier</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>modifie la valeur d&apos;une statistique dans le fichier de sauvegarde des scores </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FILE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*fichier : pointeur vers le fichier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ligne : ligne du fichier à laquelle sont sauvegardée les statistiques du joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>statAModifier : la nouvelle statistique à enregistrer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type : vaut 1 pour mdifier le nombre de victoires, vaut 2 pour changer le score max, vaut 3 pour changer le nombre de manche min pour une victoire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>valeur enregistrée </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" line="24" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" bodystart="36" bodyend="87" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" declline="24" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_fichier_8h_1ad7559ffef57cd06c0da1239323b61d2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ecrireLeaderboard</definition>
+        <argsstring>(FILE *fichier, char *pseudo, int score)</argsstring>
+        <name>ecrireLeaderboard</name>
+        <param>
+          <type>FILE *</type>
+          <declname>fichier</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+<para>vérifie si un nouveau record à été battu et l&apos;ajoute si c&apos;est le cas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>FILE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*fichier : pointeur vers fichier de meilleurs score </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pPseudo : pointeur vers le pseudo du joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>score : score a éventuellement enregistrer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" line="34" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" bodystart="89" bodyend="156" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h" declline="34" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GESTION_FICHIER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GESTION_FICHIER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecriturePseudo<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pPseudo,FILE<sp/>*pFichier);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecrireStatistique(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ligne,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statAModifier,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecrireLeaderboard(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_GESTION_FICHIER_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h"/>
+  </compounddef>
+</doxygen>

@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file affichage.c
+ * \brief ficher contenant les fonctions relative à la gestion des tableau
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 int sommeTableau(int tableau[], int tailleTableau)
 {
     int somme = 0;

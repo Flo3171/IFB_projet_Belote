@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="affichage_8h" kind="file" language="C++">
+    <compoundname>affichage.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>affichage.h</label>
+        <link refid="affichage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="affichage_8h_1ac892324566767801d485fad58318f635" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int afficheMenuPrincipal</definition>
+        <argsstring>(int type)</argsstring>
+        <name>afficheMenuPrincipal</name>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>affiche le logo du jeu puis le menu principal </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>quel type de menu est souhaité </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeur de l&apos;action que l&apos;utilisateur decide de faire </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="11" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="3" bodyend="48" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="11" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1ac44981849d484a86a70107700d39d0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int afficheInterfacePli</definition>
+        <argsstring>(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)</argsstring>
+        <name>afficheInterfacePli</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>dernierPli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>pli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>cartesEnMain</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>contratActuel</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>message</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisteur</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>dernierVainqueur</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointManche</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>affiche l&apos;interface de jeu durant un pli </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dernierPli[] : tableau contenant les 4 cartes du dernier plis </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pli[] : tableau contenant les cartes du pli en cours, mettre 0, 0 si il n&apos;y a pas de carte </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[] : tableau contenant les pseudo des 4 joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cartesEnMain[] : tableau contenant les carte dans la main de l&apos;utilisateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contratActuel : contrat qui est en cour dans cette manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>message[500] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dernierVainqueur : joueur aylant gagné le dernier pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>score[] : tableau qui contient les score de la partie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointManche[] : tableau qui contient les points de la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type : version de la fonction : 0 pour un affichage et une acquisition et 1 pour l&apos;acquisition seulle </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int : valeur choisie par l&apos;utilisateur </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Formatage des chaine de caracère relative aux pseudo</para>
+<para>&lt; Formatage des chaine de caractère relative au message</para>
+<para>&lt; Formatage des chaine de caractère relative aux cartes</para>
+<para>&lt; Formatage des chaine de caractère relative au contrat</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="32" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="51" bodyend="167" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="32" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1a25cb786f432ed01160d9268cdccbe7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void modifieTailleFenetre</definition>
+        <argsstring>(int nbLigneFenetre, int nbColloneFentre)</argsstring>
+        <name>modifieTailleFenetre</name>
+        <param>
+          <type>int</type>
+          <declname>nbLigneFenetre</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbColloneFentre</declname>
+        </param>
+        <briefdescription>
+<para>modifie la taille de la fenetre dans laquel le programme s&apos;execute </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbLingeFenetre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nombre de ligne de la fenetre </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbColloneFenetre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nombre de collone de la fenetre </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="41" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="169" bodyend="175" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1a77a2c701d655e817f1fe4c56c883af3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficheSousMenus</definition>
+        <argsstring>(char phrase[], char intitule[])</argsstring>
+        <name>afficheSousMenus</name>
+        <param>
+          <type>char</type>
+          <declname>phrase</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>intitule</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>affiche les différents sous menus </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>phrase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phrase correspondant au sous menu choisi </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; contrôle le centrage du titre du sous-menu</para>
+<para>&lt; découpe la phrase pour pouvoir l&apos;afficher <linebreak/>
+</para>
+<para>&lt;efface l&apos;écran et affiche le sous-menu avec le texte correspondant</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="49" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="178" bodyend="217" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="49" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1ad4ca97b6626eb7557ec5c8e3ad795f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficheMain</definition>
+        <argsstring>(Carte carte[])</argsstring>
+        <name>afficheMain</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carte</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>affiche les carte qu&apos;un joueur a en main </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carte[] : tableau contanant les carte </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="57" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="219" bodyend="236" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1abd791297578af449761083408a1b4462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficheContrat</definition>
+        <argsstring>(Contrat contrat, char *pseudo[], int version)</argsstring>
+        <name>afficheContrat</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>contrat</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+<para>affiche un contrat </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contrat : contrat a afficher </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>version : 1 pour la version belle et de grande taille et 2 pour la version courte </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="68" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="239" bodyend="259" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="68" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1a978cd3d8ff9f4afa72856d33ad0dea81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afficheMenuSelection</definition>
+        <argsstring>(char intitule[], char phrase[], int sautDeLigne)</argsstring>
+        <name>afficheMenuSelection</name>
+        <param>
+          <type>char</type>
+          <declname>intitule</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>phrase</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sautDeLigne</declname>
+        </param>
+        <briefdescription>
+<para>affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d&apos;elles </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>intitule []: titre du du cadre </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phrase[] : les chaines de carractère séparés par des points virgules </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sautDeLigne : nombre de lignes à sauter entre chaque chaine de carractères </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; contrôle le centrage du titre du sous-menu</para>
+<para>&lt; effacement de la chaine de carrateres</para>
+<para>&lt;efface l&apos;écran et affiche le sous-menu avec le texte correspondant</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="78" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="261" bodyend="338" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="78" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="affichage_8h_1ae37357f1035df2f6d50afb1a1c5a9947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+        <definition>Contrat proposeContratUtilisateur</definition>
+        <argsstring>(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)</argsstring>
+        <name>proposeContratUtilisateur</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>dernierContrat</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>parle</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <briefdescription>
+<para>gère le choix du contrat par l&apos;utilisateur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dernierContrat : dernier contrat proposé </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parle : joueur qui parle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le tableau qui stocke les carte dans la main du joueur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_contrat" kindref="compound">Contrat</ref> : nouveau contrat proposé par le joueur </para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="91" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="340" bodyend="415" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="91" declcolumn="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_AFFICHAGE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_AFFICHAGE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>afficheMenuPrincipal(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>afficheInterfacePli(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>dernierPli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartesEnMain[],<sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contratActuel,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[],Joueur<sp/>utilisteur,<sp/>Joueur<sp/>dernierVainqueur,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>modifieTailleFenetre(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFentre);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficheSousMenus(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule[]);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficheMain(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[]);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficheContrat(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficheMenuSelection(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule<sp/>[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sautDeLigne);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>proposeContratUtilisateur(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h"/>
+  </compounddef>
+</doxygen>

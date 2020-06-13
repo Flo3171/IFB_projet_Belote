@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file affichage.c
+ * \brief ficher contenant les fonctions les plus impotantes pour le jeu de la belote
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 void initialisation(int nbLigneFenetre, int nbColloneFenetre)
 {
     modifieTailleFenetre(nbLigneFenetre, nbColloneFenetre);

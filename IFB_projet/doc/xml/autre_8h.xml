@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="autre_8h" kind="file" language="C++">
+    <compoundname>autre.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>autre.h</label>
+        <link refid="autre_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="autre_8h_1a9028074829d59ddc4481ae51036fc9ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Joueur</type>
+        <definition>Joueur joueurSuivant</definition>
+        <argsstring>(Joueur joueur)</argsstring>
+        <name>joueurSuivant</name>
+        <param>
+          <type>Joueur</type>
+          <declname>joueur</declname>
+        </param>
+        <briefdescription>
+<para>passe au joueur suivant </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>joueur : joueur actuel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Joueur : le joueur suivant </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="10" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="3" bodyend="11" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="10" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="autre_8h_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int nbAleatoire</definition>
+        <argsstring>(int mini, int maxi)</argsstring>
+        <name>nbAleatoire</name>
+        <param>
+          <type>int</type>
+          <declname>mini</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxi</declname>
+        </param>
+        <briefdescription>
+<para>renvoit in nombre aléatoire entre deux bornes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mini : borne inférieur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>maxi : borne surpérieur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int : le nombre aléatoire </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="19" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="13" bodyend="16" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="19" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="autre_8h_1a1613864902e98bd6d49e9d82bedcbe1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setContrat</definition>
+        <argsstring>(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)</argsstring>
+        <name>setContrat</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref> *</type>
+          <declname>contrat</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>preneur</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbPoint</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type>Coinche</type>
+          <declname>coinche</declname>
+        </param>
+        <briefdescription>
+<para>définit un contrat </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Contat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*contrat : pointeur sur le contrat a modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>preneur : preneur du contrat </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbPoint : nombre de point </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;aout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Coinche</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>coinche : normal, coinché , surcoinché </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="31" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="18" bodyend="24" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="autre_8h_1a4fab4a48512193a409dc541bb38a999c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pointPli</definition>
+        <argsstring>(Carte pli[], Couleur atout, int nbCarte)</argsstring>
+        <name>pointPli</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>pli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <briefdescription>
+<para>compte le nombre de points d&apos;un pli </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pli []: tableau des cartes possées dont on doit faire la somme des points </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout: couleur de l&apos;atout joué dans la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbCarte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre de carte à compter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>points </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="41" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="26" bodyend="136" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="41" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="autre_8h_1a9072ffa3adcb064e9794208ea50de40b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ajusteEchelle</definition>
+        <argsstring>(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)</argsstring>
+        <name>ajusteEchelle</name>
+        <param>
+          <type>float</type>
+          <declname>valeur</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>entreMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>entreMax</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sortieMin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>sortieMax</declname>
+        </param>
+        <briefdescription>
+<para>met a l&apos;echelle la valeur d&apos;une variable comprise entre deux bornes pour que la variable de retour soit compris entre deux autres bornes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valeur : valeur a mettre à l&apos;echelle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entreMin : valeur minimum que peut prendre l&apos;entrée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entreMax : valeur maximum que peut prendre l&apos;entrée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sortieMin : valeur minimum que peut prendre la sortie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>float</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>sortieMax : valeur maximum que peut prendre la sortie </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float : la valeur de valeur une fois mise a l&apos;echelle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="54" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="139" bodyend="142" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="54" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="autre_8h_1ab8d4df8f4e03f038b98f6d96a2eaefd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void joue1000Partie</definition>
+        <argsstring>(int nbPartie)</argsstring>
+        <name>joue1000Partie</name>
+        <param>
+          <type>int</type>
+          <declname>nbPartie</declname>
+        </param>
+        <briefdescription>
+<para>joue n partie aves uniquement des ia pour controler si tout ce passe bien et reuceillir des statistique </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbPartie nombre de partie que l&apos;on veut jouer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>voir </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" line="64" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="145" bodyend="166" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h" declline="64" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_AUTRE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_AUTRE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">Joueur<sp/>joueurSuivant(Joueur<sp/>joueur);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbAleatoire(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mini,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxi);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setContrat(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>*contrat,<sp/>Joueur<sp/>preneur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPoint,Couleur<sp/>atout,<sp/>Coinche<sp/>coinche);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointPli(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Couleur<sp/>atout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ajusteEchelle(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>valeur,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMax,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMax);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>joue1000Partie(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPartie);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_AUTRE_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h"/>
+  </compounddef>
+</doxygen>

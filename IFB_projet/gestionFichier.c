@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file affichage.c
+ * \brief ficher contenant les fonctions relative à la gestion des fichiers
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 int ecriturePseudo (char *pPseudo,FILE *pFichier)
 {
     int ligne=-1, retour=0;

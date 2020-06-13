@@ -1,0 +1,815 @@
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h:46: warning: argument 'PPseudo' of command @param is not found in the argument list of acquisitionPseudoAvecMessage(char *pointeurPseudo, char instruction[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c:44: warning: The following parameter of acquisitionPseudoAvecMessage(char *pointeurPseudo, char instruction[], int type) is not documented:
+  parameter 'pointeurPseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c:44: warning: documented empty return type of acquisitionPseudoAvecMessage
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h:46: warning: argument 'PPseudo' of command @param is not found in the argument list of acquisitionPseudoAvecMessage(char *pointeurPseudo, char instruction[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h:55: warning: The following parameter of acquisitionPseudoAvecMessage(char *pointeurPseudo, char instruction[], int type) is not documented:
+  parameter 'pointeurPseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h:55: warning: documented empty return type of acquisitionPseudoAvecMessage
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'char' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Contrat' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'char' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:51: warning: The following parameters of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type) are not documented:
+  parameter 'dernierPli'
+  parameter 'pli'
+  parameter 'pseudo'
+  parameter 'cartesEnMain'
+  parameter 'contratActuel'
+  parameter 'message'
+  parameter 'utilisteur'
+  parameter 'dernierVainqueur'
+  parameter 'score'
+  parameter 'pointManche'
+  parameter 'type'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:34: warning: argument 'nbLingeFenetre' of command @param is not found in the argument list of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:34: warning: argument 'nbColloneFenetre' of command @param is not found in the argument list of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:169: warning: The following parameters of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre) are not documented:
+  parameter 'nbLigneFenetre'
+  parameter 'nbColloneFentre'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:169: warning: documented empty return type of modifieTailleFenetre
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:178: warning: The following parameter of afficheSousMenus(char phrase[], char intitule[]) is not documented:
+  parameter 'intitule'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:178: warning: documented empty return type of afficheSousMenus
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:51: warning: argument 'Carte' of command @param is not found in the argument list of afficheMain(Carte carte[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:219: warning: The following parameter of afficheMain(Carte carte[]) is not documented:
+  parameter 'carte'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:219: warning: documented empty return type of afficheMain
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'Contrat' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'char' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'int' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:239: warning: The following parameters of afficheContrat(Contrat contrat, char *pseudo[], int version) are not documented:
+  parameter 'contrat'
+  parameter 'pseudo'
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:239: warning: documented empty return type of afficheContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'char' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'char' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'int' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:261: warning: The following parameters of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne) are not documented:
+  parameter 'intitule'
+  parameter 'phrase'
+  parameter 'sautDeLigne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:261: warning: documented empty return type of afficheMenuSelection
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Carte' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:84: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c:340: warning: The following parameters of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain) are not documented:
+  parameter 'dernierContrat'
+  parameter 'parle'
+  parameter 'pCarteMain'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'char' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Carte' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Contrat' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'char' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:15: warning: argument 'int' of command @param is not found in the argument list of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:32: warning: The following parameters of afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type) are not documented:
+  parameter 'dernierPli'
+  parameter 'pli'
+  parameter 'pseudo'
+  parameter 'cartesEnMain'
+  parameter 'contratActuel'
+  parameter 'message'
+  parameter 'utilisteur'
+  parameter 'dernierVainqueur'
+  parameter 'score'
+  parameter 'pointManche'
+  parameter 'type'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:34: warning: argument 'nbLingeFenetre' of command @param is not found in the argument list of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:34: warning: argument 'nbColloneFenetre' of command @param is not found in the argument list of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:41: warning: The following parameters of modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre) are not documented:
+  parameter 'nbLigneFenetre'
+  parameter 'nbColloneFentre'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:41: warning: documented empty return type of modifieTailleFenetre
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:49: warning: The following parameter of afficheSousMenus(char phrase[], char intitule[]) is not documented:
+  parameter 'intitule'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:49: warning: documented empty return type of afficheSousMenus
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:51: warning: argument 'Carte' of command @param is not found in the argument list of afficheMain(Carte carte[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:57: warning: The following parameter of afficheMain(Carte carte[]) is not documented:
+  parameter 'carte'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:57: warning: documented empty return type of afficheMain
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'Contrat' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'char' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:59: warning: argument 'int' of command @param is not found in the argument list of afficheContrat(Contrat contrat, char *pseudo[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:68: warning: The following parameters of afficheContrat(Contrat contrat, char *pseudo[], int version) are not documented:
+  parameter 'contrat'
+  parameter 'pseudo'
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:68: warning: documented empty return type of afficheContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'char' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'char' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:70: warning: argument 'int' of command @param is not found in the argument list of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:78: warning: The following parameters of afficheMenuSelection(char intitule[], char phrase[], int sautDeLigne) are not documented:
+  parameter 'intitule'
+  parameter 'phrase'
+  parameter 'sautDeLigne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:78: warning: documented empty return type of afficheMenuSelection
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:80: warning: argument 'Carte' of command @param is not found in the argument list of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:84: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h:91: warning: The following parameters of proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain) are not documented:
+  parameter 'dernierContrat'
+  parameter 'parle'
+  parameter 'pCarteMain'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:4: warning: argument 'Joueur' of command @param is not found in the argument list of joueurSuivant(Joueur joueur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:3: warning: The following parameter of joueurSuivant(Joueur joueur) is not documented:
+  parameter 'joueur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:12: warning: argument 'int' of command @param is not found in the argument list of nbAleatoire(int mini, int maxi)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:12: warning: argument 'int' of command @param is not found in the argument list of nbAleatoire(int mini, int maxi)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:13: warning: The following parameters of nbAleatoire(int mini, int maxi) are not documented:
+  parameter 'mini'
+  parameter 'maxi'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Contat' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Joueur' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'int' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Couleur' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Coinche' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:18: warning: The following parameters of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche) are not documented:
+  parameter 'contrat'
+  parameter 'preneur'
+  parameter 'nbPoint'
+  parameter 'atout'
+  parameter 'coinche'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:18: warning: documented empty return type of setContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:33: warning: argument 'Carte' of command @param is not found in the argument list of pointPli(Carte pli[], Couleur atout, int nbCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:33: warning: argument 'Couleur' of command @param is not found in the argument list of pointPli(Carte pli[], Couleur atout, int nbCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:26: warning: The following parameters of pointPli(Carte pli[], Couleur atout, int nbCarte) are not documented:
+  parameter 'pli'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:139: warning: The following parameters of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax) are not documented:
+  parameter 'valeur'
+  parameter 'entreMin'
+  parameter 'entreMax'
+  parameter 'sortieMin'
+  parameter 'sortieMax'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:57: warning: argument 'int' of command @param is not found in the argument list of joue1000Partie(int nbPartie)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:145: warning: The following parameter of joue1000Partie(int nbPartie) is not documented:
+  parameter 'nbPartie'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c:145: warning: documented empty return type of joue1000Partie
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:4: warning: argument 'Joueur' of command @param is not found in the argument list of joueurSuivant(Joueur joueur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:10: warning: The following parameter of joueurSuivant(Joueur joueur) is not documented:
+  parameter 'joueur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:12: warning: argument 'int' of command @param is not found in the argument list of nbAleatoire(int mini, int maxi)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:12: warning: argument 'int' of command @param is not found in the argument list of nbAleatoire(int mini, int maxi)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:19: warning: The following parameters of nbAleatoire(int mini, int maxi) are not documented:
+  parameter 'mini'
+  parameter 'maxi'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Contat' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Joueur' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'int' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Couleur' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:21: warning: argument 'Coinche' of command @param is not found in the argument list of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:31: warning: The following parameters of setContrat(Contrat *contrat, Joueur preneur, int nbPoint, Couleur atout, Coinche coinche) are not documented:
+  parameter 'contrat'
+  parameter 'preneur'
+  parameter 'nbPoint'
+  parameter 'atout'
+  parameter 'coinche'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:31: warning: documented empty return type of setContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:33: warning: argument 'Carte' of command @param is not found in the argument list of pointPli(Carte pli[], Couleur atout, int nbCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:33: warning: argument 'Couleur' of command @param is not found in the argument list of pointPli(Carte pli[], Couleur atout, int nbCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:41: warning: The following parameters of pointPli(Carte pli[], Couleur atout, int nbCarte) are not documented:
+  parameter 'pli'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:43: warning: argument 'float' of command @param is not found in the argument list of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:54: warning: The following parameters of ajusteEchelle(float valeur, float entreMin, float entreMax, float sortieMin, float sortieMax) are not documented:
+  parameter 'valeur'
+  parameter 'entreMin'
+  parameter 'entreMax'
+  parameter 'sortieMin'
+  parameter 'sortieMax'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:57: warning: argument 'int' of command @param is not found in the argument list of joue1000Partie(int nbPartie)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:64: warning: The following parameter of joue1000Partie(int nbPartie) is not documented:
+  parameter 'nbPartie'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.h:64: warning: documented empty return type of joue1000Partie
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'char' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'char' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'int' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:3: warning: The following parameters of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine) are not documented:
+  parameter 'chaineInitial'
+  parameter 'chaineFinal'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:15: warning: argument 'char' of command @param is not found in the argument list of centreModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:15: warning: argument 'int' of command @param is not found in the argument list of centreModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:28: warning: The following parameters of centreModifieChaine(char chaine[], int longeurChaine) are not documented:
+  parameter 'chaine'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:25: warning: argument 'nbLinge' of command @param is not found in the argument list of decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:38: warning: The following parameter of decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne) is not documented:
+  parameter 'nbLigne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:86: warning: documented empty return type of rempliEspace
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:94: warning: documented empty return type of formateCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:58: warning: argument 'vesion' of command @param is not found in the argument list of stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:101: warning: The following parameter of stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine) is not documented:
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:101: warning: documented empty return type of stockeInfoCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'Joueur' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'char' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'int' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'char' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'int' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:213: warning: The following parameters of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version) are not documented:
+  parameter 'joueur'
+  parameter 'pseudo'
+  parameter 'tailleChaine'
+  parameter 'chaineFinal'
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:213: warning: documented empty return type of formatePseudo
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'Contrat' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'char' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'int' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'char' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:244: warning: The following parameters of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]) are not documented:
+  parameter 'contrat'
+  parameter 'chaineFinal'
+  parameter 'tailleLigne'
+  parameter 'pseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:244: warning: documented empty return type of formateContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:93: warning: argument 'char' of command @param is not found in the argument list of aligneModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:93: warning: argument 'int' of command @param is not found in the argument list of aligneModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:292: warning: The following parameters of aligneModifieChaine(char chaine[], int longeurChaine) are not documented:
+  parameter 'chaine'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'char' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'Joueur' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'char' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'Carte' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'int' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'TypeMessage' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:307: warning: The following parameters of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage) are not documented:
+  parameter 'message'
+  parameter 'parle'
+  parameter 'pseudo'
+  parameter 'carteJoue'
+  parameter 'score'
+  parameter 'typeMessage'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c:307: warning: documented empty return type of genereMessage
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'char' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'char' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:4: warning: argument 'int' of command @param is not found in the argument list of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:12: warning: The following parameters of centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine) are not documented:
+  parameter 'chaineInitial'
+  parameter 'chaineFinal'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:15: warning: argument 'char' of command @param is not found in the argument list of centreModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:15: warning: argument 'int' of command @param is not found in the argument list of centreModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:22: warning: The following parameters of centreModifieChaine(char chaine[], int longeurChaine) are not documented:
+  parameter 'chaine'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:25: warning: argument 'nbLinge' of command @param is not found in the argument list of decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:34: warning: The following parameter of decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne) is not documented:
+  parameter 'nbLigne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:43: warning: documented empty return type of rempliEspace
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:55: warning: documented empty return type of formateCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:58: warning: argument 'vesion' of command @param is not found in the argument list of stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:68: warning: The following parameter of stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine) is not documented:
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:68: warning: documented empty return type of stockeInfoCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'Joueur' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'char' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'int' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'char' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:70: warning: argument 'int' of command @param is not found in the argument list of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:80: warning: The following parameters of formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version) are not documented:
+  parameter 'joueur'
+  parameter 'pseudo'
+  parameter 'tailleChaine'
+  parameter 'chaineFinal'
+  parameter 'version'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:80: warning: documented empty return type of formatePseudo
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'Contrat' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'char' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'int' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:82: warning: argument 'char' of command @param is not found in the argument list of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:91: warning: The following parameters of formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]) are not documented:
+  parameter 'contrat'
+  parameter 'chaineFinal'
+  parameter 'tailleLigne'
+  parameter 'pseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:91: warning: documented empty return type of formateContrat
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:93: warning: argument 'char' of command @param is not found in the argument list of aligneModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:93: warning: argument 'int' of command @param is not found in the argument list of aligneModifieChaine(char chaine[], int longeurChaine)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:100: warning: The following parameters of aligneModifieChaine(char chaine[], int longeurChaine) are not documented:
+  parameter 'chaine'
+  parameter 'longeurChaine'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'char' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'Joueur' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'char' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'Carte' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'int' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:102: warning: argument 'TypeMessage' of command @param is not found in the argument list of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:114: warning: The following parameters of genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage) are not documented:
+  parameter 'message'
+  parameter 'parle'
+  parameter 'pseudo'
+  parameter 'carteJoue'
+  parameter 'score'
+  parameter 'typeMessage'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h:114: warning: documented empty return type of genereMessage
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:3: warning: documented empty return type of initialisation
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:8: warning: documented empty return type of menuPrincipal
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'char' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'Joueuer' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'int' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'int' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:91: warning: The following parameters of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[]) are not documented:
+  parameter 'pseudo'
+  parameter 'utilisateur'
+  parameter 'pStatistique'
+  parameter 'infoEcritureFicher'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'char' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'int' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'Joueur' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'Joueuer' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'int' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:180: warning: The following parameters of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique) are not documented:
+  parameter 'pseudo'
+  parameter 'score'
+  parameter 'dealer'
+  parameter 'utilisateur'
+  parameter 'pStatistique'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'char' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Joueur' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Carte' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Joueuer' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:279: warning: The following parameters of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur) are not documented:
+  parameter 'pseudo'
+  parameter 'dealer'
+  parameter 'pCarteMain'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'char' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Carte' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:363: warning: The following parameters of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur) are not documented:
+  parameter 'dernierContrat'
+  parameter 'parle'
+  parameter 'pseudo'
+  parameter 'pCarteMain'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Contrat' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Joueur' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'char' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'char' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Joueur' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:382: warning: The following parameters of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli) are not documented:
+  parameter 'contrat'
+  parameter 'premierAJouer'
+  parameter 'pseudo'
+  parameter 'pCarteMain'
+  parameter 'pointManche'
+  parameter 'pointAnonce'
+  parameter 'belote'
+  parameter 'cartePli'
+  parameter 'carteAncienPli'
+  parameter 'score'
+  parameter 'utilisateur'
+  parameter 'numPli'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:90: warning: argument 'pPli' of command @param is not found in the argument list of poseCarte(Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:455: warning: The following parameters of poseCarte(Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante) are not documented:
+  parameter 'pli'
+  parameter 'carteRestante'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'Contrat' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'char' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'Joueur' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c:468: warning: The following parameters of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur) are not documented:
+  parameter 'contrat'
+  parameter 'pointManche'
+  parameter 'pointAnonce'
+  parameter 'pointBelote'
+  parameter 'score'
+  parameter 'pseudo'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:11: warning: documented empty return type of initialisation
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:18: warning: documented empty return type of menuPrincipal
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'char' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'Joueuer' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'int' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:20: warning: argument 'int' of command @param is not found in the argument list of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:29: warning: The following parameters of nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[]) are not documented:
+  parameter 'pseudo'
+  parameter 'utilisateur'
+  parameter 'pStatistique'
+  parameter 'infoEcritureFicher'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'char' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'int' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'Joueur' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'Joueuer' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:32: warning: argument 'int' of command @param is not found in the argument list of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:43: warning: The following parameters of manche(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique) are not documented:
+  parameter 'pseudo'
+  parameter 'score'
+  parameter 'dealer'
+  parameter 'utilisateur'
+  parameter 'pStatistique'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'char' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Joueur' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Carte' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:46: warning: argument 'Joueuer' of command @param is not found in the argument list of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:56: warning: The following parameters of annonceContrat(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur) are not documented:
+  parameter 'pseudo'
+  parameter 'dealer'
+  parameter 'pCarteMain'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'char' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Carte' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:58: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:68: warning: The following parameters of proposeContrat(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur) are not documented:
+  parameter 'dernierContrat'
+  parameter 'parle'
+  parameter 'pseudo'
+  parameter 'pCarteMain'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Contrat' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Joueur' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'char' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'char' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Carte' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'int' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:71: warning: argument 'Joueur' of command @param is not found in the argument list of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:88: warning: The following parameters of pli(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli) are not documented:
+  parameter 'contrat'
+  parameter 'premierAJouer'
+  parameter 'pseudo'
+  parameter 'pCarteMain'
+  parameter 'pointManche'
+  parameter 'pointAnonce'
+  parameter 'belote'
+  parameter 'cartePli'
+  parameter 'carteAncienPli'
+  parameter 'score'
+  parameter 'utilisateur'
+  parameter 'numPli'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:90: warning: argument 'pPli' of command @param is not found in the argument list of poseCarte(Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:100: warning: The following parameters of poseCarte(Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante) are not documented:
+  parameter 'pli'
+  parameter 'carteRestante'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'Contrat' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'int' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'char' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:102: warning: argument 'Joueur' of command @param is not found in the argument list of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h:115: warning: The following parameters of calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur) are not documented:
+  parameter 'contrat'
+  parameter 'pointManche'
+  parameter 'pointAnonce'
+  parameter 'pointBelote'
+  parameter 'score'
+  parameter 'pseudo'
+  parameter 'utilisateur'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:5: warning: argument 'Carte' of command @param is not found in the argument list of distribueCarte(Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:6: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:4: warning: The following parameter of distribueCarte(Carte *pCarteMain) is not documented:
+  parameter 'pCarteMain'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Carte' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Valeur' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Couleur' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:42: warning: The following parameters of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte) are not documented:
+  parameter 'carte'
+  parameter 'valeurCarte'
+  parameter 'couleurCarte'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:42: warning: documented empty return type of setCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'Carte' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'int' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'int' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:48: warning: The following parameters of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer) are not documented:
+  parameter 'carte'
+  parameter 'nbCarte'
+  parameter 'carteASupprimer'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:48: warning: documented empty return type of supprimeCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Carte' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Couleur' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Joueur' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:56: warning: The following parameters of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer) are not documented:
+  parameter 'pli'
+  parameter 'atout'
+  parameter 'premierAJouer'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Carte' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Couleur' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Couleur' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:72: warning: The following parameters of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame) are not documented:
+  parameter 'carteACalculer'
+  parameter 'atout'
+  parameter 'entame'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Couleur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Joueur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Joueur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:253: warning: The following parameters of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle) are not documented:
+  parameter 'cartePose'
+  parameter 'pli'
+  parameter 'atout'
+  parameter 'pCarteMainJoueur'
+  parameter 'premierAJouer'
+  parameter 'parle'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'int' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Valeur' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:335: warning: The following parameters of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche) are not documented:
+  parameter 'pCarte'
+  parameter 'nbCarte'
+  parameter 'couleurCherche'
+  parameter 'valeurCherche'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'int' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:347: warning: The following parameters of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame) are not documented:
+  parameter 'pCarte'
+  parameter 'nbCarte'
+  parameter 'carteCherche'
+  parameter 'atout'
+  parameter 'entame'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:135: warning: argument 'Carte' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:135: warning: argument 'int' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:135: warning: argument 'Couleur' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:361: warning: The following parameters of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout) are not documented:
+  parameter 'tableauCarte'
+  parameter 'nbCarte'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:146: warning: argument 'Carte' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:146: warning: argument 'int' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:146: warning: argument 'Couleur' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:378: warning: The following parameters of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout) are not documented:
+  parameter 'tableauCarte'
+  parameter 'nbCarte'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:378: warning: documented empty return type of trieCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Carte' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Carte' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Couleur' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:396: warning: The following parameters of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout) are not documented:
+  parameter 'carteRefference'
+  parameter 'carteCompare'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'Carte' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'int' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'Joueur' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'char' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:427: warning: The following parameters of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[]) are not documented:
+  parameter 'pCarteMain'
+  parameter 'pointAnonce'
+  parameter 'utilisateur'
+  parameter 'pseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c:427: warning: documented empty return type of rechercheAnnonce
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:5: warning: argument 'Carte' of command @param is not found in the argument list of distribueCarte(Carte *pCarteMain)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:6: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:12: warning: The following parameter of distribueCarte(Carte *pCarteMain) is not documented:
+  parameter 'pCarteMain'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Carte' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Valeur' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:14: warning: argument 'Couleur' of command @param is not found in the argument list of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:22: warning: The following parameters of setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte) are not documented:
+  parameter 'carte'
+  parameter 'valeurCarte'
+  parameter 'couleurCarte'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:22: warning: documented empty return type of setCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'Carte' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'int' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:24: warning: argument 'int' of command @param is not found in the argument list of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:32: warning: The following parameters of supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer) are not documented:
+  parameter 'carte'
+  parameter 'nbCarte'
+  parameter 'carteASupprimer'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:32: warning: documented empty return type of supprimeCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Carte' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Couleur' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:34: warning: argument 'Joueur' of command @param is not found in the argument list of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:43: warning: The following parameters of vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer) are not documented:
+  parameter 'pli'
+  parameter 'atout'
+  parameter 'premierAJouer'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Carte' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Couleur' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:45: warning: argument 'Couleur' of command @param is not found in the argument list of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:54: warning: The following parameters of forceCarte(Carte carteACalculer, Couleur atout, Couleur entame) are not documented:
+  parameter 'carteACalculer'
+  parameter 'atout'
+  parameter 'entame'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Couleur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Carte' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Joueur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:57: warning: argument 'Joueur' of command @param is not found in the argument list of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:69: warning: The following parameters of carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle) are not documented:
+  parameter 'cartePose'
+  parameter 'pli'
+  parameter 'atout'
+  parameter 'pCarteMainJoueur'
+  parameter 'premierAJouer'
+  parameter 'parle'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'int' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:71: warning: argument 'Valeur' of command @param is not found in the argument list of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:81: warning: The following parameters of rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche) are not documented:
+  parameter 'pCarte'
+  parameter 'nbCarte'
+  parameter 'couleurCherche'
+  parameter 'valeurCherche'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'int' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Carte' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:83: warning: argument 'Couleur' of command @param is not found in the argument list of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:94: warning: The following parameters of rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame) are not documented:
+  parameter 'pCarte'
+  parameter 'nbCarte'
+  parameter 'carteCherche'
+  parameter 'atout'
+  parameter 'entame'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:97: warning: argument 'Carte' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:97: warning: argument 'int' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:97: warning: argument 'Couleur' of command @param is not found in the argument list of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:106: warning: The following parameters of sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout) are not documented:
+  parameter 'tableauCarte'
+  parameter 'nbCarte'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:108: warning: argument 'Carte' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:108: warning: argument 'int' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:108: warning: argument 'Couleur' of command @param is not found in the argument list of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:117: warning: The following parameters of trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout) are not documented:
+  parameter 'tableauCarte'
+  parameter 'nbCarte'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:117: warning: documented empty return type of trieCarte
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Carte' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Carte' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:119: warning: argument 'Couleur' of command @param is not found in the argument list of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:128: warning: The following parameters of cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout) are not documented:
+  parameter 'carteRefference'
+  parameter 'carteCompare'
+  parameter 'atout'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'Carte' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'int' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'Joueur' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:159: warning: argument 'char' of command @param is not found in the argument list of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:168: warning: The following parameters of rechercheAnnonce(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[]) are not documented:
+  parameter 'pCarteMain'
+  parameter 'pointAnonce'
+  parameter 'utilisateur'
+  parameter 'pseudo'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h:168: warning: documented empty return type of rechercheAnnonce
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:4: warning: argument 'char' of command @param is not found in the argument list of ecriturePseudo(char *pPseudo, FILE *pFichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:4: warning: argument 'FILE' of command @param is not found in the argument list of ecriturePseudo(char *pPseudo, FILE *pFichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c:3: warning: The following parameters of ecriturePseudo(char *pPseudo, FILE *pFichier) are not documented:
+  parameter 'pPseudo'
+  parameter 'pFichier'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'FILE' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c:36: warning: The following parameters of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type) are not documented:
+  parameter 'fichier'
+  parameter 'ligne'
+  parameter 'statAModifier'
+  parameter 'type'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'FILE' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'char' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'int' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c:89: warning: The following parameters of ecrireLeaderboard(FILE *fichier, char *pseudo, int score) are not documented:
+  parameter 'fichier'
+  parameter 'pseudo'
+  parameter 'score'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:4: warning: argument 'char' of command @param is not found in the argument list of ecriturePseudo(char *pPseudo, FILE *pFichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:4: warning: argument 'FILE' of command @param is not found in the argument list of ecriturePseudo(char *pPseudo, FILE *pFichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:12: warning: The following parameters of ecriturePseudo(char *pPseudo, FILE *pFichier) are not documented:
+  parameter 'pPseudo'
+  parameter 'pFichier'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'FILE' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:14: warning: argument 'int' of command @param is not found in the argument list of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:24: warning: The following parameters of ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type) are not documented:
+  parameter 'fichier'
+  parameter 'ligne'
+  parameter 'statAModifier'
+  parameter 'type'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'FILE' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'char' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:26: warning: argument 'int' of command @param is not found in the argument list of ecrireLeaderboard(FILE *fichier, char *pseudo, int score)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.h:34: warning: The following parameters of ecrireLeaderboard(FILE *fichier, char *pseudo, int score) are not documented:
+  parameter 'fichier'
+  parameter 'pseudo'
+  parameter 'score'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Carte' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c:3: warning: The following parameters of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat) are not documented:
+  parameter 'parle'
+  parameter 'pCarteMain'
+  parameter 'dernierContrat'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Carte' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Carte' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Couleur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'int' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c:52: warning: The following parameters of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante) are not documented:
+  parameter 'joueur'
+  parameter 'pMainJoueur'
+  parameter 'pli'
+  parameter 'dernierVainqueur'
+  parameter 'atout'
+  parameter 'carteRestante'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Joueur' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Carte' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:4: warning: argument 'Contrat' of command @param is not found in the argument list of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:13: warning: The following parameters of proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat) are not documented:
+  parameter 'parle'
+  parameter 'pCarteMain'
+  parameter 'dernierContrat'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Carte' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Carte' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Joueur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'Couleur' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:15: warning: argument 'int' of command @param is not found in the argument list of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h:27: warning: The following parameters of choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante) are not documented:
+  parameter 'joueur'
+  parameter 'pMainJoueur'
+  parameter 'pli'
+  parameter 'dernierVainqueur'
+  parameter 'atout'
+  parameter 'carteRestante'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:4: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:13: warning: argument 'pointeur' of command @param is not found in the argument list of leaderboard(FILE *fichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.c:24: warning: The following parameter of leaderboard(FILE *fichier) is not documented:
+  parameter 'fichier'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:21: warning: argument 'pointeur' of command @param is not found in the argument list of statistiqueJoueur(FILE *fichier, int ligne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:21: warning: argument 'numero' of command @param is not found in the argument list of statistiqueJoueur(FILE *fichier, int ligne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.c:77: warning: The following parameters of statistiqueJoueur(FILE *fichier, int ligne) are not documented:
+  parameter 'fichier'
+  parameter 'ligne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:4: warning: unexpected token in comment block while parsing the argument of command param
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:13: warning: argument 'pointeur' of command @param is not found in the argument list of leaderboard(FILE *fichier)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:19: warning: The following parameter of leaderboard(FILE *fichier) is not documented:
+  parameter 'fichier'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:21: warning: argument 'pointeur' of command @param is not found in the argument list of statistiqueJoueur(FILE *fichier, int ligne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:21: warning: argument 'numero' of command @param is not found in the argument list of statistiqueJoueur(FILE *fichier, int ligne)
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/sous-menus.h:29: warning: The following parameters of statistiqueJoueur(FILE *fichier, int ligne) are not documented:
+  parameter 'fichier'
+  parameter 'ligne'
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:17: warning: documented empty return type of copie
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:49: warning: documented empty return type of zeroSiSuperieur
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:58: warning: documented empty return type of ordonnerTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:75: warning: documented empty return type of afficheTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:85: warning: documented empty return type of acquiertTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:93: warning: documented empty return type of constanteTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.c:119: warning: documented empty return type of aleatoireTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:32: warning: documented empty return type of copie
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:67: warning: documented empty return type of zeroSiSuperieur
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:77: warning: documented empty return type of ordonnerTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:89: warning: documented empty return type of afficheTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:100: warning: documented empty return type of acquiertTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:114: warning: documented empty return type of constanteTableau
+C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/tableau.h:126: warning: documented empty return type of aleatoireTableau
+error: Problems running dot: exit code=-1, command='dot', arguments='"C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/doc/html/graph_legend.dot" -Tpng -o "C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/doc/html/graph_legend.png"'

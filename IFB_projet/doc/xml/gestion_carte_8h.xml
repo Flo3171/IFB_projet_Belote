@@ -1,0 +1,817 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="gestion_carte_8h" kind="file" language="C++">
+    <compoundname>gestionCarte.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+      </node>
+      <node id="1">
+        <label>gestionCarte.h</label>
+        <link refid="gestion_carte_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="gestion_carte_8h_1ae1326a1796189845699f614535268322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void distribueCarte</definition>
+        <argsstring>(Carte *pCarteMain)</argsstring>
+        <name>distribueCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <briefdescription>
+<para>distribue les cartes entre les diffÈrent joueur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="12" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="4" bodyend="40" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="12" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1aa6ee6fa9bf13839d948e7df5f4199e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCarte</definition>
+        <argsstring>(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)</argsstring>
+        <name>setCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>carte</declname>
+        </param>
+        <param>
+          <type>Valeur</type>
+          <declname>valeurCarte</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>couleurCarte</declname>
+        </param>
+        <briefdescription>
+<para>donne une valeur et une couleur a une carte </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*carte : pointeur sur la carte a modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Valeur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valeurCarte : valeur a donner a la carte </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>couleurCarte : couleur a donner a la carte </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="22" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="42" bodyend="46" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a77b2ed8ac4298678feea52baa2e9cf0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void supprimeCarte</definition>
+        <argsstring>(Carte carte[], int nbCarte, int carteASupprimer)</argsstring>
+        <name>supprimeCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carte</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>carteASupprimer</declname>
+        </param>
+        <briefdescription>
+<para>supprime une carte d&apos;un tableau et rÈduit la taille de ce tableu par le bas </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carte[] : tableau conteneant les carte a modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbCarte : nombre total de carte </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteASupprimer : indice dans le tableau de la carte a enlever </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="32" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="48" bodyend="54" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1aa27d92d54128016ef6bf0faee2de1eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Joueur</type>
+        <definition>Joueur vainqueurPli</definition>
+        <argsstring>(Carte pli[], Couleur atout, Joueur premierAJouer)</argsstring>
+        <name>vainqueurPli</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>pli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>premierAJouer</declname>
+        </param>
+        <briefdescription>
+<para>donne le vainquer d&apos;un pli </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pli[] : tableau contenant les carte du pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout durant cette manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>premierAJouer : joueur qui pose la premiËre carte du pli </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Joueur : le jouer qui a gagnÈ le pli </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; La carte du joueur que l&apos;on test est plus forte que la meilleur actuelle alors ca devient la meilleure</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="43" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="56" bodyend="69" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="43" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1af903ef331292d446d28bdcd7a13ce6d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float forceCarte</definition>
+        <argsstring>(Carte carteACalculer, Couleur atout, Couleur entame)</argsstring>
+        <name>forceCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carteACalculer</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>entame</declname>
+        </param>
+        <briefdescription>
+<para>calcul la force d&apos;une carte, en faisant la probabilitÈe qu&apos;elle a de gagnÈ contre toutes les autres cartes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteACalculer : carte dont on veut connaitre la force </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout durant la partie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entame : couleur de l&apos;entame durant la partie </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float : probabilitÈe de victoir de la carte </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; la carte est un atout ou que la manche se joue en tout atout</para>
+<para>&lt; si on est en tout atout mais que la couleur de la carte n&apos;est pa la couleur de l&apos;entame alors la carte sera plus faible que toutes les cartees dans la bonne couleur</para>
+<para>&lt; la manche est en sans atout et la carte est dans la couleur de l&apos;entame</para>
+<para>&lt; on est en atout d&apos;une certaine couleur ou en sans atoutavec une couleur diff√©rente de l&apos;entame</para>
+<para>&lt; quand l&apos;entame est diff√©rent de la couleur de la carte et que ce n&apos;est pas un atout alor on pert a chaque fois</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="54" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="72" bodyend="251" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="54" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a860c9426634ed327bf5ed8344ee582e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char carteValide</definition>
+        <argsstring>(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)</argsstring>
+        <name>carteValide</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>cartePose</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>pli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMainJoueur</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>premierAJouer</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>parle</declname>
+        </param>
+        <briefdescription>
+<para>ddÈtermine si une carte peut etre posÈ par un joueur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cartPose : carte que l&apos;on veut poser </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pli[] : tableau contenet les carte du pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMainJoueur pointeur sur un tableau de 8 carte contenent les cartes dans la main du joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>premierAJouer : premier joueur a jouer dans le pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parle : joueur en train de jouer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char 1 si la carte est valide 0 sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Fonction faite a partir de l&apos;oranigrame qui montre comment d√©terminer si une carte est valide a partir des r√®gle</para>
+<para>&lt; On verifier que ce n&apos;est pas une carte vide</para>
+<para>&lt; premi√®re carte du plis ?</para>
+<para>&lt; Le joueur pos√®de il la couleur demand√©e ?</para>
+<para>&lt; l&apos;entame est en atout</para>
+<para>&lt; Le joueur a il un ajout de valeur sup√©rieur au meilleur ajout pos√©</para>
+<para>&lt; si la carte est un ajout le valeur sup√©rieur au meilleur atout pos√©</para>
+<para>&lt; Si la carte est un atout</para>
+<para>&lt; Si la carte est dans la couleur demand√©e</para>
+<para>&lt; Le partemenaire est maitre ?</para>
+<para>&lt; Le joueur a il un atout ?</para>
+<para>&lt; il y a deja un ajout de pos√©</para>
+<para>&lt; Le joueur a il un ajout de valeur sup√©rieur au meilleur ajout pos√©</para>
+<para>&lt; si la carte est un ajout le valeur sup√©rieur au meilleur atout pos√©</para>
+<para>&lt; Si la carte est un atout alors elle est valide</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="69" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="253" bodyend="333" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="69" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1ac56fc1f7ac0fcff4617638f73704540e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char rechercherCarte</definition>
+        <argsstring>(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)</argsstring>
+        <name>rechercherCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>couleurCherche</declname>
+        </param>
+        <param>
+          <type>Valeur</type>
+          <declname>valeurCherche</declname>
+        </param>
+        <briefdescription>
+<para>cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarte : pointeur sur un tableau de carte </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbCarte : nombre de carte dans le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>couleurCherche : couleur que l&apos;on veut chercher dans le tableau (mettre SANS_COULEUR pour rechercher toutes les couleur) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Valeur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valeurCherche : valeur que l&apos;on cherche dans le tableau (mettre SANS_VALEUR pour chercher toutes les valeur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char 1 si on a trouvÈ une carte qui correspond au critËre 0 sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="81" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="335" bodyend="345" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="81" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a03e9f6983a9e26fc546d1301ec3cf5ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char rechercherCarteSuperieur</definition>
+        <argsstring>(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)</argsstring>
+        <name>rechercherCarteSuperieur</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carteCherche</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>entame</declname>
+        </param>
+        <briefdescription>
+<para>cherche dans un tableau de carte si il y a une carte d&apos;une force suppÈrieur a carteCherche </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarte : pointeur sur un tableau de carte </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbCarte : nombre de carte dans le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteCherche : carte a laquele on veut que la carte cherchÈe soit supÈrieur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout dans la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>entame : couleur de l&apos;entame dans la manche </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char 1 si on a trouvÈ une carte qui correspond au critËre 0 sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="94" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="347" bodyend="358" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="94" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a372fd921fb081b8ac3b24fa4eacf1357" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float sommeForceCarte</definition>
+        <argsstring>(Carte *tableauCarte, int nbCarte, Couleur atout)</argsstring>
+        <name>sommeForceCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>tableauCarte</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <briefdescription>
+<para>calucule la somme force des carte dans un tableau </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tableauCarte : tableau de carte sur lequel on veut travailler </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbCarte : nombre de carte dans le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout sur la manche </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float : la valeur de lla somme des force des carte </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="106" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="361" bodyend="376" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="106" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a1ae8efe125a9388197c70d15f8b08c3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void trieCarte</definition>
+        <argsstring>(Carte tableauCarte[], int nbCarte, Couleur atout)</argsstring>
+        <name>trieCarte</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>tableauCarte</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbCarte</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <briefdescription>
+<para>trie un tableau de cartes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tableauCarte[] : tableau contenant les cartes a trier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nbCarte nombre de carte dans le tableau </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout dans la manche </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; On r√©alise un tri a bulle pour mettre atout du plus fort au moin fort au d√©but de la main puis les carte par famille</para>
+<para>&lt; Si la carte dois aller devant dans le tableau</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="117" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="378" bodyend="394" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="117" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1ad5f137155414b037892fcefbb4659c38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char cartePlaceAvant</definition>
+        <argsstring>(Carte carteRefference, Carte carteCompare, Couleur atout)</argsstring>
+        <name>cartePlaceAvant</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carteRefference</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carteCompare</declname>
+        </param>
+        <param>
+          <type>Couleur</type>
+          <declname>atout</declname>
+        </param>
+        <briefdescription>
+<para>permet de savoir si une carte doit etre placÈe avant lors du trie des cartes </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteRefference : carte par raport a laquelle on compare </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteCompare : carte que l&apos;on compare </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Couleur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>atout : couleur de l&apos;atout dans la manche </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char : renvoie 1 si la catre doit etre placÈe avant 0 sinon </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Les deux carte sont elle de la meme famille</para>
+<para>&lt; si carteCompate est un atout</para>
+<para>&lt; si la couleur de la carteCompare est devant celle de carteRefference dans l&apos;√©num√©ration(ordre arbitraire)</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="128" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="396" bodyend="424" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="128" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="gestion_carte_8h_1a60713486558430d396e98d6090e6db23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void rechercheAnnonce</definition>
+        <argsstring>(Carte *pCarteMain, int pointAnonce[], Joueur utilisateur, char *pseudo[])</argsstring>
+        <name>rechercheAnnonce</name>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointAnonce</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>rechere dans un tableau de cartes qui correspond a la main d&apos;un joureur si il peut faire des anonc, et si oui ajoute les points assacier au tableau dans le tableau des anonce </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le premier ÈlÈment du tableau qui cintient les cartes de tout les joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointAnonce[] : tableau contenant les point d&apos;anonce </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[] : tableau contenant les pseudo des 4 joueur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; on cherche si le joueur a un carr√©</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" line="168" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.c" bodystart="427" bodyend="560" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h" declline="168" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GESTION_CARTE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GESTION_CARTE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>liste<sp/>des<sp/>fonction<sp/>concerant<sp/>la<sp/>gestion<sp/>des<sp/>cartes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>distribueCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*carte,<sp/>Valeur<sp/>valeurCarte,<sp/>Couleur<sp/>couleurCarte);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>supprimeCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteASupprimer);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">Joueur<sp/>vainqueurPli(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Couleur<sp/>atout,<sp/>Joueur<sp/>premierAJouer);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>forceCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteACalculer,<sp/>Couleur<sp/>atout,<sp/>Couleur<sp/>entame);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>carteValide(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartePose,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Couleur<sp/>atout,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMainJoueur,<sp/>Joueur<sp/>premierAJouer,<sp/>Joueur<sp/>parle);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rechercherCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/>Couleur<sp/>couleurCherche,<sp/>Valeur<sp/>valeurCherche);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>rechercherCarteSuperieur(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteCherche,<sp/>Couleur<sp/>atout,<sp/>Couleur<sp/>entame);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sommeForceCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*tableauCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/>Couleur<sp/>atout);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trieCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>tableauCarte[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/>Couleur<sp/>atout);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cartePlaceAvant(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteRefference,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteCompare,<sp/>Couleur<sp/>atout);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sommeForceCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*tableauCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/>Couleur<sp/>atout);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>trieCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>tableauCarte[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/>Couleur<sp/>atout);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rechercheAnnonce(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[]);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_GESTION_CARTE_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionCarte.h"/>
+  </compounddef>
+</doxygen>

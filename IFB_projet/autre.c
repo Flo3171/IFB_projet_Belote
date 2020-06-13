@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file autre.c
+ * \brief ficher contenant les fonctions qui n'allait dans aucun autre fichier
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 Joueur joueurSuivant(Joueur joueur)
 {
     if (joueur == OUEST){

@@ -1,0 +1,772 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="general_8h" kind="file" language="C++">
+    <compoundname>general.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="general_8h_1a7a3238715d030c42dde5f4539c9ca3b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void initialisation</definition>
+        <argsstring>(int nbLigneFenetre, int nbColloneFenetre)</argsstring>
+        <name>initialisation</name>
+        <param>
+          <type>int</type>
+          <declname>nbLigneFenetre</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbColloneFenetre</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui gère l&apos;initialitation et le lancement du programme </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nbLigneFenetre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: taille verticale de la fenêtre </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nbColloneFenetre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: taille horizonotale de la fenêtre </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="11" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="3" bodyend="6" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1adfbaa271f44d828c6a42ce7e9affee88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void menuPrincipal</definition>
+        <argsstring>()</argsstring>
+        <name>menuPrincipal</name>
+        <briefdescription>
+<para>fonction qui gère le debut de la partie </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; contrôle d&apos;acquisition avec réaffichage de l&apos;interfface</para>
+<para>&lt;executer la fonction nouvelle partie</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="18" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="8" bodyend="89" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1a1faac25606ba09c4cdbcf54a142dbe0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int nouvellePartie</definition>
+        <argsstring>(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])</argsstring>
+        <name>nouvellePartie</name>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pStatistique</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>infoEcritureFicher</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>lancement d&apos;une nouvelle partie </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueuer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>infoEcritureFichier[] : tableau contenant les info qui devront etre écrite dans le fichier </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int : nombre de manche jusqu&apos;a la victoir d&apos;une équipe </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; On change l&apos;affichage pour avoir un affichage plus simple a lire lors d&apos;une partie entre 4 ordinateur</para>
+<para>&lt; a suprimer une fois de debug fini</para>
+<para>&lt; Fin de partie</para>
+<para>&lt; affichage des resultat</para>
+<para>&lt; L&apos;utilisatuer et nord gagnent</para>
+<para>&lt; est et touest gagnent</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="29" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="91" bodyend="178" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="29" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1a82e65877686a049b4bee9160af15c97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char manche</definition>
+        <argsstring>(char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)</argsstring>
+        <name>manche</name>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>dealer</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>pStatistique</declname>
+        </param>
+        <briefdescription>
+<para>lancement d&apos;une manche </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>score[] : tableau contenant les scores des joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dealer : joueur qui distibue les cartes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueuer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char : 0 si tout le monde passe, 1 si la manche a bien lieu </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; tableau qui stocke les anonce de chaque joueur, on y ajoute 1 pour le roi d&apos;atout puis 1 pour la dame d&apos;atout</para>
+<para>&lt; distribution des cartes</para>
+<para>&lt; On cherche si les joueurs on des anonce a faire</para>
+<para>&lt; On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche</para>
+<para>&lt; si un joueur a fait une belote rebelote il gagne 20 point</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="43" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="180" bodyend="277" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="43" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1a6eeea9d2fea8b2c504b0051af39f7c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+        <definition>Contrat annonceContrat</definition>
+        <argsstring>(char *pseudo[], Joueur dealer, Carte *pCarteMain, Joueur utilisateur)</argsstring>
+        <name>annonceContrat</name>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>dealer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <briefdescription>
+<para>gère l&apos;annonce et la surenchère des contats par les joueurs </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dealer : joueur qui distibue les cartes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueuer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_contrat" kindref="compound">Contrat</ref> : contrat final qui a ete choisi pour la partie </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Affichage du choix du joueur</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="56" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="279" bodyend="361" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="56" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1abde08a751131f9afc15de6fc616348f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+        <definition>Contrat proposeContrat</definition>
+        <argsstring>(Contrat dernierContrat, Joueur parle, char *pseudo[], Carte *pCarteMain, Joueur utilisateur)</argsstring>
+        <name>proposeContrat</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>dernierContrat</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>parle</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <briefdescription>
+<para>proposition d&apos;un contrat par un joueur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dernierContrat : dernier contrat proposé </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parle : joueur qui parle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="struct_contrat" kindref="compound">Contrat</ref> : nouveau contrat proposé par le joueur </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; acquisition par l&apos;utilisateur</para>
+<para>&lt; choix par l&apos;ia d&apos;un contrat</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="68" column="10" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="363" bodyend="379" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="68" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1a09dedac7ae460c4fd07ebcc4af44568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Joueur</type>
+        <definition>Joueur pli</definition>
+        <argsstring>(Contrat contrat, Joueur premierAJouer, char *pseudo[], Carte *pCarteMain, int pointManche[], int pointAnonce[], char belote[], Carte cartePli[], Carte carteAncienPli[], int score[], Joueur utilisateur, int numPli)</argsstring>
+        <name>pli</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>contrat</declname>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>premierAJouer</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pCarteMain</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointManche</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointAnonce</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>belote</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>cartePli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>carteAncienPli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numPli</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui gère un pli </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contrat : contrat qui a été choisipour cette manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>premierAjouer : premier joueur a jouer dans le pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[]: tableau de pointeur contenant les pseudo des différents joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointManche[] : tableau contenant les point de chaque joueur dans la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointAnonce[] : tableau contenant les point d&apos;anonce de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>belote[] : tableau contenant les ancone belote rebelote de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cartePli[] : tableau contenant les 4 carte du pli </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_carte" kindref="compound">Carte</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>carteAncienPli[] : tableau contenant les carte du pli précédent </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>score[] : tableau qui contient les score de la partie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Joueur : le vainceur du pli </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; interface de pli Utilisateur</para>
+<para>&lt; interface de pli ordinateur</para>
+<para>&lt; on regarde si une dame ou un roi d&apos;atout vien d&apos;etre jouer pour ajouter au tableau belote[]</para>
+<para>&lt; affichage de la carte qui vien d&apos;etre jouée</para>
+<para>&lt; 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="88" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="382" bodyend="453" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="88" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int poseCarte</definition>
+        <argsstring>(Joueur joueur, int numCarte, Carte *pMainJoueurs, Carte pli[], int carteRestante)</argsstring>
+        <name>poseCarte</name>
+        <param>
+          <type>Joueur</type>
+          <declname>joueur</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numCarte</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref> *</type>
+          <declname>pMainJoueurs</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_carte" kindref="compound">Carte</ref></type>
+          <declname>pli</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>carteRestante</declname>
+        </param>
+        <briefdescription>
+<para>fonction qui verifie la validité d&apos;une carte est la pose </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable qui defini la position du joueur qui effectue l&apos;action </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numCarte</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>variable qui defini la carte choisie par le joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pMainJoueurs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur qui renvoie vers le tableau de la main de tous les joueurs </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPli</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: pointeur qui renvoie vers le tableau des carte jouées dans le pli </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="100" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="455" bodyend="465" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="100" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="general_8h_1ae2494afb9457cbcf96753839016abbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char calculPointManche</definition>
+        <argsstring>(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)</argsstring>
+        <name>calculPointManche</name>
+        <param>
+          <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+          <declname>contrat</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointManche</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointAnonce</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointBelote</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>pseudo</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>Joueur</type>
+          <declname>utilisateur</declname>
+        </param>
+        <briefdescription>
+<para>compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="struct_contrat" kindref="compound">Contrat</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para>contrat : contrat qui a été choisi durant la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointManche[] : tableau qui contient les points de la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointAnonce[] : tableau qui contient les points d&apos;anonce de la manche </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>score[] : tableau qui contient les score de la partie </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>char</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>*pseudo[]: tableau de pointeur contenant les pseudo des différents joueur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Joueur</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>utilisateur : donne la position de l&apos;utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>char : 1 si le contrtat a été réussi et 0 si le contrat a échoué </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; On reche si le contrat est rampli</para>
+<para>&lt; cas ou un des joueur a pris un capot</para>
+<para>&lt; cas ou un des joueur a pris une générale</para>
+<para>&lt; Le contrat est rempli si le les point de l&apos;équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces</para>
+<para>&lt; on affiche ce qui c&apos;est passé</para>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="115" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="468" bodyend="568" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="115" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_GENERAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_GENERAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialisation(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFenetre);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>menuPrincipal<sp/>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nouvellePartie(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>infoEcritureFicher[]);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>manche(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>dealer,<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>annonceContrat(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>dealer,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>proposeContrat(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">Joueur<sp/>pli(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/>Joueur<sp/>premierAJouer,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>belote[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartePli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteAncienPli[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPli);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>poseCarte<sp/>(Joueur<sp/>joueur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCarte,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueurs,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>calculPointManche(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointBelote[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_GENERAL_H_</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h"/>
+  </compounddef>
+</doxygen>

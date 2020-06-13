@@ -19,47 +19,79 @@
 #define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
 #define MODE_1_MANCHE 0 /**< 0 pour le mode normal, 1 pour le mode ou une partie est constitué d'une uique manche */
 
-/**< Structure */
+/**< Structure et énumérations */
+
+/**
+ *\enum Couleur
+ *\brief Les différentes couleur d'atout possible a la belote coinchée
+ *
+ *toute les couleur disponible ainsi que tout atouts et sans atout
+ *sert a la fois pour le type Carte et le type Contrat
+ *
+ */
 
 typedef enum Couleur
 {
-    SANS_COULEUR = 0,
-    COEUR        = 1,
-    PIQUE        = 2,
-    CARREAU      = 3,
-    TREFLE       = 4,
-    TOUT_ATOUT   = 5,
-    SANS_ATOUT   = 6
+    SANS_COULEUR = 0, /*!Couleur par défaut, pour une carte vide */
+    COEUR        = 1, /*!Couleur coeur */
+    PIQUE        = 2, /*!Couleur pique */
+    CARREAU      = 3, /*!Couleur carreau */
+    TREFLE       = 4, /*!Couleur trefle */
+    TOUT_ATOUT   = 5, /*!Tout atout */
+    SANS_ATOUT   = 6  /*!Sans atout */
 
 }Couleur;
 
+/**
+ *\enum Valeur
+ *\brief Les différentes valeur possible des cartes d'un jeu de 32 cartes
+ *
+ * Les valeurs associée on été placée de manière arbitraire et n'ont pas d'importance sur le programme
+ *
+ */
+
 typedef enum Valeur
 {
-    SANS_VALEUR = 0,
-    AS          = 1,
-    VALET       = 11,
-    DAME        = 12,
-    ROI         = 13,
-    SEPT        = 7,
-    HUIT        = 8,
-    NEUF        = 9,
-    DIX         = 10
+    SANS_VALEUR = 0,  /*!Valeur par défaut, pour une carte vide  */
+    AS          = 1,  /*!Valeur As */
+    VALET       = 11, /*!Valeur Valet */
+    DAME        = 12, /*!Valeur Dame */
+    ROI         = 13, /*!Valeur Roi */
+    SEPT        = 7, /*!Valeur 7 */
+    HUIT        = 8, /*!Valeur 8 */
+    NEUF        = 9, /*!Valeur 9 */
+    DIX         = 10 /*!Valeur 10 */
 }Valeur;
+
+/**
+ *\enum Joueur
+ *\brief Les différente joueur lors d'une partie
+ *
+ * Les joueur sont nomé par les different point cardinaut correspondant à leur placement sur la table
+ *
+ */
 
 typedef enum Joueur
 {
-    SANS_JOUEUR = 0,
-    NORD        = 1,
-    EST         = 2,
-    SUD         = 3,
-    OUEST       = 4
+    SANS_JOUEUR = 0,/*!Joueur par défaut, quand il n'y a pas de joueur ou pour l'initialitation */
+    NORD        = 1,/*!Joueur en haut */
+    EST         = 2,/*!Joueur à gauche */
+    SUD         = 3,/*!Joueur en bas */
+    OUEST       = 4 /*!Joueur à droite */
 }Joueur;
+
+/**
+ *\enum Coinche
+ *\brief indique il un contrat est coinché ou surcoinché
+ *
+ *
+ */
 
 typedef enum Coinche
 {
-    NORMAL     = 0,
-    COINCHE    = 1,
-    SURCOINCHE = 2
+    NORMAL     = 0,/*!Le contrat n'est pas coiché, par défaut */
+    COINCHE    = 1,/*!Le contrat est Coinché */
+    SURCOINCHE = 2 /*!Le contrat est Surcoiché */
 }Coinche;
 
 typedef enum NbPoint

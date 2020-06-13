@@ -1,0 +1,928 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="main_8h" kind="file" language="C++">
+    <compoundname>main.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">conio.h</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="tableau_8h" local="yes">tableau.h</includes>
+    <includes refid="acquisition_8h" local="yes">acquisition.h</includes>
+    <includes refid="affichage_8h" local="yes">affichage.h</includes>
+    <includes refid="gestion_carte_8h" local="yes">gestionCarte.h</includes>
+    <includes refid="general_8h" local="yes">general.h</includes>
+    <includes refid="formatage_chaine_8h" local="yes">formatageChaine.h</includes>
+    <includes refid="autre_8h" local="yes">autre.h</includes>
+    <includes refid="ia_8h" local="yes">ia.h</includes>
+    <includes refid="sous-menus_8h" local="yes">sous-menus.h</includes>
+    <includes refid="gestion_fichier_8h" local="yes">gestionFichier.h</includes>
+    <includedby refid="acquisition_8c" local="yes">acquisition.c</includedby>
+    <includedby refid="affichage_8c" local="yes">affichage.c</includedby>
+    <includedby refid="autre_8c" local="yes">autre.c</includedby>
+    <includedby refid="formatage_chaine_8c" local="yes">formatageChaine.c</includedby>
+    <includedby refid="general_8c" local="yes">general.c</includedby>
+    <includedby refid="gestion_carte_8c" local="yes">gestionCarte.c</includedby>
+    <includedby refid="gestion_fichier_8c" local="yes">gestionFichier.c</includedby>
+    <includedby refid="ia_8c" local="yes">ia.c</includedby>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="sous-menus_8c" local="yes">sous-menus.c</includedby>
+    <includedby refid="tableau_8c" local="yes">tableau.c</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>affichage.h</label>
+        <link refid="affichage_8h_source"/>
+      </node>
+      <node id="3">
+        <label>stdlib.h</label>
+      </node>
+      <node id="16">
+        <label>sous-menus.h</label>
+        <link refid="sous-menus_8h_source"/>
+      </node>
+      <node id="4">
+        <label>conio.h</label>
+      </node>
+      <node id="14">
+        <label>autre.h</label>
+        <link refid="autre_8h_source"/>
+      </node>
+      <node id="12">
+        <label>general.h</label>
+        <link refid="general_8h_source"/>
+      </node>
+      <node id="17">
+        <label>gestionFichier.h</label>
+        <link refid="gestion_fichier_8h_source"/>
+      </node>
+      <node id="15">
+        <label>ia.h</label>
+        <link refid="ia_8h_source"/>
+      </node>
+      <node id="1">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string.h</label>
+      </node>
+      <node id="8">
+        <label>tableau.h</label>
+        <link refid="tableau_8h_source"/>
+      </node>
+      <node id="6">
+        <label>time.h</label>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+      <node id="13">
+        <label>formatageChaine.h</label>
+        <link refid="formatage_chaine_8h_source"/>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="11">
+        <label>gestionCarte.h</label>
+        <link refid="gestion_carte_8h_source"/>
+      </node>
+      <node id="9">
+        <label>acquisition.h</label>
+        <link refid="acquisition_8h_source"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_carte" prot="public">Carte</innerclass>
+    <innerclass refid="struct_contrat" prot="public">Contrat</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="main_8h_1aaf7d02a9ede3e3b63a2c50943a7ecc31" prot="public" static="no">
+        <name>TAILLE_MAXI_PESEUDO</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="7" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a0dfaeaaa2aed63e74e28da9d81a8994f" prot="public" static="no">
+        <name>TAILLE_MAXI_COULEUR</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="8" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a6549522dc97ddb177422115c870f88c5" prot="public" static="no">
+        <name>NB_JOUEUR</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="9" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a76de9065470a5f029e28d37232e559c6" prot="public" static="no">
+        <name>TAILLE_MAXI_MESSAGE</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="10" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a626944165511c21519670751ef149477" prot="public" static="no">
+        <name>NB_TOATAL_CARTE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="11" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1af76f640d79a38e651d7b6058f71f6394" prot="public" static="no">
+        <name>NIVEAU_IA</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="12" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1af9dde9c40935b78c490d03d21db41565" prot="public" static="no">
+        <name>NB_CARRACTERE_SCORE</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="13" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a913e650dfb78ea7034b399a7c72c3d21" prot="public" static="no">
+        <name>POSITION_NB_VICTOIRE</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="14" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a9718e53886ba273a93f9d720fd659f2e" prot="public" static="no">
+        <name>POSITION_SCORE_MAX</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="15" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a0ed282b22dde6608557dc871aea05b22" prot="public" static="no">
+        <name>POSITION_NB_MANCHES_POUR_GAGNER</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="16" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a0bf03abbface9eeac5a2b5494c9c9867" prot="public" static="no">
+        <name>NB_CARRACTERE_LEADERBOARD</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="17" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1add1753cf43e29dda2bf97e857d695e5f" prot="public" static="no">
+        <name>POSITION_RECORD_VICTOIRE</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="18" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1ac80a3592e72fd96b772ee47a7d8e0d0a" prot="public" static="no">
+        <name>DEBUG_MODE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 pour le mode normal, 1 pour le mode débug </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="19" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="main_8h_1a2c1f0982f539721030f4128a32d8a48e" prot="public" static="no">
+        <name>MODE_1_MANCHE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>0 pour le mode normal, 1 pour le mode ou une partie est constitué d&apos;une uique manche Structure </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="20" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="main_8h_1aa304d0ca681f782b1d7735da33037dd7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Couleur</name>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7a6c08e53dd32d8f237c48a1d06c28a70f" prot="public">
+          <name>SANS_COULEUR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7afe25ae4ef5c689f46e1c4c972243d4db" prot="public">
+          <name>COEUR</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7a835c1d28b93fd71585c0bd8c629ea98a" prot="public">
+          <name>PIQUE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7aa8e960c091829457b4833077289e00a0" prot="public">
+          <name>CARREAU</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7aff50f65df1ad73caec3e886c499657ba" prot="public">
+          <name>TREFLE</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7ae290acbfa912b09c0cef378a61628e8d" prot="public">
+          <name>TOUT_ATOUT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7a6a14acaec08fe6a02f30068425b0038d" prot="public">
+          <name>SANS_ATOUT</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="24" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="25" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="enum" id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Valeur</name>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa8b89c86ac4eb520fd7232afc0729d166" prot="public">
+          <name>SANS_VALEUR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa0b84664ffa026b1a5f43c051cd6fe69f" prot="public">
+          <name>AS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa63afc18876b4864ae749c6343dae3ba0" prot="public">
+          <name>VALET</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa436250abd7e6692a3ab0983590128093" prot="public">
+          <name>DAME</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa630b67ff829a4c185e65091797e9a03c" prot="public">
+          <name>ROI</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa9a9953fcb482418f2a1fe258c4f46a70" prot="public">
+          <name>SEPT</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa29ed9d7f614ba184a86644f1c9a03291" prot="public">
+          <name>HUIT</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa79e4607adbe51052bdfebc8c55cc85c8" prot="public">
+          <name>NEUF</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa1507d51307dbb0fbb3b438e591dc99e4" prot="public">
+          <name>DIX</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="36" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="37" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="main_8h_1a9a527722d878ba01d077a448efebe469" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Joueur</name>
+        <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469a36235597ab9cf83f634e0e4fdb02f0b6" prot="public">
+          <name>SANS_JOUEUR</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469aa1f529db9f2d334d9c41dcc5f6f6e2a7" prot="public">
+          <name>NORD</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469ab26f94a551dbfca6e0f4f6b5ad145c01" prot="public">
+          <name>EST</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469ad2d3ceab3fce63bbe07882ab5a4e991e" prot="public">
+          <name>SUD</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469a564dddee8796eda21f35c76cb586aeb6" prot="public">
+          <name>OUEST</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="49" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Coinche</name>
+        <enumvalue id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2a50d1448013c6f17125caee18aa418af7" prot="public">
+          <name>NORMAL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2a970bdd144ee8eb80232c1a5487a3acd7" prot="public">
+          <name>COINCHE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2a7d474fc11a1b42c2e48c320d5ea9d08b" prot="public">
+          <name>SURCOINCHE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="58" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="59" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="main_8h_1a069bf47271688902ffe3b7ea5bd77791" prot="public" static="no" strong="no">
+        <type></type>
+        <name>NbPoint</name>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ae117e3533122c80b262257b49b21cddf" prot="public">
+          <name>ZERO</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791adf5d02c8e96cb24a7ebac75c6c343ee4" prot="public">
+          <name>QUATRE_VINGT</name>
+          <initializer>= 80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ae1834978d36fbcca2d6854b0c4417d4f" prot="public">
+          <name>QUATRE_VINGT_DIX</name>
+          <initializer>= 90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791af59ee3d128b9d3f5d89bc37bff97b5ab" prot="public">
+          <name>CENT</name>
+          <initializer>= 100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791af3894ec5845c03aa9ed7521de8bace7e" prot="public">
+          <name>CENT_DIX</name>
+          <initializer>= 110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ac6fa2e4ac9c470dbd87f350414fdabd0" prot="public">
+          <name>CENT_VINGT</name>
+          <initializer>= 120</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb" prot="public">
+          <name>CENT_TRENTE</name>
+          <initializer>= 130</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8" prot="public">
+          <name>CENT_QUARANTE</name>
+          <initializer>= 140</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5" prot="public">
+          <name>CENT_CINQUANTE</name>
+          <initializer>= 150</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76" prot="public">
+          <name>CAPOT</name>
+          <initializer>= 160</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716" prot="public">
+          <name>GENERALE</name>
+          <initializer>= 170</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="65" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="66" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="enum" id="main_8h_1a5455a7020c511bffb5b2c664b746686d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TypeMessage</name>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dab52497a3e8db9c06f0c0199dc274c9b9" prot="public">
+          <name>SANS_MESSAGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dac7fd34218112a72b05ae3e4b190e9b6b" prot="public">
+          <name>POSE_CARTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa" prot="public">
+          <name>RESULTAT_PLI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8" prot="public">
+          <name>RESULTAT_MANCHE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686da07eb5e74edeb9cdbf5546fe264a15228" prot="public">
+          <name>RESULTAT_PARTIE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686da00a3a2419c480fddee84b1e62cae7e86" prot="public">
+          <name>PROPOSE_CONTRAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686daaa1ffce059c97b8d2d7fa9475279eb99" prot="public">
+          <name>CONTRAT_FINAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="95" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="96" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="main_8h_1a297c7f13df924dd6c731cb40f9fff63c" prot="public" static="no">
+        <type>enum Couleur</type>
+        <definition>typedef enum Couleur Couleur</definition>
+        <argsstring></argsstring>
+        <name>Couleur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="34" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1aa426d41d865abab7356c475a678981d8" prot="public" static="no">
+        <type>enum Valeur</type>
+        <definition>typedef enum Valeur Valeur</definition>
+        <argsstring></argsstring>
+        <name>Valeur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="47" column="7"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1a05b3c314c9748336cf88af587ab5afc4" prot="public" static="no">
+        <type>enum Joueur</type>
+        <definition>typedef enum Joueur Joueur</definition>
+        <argsstring></argsstring>
+        <name>Joueur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="56" column="7"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1afd02ea287891c05b01211a7fcf6257a2" prot="public" static="no">
+        <type>enum Coinche</type>
+        <definition>typedef enum Coinche Coinche</definition>
+        <argsstring></argsstring>
+        <name>Coinche</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1a7f9ad56f7117778c67798b09b2c89951" prot="public" static="no">
+        <type>enum NbPoint</type>
+        <definition>typedef enum NbPoint NbPoint</definition>
+        <argsstring></argsstring>
+        <name>NbPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="78" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1abd96d4afde54ec0be90c0393c1bedc48" prot="public" static="no">
+        <type>struct <ref refid="struct_carte" kindref="compound">Carte</ref></type>
+        <definition>typedef struct Carte Carte</definition>
+        <argsstring></argsstring>
+        <name>Carte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="84" column="6"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1a8ee21120b5913e65570a4afc1afced74" prot="public" static="no">
+        <type>struct <ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
+        <definition>typedef struct Contrat Contrat</definition>
+        <argsstring></argsstring>
+        <name>Contrat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="93" column="8"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8h_1a1747b5ea476e8157aaa93f487d0b21d2" prot="public" static="no">
+        <type>enum TypeMessage</type>
+        <definition>typedef enum TypeMessage TypeMessage</definition>
+        <argsstring></argsstring>
+        <name>TypeMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fontions standard Fontions créée dans le cardre du projet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="115" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*on<sp/>regroupe<sp/>dans<sp/>ce<sp/>ficher<sp/>les<sp/>include<sp/>des<sp/>bibliothèque<sp/>et<sp/>la<sp/>declaration<sp/>des<sp/>constante*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_MAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_MAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Constantes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAILLE_MAXI_PESEUDO<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAILLE_MAXI_COULEUR<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB_JOUEUR<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAILLE_MAXI_MESSAGE<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB_TOATAL_CARTE<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NIVEAU_IA<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB_CARRACTERE_SCORE<sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_NB_VICTOIRE<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_SCORE_MAX<sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_NB_MANCHES_POUR_GAGNER<sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NB_CARRACTERE_LEADERBOARD<sp/>26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_RECORD_VICTOIRE<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_MODE<sp/>0<sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor">#define<sp/>MODE_1_MANCHE<sp/>0<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor">typedef<sp/>enum<sp/>Couleur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_COULEUR<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>COEUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>PIQUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>CARREAU<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>TREFLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>TOUT_ATOUT<sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_ATOUT<sp/><sp/><sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}Couleur;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Valeur</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_VALEUR<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>AS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>VALET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>DAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ROI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>SEPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>HUIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>NEUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>DIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}Valeur;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Joueur</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_JOUEUR<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>NORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>EST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>SUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>OUEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}Joueur;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Coinche</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>NORMAL<sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>COINCHE<sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>SURCOINCHE<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}Coinche;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NbPoint</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ZERO<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT<sp/>=<sp/>80,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT_DIX<sp/>=<sp/>90,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT<sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_DIX<sp/>=<sp/>110,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_VINGT<sp/>=<sp/>120,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_TRENTE<sp/>=<sp/>130,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_QUARANTE<sp/>=<sp/>140,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_CINQUANTE<sp/>=<sp/>150,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>CAPOT<sp/>=<sp/>160,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERALE<sp/>=<sp/>170</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}NbPoint;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_carte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_carte" kindref="compound">Carte</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>couleur;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>Valeur<sp/>valeur;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}<ref refid="struct_carte" kindref="compound">Carte</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct_contrat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>Joueur<sp/>preneur;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>NbPoint<sp/>nbPoint;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>atout;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>Coinche<sp/>coinche;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<ref refid="struct_contrat" kindref="compound">Contrat</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TypeMessage</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_MESSAGE,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>POSE_CARTE,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_PLI,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_MANCHE,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_PARTIE,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>PROPOSE_CONTRAT,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>CONTRAT_FINAL</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}TypeMessage;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;conio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor">#include<sp/>&quot;tableau.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acquisition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;affichage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionCarte.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;general.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;formatageChaine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;autre.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ia.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sous-menus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionFichier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_MAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h"/>
+  </compounddef>
+</doxygen>
