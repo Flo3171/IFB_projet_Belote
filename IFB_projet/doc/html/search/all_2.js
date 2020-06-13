@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['joue1000partie_20',['joue1000Partie',['../autre_8c.html#ab8d4df8f4e03f038b98f6d96a2eaefd2',1,'autre.c']]],
-  ['joueursuivant_21',['joueurSuivant',['../autre_8c.html#a9028074829d59ddc4481ae51036fc9ef',1,'autre.c']]]
+  ['decoupechaine_30',['decoupeChaine',['../formatage_chaine_8c.html#ad598bad9520e1d05637504cf2890a947',1,'decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#ad598bad9520e1d05637504cf2890a947',1,'decoupeChaine(char chaineInitiale[], char *chaineFinale, int tailleLigne, int nbLigne):&#160;formatageChaine.c']]],
+  ['distribuecarte_31',['distribueCarte',['../gestion_carte_8c.html#ae1326a1796189845699f614535268322',1,'distribueCarte(Carte *pCarteMain):&#160;gestionCarte.c'],['../gestion_carte_8h.html#ae1326a1796189845699f614535268322',1,'distribueCarte(Carte *pCarteMain):&#160;gestionCarte.c']]]
 ];

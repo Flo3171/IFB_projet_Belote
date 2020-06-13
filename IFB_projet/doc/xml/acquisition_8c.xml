@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -20,15 +20,15 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -85,14 +85,14 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="1">
         <label>acquisition.c</label>
@@ -102,7 +102,7 @@
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -209,9 +209,9 @@
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="33" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="33" bodyend="40"/>
       </memberdef>
-      <memberdef kind="function" id="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int acquisitionEntierSansMessageAvecConsigne</definition>
+        <definition>acquisitionEntierSansMessageAvecConsigne</definition>
         <argsstring>(int min, int max, char consigne[])</argsstring>
         <name>acquisitionEntierSansMessageAvecConsigne</name>
         <param>
@@ -340,7 +340,7 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>ficher contenant les fonctions relative a l&apos;acquisirion </para>
+<para>ficher source contenant les fonctions relative a l&apos;acquisirion </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
@@ -354,7 +354,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;main.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" kindref="member">acquisitionEntierAvecMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
+<codeline lineno="11" refid="acquisition_8h_1af9aa780804fe8400546627dea47953a0" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" kindref="member">acquisitionEntierAvecMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrer<sp/>un<sp/>nombre<sp/>entier<sp/>entre<sp/>%d<sp/>et<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>min,<sp/>max);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;valeur);</highlight></codeline>
@@ -367,7 +367,7 @@
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" kindref="member">acquisitionEntierSansMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
+<codeline lineno="24" refid="acquisition_8h_1a18f937b66ed35b9776e797d80b5916cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" kindref="member">acquisitionEntierSansMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrer<sp/>un<sp/>nombre<sp/>entier<sp/>entre<sp/>%d<sp/>et<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>min,<sp/>max);</highlight></codeline>
@@ -376,7 +376,7 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" kindref="member">acquisitionOuiNonSansMessage</ref>(){</highlight></codeline>
+<codeline lineno="33" refid="acquisition_8h_1a0daf819099ce021f9a1d0a8464212af4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" kindref="member">acquisitionOuiNonSansMessage</ref>(){</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Voulez<sp/>vous<sp/>recomencer<sp/>O/N\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -385,7 +385,7 @@
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[])</highlight></codeline>
+<codeline lineno="42" refid="acquisition_8h_1ac37f94c13b479302eb91f586007056ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[])</highlight></codeline>
 <codeline lineno="43"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
@@ -395,7 +395,7 @@
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction<sp/>[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="52" refid="acquisition_8h_1afcd1bfa47bc634de2b8467f3191b8782" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction<sp/>[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pseudo[100];</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>controle=0;</highlight></codeline>
@@ -437,7 +437,7 @@
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/>}</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94" refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>()</highlight></codeline>
+<codeline lineno="94" refid="acquisition_8h_1a29f102dc63957f1bd52030075bb9beef" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>()</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>num[50];</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NB=0;</highlight></codeline>

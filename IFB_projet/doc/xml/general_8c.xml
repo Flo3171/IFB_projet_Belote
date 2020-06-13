@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -20,7 +20,7 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="1">
         <label>general.c</label>
@@ -30,11 +30,11 @@
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -147,6 +147,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="11" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="11" bodyend="14"/>
+        <references refid="affichage_8c_1a25cb786f432ed01160d9268cdccbe7dc" compoundref="affichage_8c" startline="177" endline="183">modifieTailleFenetre</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1adfbaa271f44d828c6a42ce7e9affee88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -166,6 +167,14 @@
 <para>&lt;executer la fonction nouvelle partie</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="16" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="16" bodyend="97"/>
+        <references refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" compoundref="acquisition_8c" startline="52" endline="92">acquisitionPseudoAvecMessage</references>
+        <references refid="affichage_8c_1ac892324566767801d485fad58318f635" compoundref="affichage_8c" startline="11" endline="56">afficheMenuPrincipal</references>
+        <references refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" compoundref="affichage_8c" startline="269" endline="346">afficheMenuSelection</references>
+        <references refid="gestion_fichier_8c_1a7e238d3b3fe49a72cf5deb9757d4466e" compoundref="gestion_fichier_8c" startline="97" endline="164">ecrireLeaderboard</references>
+        <references refid="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" compoundref="gestion_fichier_8c" startline="44" endline="95">ecrireStatistique</references>
+        <references refid="gestion_fichier_8c_1a90d5f557067c87ecf4dd33f4345f5f2e" compoundref="gestion_fichier_8c" startline="11" endline="42">ecriturePseudo</references>
+        <references refid="autre_8c_1ab8d4df8f4e03f038b98f6d96a2eaefd2" compoundref="autre_8c" startline="153" endline="174">joue1000Partie</references>
+        <references refid="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" compoundref="general_8c" startline="99" endline="186">nouvellePartie</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -240,6 +249,10 @@
 <para>&lt; est et touest gagnent</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="99" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="99" bodyend="186"/>
+        <references refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" compoundref="affichage_8c" startline="269" endline="346">afficheMenuSelection</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="general_8c_1a82e65877686a049b4bee9160af15c97f" compoundref="general_8c" startline="188" endline="285">manche</references>
+        <references refid="autre_8c_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" compoundref="autre_8c" startline="21" endline="24">nbAleatoire</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1a82e65877686a049b4bee9160af15c97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -325,6 +338,17 @@
 <para>&lt; si un joueur a fait une belote rebelote il gagne 20 point</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="188" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="188" bodyend="285"/>
+        <references refid="general_8c_1a6eeea9d2fea8b2c504b0051af39f7c80" compoundref="general_8c" startline="287" endline="369">annonceContrat</references>
+        <references refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" compoundref="main_8h" startline="146">Contrat::atout</references>
+        <references refid="general_8c_1ae2494afb9457cbcf96753839016abbb6" compoundref="general_8c" startline="476" endline="576">calculPointManche</references>
+        <references refid="gestion_carte_8c_1ae1326a1796189845699f614535268322" compoundref="gestion_carte_8c" startline="12" endline="48">distribueCarte</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
+        <references refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" compoundref="general_8c" startline="390" endline="461">pli</references>
+        <references refid="gestion_carte_8c_1a60713486558430d396e98d6090e6db23" compoundref="gestion_carte_8c" startline="435" endline="568">rechercheAnnonce</references>
+        <references refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" compoundref="gestion_carte_8c" startline="50" endline="54">setCarte</references>
+        <references refid="gestion_carte_8c_1a1ae8efe125a9388197c70d15f8b08c3a" compoundref="gestion_carte_8c" startline="386" endline="402">trieCarte</references>
+        <references refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" compoundref="gestion_carte_8c" startline="64" endline="77">vainqueurPli</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1a6eeea9d2fea8b2c504b0051af39f7c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -393,6 +417,12 @@
 <para>&lt; Affichage du choix du joueur</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="287" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="287" bodyend="369"/>
+        <references refid="affichage_8c_1abd791297578af449761083408a1b4462" compoundref="affichage_8c" startline="247" endline="267">afficheContrat</references>
+        <references refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" compoundref="main_8h" startline="147">Contrat::coinche</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
+        <references refid="general_8c_1abde08a751131f9afc15de6fc616348f6" compoundref="general_8c" startline="371" endline="387">proposeContrat</references>
+        <references refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" compoundref="autre_8c" startline="26" endline="32">setContrat</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1abde08a751131f9afc15de6fc616348f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -474,6 +504,8 @@
 <para>&lt; choix par l&apos;ia d&apos;un contrat</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="371" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="371" bodyend="387"/>
+        <references refid="affichage_8c_1ae37357f1035df2f6d50afb1a1c5a9947" compoundref="affichage_8c" startline="348" endline="423">proposeContratUtilisateur</references>
+        <references refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" compoundref="autre_8c" startline="26" endline="32">setContrat</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Joueur</type>
@@ -640,6 +672,14 @@
 <para>&lt; 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="390" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="390" bodyend="461"/>
+        <references refid="affichage_8c_1a773118ff3accfbd267688f5e91f26ed7" compoundref="affichage_8c" startline="59" endline="175">afficheInterfacePli</references>
+        <references refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" compoundref="main_8h" startline="146">Contrat::atout</references>
+        <references refid="formatage_chaine_8c_1a0a9bbb51e5f916ca5bef2365312e23be" compoundref="formatage_chaine_8c" startline="314" endline="342">genereMessage</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="autre_8c_1a4fab4a48512193a409dc541bb38a999c" compoundref="autre_8c" startline="34" endline="144">pointPli</references>
+        <references refid="general_8c_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" compoundref="general_8c" startline="463" endline="473">poseCarte</references>
+        <references refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" compoundref="gestion_carte_8c" startline="64" endline="77">vainqueurPli</references>
+        <references refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" compoundref="main_8h" startline="130">Carte::valeur</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -711,6 +751,10 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="463" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="463" bodyend="473"/>
+        <references refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" compoundref="general_8c" startline="390" endline="461">pli</references>
+        <references refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" compoundref="gestion_carte_8c" startline="50" endline="54">setCarte</references>
+        <references refid="gestion_carte_8c_1a77b2ed8ac4298678feea52baa2e9cf0e" compoundref="gestion_carte_8c" startline="56" endline="62">supprimeCarte</references>
+        <references refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" compoundref="main_8h" startline="130">Carte::valeur</references>
       </memberdef>
       <memberdef kind="function" id="general_8c_1ae2494afb9457cbcf96753839016abbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -823,21 +867,33 @@
 <para>&lt; on affiche ce qui c&apos;est passé</para>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" line="476" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="476" bodyend="576"/>
+        <references refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" compoundref="affichage_8c" startline="269" endline="346">afficheMenuSelection</references>
+        <references refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" compoundref="main_8h" startline="147">Contrat::coinche</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>ficher source contenant les fonctions les plus impotantes pour le jeu de la belote </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;main.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialisation(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFenetre)</highlight></codeline>
+<codeline lineno="11" refid="general_8h_1a7a3238715d030c42dde5f4539c9ca3b3" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="general_8c_1a7a3238715d030c42dde5f4539c9ca3b3" kindref="member">initialisation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFenetre)</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1a25cb786f432ed01160d9268cdccbe7dc" kindref="member">modifieTailleFenetre</ref>(nbLigneFenetre,<sp/>nbColloneFenetre);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>menuPrincipal()</highlight></codeline>
+<codeline lineno="16" refid="general_8h_1adfbaa271f44d828c6a42ce7e9affee88" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="general_8c_1adfbaa271f44d828c6a42ce7e9affee88" kindref="member">menuPrincipal</ref>()</highlight></codeline>
 <codeline lineno="17"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choix,<sp/>sortie=1,ligne=0;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statistique[5][4]<sp/>=<sp/>{0};</highlight></codeline>
@@ -860,7 +916,7 @@
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(pseudo[SUD-1],</highlight><highlight class="stringliteral">&quot;Choisisez<sp/>votre<sp/>pseudo:&quot;</highlight><highlight class="normal">,0);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>ligne=ecriturePseudo(pseudo[SUD-1],fichier);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>ligne=<ref refid="gestion_fichier_8c_1a90d5f557067c87ecf4dd33f4345f5f2e" kindref="member">ecriturePseudo</ref>(pseudo[SUD-1],fichier);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pPseudo[4];</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;4;<sp/>i++)</highlight></codeline>
@@ -875,13 +931,13 @@
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1<sp/>:{</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>infoEcritureFichier[3]<sp/>=<sp/>{0},<sp/>nbVictoire<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nouvellePartie(pPseudo,<sp/>SUD,<sp/>pStatistique,<sp/>infoEcritureFichier);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbVictoire<sp/>=<sp/>ecrireStatistique(fichier,ligne,infoEcritureFichier[1],1);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecrireStatistique(fichier,ligne,infoEcritureFichier[2],2);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" kindref="member">nouvellePartie</ref>(pPseudo,<sp/>SUD,<sp/>pStatistique,<sp/>infoEcritureFichier);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbVictoire<sp/>=<sp/><ref refid="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" kindref="member">ecrireStatistique</ref>(fichier,ligne,infoEcritureFichier[1],1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" kindref="member">ecrireStatistique</ref>(fichier,ligne,infoEcritureFichier[2],2);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(infoEcritureFichier[1]==1){</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecrireStatistique(fichier,ligne,infoEcritureFichier[0],3);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" kindref="member">ecrireStatistique</ref>(fichier,ligne,infoEcritureFichier[0],3);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ecrireLeaderboard(fichier2,pseudo[SUD-1],nbVictoire);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_fichier_8c_1a7e238d3b3fe49a72cf5deb9757d4466e" kindref="member">ecrireLeaderboard</ref>(fichier2,pseudo[SUD-1],nbVictoire);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2<sp/>:<sp/></highlight><highlight class="comment">/*executer<sp/>la<sp/>fonction<sp/>leaderboard<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -896,7 +952,7 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5<sp/>:<sp/></highlight><highlight class="comment">/*executer<sp/>la<sp/>fonction<sp/>changement<sp/>d&apos;utilisateur<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(pseudo[SUD-1],</highlight><highlight class="stringliteral">&quot;Choisissez<sp/>un<sp/>nouveau<sp/>joueur&quot;</highlight><highlight class="normal">,1);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ligne=ecriturePseudo(pseudo[SUD-1],fichier);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ligne=<ref refid="gestion_fichier_8c_1a90d5f557067c87ecf4dd33f4345f5f2e" kindref="member">ecriturePseudo</ref>(pseudo[SUD-1],fichier);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6<sp/>:</highlight></codeline>
@@ -919,7 +975,7 @@
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nouvellePartie(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>infoEcritureFicher[])</highlight></codeline>
+<codeline lineno="99" refid="general_8h_1a1faac25606ba09c4cdbcf54a142dbe0c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" kindref="member">nouvellePartie</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>infoEcritureFicher[])</highlight></codeline>
 <codeline lineno="100"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[TAILLE_MAXI_MESSAGE];</highlight></codeline>
@@ -944,7 +1000,7 @@
 <codeline lineno="123"><highlight class="normal"></highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(manche(pseudo,<sp/>score,<sp/>dealer,<sp/>utilisateur,<sp/>pStatistique)){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="general_8c_1a82e65877686a049b4bee9160af15c97f" kindref="member">manche</ref>(pseudo,<sp/>score,<sp/>dealer,<sp/>utilisateur,<sp/>pStatistique)){</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dealer<sp/>=<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(dealer);</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbManche<sp/>++;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1001,7 +1057,7 @@
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nbManche;</highlight></codeline>
 <codeline lineno="186"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>manche(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>dealer,<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique)</highlight></codeline>
+<codeline lineno="188" refid="general_8h_1a82e65877686a049b4bee9160af15c97f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="general_8c_1a82e65877686a049b4bee9160af15c97f" kindref="member">manche</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>dealer,<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pStatistique)</highlight></codeline>
 <codeline lineno="189"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mancheJouee<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(utilisateur<sp/>!=<sp/>SANS_JOUEUR){</highlight></codeline>
@@ -1019,23 +1075,23 @@
 <codeline lineno="203"><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>belote[4]<sp/>=<sp/>{0};</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueur<sp/>=<sp/>&amp;mainJoueur[0][0];</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>distribueCarte(pMainJoueur);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1ae1326a1796189845699f614535268322" kindref="member">distribueCarte</ref>(pMainJoueur);</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilisateur<sp/>!=<sp/>SANS_JOUEUR<sp/>||<sp/>DEBUG_MODE<sp/>==<sp/>1){</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\nDistribution<sp/>des<sp/>cartes\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(utilisateur<sp/>!=<sp/>SANS_JOUEUR){</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trieCarte(mainJoueur[utilisateur-1],<sp/>8,<sp/>TOUT_ATOUT);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1a1ae8efe125a9388197c70d15f8b08c3a" kindref="member">trieCarte</ref>(mainJoueur[utilisateur-1],<sp/>8,<sp/>TOUT_ATOUT);</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>contrat<sp/><sp/>=<sp/>annonceContrat(pseudo,<sp/>dealer,<sp/>pMainJoueur,<sp/>utilisateur);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>contrat<sp/><sp/>=<sp/><ref refid="general_8c_1a6eeea9d2fea8b2c504b0051af39f7c80" kindref="member">annonceContrat</ref>(pseudo,<sp/>dealer,<sp/>pMainJoueur,<sp/>utilisateur);</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>rechercheAnnonce(pMainJoueur,<sp/>pointAnonce,<sp/>utilisateur,<sp/>pseudo);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1a60713486558430d396e98d6090e6db23" kindref="member">rechercheAnnonce</ref>(pMainJoueur,<sp/>pointAnonce,<sp/>utilisateur,<sp/>pseudo);</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"></highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilisateur<sp/>!=<sp/>SANS_JOUEUR){</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Appuyer<sp/>sur<sp/>une<sp/>touche<sp/>pour<sp/>continuer\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getch();</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trieCarte(mainJoueur[utilisateur-1],<sp/>8,<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1a1ae8efe125a9388197c70d15f8b08c3a" kindref="member">trieCarte</ref>(mainJoueur[utilisateur-1],<sp/>8,<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>);</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight></codeline>
@@ -1043,24 +1099,24 @@
 <codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mancheJouee<sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>4<sp/>+<sp/>contrat.preneur<sp/>-<sp/>1)<sp/>+=1;</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joueur<sp/>vainqueurPli<sp/>=<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(dealer);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joueur<sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref><sp/>=<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(dealer);</highlight></codeline>
 <codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartePli[4],<sp/>carteDernierPli[4];</highlight></codeline>
 <codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
 <codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCarte(&amp;carteDernierPli[i],<sp/>SANS_VALEUR,<sp/>SANS_COULEUR);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(&amp;carteDernierPli[i],<sp/>SANS_VALEUR,<sp/>SANS_COULEUR);</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>4;<sp/>j++)</highlight></codeline>
 <codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCarte(&amp;cartePli[j],<sp/>SANS_VALEUR,<sp/>SANS_COULEUR);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(&amp;cartePli[j],<sp/>SANS_VALEUR,<sp/>SANS_COULEUR);</highlight></codeline>
 <codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vainqueurPli<sp/>=<sp/>pli(contrat,<sp/>vainqueurPli,<sp/>pseudo,<sp/>pMainJoueur,<sp/>pointManche,<sp/>pointAnonce,<sp/>belote,<sp/>cartePli,<sp/>carteDernierPli,score,<sp/>utilisateur,<sp/>i);</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>3*4<sp/>+<sp/>vainqueurPli<sp/>-<sp/>1)<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref><sp/>=<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>(contrat,<sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref>,<sp/>pseudo,<sp/>pMainJoueur,<sp/>pointManche,<sp/>pointAnonce,<sp/>belote,<sp/>cartePli,<sp/>carteDernierPli,score,<sp/>utilisateur,<sp/>i);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>3*4<sp/>+<sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref><sp/>-<sp/>1)<sp/>+=<sp/>1;</highlight></codeline>
 <codeline lineno="251"><highlight class="normal"></highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++)</highlight></codeline>
 <codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCarte(&amp;carteDernierPli[i],<sp/>cartePli[i].valeur,<sp/>cartePli[i].couleur);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(&amp;carteDernierPli[i],<sp/>cartePli[i].valeur,<sp/>cartePli[i].couleur);</highlight></codeline>
 <codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>4;<sp/>i++){</highlight></codeline>
@@ -1069,7 +1125,7 @@
 <codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*printf(&quot;%d,<sp/>%d,<sp/>%d,<sp/>%d,<sp/>total<sp/>:<sp/>%d\n&quot;,<sp/>pointManche[0],<sp/>pointManche[1],<sp/>pointManche[2],<sp/>pointManche[3],<sp/>pointManche[0]+<sp/>pointManche[1]+<sp/>pointManche[2]+<sp/>pointManche[3]<sp/>);*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(calculPointManche(contrat,<sp/>pointManche,<sp/>pointAnonce,<sp/>pointBelote,<sp/>score,<sp/>pseudo,<sp/>utilisateur)){</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1ae2494afb9457cbcf96753839016abbb6" kindref="member">calculPointManche</ref>(contrat,<sp/>pointManche,<sp/>pointAnonce,<sp/>pointBelote,<sp/>score,<sp/>pseudo,<sp/>utilisateur)){</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>4*2<sp/>+<sp/>contrat.preneur<sp/>-<sp/>1)<sp/>+=<sp/>1;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>4*4<sp/>+<sp/>contrat.preneur<sp/>-<sp/>1)<sp/>+=<sp/>1;</highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pStatistique<sp/>+<sp/>4*4<sp/>+<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(<ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(contrat.preneur))<sp/>-<sp/>1)<sp/>+=<sp/>1;</highlight></codeline>
@@ -1091,7 +1147,7 @@
 <codeline lineno="284"><highlight class="normal"></highlight></codeline>
 <codeline lineno="285"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="286"><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>annonceContrat(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>dealer,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
+<codeline lineno="287" refid="general_8h_1a6eeea9d2fea8b2c504b0051af39f7c80" refkind="member"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/><ref refid="general_8c_1a6eeea9d2fea8b2c504b0051af39f7c80" kindref="member">annonceContrat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>dealer,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
 <codeline lineno="288"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPasse<sp/>=<sp/>-1;</highlight></codeline>
 <codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>Joueur<sp/>parle<sp/>=<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(dealer);</highlight></codeline>
@@ -1102,7 +1158,7 @@
 <codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(nbPasse<sp/>&lt;<sp/>3)</highlight></codeline>
 <codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nouveauContrat<sp/>=<sp/>proposeContrat(contratPropose,<sp/>parle,<sp/>pseudo,<sp/>pCarteMain,<sp/>utilisateur);</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nouveauContrat<sp/>=<sp/><ref refid="general_8c_1abde08a751131f9afc15de6fc616348f6" kindref="member">proposeContrat</ref>(contratPropose,<sp/>parle,<sp/>pseudo,<sp/>pCarteMain,<sp/>utilisateur);</highlight></codeline>
 <codeline lineno="299"><highlight class="normal"></highlight></codeline>
 <codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilisateur<sp/>!=<sp/>SANS_JOUEUR<sp/>||<sp/>DEBUG_MODE<sp/>==<sp/>1){</highlight></codeline>
 <codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nouveauContrat.<ref refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" kindref="member">nbPoint</ref><sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nouveauContrat.<ref refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" kindref="member">coinche</ref><sp/>==<sp/>NORMAL){</highlight></codeline>
@@ -1173,7 +1229,7 @@
 <codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>contratPropose;</highlight></codeline>
 <codeline lineno="369"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"></highlight></codeline>
-<codeline lineno="371"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>proposeContrat(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
+<codeline lineno="371" refid="general_8h_1abde08a751131f9afc15de6fc616348f6" refkind="member"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/><ref refid="general_8c_1abde08a751131f9afc15de6fc616348f6" kindref="member">proposeContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
 <codeline lineno="372"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>nouveauContrat;</highlight></codeline>
 <codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" kindref="member">setContrat</ref>(&amp;nouveauContrat,<sp/>SANS_JOUEUR,<sp/>ZERO,<sp/>SANS_COULEUR,<sp/>NORMAL);</highlight></codeline>
@@ -1190,7 +1246,7 @@
 <codeline lineno="387"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="388"><highlight class="normal"></highlight></codeline>
 <codeline lineno="389"><highlight class="normal"></highlight></codeline>
-<codeline lineno="390"><highlight class="normal">Joueur<sp/>pli(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/>Joueur<sp/>premierAJouer,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>belote[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartePli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteAncienPli[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPli)</highlight></codeline>
+<codeline lineno="390" refid="general_8h_1a09dedac7ae460c4fd07ebcc4af44568f" refkind="member"><highlight class="normal">Joueur<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/>Joueur<sp/>premierAJouer,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>belote[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartePli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteAncienPli[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/>Joueur<sp/>utilisateur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numPli)</highlight></codeline>
 <codeline lineno="391"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/>Joueur<sp/>vainceur<sp/>=<sp/>SANS_JOUEUR,<sp/>parle<sp/>=<sp/>premierAJouer;</highlight></codeline>
 <codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[TAILLE_MAXI_MESSAGE];</highlight></codeline>
@@ -1199,7 +1255,7 @@
 <codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parle<sp/>==<sp/>utilisateur)</highlight></codeline>
 <codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte<sp/>=<sp/><ref refid="affichage_8c_1ac44981849d484a86a70107700d39d0d4" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(parle<sp/>-1),<sp/>contrat,<sp/></highlight><highlight class="stringliteral">&quot;Entrez<sp/>le<sp/>numero<sp/>de<sp/>la<sp/>carte<sp/>que<sp/>vous<sp/>voulez<sp/>jouer&quot;</highlight><highlight class="normal">,<sp/>utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>0);</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte<sp/>=<sp/><ref refid="affichage_8c_1a773118ff3accfbd267688f5e91f26ed7" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(parle<sp/>-1),<sp/>contrat,<sp/></highlight><highlight class="stringliteral">&quot;Entrez<sp/>le<sp/>numero<sp/>de<sp/>la<sp/>carte<sp/>que<sp/>vous<sp/>voulez<sp/>jouer&quot;</highlight><highlight class="normal">,<sp/>utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>0);</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1207,10 +1263,10 @@
 <codeline lineno="406"><highlight class="normal"></highlight></codeline>
 <codeline lineno="407"><highlight class="normal"></highlight></codeline>
 <codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>poseCarte(parle,<sp/>numCarte,<sp/>pCarteMain+<sp/>8*(parle<sp/>-1),<sp/>cartePli,<sp/>8-numPli);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="general_8c_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" kindref="member">poseCarte</ref>(parle,<sp/>numCarte,<sp/>pCarteMain+<sp/>8*(parle<sp/>-1),<sp/>cartePli,<sp/>8-numPli);</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"></highlight></codeline>
-<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>genereMessage(message,<sp/>parle,<sp/>pseudo,<sp/>cartePli[parle-1],<sp/>0,<sp/>POSE_CARTE);</highlight></codeline>
-<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cartePli[parle-1].couleur<sp/>==<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref><sp/>||<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref><sp/>==<sp/>TOUT_ATOUT)<sp/>&amp;&amp;<sp/>(cartePli[parle-1].valeur<sp/>==<sp/>DAME<sp/>||cartePli[parle-1].valeur<sp/>==<sp/>ROI)){</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a0a9bbb51e5f916ca5bef2365312e23be" kindref="member">genereMessage</ref>(message,<sp/>parle,<sp/>pseudo,<sp/>cartePli[parle-1],<sp/>0,<sp/>POSE_CARTE);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cartePli[parle-1].couleur<sp/>==<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref><sp/>||<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref><sp/>==<sp/>TOUT_ATOUT)<sp/>&amp;&amp;<sp/>(cartePli[parle-1].<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref><sp/>==<sp/>DAME<sp/>||cartePli[parle-1].<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref><sp/>==<sp/>ROI)){</highlight></codeline>
 <codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>belote[parle-1]<sp/>+=<sp/>1;</highlight></codeline>
 <codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(belote[parle-1]==<sp/>1){</highlight></codeline>
 <codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcat(message,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>et<sp/>anonce<sp/>une<sp/>Belote&quot;</highlight><highlight class="normal">);</highlight></codeline>
@@ -1221,7 +1277,7 @@
 <codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilisateur<sp/>!=<sp/>SANS_JOUEUR)</highlight></codeline>
 <codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1ac44981849d484a86a70107700d39d0d4" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(utilisateur<sp/>-1),<sp/>contrat,<sp/>message,<sp/>utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>1);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1a773118ff3accfbd267688f5e91f26ed7" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(utilisateur<sp/>-1),<sp/>contrat,<sp/>message,<sp/>utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>1);</highlight></codeline>
 <codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DEBUG_MODE<sp/>==<sp/>1)</highlight></codeline>
 <codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1231,7 +1287,7 @@
 <codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parle<sp/>=<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(parle);</highlight></codeline>
 <codeline lineno="435"><highlight class="normal"></highlight></codeline>
 <codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>vainceur<sp/>=<sp/>vainqueurPli(cartePli,<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>,<sp/>premierAJouer);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>vainceur<sp/>=<sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref>(cartePli,<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>,<sp/>premierAJouer);</highlight></codeline>
 <codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointDuPli<sp/>=<sp/><ref refid="autre_8c_1a4fab4a48512193a409dc541bb38a999c" kindref="member">pointPli</ref>(cartePli,<sp/>contrat.<ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>,<sp/>4);</highlight></codeline>
 <codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>pointManche[vainceur<sp/>-1]<sp/>+=<sp/>pointDuPli;</highlight></codeline>
 <codeline lineno="441"><highlight class="normal"></highlight></codeline>
@@ -1240,10 +1296,10 @@
 <codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointManche[vainceur<sp/>-1]<sp/>+=<sp/>10;</highlight></codeline>
 <codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="447"><highlight class="normal"></highlight></codeline>
-<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>genereMessage(message,<sp/>vainceur,<sp/>pseudo,<sp/>cartePli[parle-1],<sp/>pointDuPli,<sp/>RESULTAT_PLI);</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a0a9bbb51e5f916ca5bef2365312e23be" kindref="member">genereMessage</ref>(message,<sp/>vainceur,<sp/>pseudo,<sp/>cartePli[parle-1],<sp/>pointDuPli,<sp/>RESULTAT_PLI);</highlight></codeline>
 <codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilisateur<sp/>!=<sp/>SANS_JOUEUR)</highlight></codeline>
 <codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1ac44981849d484a86a70107700d39d0d4" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(utilisateur<sp/>-1),<sp/>contrat,<sp/>message,utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>1);</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1a773118ff3accfbd267688f5e91f26ed7" kindref="member">afficheInterfacePli</ref>(carteAncienPli,<sp/>cartePli,<sp/>pseudo,<sp/>pCarteMain<sp/>+<sp/>8*(utilisateur<sp/>-1),<sp/>contrat,<sp/>message,utilisateur,<sp/>premierAJouer,<sp/>score,<sp/>pointManche,<sp/>1);</highlight></codeline>
 <codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(DEBUG_MODE<sp/>==<sp/>1)</highlight></codeline>
 <codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -1255,20 +1311,20 @@
 <codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vainceur;</highlight></codeline>
 <codeline lineno="461"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="462"><highlight class="normal"></highlight></codeline>
-<codeline lineno="463"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>poseCarte<sp/>(Joueur<sp/>joueur,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCarte,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueurs,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante)</highlight></codeline>
+<codeline lineno="463" refid="general_8h_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="general_8c_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" kindref="member">poseCarte</ref><sp/>(Joueur<sp/>joueur,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numCarte,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueurs,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante)</highlight></codeline>
 <codeline lineno="464"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>retour=NULL;</highlight></codeline>
 <codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteAJouer;</highlight></codeline>
 <codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/><sp/>*((numCarte-1)+<sp/>pMainJoueurs);</highlight></codeline>
 <codeline lineno="468"><highlight class="normal"></highlight></codeline>
-<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>supprimeCarte(pMainJoueurs,carteRestante,numCarte-1);</highlight></codeline>
-<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>setCarte(pli+joueur-1,carteAJouer.<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref>,carteAJouer.couleur);</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1a77b2ed8ac4298678feea52baa2e9cf0e" kindref="member">supprimeCarte</ref>(pMainJoueurs,carteRestante,numCarte-1);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>+joueur-1,carteAJouer.<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref>,carteAJouer.couleur);</highlight></codeline>
 <codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>retour=1;</highlight></codeline>
 <codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retour;</highlight></codeline>
 <codeline lineno="473"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="474"><highlight class="normal"></highlight></codeline>
 <codeline lineno="475"><highlight class="normal"></highlight></codeline>
-<codeline lineno="476"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>calculPointManche(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointBelote[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
+<codeline lineno="476" refid="general_8h_1ae2494afb9457cbcf96753839016abbb6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="general_8c_1ae2494afb9457cbcf96753839016abbb6" kindref="member">calculPointManche</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointAnonce[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointBelote[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/>Joueur<sp/>utilisateur)</highlight></codeline>
 <codeline lineno="477"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>contratRempli<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointPreneur<sp/>=<sp/>pointManche[contrat.preneur-1]<sp/>+<sp/>pointManche[<ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(<ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(contrat.preneur))-1];</highlight></codeline>

@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -26,15 +26,15 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -310,6 +310,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" line="34" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="34" bodyend="144"/>
+        <references refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" compoundref="general_8c" startline="390" endline="461">pli</references>
       </memberdef>
       <memberdef kind="function" id="autre_8c_1a9072ffa3adcb064e9794208ea50de40b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>float</type>
@@ -418,10 +419,11 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" line="153" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/autre.c" bodystart="153" bodyend="174"/>
+        <references refid="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" compoundref="general_8c" startline="99" endline="186">nouvellePartie</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>ficher contenant les fonctions qui n&apos;allait dans aucun autre fichier </para>
+<para>ficher source contenant les fonctions qui n&apos;allait dans aucun autre fichier </para>
     </briefdescription>
     <detaileddescription>
 <para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
@@ -435,7 +437,7 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;main.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" refkind="member"><highlight class="normal">Joueur<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(Joueur<sp/>joueur)</highlight></codeline>
+<codeline lineno="11" refid="autre_8h_1a9028074829d59ddc4481ae51036fc9ef" refkind="member"><highlight class="normal">Joueur<sp/><ref refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" kindref="member">joueurSuivant</ref>(Joueur<sp/>joueur)</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(joueur<sp/>==<sp/>OUEST){</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NORD;</highlight></codeline>
@@ -445,12 +447,12 @@
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="19"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="autre_8c_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" kindref="member">nbAleatoire</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mini,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxi)</highlight></codeline>
+<codeline lineno="21" refid="autre_8h_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a1fe3fe4b2fbc888f6af5db69f6cc72f6" kindref="member">nbAleatoire</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mini,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxi)</highlight></codeline>
 <codeline lineno="22"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rand()%(maxi<sp/>-<sp/>mini<sp/>+<sp/>1))<sp/>+<sp/>mini;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" kindref="member">setContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>*contrat,<sp/>Joueur<sp/>preneur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPoint,<sp/>Couleur<sp/>atout,<sp/>Coinche<sp/>coinche)</highlight></codeline>
+<codeline lineno="26" refid="autre_8h_1a1613864902e98bd6d49e9d82bedcbe1c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" kindref="member">setContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>*contrat,<sp/>Joueur<sp/>preneur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPoint,<sp/>Couleur<sp/>atout,<sp/>Coinche<sp/>coinche)</highlight></codeline>
 <codeline lineno="27"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>(*contrat).preneur<sp/>=<sp/>preneur;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>(*contrat).nbPoint<sp/>=<sp/>nbPoint;</highlight></codeline>
@@ -458,7 +460,7 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>(*contrat).coinche<sp/>=<sp/>coinche;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="autre_8c_1a4fab4a48512193a409dc541bb38a999c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a4fab4a48512193a409dc541bb38a999c" kindref="member">pointPli</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Couleur<sp/>atout,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte)</highlight></codeline>
+<codeline lineno="34" refid="autre_8h_1a4fab4a48512193a409dc541bb38a999c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a4fab4a48512193a409dc541bb38a999c" kindref="member">pointPli</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[],<sp/>Couleur<sp/>atout,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte)</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>point=0;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
@@ -466,7 +468,7 @@
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(atout){</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>TOUT_ATOUT:</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pli[i].valeur){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[i].valeur){</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>VALET:</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point<sp/>=<sp/>point<sp/>+<sp/>14<sp/>;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -493,7 +495,7 @@
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>SANS_ATOUT:</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pli[i].valeur){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[i].valeur){</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>AS:</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point<sp/>=<sp/>point<sp/>+<sp/>19<sp/>;</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -517,8 +519,8 @@
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pli[i].couleur<sp/>==<sp/>atout){</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pli[i].valeur){</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[i].couleur<sp/>==<sp/>atout){</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[i].valeur){</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>VALET:</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point<sp/>=<sp/>point<sp/>+<sp/>14<sp/>;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -542,7 +544,7 @@
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(pli[i].valeur){</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[i].valeur){</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>AS:</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>point<sp/>=<sp/>point<sp/>+<sp/>19<sp/>;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
@@ -571,13 +573,13 @@
 <codeline lineno="144"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
 <codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147" refid="autre_8c_1a9072ffa3adcb064e9794208ea50de40b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a9072ffa3adcb064e9794208ea50de40b" kindref="member">ajusteEchelle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>valeur,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMax,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMax)</highlight></codeline>
+<codeline lineno="147" refid="autre_8h_1a9072ffa3adcb064e9794208ea50de40b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1a9072ffa3adcb064e9794208ea50de40b" kindref="member">ajusteEchelle</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>valeur,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>entreMax,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMin,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sortieMax)</highlight></codeline>
 <codeline lineno="148"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(valeur<sp/>-<sp/>entreMin)*(sortieMax<sp/>-<sp/>sortieMin)/(entreMax<sp/>-<sp/>entreMin)<sp/>+<sp/>sortieMin;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153" refid="autre_8c_1ab8d4df8f4e03f038b98f6d96a2eaefd2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1ab8d4df8f4e03f038b98f6d96a2eaefd2" kindref="member">joue1000Partie</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPartie)</highlight></codeline>
+<codeline lineno="153" refid="autre_8h_1ab8d4df8f4e03f038b98f6d96a2eaefd2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="autre_8c_1ab8d4df8f4e03f038b98f6d96a2eaefd2" kindref="member">joue1000Partie</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbPartie)</highlight></codeline>
 <codeline lineno="154"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statisitique[5][4]<sp/>=<sp/>{0};</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*pSatistique<sp/>=<sp/>&amp;statisitique[0][0];</highlight></codeline>
@@ -585,7 +587,7 @@
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[4]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;A_Philipe&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Gilou&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Utilisateur&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Tutu&quot;</highlight><highlight class="normal">};</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbManche<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>noPartie<sp/>=<sp/>1;<sp/>noPartie<sp/>&lt;=<sp/>nbPartie;<sp/>noPartie<sp/>++){</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbManche<sp/>+=<sp/>nouvellePartie(pseudo,<sp/>SANS_JOUEUR,<sp/>pSatistique,<sp/>infoEcriture);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbManche<sp/>+=<sp/><ref refid="general_8c_1a1faac25606ba09c4cdbcf54a142dbe0c" kindref="member">nouvellePartie</ref>(pseudo,<sp/>SANS_JOUEUR,<sp/>pSatistique,<sp/>infoEcriture);</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>system(</highlight><highlight class="stringliteral">&quot;cls&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d<sp/>parties<sp/>viennent<sp/>d&apos;etre<sp/>jouees<sp/>entre<sp/>4<sp/>ia.<sp/>\nVoici<sp/>des<sp/>statistiques<sp/>qui<sp/>permettent<sp/>de<sp/>tester<sp/>les<sp/>fonctions<sp/>d&apos;ia<sp/>\npour<sp/>determiner<sp/>lesquelles<sp/>sont<sp/>les<sp/>plus<sp/>efficaces<sp/>sur<sp/>un<sp/>grand<sp/>nombre<sp/>de<sp/>parties\n&quot;</highlight><highlight class="normal">,<sp/>nbPartie);</highlight></codeline>

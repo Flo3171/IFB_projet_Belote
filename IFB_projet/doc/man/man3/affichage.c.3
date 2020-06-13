@@ -2,7 +2,7 @@
 .ad l
 .nh
 .SH NAME
-affichage.c \- ficher contenant les fonctions relative à l'affichage  
+affichage.c \- ficher source contenant les fonctions relative à l'affichage  
 
 .SH SYNOPSIS
 .br
@@ -18,7 +18,7 @@ affichage.c \- ficher contenant les fonctions relative à l'affichage
 .br
 .RI "affiche le logo du jeu puis le menu principal "
 .ti -1c
-.RI "int \fBafficheInterfacePli\fP (\fBCarte\fP dernierPli[], \fBCarte\fP pli[], char *pseudo[], \fBCarte\fP cartesEnMain[], \fBContrat\fP contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)"
+.RI "int \fBafficheInterfacePli\fP (\fBCarte\fP dernierPli[], \fBCarte\fP \fBpli\fP[], char *pseudo[], \fBCarte\fP cartesEnMain[], \fBContrat\fP contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)"
 .br
 .RI "affiche l'interface de jeu durant un pli "
 .ti -1c
@@ -48,21 +48,13 @@ affichage.c \- ficher contenant les fonctions relative à l'affichage
 .in -1c
 .SH "Detailed Description"
 .PP 
-ficher contenant les fonctions relative à l'affichage 
+ficher source contenant les fonctions relative à l'affichage 
 
 ficher contenant les fonctions relative à la gestion des tableau
 .PP
 ficher contenant les fonctions des different sous menu disponible sur le menu principal
 .PP
 ficher contenant les fonctions relative au inteligences artificielles
-.PP
-ficher contenant les fonctions relative à la gestion des fichiers
-.PP
-ficher contenant les fonctions relative a la gestion des cartes
-.PP
-ficher contenant les fonctions les plus impotantes pour le jeu de la belote
-.PP
-ficher contenant les fonctions relative au formatage
 .PP
 \fBAuthor\fP
 .RS 4
@@ -102,7 +94,7 @@ void
 .RE
 .PP
 
-.SS "int afficheInterfacePli (\fBCarte\fP dernierPli[], \fBCarte\fP pli[], char * pseudo[], \fBCarte\fP cartesEnMain[], \fBContrat\fP contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)"
+.SS "afficheInterfacePli (\fBCarte\fP dernierPli[], \fBCarte\fP pli[], char * pseudo[], \fBCarte\fP cartesEnMain[], \fBContrat\fP contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)"
 
 .PP
 affiche l'interface de jeu durant un pli 

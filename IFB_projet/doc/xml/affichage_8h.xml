@@ -18,7 +18,15 @@
         <label>autre.c</label>
         <link refid="autre_8c"/>
       </node>
-      <node id="6">
+      <node id="7">
+        <label>general.c</label>
+        <link refid="general_8c"/>
+      </node>
+      <node id="9">
+        <label>gestionFichier.c</label>
+        <link refid="gestion_fichier_8c"/>
+      </node>
+      <node id="10">
         <label>main.c</label>
         <link refid="main_8c"/>
       </node>
@@ -33,6 +41,22 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>formatageChaine.c</label>
+        <link refid="formatage_chaine_8c"/>
+      </node>
+      <node id="8">
+        <label>gestionCarte.c</label>
+        <link refid="gestion_carte_8c"/>
       </node>
       <node id="3">
         <label>acquisition.c</label>
@@ -68,9 +92,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="11" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="11" bodyend="56" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="11" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="21" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="11" bodyend="56" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="21" declcolumn="5"/>
+        <references refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
         <references refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" compoundref="affichage_8c" startline="269" endline="346">afficheMenuSelection</references>
-        <references refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1ac44981849d484a86a70107700d39d0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -231,10 +255,17 @@
 <para>&lt; Formatage des chaine de caractère relative aux cartes</para>
 <para>&lt; Formatage des chaine de caractère relative au contrat</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="32" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="59" bodyend="175" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="32" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="44" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="59" bodyend="175" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="44" declcolumn="5"/>
+        <references refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
         <references refid="affichage_8c_1ad4ca97b6626eb7557ec5c8e3ad795f95" compoundref="affichage_8c" startline="227" endline="244">afficheMain</references>
         <references refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" compoundref="main_8h" startline="146">Contrat::atout</references>
-        <references refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
+        <references refid="gestion_carte_8c_1a860c9426634ed327bf5ed8344ee582e3" compoundref="gestion_carte_8c" startline="261" endline="341">carteValide</references>
+        <references refid="formatage_chaine_8c_1ae9b1a537c2b31ecd1400d3644bb180af" compoundref="formatage_chaine_8c" startline="10" endline="33">centreChaine</references>
+        <references refid="formatage_chaine_8c_1ad598bad9520e1d05637504cf2890a947" compoundref="formatage_chaine_8c" startline="45" endline="91">decoupeChaine</references>
+        <references refid="formatage_chaine_8c_1ae97b1deba041f2e607c1acad99704bac" compoundref="formatage_chaine_8c" startline="101" endline="106">formateCarte</references>
+        <references refid="formatage_chaine_8c_1a76b00dd8006b0682ba30099e193d4dd0" compoundref="formatage_chaine_8c" startline="251" endline="297">formateContrat</references>
+        <references refid="formatage_chaine_8c_1ae05838b849d6b785d714efebfcd71cf3" compoundref="formatage_chaine_8c" startline="220" endline="249">formatePseudo</references>
+        <references refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" compoundref="general_8c" startline="390" endline="461">pli</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1a25cb786f432ed01160d9268cdccbe7dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -276,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="41" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="177" bodyend="183" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="41" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="55" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="177" bodyend="183" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="55" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1a77a2c701d655e817f1fe4c56c883af3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -316,7 +347,9 @@
 </para>
 <para>&lt;efface l&apos;écran et affiche le sous-menu avec le texte correspondant</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="49" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="186" bodyend="225" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="49" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="65" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="186" bodyend="225" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="65" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1ae9b1a537c2b31ecd1400d3644bb180af" compoundref="formatage_chaine_8c" startline="10" endline="33">centreChaine</references>
+        <references refid="formatage_chaine_8c_1ad598bad9520e1d05637504cf2890a947" compoundref="formatage_chaine_8c" startline="45" endline="91">decoupeChaine</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1ad4ca97b6626eb7557ec5c8e3ad795f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -347,7 +380,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="57" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="227" bodyend="244" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="57" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="75" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="227" bodyend="244" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="75" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1ae97b1deba041f2e607c1acad99704bac" compoundref="formatage_chaine_8c" startline="101" endline="106">formateCarte</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1abd791297578af449761083408a1b4462" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -402,7 +436,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="68" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="247" bodyend="267" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="68" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="88" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="247" bodyend="267" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="88" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1a76b00dd8006b0682ba30099e193d4dd0" compoundref="formatage_chaine_8c" startline="251" endline="297">formateContrat</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1a978cd3d8ff9f4afa72856d33ad0dea81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -461,7 +496,10 @@
 <para>&lt; effacement de la chaine de carrateres</para>
 <para>&lt;efface l&apos;écran et affiche le sous-menu avec le texte correspondant</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="78" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="269" bodyend="346" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="78" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="100" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="269" bodyend="346" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="100" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1ae9b1a537c2b31ecd1400d3644bb180af" compoundref="formatage_chaine_8c" startline="10" endline="33">centreChaine</references>
+        <references refid="formatage_chaine_8c_1ad598bad9520e1d05637504cf2890a947" compoundref="formatage_chaine_8c" startline="45" endline="91">decoupeChaine</references>
+        <references refid="formatage_chaine_8c_1acbb12af7b4e8b15a8d366abae8fe5ca3" compoundref="formatage_chaine_8c" startline="93" endline="99">rempliEspace</references>
       </memberdef>
       <memberdef kind="function" id="affichage_8h_1ae37357f1035df2f6d50afb1a1c5a9947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -522,45 +560,53 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="91" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="348" bodyend="423" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="91" declcolumn="9"/>
-        <references refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" compoundref="autre_8c" startline="26" endline="32">setContrat</references>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" line="115" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.c" bodystart="348" bodyend="423" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h" declline="115" declcolumn="9"/>
+        <references refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
         <references refid="affichage_8c_1ad4ca97b6626eb7557ec5c8e3ad795f95" compoundref="affichage_8c" startline="227" endline="244">afficheMain</references>
-        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
-        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
-        <references refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" compoundref="main_8h" startline="147">Contrat::coinche</references>
-        <references refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" compoundref="acquisition_8c" startline="42" endline="50">acquisitionEntierSansMessageAvecConsigne</references>
         <references refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" compoundref="main_8h" startline="146">Contrat::atout</references>
+        <references refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" compoundref="main_8h" startline="147">Contrat::coinche</references>
+        <references refid="autre_8c_1a9028074829d59ddc4481ae51036fc9ef" compoundref="autre_8c" startline="11" endline="19">joueurSuivant</references>
+        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
+        <references refid="autre_8c_1a1613864902e98bd6d49e9d82bedcbe1c" compoundref="autre_8c" startline="26" endline="32">setContrat</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>ficher header contenant les prototypes des fonctions relative à l&apos;affichage </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_AFFICHAGE_H_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_AFFICHAGE_H_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1ac892324566767801d485fad58318f635" kindref="member">afficheMenuPrincipal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1ac44981849d484a86a70107700d39d0d4" kindref="member">afficheInterfacePli</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>dernierPli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartesEnMain[],<sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contratActuel,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[],Joueur<sp/>utilisteur,<sp/>Joueur<sp/>dernierVainqueur,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1a25cb786f432ed01160d9268cdccbe7dc" kindref="member">modifieTailleFenetre</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFentre);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule[]);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1ad4ca97b6626eb7557ec5c8e3ad795f95" kindref="member">afficheMain</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[]);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1abd791297578af449761083408a1b4462" kindref="member">afficheContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" kindref="member">afficheMenuSelection</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule<sp/>[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sautDeLigne);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/><ref refid="affichage_8c_1ae37357f1035df2f6d50afb1a1c5a9947" kindref="member">proposeContratUtilisateur</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1ac892324566767801d485fad58318f635" kindref="member">afficheMenuPrincipal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1ac44981849d484a86a70107700d39d0d4" kindref="member">afficheInterfacePli</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>dernierPli[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>cartesEnMain[],<sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contratActuel,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[],Joueur<sp/>utilisteur,<sp/>Joueur<sp/>dernierVainqueur,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointManche[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1a25cb786f432ed01160d9268cdccbe7dc" kindref="member">modifieTailleFenetre</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigneFenetre,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbColloneFentre);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule[]);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1ad4ca97b6626eb7557ec5c8e3ad795f95" kindref="member">afficheMain</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[]);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1abd791297578af449761083408a1b4462" kindref="member">afficheContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="affichage_8h_1a978cd3d8ff9f4afa72856d33ad0dea81" kindref="member">afficheMenuSelection</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>intitule<sp/>[],</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>phrase[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sautDeLigne);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/><ref refid="affichage_8h_1ae37357f1035df2f6d50afb1a1c5a9947" kindref="member">proposeContratUtilisateur</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat,<sp/>Joueur<sp/>parle,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/affichage.h"/>
   </compounddef>

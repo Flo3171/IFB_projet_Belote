@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -20,15 +20,15 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">

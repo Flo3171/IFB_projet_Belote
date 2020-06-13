@@ -14,7 +14,7 @@
     <member refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" kind="function"><name>acquisitionEntierAvecMessage</name></member>
     <member refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" kind="function"><name>acquisitionEntierSansMessage</name></member>
     <member refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" kind="function"><name>acquisitionOuiNonSansMessage</name></member>
-    <member refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" kind="function"><name>acquisitionEntierSansMessageAvecConsigne</name></member>
+    <member refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" kind="function"><name>acquisitionEntierSansMessageAvecConsigne</name></member>
     <member refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kind="function"><name>acquisitionPseudoAvecMessage</name></member>
     <member refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kind="function"><name>acquisitionEntierSecurise</name></member>
   </compound>
@@ -28,7 +28,7 @@
   </compound>
   <compound refid="affichage_8c" kind="file"><name>affichage.c</name>
     <member refid="affichage_8c_1ac892324566767801d485fad58318f635" kind="function"><name>afficheMenuPrincipal</name></member>
-    <member refid="affichage_8c_1ac44981849d484a86a70107700d39d0d4" kind="function"><name>afficheInterfacePli</name></member>
+    <member refid="affichage_8c_1a773118ff3accfbd267688f5e91f26ed7" kind="function"><name>afficheInterfacePli</name></member>
     <member refid="affichage_8c_1a25cb786f432ed01160d9268cdccbe7dc" kind="function"><name>modifieTailleFenetre</name></member>
     <member refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kind="function"><name>afficheSousMenus</name></member>
     <member refid="affichage_8c_1ad4ca97b6626eb7557ec5c8e3ad795f95" kind="function"><name>afficheMain</name></member>

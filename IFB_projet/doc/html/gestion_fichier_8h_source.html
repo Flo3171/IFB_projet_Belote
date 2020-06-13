@@ -88,23 +88,30 @@ $(document).ready(function(){initNavTree('gestion_fichier_8h_source.html',''); i
 <div class="title">gestionFichier.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _GESTION_FICHIER_H_</span></div>
+<a href="gestion_fichier_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _GESTION_FICHIER_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _GESTION_FICHIER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> ecriturePseudo (<span class="keywordtype">char</span> *pPseudo,FILE *pFichier);</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> ecrireStatistique(FILE *fichier,<span class="keywordtype">int</span> ligne, <span class="keywordtype">int</span> statAModifier, <span class="keywordtype">int</span> type);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">int</span> ecrireLeaderboard(FILE *fichier,<span class="keywordtype">char</span> *pseudo,<span class="keywordtype">int</span> score);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif // _GESTION_FICHIER_H_</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gestion_fichier_8h.html#a90d5f557067c87ecf4dd33f4345f5f2e">ecriturePseudo</a> (<span class="keywordtype">char</span> *pPseudo,FILE *pFichier);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gestion_fichier_8h.html#a72c9b768b73e0805b86215b86a67c8bd">ecrireStatistique</a>(FILE *fichier,<span class="keywordtype">int</span> ligne, <span class="keywordtype">int</span> statAModifier, <span class="keywordtype">int</span> type);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> <a class="code" href="gestion_fichier_8h.html#ad7559ffef57cd06c0da1239323b61d2a">ecrireLeaderboard</a>(FILE *fichier,<span class="keywordtype">char</span> *pseudo,<span class="keywordtype">int</span> score);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // _GESTION_FICHIER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aformatage_chaine_8c_html_a416dc0656ec712c3624275a4aefb85c6"><div class="ttname"><a href="formatage_chaine_8c.html#a416dc0656ec712c3624275a4aefb85c6">aligneModifieChaine</a></div><div class="ttdeci">int aligneModifieChaine(char chaine[], int longeurChaine)</div><div class="ttdoc">transforme une chaine de cararact�re en sa vertion align� a gauche</div><div class="ttdef"><b>Definition:</b> formatageChaine.c:299</div></div>
+<div class="ttc" id="agestion_fichier_8c_html_a90d5f557067c87ecf4dd33f4345f5f2e"><div class="ttname"><a href="gestion_fichier_8c.html#a90d5f557067c87ecf4dd33f4345f5f2e">ecriturePseudo</a></div><div class="ttdeci">int ecriturePseudo(char *pPseudo, FILE *pFichier)</div><div class="ttdoc">fonction qui recherche dans un fichier si le joueur est deja enregistré au le rajoute à la fin si ce ...</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:11</div></div>
+<div class="ttc" id="agestion_fichier_8h_html_ad7559ffef57cd06c0da1239323b61d2a"><div class="ttname"><a href="gestion_fichier_8h.html#ad7559ffef57cd06c0da1239323b61d2a">ecrireLeaderboard</a></div><div class="ttdeci">int ecrireLeaderboard(FILE *fichier, char *pseudo, int score)</div><div class="ttdoc">vérifie si un nouveau record à été battu et l'ajoute si c'est le cas</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:97</div></div>
+<div class="ttc" id="agestion_fichier_8c_html_a72c9b768b73e0805b86215b86a67c8bd"><div class="ttname"><a href="gestion_fichier_8c.html#a72c9b768b73e0805b86215b86a67c8bd">ecrireStatistique</a></div><div class="ttdeci">int ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)</div><div class="ttdoc">modifie la valeur d'une statistique dans le fichier de sauvegarde des scores</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:44</div></div>
+<div class="ttc" id="agestion_fichier_8h_html_a72c9b768b73e0805b86215b86a67c8bd"><div class="ttname"><a href="gestion_fichier_8h.html#a72c9b768b73e0805b86215b86a67c8bd">ecrireStatistique</a></div><div class="ttdeci">int ecrireStatistique(FILE *fichier, int ligne, int statAModifier, int type)</div><div class="ttdoc">modifie la valeur d'une statistique dans le fichier de sauvegarde des scores</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:44</div></div>
+<div class="ttc" id="agestion_fichier_8c_html_a7e238d3b3fe49a72cf5deb9757d4466e"><div class="ttname"><a href="gestion_fichier_8c.html#a7e238d3b3fe49a72cf5deb9757d4466e">ecrireLeaderboard</a></div><div class="ttdeci">int ecrireLeaderboard(FILE *fichier, char *pseudo, int scoreJ)</div><div class="ttdoc">vérifie si un nouveau record à été battu et l'ajoute si c'est le cas</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:97</div></div>
+<div class="ttc" id="agestion_fichier_8h_html_a90d5f557067c87ecf4dd33f4345f5f2e"><div class="ttname"><a href="gestion_fichier_8h.html#a90d5f557067c87ecf4dd33f4345f5f2e">ecriturePseudo</a></div><div class="ttdeci">int ecriturePseudo(char *pPseudo, FILE *pFichier)</div><div class="ttdoc">fonction qui recherche dans un fichier si le joueur est deja enregistré au le rajoute à la fin si ce ...</div><div class="ttdef"><b>Definition:</b> gestionFichier.c:11</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>gestionFichier.h</b></li>
-    <li class="footer">Generated on Sun Jun 14 2020 00:53:14 for IFB_projet by
+    <li class="navelem"><a class="el" href="gestion_fichier_8h.html">gestionFichier.h</a></li>
+    <li class="footer">Generated on Sun Jun 14 2020 01:55:52 for IFB_projet by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

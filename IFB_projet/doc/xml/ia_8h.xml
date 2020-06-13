@@ -12,13 +12,21 @@
         <label>autre.c</label>
         <link refid="autre_8c"/>
       </node>
+      <node id="7">
+        <label>general.c</label>
+        <link refid="general_8c"/>
+      </node>
+      <node id="9">
+        <label>gestionFichier.c</label>
+        <link refid="gestion_fichier_8c"/>
+      </node>
       <node id="1">
         <label>ia.h</label>
         <link refid="ia_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="10">
         <label>main.c</label>
         <link refid="main_8c"/>
       </node>
@@ -33,6 +41,22 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>formatageChaine.c</label>
+        <link refid="formatage_chaine_8c"/>
+      </node>
+      <node id="8">
+        <label>gestionCarte.c</label>
+        <link refid="gestion_carte_8c"/>
       </node>
       <node id="3">
         <label>acquisition.c</label>
@@ -200,7 +224,7 @@
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>proposeContratIa(Joueur<sp/>parle,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pCarteMain,<sp/><ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>dernierContrat);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choixCarteIA(Joueur<sp/>joueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Joueur<sp/>dernierVainqueur,<sp/>Couleur<sp/>atout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choixCarteIA(Joueur<sp/>joueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[],<sp/>Joueur<sp/>dernierVainqueur,<sp/>Couleur<sp/>atout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_IA_H_</highlight></codeline>
     </programlisting>

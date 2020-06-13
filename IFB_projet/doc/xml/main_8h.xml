@@ -32,7 +32,7 @@
     <incdepgraph>
       <node id="10">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="3">
         <label>stdlib.h</label>
@@ -46,15 +46,15 @@
       </node>
       <node id="14">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="12">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="17">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="15">
         <label>ia.h</label>
@@ -111,18 +111,18 @@
       </node>
       <node id="13">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="2">
         <label>stdio.h</label>
       </node>
       <node id="11">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="9">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -134,7 +134,15 @@
         <label>autre.c</label>
         <link refid="autre_8c"/>
       </node>
-      <node id="5">
+      <node id="6">
+        <label>general.c</label>
+        <link refid="general_8c"/>
+      </node>
+      <node id="8">
+        <label>gestionFichier.c</label>
+        <link refid="gestion_fichier_8c"/>
+      </node>
+      <node id="9">
         <label>main.c</label>
         <link refid="main_8c"/>
       </node>
@@ -149,6 +157,22 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>formatageChaine.c</label>
+        <link refid="formatage_chaine_8c"/>
+      </node>
+      <node id="7">
+        <label>gestionCarte.c</label>
+        <link refid="gestion_carte_8c"/>
       </node>
       <node id="2">
         <label>acquisition.c</label>
@@ -960,15 +984,15 @@
 <codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="preprocessor">#include<sp/>&quot;tableau.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acquisition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;affichage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionCarte.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;general.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;formatageChaine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;autre.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="acquisition_8h" kindref="compound">acquisition.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="affichage_8h" kindref="compound">affichage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gestion_carte_8h" kindref="compound">gestionCarte.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="general_8h" kindref="compound">general.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="formatage_chaine_8h" kindref="compound">formatageChaine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="autre_8h" kindref="compound">autre.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ia.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sous-menus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionFichier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gestion_fichier_8h" kindref="compound">gestionFichier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="186"><highlight class="normal"></highlight></codeline>
 <codeline lineno="187"><highlight class="normal"></highlight></codeline>
 <codeline lineno="188"><highlight class="normal"></highlight></codeline>

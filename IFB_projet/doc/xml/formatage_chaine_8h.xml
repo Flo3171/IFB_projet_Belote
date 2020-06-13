@@ -12,7 +12,15 @@
         <label>autre.c</label>
         <link refid="autre_8c"/>
       </node>
-      <node id="6">
+      <node id="7">
+        <label>general.c</label>
+        <link refid="general_8c"/>
+      </node>
+      <node id="9">
+        <label>gestionFichier.c</label>
+        <link refid="gestion_fichier_8c"/>
+      </node>
+      <node id="10">
         <label>main.c</label>
         <link refid="main_8c"/>
       </node>
@@ -27,12 +35,28 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>formatageChaine.c</label>
+        <link refid="formatage_chaine_8c"/>
       </node>
       <node id="1">
         <label>formatageChaine.h</label>
         <link refid="formatage_chaine_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="8">
+        <label>gestionCarte.c</label>
+        <link refid="gestion_carte_8c"/>
       </node>
       <node id="3">
         <label>acquisition.c</label>
@@ -94,7 +118,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="12" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="10" bodyend="33" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="12" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="23" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="10" bodyend="33" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="23" declcolumn="5"/>
+        <references refid="formatage_chaine_8c_1acbb12af7b4e8b15a8d366abae8fe5ca3" compoundref="formatage_chaine_8c" startline="93" endline="99">rempliEspace</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1a3a016c722803925f63f13d6218d6d1de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -137,7 +162,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="22" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="35" bodyend="43" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="22" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="35" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="35" bodyend="43" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="35" declcolumn="5"/>
+        <references refid="formatage_chaine_8c_1ae9b1a537c2b31ecd1400d3644bb180af" compoundref="formatage_chaine_8c" startline="10" endline="33">centreChaine</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1ad598bad9520e1d05637504cf2890a947" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -204,7 +230,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="34" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="45" bodyend="91" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="34" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="49" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="45" bodyend="91" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="49" declcolumn="5"/>
+        <references refid="formatage_chaine_8c_1a3a016c722803925f63f13d6218d6d1de" compoundref="formatage_chaine_8c" startline="35" endline="43">centreModifieChaine</references>
+        <references refid="formatage_chaine_8c_1acbb12af7b4e8b15a8d366abae8fe5ca3" compoundref="formatage_chaine_8c" startline="93" endline="99">rempliEspace</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1acbb12af7b4e8b15a8d366abae8fe5ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -246,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="43" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="93" bodyend="99" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="43" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="60" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="93" bodyend="99" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="60" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1ae97b1deba041f2e607c1acad99704bac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -325,7 +353,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="55" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="101" bodyend="106" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="55" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="74" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="101" bodyend="106" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="74" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1ad06c0eb331a3563fa5b53797ee448034" compoundref="formatage_chaine_8c" startline="108" endline="218">stockeInfoCarte</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1ad06c0eb331a3563fa5b53797ee448034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -403,7 +432,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="68" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="108" bodyend="218" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="68" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="89" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="108" bodyend="218" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="89" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1a3a016c722803925f63f13d6218d6d1de" compoundref="formatage_chaine_8c" startline="35" endline="43">centreModifieChaine</references>
+        <references refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" compoundref="main_8h" startline="130">Carte::valeur</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1ae05838b849d6b785d714efebfcd71cf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -483,7 +514,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="80" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="220" bodyend="249" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="80" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="103" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="220" bodyend="249" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="103" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" compoundref="formatage_chaine_8c" startline="299" endline="312">aligneModifieChaine</references>
+        <references refid="formatage_chaine_8c_1a3a016c722803925f63f13d6218d6d1de" compoundref="formatage_chaine_8c" startline="35" endline="43">centreModifieChaine</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1a76b00dd8006b0682ba30099e193d4dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -550,7 +583,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="91" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="251" bodyend="297" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="91" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="116" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="251" bodyend="297" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="116" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" compoundref="formatage_chaine_8c" startline="299" endline="312">aligneModifieChaine</references>
+        <references refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" compoundref="main_8h" startline="146">Contrat::atout</references>
+        <references refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" compoundref="main_8h" startline="147">Contrat::coinche</references>
+        <references refid="formatage_chaine_8c_1ae05838b849d6b785d714efebfcd71cf3" compoundref="formatage_chaine_8c" startline="220" endline="249">formatePseudo</references>
+        <references refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" compoundref="main_8h" startline="145">Contrat::nbPoint</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1a416dc0656ec712c3624275a4aefb85c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -593,7 +631,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="100" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="299" bodyend="312" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="100" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="127" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="299" bodyend="312" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="127" declcolumn="5"/>
+        <references refid="formatage_chaine_8c_1acbb12af7b4e8b15a8d366abae8fe5ca3" compoundref="formatage_chaine_8c" startline="93" endline="99">rempliEspace</references>
       </memberdef>
       <memberdef kind="function" id="formatage_chaine_8h_1a0a9bbb51e5f916ca5bef2365312e23be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -685,45 +724,54 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="114" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="314" bodyend="342" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="114" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" line="143" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.c" bodystart="314" bodyend="342" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h" declline="143" declcolumn="6"/>
+        <references refid="formatage_chaine_8c_1ad06c0eb331a3563fa5b53797ee448034" compoundref="formatage_chaine_8c" startline="108" endline="218">stockeInfoCarte</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>ficher header contenant les prototypes des fonctions relative au formatage </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>_FORMATAGE_CHAINE_H_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FORMATAGE_CHAINE_H_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>centreChaine(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineInitial[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineFinal[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>centreModifieChaine(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaine[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1ae9b1a537c2b31ecd1400d3644bb180af" kindref="member">centreChaine</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineInitial[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineFinal[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>decoupeChaine(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineInitiale[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinale,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleLigne,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigne);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rempliEspace(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaine,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspace);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>formateCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinale,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stockeInfoCarte(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*valeur,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*couleur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine);</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>formatePseudo(Joueur<sp/>joueur,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineFinal[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>formateContrat(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinal,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleLigne,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[]);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aligneModifieChaine(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaine[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>genereMessage(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[],<sp/>Joueur<sp/>parle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteJoue,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score,<sp/>TypeMessage<sp/>typeMessage);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1a3a016c722803925f63f13d6218d6d1de" kindref="member">centreModifieChaine</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaine[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1ad598bad9520e1d05637504cf2890a947" kindref="member">decoupeChaine</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineInitiale[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinale,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleLigne,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbLigne);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1acbb12af7b4e8b15a8d366abae8fe5ca3" kindref="member">rempliEspace</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaine,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbEspace);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1ae97b1deba041f2e607c1acad99704bac" kindref="member">formateCarte</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte[],<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinale,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbCarte,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1ad06c0eb331a3563fa5b53797ee448034" kindref="member">stockeInfoCarte</ref>(<ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carte,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*valeur,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*couleur,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1ae05838b849d6b785d714efebfcd71cf3" kindref="member">formatePseudo</ref>(Joueur<sp/>joueur,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleChaine,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaineFinal[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>version);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1a76b00dd8006b0682ba30099e193d4dd0" kindref="member">formateContrat</ref>(<ref refid="struct_contrat" kindref="compound">Contrat</ref><sp/>contrat,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*chaineFinal,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tailleLigne,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[]);</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_FORMATAGE_CHAINE_H_</highlight></codeline>
+<codeline lineno="127"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>chaine[],<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>longeurChaine);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="formatage_chaine_8h_1a0a9bbb51e5f916ca5bef2365312e23be" kindref="member">genereMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>message[],<sp/>Joueur<sp/>parle,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo[],<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteJoue,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score,<sp/>TypeMessage<sp/>typeMessage);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_FORMATAGE_CHAINE_H_</highlight></codeline>
     </programlisting>
     <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/formatageChaine.h"/>
   </compounddef>

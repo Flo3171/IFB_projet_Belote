@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['pointpli_55',['pointPli',['../autre_8c.html#a4fab4a48512193a409dc541bb38a999c',1,'autre.c']]],
-  ['proposecontratutilisateur_56',['proposeContratUtilisateur',['../affichage_8c.html#ae37357f1035df2f6d50afb1a1c5a9947',1,'affichage.c']]]
+  ['forcecarte_118',['forceCarte',['../gestion_carte_8c.html#af903ef331292d446d28bdcd7a13ce6d8',1,'forceCarte(Carte carteACalculer, Couleur atout, Couleur entame):&#160;gestionCarte.c'],['../gestion_carte_8h.html#af903ef331292d446d28bdcd7a13ce6d8',1,'forceCarte(Carte carteACalculer, Couleur atout, Couleur entame):&#160;gestionCarte.c']]],
+  ['formatecarte_119',['formateCarte',['../formatage_chaine_8c.html#ae97b1deba041f2e607c1acad99704bac',1,'formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#ae97b1deba041f2e607c1acad99704bac',1,'formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version):&#160;formatageChaine.c']]],
+  ['formatecontrat_120',['formateContrat',['../formatage_chaine_8c.html#a76b00dd8006b0682ba30099e193d4dd0',1,'formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#a76b00dd8006b0682ba30099e193d4dd0',1,'formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]):&#160;formatageChaine.c']]],
+  ['formatepseudo_121',['formatePseudo',['../formatage_chaine_8c.html#ae05838b849d6b785d714efebfcd71cf3',1,'formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#ae05838b849d6b785d714efebfcd71cf3',1,'formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version):&#160;formatageChaine.c']]]
 ];

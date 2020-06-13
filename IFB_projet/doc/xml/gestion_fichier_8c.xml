@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -20,11 +20,11 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="1">
         <label>gestionFichier.c</label>
@@ -34,7 +34,7 @@
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -147,6 +147,7 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" line="11" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" bodystart="11" bodyend="42"/>
+        <references refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" compoundref="formatage_chaine_8c" startline="299" endline="312">aligneModifieChaine</references>
       </memberdef>
       <memberdef kind="function" id="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -229,8 +230,8 @@
         </param>
         <param>
           <type>int</type>
-          <declname>score</declname>
-          <defname>scoreJ</defname>
+          <declname>scoreJ</declname>
+          <defname>score</defname>
         </param>
         <briefdescription>
 <para>vérifie si un nouveau record à été battu et l&apos;ajoute si c&apos;est le cas </para>
@@ -268,16 +269,25 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" line="97" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/gestionFichier.c" bodystart="97" bodyend="164"/>
+        <references refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" compoundref="formatage_chaine_8c" startline="299" endline="312">aligneModifieChaine</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>ficher source contenant les fonctions relative � la gestion des fichiers </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;main.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecriturePseudo<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pPseudo,FILE<sp/>*pFichier)</highlight></codeline>
+<codeline lineno="11" refid="gestion_fichier_8h_1a90d5f557067c87ecf4dd33f4345f5f2e" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gestion_fichier_8c_1a90d5f557067c87ecf4dd33f4345f5f2e" kindref="member">ecriturePseudo</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pPseudo,FILE<sp/>*pFichier)</highlight></codeline>
 <codeline lineno="12"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ligne=-1,<sp/>retour=0;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pseudoRecup[TAILLE_MAXI_PESEUDO+1],pseudoJ[TAILLE_MAXI_PESEUDO+1];</highlight></codeline>
@@ -302,7 +312,7 @@
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(retour==2){</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strcpy(pseudoJ,pPseudo);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aligneModifieChaine(pseudoJ,TAILLE_MAXI_PESEUDO);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(pseudoJ,TAILLE_MAXI_PESEUDO);</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(pFichier,0,SEEK_END);</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(pFichier,</highlight><highlight class="stringliteral">&quot;\n%20s;%3d;%4d;%1s&quot;</highlight><highlight class="normal">,pseudoJ,0,0,</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -310,7 +320,7 @@
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ligne;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecrireStatistique(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ligne,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statAModifier,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="44" refid="gestion_fichier_8h_1a72c9b768b73e0805b86215b86a67c8bd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gestion_fichier_8c_1a72c9b768b73e0805b86215b86a67c8bd" kindref="member">ecrireStatistique</ref>(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ligne,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statAModifier,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeurCherchee=0,retour=0;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fichier<sp/>==<sp/>NULL){</highlight></codeline>
@@ -363,7 +373,7 @@
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retour;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ecrireLeaderboard(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scoreJ)</highlight></codeline>
+<codeline lineno="97" refid="gestion_fichier_8h_1ad7559ffef57cd06c0da1239323b61d2a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="gestion_fichier_8c_1a7e238d3b3fe49a72cf5deb9757d4466e" kindref="member">ecrireLeaderboard</ref>(FILE<sp/>*fichier,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pseudo,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scoreJ)</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pseudoRecup[TAILLE_MAXI_PESEUDO+1];</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score=0,stop=0,ligne=0,retour=0;</highlight></codeline>
@@ -387,7 +397,7 @@
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stop=0;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>stop!=1<sp/>&amp;&amp;<sp/>ligne&gt;=0){</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aligneModifieChaine(pseudoRecup,TAILLE_MAXI_PESEUDO);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(pseudoRecup,TAILLE_MAXI_PESEUDO);</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fscanf(fichier,</highlight><highlight class="stringliteral">&quot;%20s&quot;</highlight><highlight class="normal">,pseudoRecup);</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%6s|&quot;</highlight><highlight class="normal">,pseudoRecup);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
@@ -397,7 +407,7 @@
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(scoreJ<sp/>&gt;<sp/>score<sp/>&amp;&amp;<sp/>ligne&lt;9<sp/>){</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD,SEEK_SET);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aligneModifieChaine(pseudoRecup,TAILLE_MAXI_PESEUDO);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(pseudoRecup,TAILLE_MAXI_PESEUDO);</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fichier,</highlight><highlight class="stringliteral">&quot;%20s;&quot;</highlight><highlight class="normal">,pseudoRecup);</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);</highlight></codeline>
@@ -405,7 +415,7 @@
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>ligne==0<sp/>&amp;&amp;<sp/>scoreJ&gt;=score<sp/>){</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aligneModifieChaine(pseudo,TAILLE_MAXI_PESEUDO);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(pseudo,TAILLE_MAXI_PESEUDO);</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fichier,</highlight><highlight class="stringliteral">&quot;%20s;&quot;</highlight><highlight class="normal">,pseudo);</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);</highlight></codeline>
@@ -415,7 +425,7 @@
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scoreJ&lt;=score){</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ligne&lt;9){</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD,SEEK_SET);</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aligneModifieChaine(pseudo,TAILLE_MAXI_PESEUDO);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="formatage_chaine_8c_1a416dc0656ec712c3624275a4aefb85c6" kindref="member">aligneModifieChaine</ref>(pseudo,TAILLE_MAXI_PESEUDO);</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fichier,</highlight><highlight class="stringliteral">&quot;%20s;&quot;</highlight><highlight class="normal">,pseudo);</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fseek(fichier,(ligne+1)*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);</highlight></codeline>

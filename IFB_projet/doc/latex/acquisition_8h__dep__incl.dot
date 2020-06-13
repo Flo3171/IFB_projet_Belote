@@ -1,0 +1,25 @@
+digraph "acquisition.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="acquisition.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ficher header contenant les prototype des fonctions relative a l'acquisirion"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="main.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h_source.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="acquisition.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$acquisition_8c.html",tooltip="ficher source contenant les fonctions relative a l'acquisirion"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="affichage.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$affichage_8c.html",tooltip="ficher source contenant les fonctions relative à l'affichage"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="autre.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$autre_8c.html",tooltip="ficher source contenant les fonctions qui n'allait dans aucun autre fichier"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="formatageChaine.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$formatage_chaine_8c.html",tooltip="ficher source contenant les fonctions relative au formatage"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="general.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$general_8c.html",tooltip="ficher source contenant les fonctions les plus impotantes pour le jeu de la belote"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="gestionCarte.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html",tooltip="ficher contenant les fonctions relative a la gestion des cartes"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="gestionFichier.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_fichier_8c.html",tooltip="ficher source contenant les fonctions relative à la gestion des fichiers"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="main.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html",tooltip="ficher contenant la fonction main"];
+}

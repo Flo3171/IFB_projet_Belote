@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -20,11 +20,11 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="1">
         <label>ia.c</label>
@@ -34,7 +34,7 @@
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -283,7 +283,7 @@
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>meilleurCouleur<sp/>=<sp/>SANS_COULEUR;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>forceMeilleurCouleur<sp/>=<sp/>0,<sp/>sommeForce<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(Couleur<sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>7;<sp/>i++){</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sommeForce<sp/>=<sp/>sommeForceCarte(pCarteMain,<sp/>8,<sp/>i);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sommeForce<sp/>=<sp/><ref refid="gestion_carte_8c_1a372fd921fb081b8ac3b24fa4eacf1357" kindref="member">sommeForceCarte</ref>(pCarteMain,<sp/>8,<sp/>i);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sommeForce<sp/>&gt;<sp/>forceMeilleurCouleur){</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>meilleurCouleur<sp/>=<sp/>i;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>forceMeilleurCouleur<sp/>=<sp/>sommeForce;</highlight></codeline>
@@ -312,7 +312,7 @@
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choixCarteIA(Joueur<sp/>joueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>pli[],<sp/>Joueur<sp/>premierJoueur,<sp/>Couleur<sp/>atout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choixCarteIA(Joueur<sp/>joueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>*pMainJoueur,<sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[],<sp/>Joueur<sp/>premierJoueur,<sp/>Couleur<sp/>atout,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>carteRestante)</highlight></codeline>
 <codeline lineno="61"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>retour=NULL,<sp/>numCarte=0,<sp/>nbCarteValide=0,<sp/>offset=0,difficulte=NIVEAU_IA;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_carte" kindref="compound">Carte</ref><sp/>carteAJouer;</highlight></codeline>
@@ -327,7 +327,7 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte=numCarte+1;</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/><sp/>*(pMainJoueur<sp/>+<sp/>numCarte-1);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retour<sp/>=<sp/>carteValide(carteAJouer,<sp/>pli,<sp/>atout,<sp/>pMainJoueur,<sp/>premierJoueur,joueur);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>retour<sp/>=<sp/><ref refid="gestion_carte_8c_1a860c9426634ed327bf5ed8344ee582e3" kindref="member">carteValide</ref>(carteAJouer,<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>,<sp/>atout,<sp/>pMainJoueur,<sp/>premierJoueur,joueur);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(retour<sp/>==<sp/>0);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numCarte&lt;1<sp/>||<sp/>numCarte<sp/>&gt;<sp/>8){</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte=1;</highlight></codeline>
@@ -347,20 +347,20 @@
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(numCarte<sp/>&lt;<sp/>carteRestante){</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/><sp/>*(pMainJoueur<sp/>+<sp/>numCarte);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(carteValide(carteAJouer,<sp/>pli,<sp/>atout,<sp/>pMainJoueur,<sp/>premierJoueur,joueur)==1){</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCarte(pCarteValidee+nbCarteValide,carteAJouer.<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref>,<sp/>carteAJouer.couleur);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="gestion_carte_8c_1a860c9426634ed327bf5ed8344ee582e3" kindref="member">carteValide</ref>(carteAJouer,<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>,<sp/>atout,<sp/>pMainJoueur,<sp/>premierJoueur,joueur)==1){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(pCarteValidee+nbCarteValide,carteAJouer.<ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref>,<sp/>carteAJouer.couleur);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarteValide[nbCarteValide]=numCarte+1;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbCarteValide++;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte++;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Meneur<sp/>=<sp/>vainqueurPli(pli,<sp/>atout,<sp/>premierJoueur);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Meneur<sp/>=<sp/><ref refid="gestion_carte_8c_1aa27d92d54128016ef6bf0faee2de1eaa" kindref="member">vainqueurPli</ref>(<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>,<sp/>atout,<sp/>premierJoueur);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(nbCarteValide<sp/>!=<sp/>1){</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;nbCarteValide;<sp/>j++<sp/>){</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rechercherCarteSuperieur(pCarteValidee+j,nbCarteValide,<sp/>pli[Meneur-1],<sp/>atout,<sp/>pli[premierJoueur-1].couleur)==1){</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCarte(pCarteGagante+offset,carteValidee[j].valeur,carteValidee[j].couleur);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="gestion_carte_8c_1a03e9f6983a9e26fc546d1301ec3cf5ea" kindref="member">rechercherCarteSuperieur</ref>(pCarteValidee+j,nbCarteValide,<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[Meneur-1],<sp/>atout,<sp/><ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[premierJoueur-1].couleur)==1){</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gestion_carte_8c_1aa6ee6fa9bf13839d948e7df5f4199e0e" kindref="member">setCarte</ref>(pCarteGagante+offset,carteValidee[j].valeur,carteValidee[j].couleur);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarteGagnante[offset]=numCarteValide[j];</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>offset<sp/>+1<sp/>;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -374,7 +374,7 @@
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/>*pCarteValidee;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte=<sp/>numCarteValide[0];</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;nbCarteValide;i++){</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rechercherCarteSuperieur(pCarteValidee+i,nbCarteValide,carteAJouer,atout,pli[premierJoueur-1].couleur)==0){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="gestion_carte_8c_1a03e9f6983a9e26fc546d1301ec3cf5ea" kindref="member">rechercherCarteSuperieur</ref>(pCarteValidee+i,nbCarteValide,carteAJouer,atout,<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[premierJoueur-1].couleur)==0){</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/>*(pCarteValidee<sp/>+<sp/>i);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte<sp/>=<sp/>numCarteValide[i];</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*printf(&quot;%d|%d\n&quot;,carteAJouer.valeur,carteAJouer.couleur);*/</highlight><highlight class="normal"></highlight></codeline>
@@ -386,7 +386,7 @@
 <codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/>*pCarteGagante;</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte=<sp/>numCarteGagnante[0];</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=1;<sp/>i&lt;offset;i++){</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rechercherCarteSuperieur(pCarteGagante+i,offset,carteAJouer,atout,pli[premierJoueur-1].couleur)==0){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="gestion_carte_8c_1a03e9f6983a9e26fc546d1301ec3cf5ea" kindref="member">rechercherCarteSuperieur</ref>(pCarteGagante+i,offset,carteAJouer,atout,<ref refid="general_8c_1a09dedac7ae460c4fd07ebcc4af44568f" kindref="member">pli</ref>[premierJoueur-1].couleur)==0){</highlight></codeline>
 <codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>carteAJouer<sp/>=<sp/>*(pCarteGagante<sp/>+<sp/>i);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numCarte<sp/>=<sp/>numCarteGagnante[i];</highlight></codeline>
 <codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*printf(&quot;%d|%d\n&quot;,carteAJouer.valeur,carteAJouer.couleur);*/</highlight><highlight class="normal"></highlight></codeline>

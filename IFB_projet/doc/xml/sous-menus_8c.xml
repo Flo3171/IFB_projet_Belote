@@ -6,7 +6,7 @@
     <incdepgraph>
       <node id="11">
         <label>affichage.h</label>
-        <link refid="affichage_8h_source"/>
+        <link refid="affichage_8h"/>
       </node>
       <node id="4">
         <label>stdlib.h</label>
@@ -26,15 +26,15 @@
       </node>
       <node id="15">
         <label>autre.h</label>
-        <link refid="autre_8h_source"/>
+        <link refid="autre_8h"/>
       </node>
       <node id="13">
         <label>general.h</label>
-        <link refid="general_8h_source"/>
+        <link refid="general_8h"/>
       </node>
       <node id="18">
         <label>gestionFichier.h</label>
-        <link refid="gestion_fichier_8h_source"/>
+        <link refid="gestion_fichier_8h"/>
       </node>
       <node id="16">
         <label>ia.h</label>
@@ -91,18 +91,18 @@
       </node>
       <node id="14">
         <label>formatageChaine.h</label>
-        <link refid="formatage_chaine_8h_source"/>
+        <link refid="formatage_chaine_8h"/>
       </node>
       <node id="3">
         <label>stdio.h</label>
       </node>
       <node id="12">
         <label>gestionCarte.h</label>
-        <link refid="gestion_carte_8h_source"/>
+        <link refid="gestion_carte_8h"/>
       </node>
       <node id="10">
         <label>acquisition.h</label>
-        <link refid="acquisition_8h_source"/>
+        <link refid="acquisition_8h"/>
       </node>
     </incdepgraph>
       <sectiondef kind="func">
@@ -218,7 +218,7 @@
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>retour=0;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1a978cd3d8ff9f4afa72856d33ad0dea81" kindref="member">afficheMenuSelection</ref>(</highlight><highlight class="stringliteral">&quot;parametre&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;1-changer<sp/>le<sp/>pseudo<sp/>du<sp/>joueur<sp/>NORD;2-changer<sp/>le<sp/>pseudo<sp/>du<sp/>joueur<sp/>EST;3-changer<sp/>le<sp/>pseudo<sp/>du<sp/>joueur<sp/>OUEST;4-Quitter<sp/>&quot;</highlight><highlight class="normal">,2);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>retour=<ref refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(1,4,</highlight><highlight class="stringliteral">&quot;Choisisez<sp/>une<sp/>action<sp/>:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>retour=<ref refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(1,4,</highlight><highlight class="stringliteral">&quot;Choisisez<sp/>une<sp/>action<sp/>:&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal">(retour){</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1<sp/>:<sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(pseudo[NORD-1],</highlight><highlight class="stringliteral">&quot;choisisez<sp/>un<sp/>nouveau<sp/>nom<sp/>pour<sp/>le<sp/>joueur<sp/>NORD&quot;</highlight><highlight class="normal">,1);</highlight></codeline>

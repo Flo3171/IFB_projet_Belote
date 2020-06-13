@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('affichage_8c.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
-<p>ficher contenant les fonctions relative à l'affichage  
+<p>ficher source contenant les fonctions relative à l'affichage  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;main.h&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
@@ -105,9 +105,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ac892324566767801d485fad58318f635"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#ac892324566767801d485fad58318f635">afficheMenuPrincipal</a> (int type)</td></tr>
 <tr class="memdesc:ac892324566767801d485fad58318f635"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche le logo du jeu puis le menu principal  <a href="affichage_8c.html#ac892324566767801d485fad58318f635">More...</a><br /></td></tr>
 <tr class="separator:ac892324566767801d485fad58318f635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac44981849d484a86a70107700d39d0d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#ac44981849d484a86a70107700d39d0d4">afficheInterfacePli</a> (<a class="el" href="struct_carte.html">Carte</a> dernierPli[], <a class="el" href="struct_carte.html">Carte</a> pli[], char *pseudo[], <a class="el" href="struct_carte.html">Carte</a> cartesEnMain[], <a class="el" href="struct_contrat.html">Contrat</a> contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)</td></tr>
-<tr class="memdesc:ac44981849d484a86a70107700d39d0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche l'interface de jeu durant un pli  <a href="affichage_8c.html#ac44981849d484a86a70107700d39d0d4">More...</a><br /></td></tr>
-<tr class="separator:ac44981849d484a86a70107700d39d0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a773118ff3accfbd267688f5e91f26ed7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#a773118ff3accfbd267688f5e91f26ed7">afficheInterfacePli</a> (<a class="el" href="struct_carte.html">Carte</a> dernierPli[], <a class="el" href="struct_carte.html">Carte</a> <a class="el" href="general_8h.html#a09dedac7ae460c4fd07ebcc4af44568f">pli</a>[], char *pseudo[], <a class="el" href="struct_carte.html">Carte</a> cartesEnMain[], <a class="el" href="struct_contrat.html">Contrat</a> contratActuel, char message[], Joueur utilisteur, Joueur dernierVainqueur, int score[], int pointManche[], int type)</td></tr>
+<tr class="memdesc:a773118ff3accfbd267688f5e91f26ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche l'interface de jeu durant un pli  <a href="affichage_8c.html#a773118ff3accfbd267688f5e91f26ed7">More...</a><br /></td></tr>
+<tr class="separator:a773118ff3accfbd267688f5e91f26ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25cb786f432ed01160d9268cdccbe7dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="affichage_8c.html#a25cb786f432ed01160d9268cdccbe7dc">modifieTailleFenetre</a> (int nbLigneFenetre, int nbColloneFentre)</td></tr>
 <tr class="memdesc:a25cb786f432ed01160d9268cdccbe7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifie la taille de la fenetre dans laquel le programme s'execute  <a href="affichage_8c.html#a25cb786f432ed01160d9268cdccbe7dc">More...</a><br /></td></tr>
 <tr class="separator:a25cb786f432ed01160d9268cdccbe7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,14 +128,10 @@ Functions</h2></td></tr>
 <tr class="separator:ae37357f1035df2f6d50afb1a1c5a9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ficher contenant les fonctions relative à l'affichage </p>
+<div class="textblock"><p>ficher source contenant les fonctions relative à l'affichage </p>
 <p>ficher contenant les fonctions relative à la gestion des tableau</p>
 <p>ficher contenant les fonctions des different sous menu disponible sur le menu principal</p>
 <p>ficher contenant les fonctions relative au inteligences artificielles</p>
-<p>ficher contenant les fonctions relative à la gestion des fichiers</p>
-<p>ficher contenant les fonctions relative a la gestion des cartes</p>
-<p>ficher contenant les fonctions les plus impotantes pour le jeu de la belote</p>
-<p>ficher contenant les fonctions relative au formatage</p>
 <dl class="section author"><dt>Author</dt><dd>Carlo.A &amp; Florian.C </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>v1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>12 juin 2020 </dd></dl>
@@ -182,17 +178,22 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="affichage_8c_abd791297578af449761083408a1b4462_cgraph.png" border="0" usemap="#affichage_8c_abd791297578af449761083408a1b4462_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
-<a id="ac44981849d484a86a70107700d39d0d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac44981849d484a86a70107700d39d0d4">&#9670;&nbsp;</a></span>afficheInterfacePli()</h2>
+<a id="a773118ff3accfbd267688f5e91f26ed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a773118ff3accfbd267688f5e91f26ed7">&#9670;&nbsp;</a></span>afficheInterfacePli()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int afficheInterfacePli </td>
+          <td class="memname">afficheInterfacePli </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_carte.html">Carte</a>&#160;</td>
           <td class="paramname"><em>dernierPli</em>[], </td>
@@ -290,7 +291,7 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="affichage_8c_ac44981849d484a86a70107700d39d0d4_cgraph.png" border="0" usemap="#affichage_8c_ac44981849d484a86a70107700d39d0d4_cgraph" alt=""/></div>
+<div class="center"><img src="affichage_8c_a773118ff3accfbd267688f5e91f26ed7_cgraph.png" border="0" usemap="#affichage_8c_a773118ff3accfbd267688f5e91f26ed7_cgraph" alt=""/></div>
 </div>
 
 </div>
@@ -319,6 +320,11 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="affichage_8c_ad4ca97b6626eb7557ec5c8e3ad795f95_cgraph.png" border="0" usemap="#affichage_8c_ad4ca97b6626eb7557ec5c8e3ad795f95_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -399,6 +405,11 @@ Here is the call graph for this function:</div>
 <p>&lt; contrôle le centrage du titre du sous-menu</p>
 <p>&lt; effacement de la chaine de carrateres</p>
 <p>&lt;efface l'écran et affiche le sous-menu avec le texte correspondant</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="affichage_8c_a978cd3d8ff9f4afa72856d33ad0dea81_cgraph.png" border="0" usemap="#affichage_8c_a978cd3d8ff9f4afa72856d33ad0dea81_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -440,6 +451,11 @@ Here is the call graph for this function:</div>
 <p>&lt; découpe la phrase pour pouvoir l'afficher <br  />
 </p>
 <p>&lt;efface l'écran et affiche le sous-menu avec le texte correspondant</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="affichage_8c_a77a2c701d655e817f1fe4c56c883af3f_cgraph.png" border="0" usemap="#affichage_8c_a77a2c701d655e817f1fe4c56c883af3f_cgraph" alt=""/></div>
+</div>
 
 </div>
 </div>
@@ -543,7 +559,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="affichage_8c.html">affichage.c</a></li>
-    <li class="footer">Generated on Sun Jun 14 2020 00:53:14 for IFB_projet by
+    <li class="footer">Generated on Sun Jun 14 2020 01:55:52 for IFB_projet by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

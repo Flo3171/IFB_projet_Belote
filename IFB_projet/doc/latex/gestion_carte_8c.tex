@@ -1,0 +1,387 @@
+\hypertarget{gestion_carte_8c}{}\doxysection{gestion\+Carte.\+c File Reference}
+\label{gestion_carte_8c}\index{gestionCarte.c@{gestionCarte.c}}
+
+
+ficher contenant les fonctions relative a la gestion des cartes  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for gestion\+Carte.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gestion_carte_8c_ae1326a1796189845699f614535268322}{distribue\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main)
+\begin{DoxyCompactList}\small\item\em distribue les cartes entre les différent joueur \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestion_carte_8c_aa6ee6fa9bf13839d948e7df5f4199e0e}{set\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$carte, Valeur valeur\+Carte, Couleur couleur\+Carte)
+\begin{DoxyCompactList}\small\item\em donne une valeur et une couleur a une carte \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestion_carte_8c_a77b2ed8ac4298678feea52baa2e9cf0e}{supprime\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} carte\mbox{[}$\,$\mbox{]}, int nb\+Carte, int carte\+A\+Supprimer)
+\begin{DoxyCompactList}\small\item\em supprime une carte d\textquotesingle{}un tableau et réduit la taille de ce tableu par le bas \end{DoxyCompactList}\item 
+Joueur \mbox{\hyperlink{gestion_carte_8c_aa27d92d54128016ef6bf0faee2de1eaa}{vainqueur\+Pli}} (\mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, Couleur atout, Joueur premier\+A\+Jouer)
+\begin{DoxyCompactList}\small\item\em donne le vainquer d\textquotesingle{}un pli \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{gestion_carte_8c_af903ef331292d446d28bdcd7a13ce6d8}{force\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} carte\+A\+Calculer, Couleur atout, Couleur entame)
+\begin{DoxyCompactList}\small\item\em calcul la force d\textquotesingle{}une carte, en faisant la probabilitée qu\textquotesingle{}elle a de gagné contre toutes les autres cartes \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{gestion_carte_8c_a860c9426634ed327bf5ed8344ee582e3}{carte\+Valide}} (\mbox{\hyperlink{struct_carte}{Carte}} carte\+Pose, \mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, Couleur atout, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main\+Joueur, Joueur premier\+A\+Jouer, Joueur parle)
+\begin{DoxyCompactList}\small\item\em ddétermine si une carte peut etre posé par un joueur \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{gestion_carte_8c_ac56fc1f7ac0fcff4617638f73704540e}{rechercher\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte, int nb\+Carte, Couleur couleur\+Cherche, Valeur valeur\+Cherche)
+\begin{DoxyCompactList}\small\item\em cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{gestion_carte_8c_a03e9f6983a9e26fc546d1301ec3cf5ea}{rechercher\+Carte\+Superieur}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte, int nb\+Carte, \mbox{\hyperlink{struct_carte}{Carte}} carte\+Cherche, Couleur atout, Couleur entame)
+\begin{DoxyCompactList}\small\item\em cherche dans un tableau de carte si il y a une carte d\textquotesingle{}une force suppérieur a carte\+Cherche \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{gestion_carte_8c_a372fd921fb081b8ac3b24fa4eacf1357}{somme\+Force\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$tableau\+Carte, int nb\+Carte, Couleur atout)
+\begin{DoxyCompactList}\small\item\em calucule la somme force des carte dans un tableau \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestion_carte_8c_a1ae8efe125a9388197c70d15f8b08c3a}{trie\+Carte}} (\mbox{\hyperlink{struct_carte}{Carte}} tableau\+Carte\mbox{[}$\,$\mbox{]}, int nb\+Carte, Couleur atout)
+\begin{DoxyCompactList}\small\item\em trie un tableau de cartes \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{gestion_carte_8c_ad5f137155414b037892fcefbb4659c38}{carte\+Place\+Avant}} (\mbox{\hyperlink{struct_carte}{Carte}} carte\+Refference, \mbox{\hyperlink{struct_carte}{Carte}} carte\+Compare, Couleur atout)
+\begin{DoxyCompactList}\small\item\em permet de savoir si une carte doit etre placée avant lors du trie des cartes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{gestion_carte_8c_a60713486558430d396e98d6090e6db23}{recherche\+Annonce}} (\mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main, int point\+Anonce\mbox{[}$\,$\mbox{]}, Joueur utilisateur, char $\ast$pseudo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em rechere dans un tableau de cartes qui correspond a la main d\textquotesingle{}un joureur si il peut faire des anonc, et si oui ajoute les points assacier au tableau dans le tableau des anonce \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ficher contenant les fonctions relative a la gestion des cartes 
+
+\begin{DoxyAuthor}{Author}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gestion_carte_8c_ad5f137155414b037892fcefbb4659c38}\label{gestion_carte_8c_ad5f137155414b037892fcefbb4659c38}} 
+\index{gestionCarte.c@{gestionCarte.c}!cartePlaceAvant@{cartePlaceAvant}}
+\index{cartePlaceAvant@{cartePlaceAvant}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{cartePlaceAvant()}{cartePlaceAvant()}}
+{\footnotesize\ttfamily char carte\+Place\+Avant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Refference,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Compare,  }\item[{Couleur}]{atout }\end{DoxyParamCaption})}
+
+
+
+permet de savoir si une carte doit etre placée avant lors du trie des cartes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+Refference \+: carte par raport a laquelle on compare \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+Compare \+: carte que l\textquotesingle{}on compare \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout dans la manche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char \+: renvoie 1 si la catre doit etre placée avant 0 sinon 
+\end{DoxyReturn}
+$<$ Les deux carte sont elle de la meme famille
+
+$<$ si carte\+Compate est un atout
+
+$<$ si la couleur de la carte\+Compare est devant celle de carte\+Refference dans l\textquotesingle{}Ã©numÃ©ration(ordre arbitraire)Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{gestion_carte_8c_a860c9426634ed327bf5ed8344ee582e3}\label{gestion_carte_8c_a860c9426634ed327bf5ed8344ee582e3}} 
+\index{gestionCarte.c@{gestionCarte.c}!carteValide@{carteValide}}
+\index{carteValide@{carteValide}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{carteValide()}{carteValide()}}
+{\footnotesize\ttfamily char carte\+Valide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Pose,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{Couleur}]{atout,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main\+Joueur,  }\item[{Joueur}]{premier\+A\+Jouer,  }\item[{Joueur}]{parle }\end{DoxyParamCaption})}
+
+
+
+ddétermine si une carte peut etre posé par un joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & cart\+Pose \+: carte que l\textquotesingle{}on veut poser \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli\mbox{[}\mbox{]} \+: tableau contenet les carte du pli \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main\+Joueur pointeur sur un tableau de 8 carte contenent les cartes dans la main du joueur \\
+\hline
+{\em Joueur} & premier\+A\+Jouer \+: premier joueur a jouer dans le pli \\
+\hline
+{\em Joueur} & parle \+: joueur en train de jouer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 1 si la carte est valide 0 sinon 
+\end{DoxyReturn}
+$<$ Fonction faite a partir de l\textquotesingle{}oranigrame qui montre comment dÃ©terminer si une carte est valide a partir des rÃ¨gle
+
+$<$ On verifier que ce n\textquotesingle{}est pas une carte vide
+
+$<$ premiÃ¨re carte du plis ?
+
+$<$ Le joueur posÃ¨de il la couleur demandÃ©e ?
+
+$<$ l\textquotesingle{}entame est en atout
+
+$<$ Le joueur a il un ajout de valeur supÃ©rieur au meilleur ajout posÃ©
+
+$<$ si la carte est un ajout le valeur supÃ©rieur au meilleur atout posÃ©
+
+$<$ Si la carte est un atout
+
+$<$ Si la carte est dans la couleur demandÃ©e
+
+$<$ Le partemenaire est maitre ?
+
+$<$ Le joueur a il un atout ?
+
+$<$ il y a deja un ajout de posÃ©
+
+$<$ Le joueur a il un ajout de valeur supÃ©rieur au meilleur ajout posÃ©
+
+$<$ si la carte est un ajout le valeur supÃ©rieur au meilleur atout posÃ©
+
+$<$ Si la carte est un atout alors elle est valideHere is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{gestion_carte_8c_ae1326a1796189845699f614535268322}\label{gestion_carte_8c_ae1326a1796189845699f614535268322}} 
+\index{gestionCarte.c@{gestionCarte.c}!distribueCarte@{distribueCarte}}
+\index{distribueCarte@{distribueCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{distribueCarte()}{distribueCarte()}}
+{\footnotesize\ttfamily void distribue\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main }\end{DoxyParamCaption})}
+
+
+
+distribue les cartes entre les différent joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le tableau qui stocke les carte dans la main de chaque joueur \\
+\hline
+{\em } & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{gestion_carte_8c_af903ef331292d446d28bdcd7a13ce6d8}\label{gestion_carte_8c_af903ef331292d446d28bdcd7a13ce6d8}} 
+\index{gestionCarte.c@{gestionCarte.c}!forceCarte@{forceCarte}}
+\index{forceCarte@{forceCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{forceCarte()}{forceCarte()}}
+{\footnotesize\ttfamily float force\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+A\+Calculer,  }\item[{Couleur}]{atout,  }\item[{Couleur}]{entame }\end{DoxyParamCaption})}
+
+
+
+calcul la force d\textquotesingle{}une carte, en faisant la probabilitée qu\textquotesingle{}elle a de gagné contre toutes les autres cartes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+A\+Calculer \+: carte dont on veut connaitre la force \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout durant la partie \\
+\hline
+{\em Couleur} & entame \+: couleur de l\textquotesingle{}entame durant la partie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float \+: probabilitée de victoir de la carte 
+\end{DoxyReturn}
+$<$ la carte est un atout ou que la manche se joue en tout atout
+
+$<$ si on est en tout atout mais que la couleur de la carte n\textquotesingle{}est pa la couleur de l\textquotesingle{}entame alors la carte sera plus faible que toutes les cartees dans la bonne couleur
+
+$<$ la manche est en sans atout et la carte est dans la couleur de l\textquotesingle{}entame
+
+$<$ on est en atout d\textquotesingle{}une certaine couleur ou en sans atoutavec une couleur diffÃ©rente de l\textquotesingle{}entame
+
+$<$ quand l\textquotesingle{}entame est diffÃ©rent de la couleur de la carte et que ce n\textquotesingle{}est pas un atout alor on pert a chaque fois\mbox{\Hypertarget{gestion_carte_8c_a60713486558430d396e98d6090e6db23}\label{gestion_carte_8c_a60713486558430d396e98d6090e6db23}} 
+\index{gestionCarte.c@{gestionCarte.c}!rechercheAnnonce@{rechercheAnnonce}}
+\index{rechercheAnnonce@{rechercheAnnonce}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{rechercheAnnonce()}{rechercheAnnonce()}}
+{\footnotesize\ttfamily void recherche\+Annonce (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main,  }\item[{int}]{point\+Anonce\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{utilisateur,  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+rechere dans un tableau de cartes qui correspond a la main d\textquotesingle{}un joureur si il peut faire des anonc, et si oui ajoute les points assacier au tableau dans le tableau des anonce 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le premier élément du tableau qui cintient les cartes de tout les joueur \\
+\hline
+{\em int} & point\+Anonce\mbox{[}\mbox{]} \+: tableau contenant les point d\textquotesingle{}anonce \\
+\hline
+{\em Joueur} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]} \+: tableau contenant les pseudo des 4 joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ on cherche si le joueur a un carrÃ©Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{gestion_carte_8c_ac56fc1f7ac0fcff4617638f73704540e}\label{gestion_carte_8c_ac56fc1f7ac0fcff4617638f73704540e}} 
+\index{gestionCarte.c@{gestionCarte.c}!rechercherCarte@{rechercherCarte}}
+\index{rechercherCarte@{rechercherCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{rechercherCarte()}{rechercherCarte()}}
+{\footnotesize\ttfamily char rechercher\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte,  }\item[{int}]{nb\+Carte,  }\item[{Couleur}]{couleur\+Cherche,  }\item[{Valeur}]{valeur\+Cherche }\end{DoxyParamCaption})}
+
+
+
+cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte \+: pointeur sur un tableau de carte \\
+\hline
+{\em int} & nb\+Carte \+: nombre de carte dans le tableau \\
+\hline
+{\em Couleur} & couleur\+Cherche \+: couleur que l\textquotesingle{}on veut chercher dans le tableau (mettre S\+A\+N\+S\+\_\+\+C\+O\+U\+L\+E\+UR pour rechercher toutes les couleur) \\
+\hline
+{\em Valeur} & valeur\+Cherche \+: valeur que l\textquotesingle{}on cherche dans le tableau (mettre S\+A\+N\+S\+\_\+\+V\+A\+L\+E\+UR pour chercher toutes les valeur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 1 si on a trouvé une carte qui correspond au critère 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gestion_carte_8c_a03e9f6983a9e26fc546d1301ec3cf5ea}\label{gestion_carte_8c_a03e9f6983a9e26fc546d1301ec3cf5ea}} 
+\index{gestionCarte.c@{gestionCarte.c}!rechercherCarteSuperieur@{rechercherCarteSuperieur}}
+\index{rechercherCarteSuperieur@{rechercherCarteSuperieur}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{rechercherCarteSuperieur()}{rechercherCarteSuperieur()}}
+{\footnotesize\ttfamily char rechercher\+Carte\+Superieur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte,  }\item[{int}]{nb\+Carte,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Cherche,  }\item[{Couleur}]{atout,  }\item[{Couleur}]{entame }\end{DoxyParamCaption})}
+
+
+
+cherche dans un tableau de carte si il y a une carte d\textquotesingle{}une force suppérieur a carte\+Cherche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte \+: pointeur sur un tableau de carte \\
+\hline
+{\em int} & nb\+Carte \+: nombre de carte dans le tableau \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+Cherche \+: carte a laquele on veut que la carte cherchée soit supérieur \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout dans la manche \\
+\hline
+{\em Couleur} & entame \+: couleur de l\textquotesingle{}entame dans la manche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char 1 si on a trouvé une carte qui correspond au critère 0 sinon 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{gestion_carte_8c_aa6ee6fa9bf13839d948e7df5f4199e0e}\label{gestion_carte_8c_aa6ee6fa9bf13839d948e7df5f4199e0e}} 
+\index{gestionCarte.c@{gestionCarte.c}!setCarte@{setCarte}}
+\index{setCarte@{setCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{setCarte()}{setCarte()}}
+{\footnotesize\ttfamily void set\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{carte,  }\item[{Valeur}]{valeur\+Carte,  }\item[{Couleur}]{couleur\+Carte }\end{DoxyParamCaption})}
+
+
+
+donne une valeur et une couleur a une carte 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$carte \+: pointeur sur la carte a modifier \\
+\hline
+{\em Valeur} & valeur\+Carte \+: valeur a donner a la carte \\
+\hline
+{\em Couleur} & couleur\+Carte \+: couleur a donner a la carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gestion_carte_8c_a372fd921fb081b8ac3b24fa4eacf1357}\label{gestion_carte_8c_a372fd921fb081b8ac3b24fa4eacf1357}} 
+\index{gestionCarte.c@{gestionCarte.c}!sommeForceCarte@{sommeForceCarte}}
+\index{sommeForceCarte@{sommeForceCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{sommeForceCarte()}{sommeForceCarte()}}
+{\footnotesize\ttfamily float somme\+Force\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{tableau\+Carte,  }\item[{int}]{nb\+Carte,  }\item[{Couleur}]{atout }\end{DoxyParamCaption})}
+
+
+
+calucule la somme force des carte dans un tableau 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & tableau\+Carte \+: tableau de carte sur lequel on veut travailler \\
+\hline
+{\em int} & nb\+Carte \+: nombre de carte dans le tableau \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout sur la manche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float \+: la valeur de lla somme des force des carte 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{gestion_carte_8c_a77b2ed8ac4298678feea52baa2e9cf0e}\label{gestion_carte_8c_a77b2ed8ac4298678feea52baa2e9cf0e}} 
+\index{gestionCarte.c@{gestionCarte.c}!supprimeCarte@{supprimeCarte}}
+\index{supprimeCarte@{supprimeCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{supprimeCarte()}{supprimeCarte()}}
+{\footnotesize\ttfamily void supprime\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\mbox{[}$\,$\mbox{]},  }\item[{int}]{nb\+Carte,  }\item[{int}]{carte\+A\+Supprimer }\end{DoxyParamCaption})}
+
+
+
+supprime une carte d\textquotesingle{}un tableau et réduit la taille de ce tableu par le bas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\mbox{[}\mbox{]} \+: tableau conteneant les carte a modifier \\
+\hline
+{\em int} & nb\+Carte \+: nombre total de carte \\
+\hline
+{\em int} & carte\+A\+Supprimer \+: indice dans le tableau de la carte a enlever \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{gestion_carte_8c_a1ae8efe125a9388197c70d15f8b08c3a}\label{gestion_carte_8c_a1ae8efe125a9388197c70d15f8b08c3a}} 
+\index{gestionCarte.c@{gestionCarte.c}!trieCarte@{trieCarte}}
+\index{trieCarte@{trieCarte}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{trieCarte()}{trieCarte()}}
+{\footnotesize\ttfamily void trie\+Carte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{tableau\+Carte\mbox{[}$\,$\mbox{]},  }\item[{int}]{nb\+Carte,  }\item[{Couleur}]{atout }\end{DoxyParamCaption})}
+
+
+
+trie un tableau de cartes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & tableau\+Carte\mbox{[}\mbox{]} \+: tableau contenant les cartes a trier \\
+\hline
+{\em int} & nb\+Carte nombre de carte dans le tableau \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout dans la manche \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ On rÃ©alise un tri a bulle pour mettre atout du plus fort au moin fort au dÃ©but de la main puis les carte par famille
+
+$<$ Si la carte dois aller devant dans le tableauHere is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{gestion_carte_8c_aa27d92d54128016ef6bf0faee2de1eaa}\label{gestion_carte_8c_aa27d92d54128016ef6bf0faee2de1eaa}} 
+\index{gestionCarte.c@{gestionCarte.c}!vainqueurPli@{vainqueurPli}}
+\index{vainqueurPli@{vainqueurPli}!gestionCarte.c@{gestionCarte.c}}
+\doxysubsubsection{\texorpdfstring{vainqueurPli()}{vainqueurPli()}}
+{\footnotesize\ttfamily Joueur vainqueur\+Pli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{Couleur}]{atout,  }\item[{Joueur}]{premier\+A\+Jouer }\end{DoxyParamCaption})}
+
+
+
+donne le vainquer d\textquotesingle{}un pli 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli\mbox{[}\mbox{]} \+: tableau contenant les carte du pli \\
+\hline
+{\em Couleur} & atout \+: couleur de l\textquotesingle{}atout durant cette manche \\
+\hline
+{\em Joueur} & premier\+A\+Jouer \+: joueur qui pose la première carte du pli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Joueur \+: le jouer qui a gagné le pli 
+\end{DoxyReturn}
+$<$ La carte du joueur que l\textquotesingle{}on test est plus forte que la meilleur actuelle alors ca devient la meilleureHere is the call graph for this function\+:
+% FIG 9

@@ -1,0 +1,328 @@
+\hypertarget{general_8h}{}\doxysection{general.\+h File Reference}
+\label{general_8h}\index{general.h@{general.h}}
+
+
+ficher header contenant les prototypes des fonctions les plus impotantes pour le jeu de la belote  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{general_8h_a7a3238715d030c42dde5f4539c9ca3b3}{initialisation}} (int nb\+Ligne\+Fenetre, int nb\+Collone\+Fenetre)
+\begin{DoxyCompactList}\small\item\em fonction qui gère l\textquotesingle{}initialitation et le lancement du programme \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{general_8h_adfbaa271f44d828c6a42ce7e9affee88}{menu\+Principal}} ()
+\begin{DoxyCompactList}\small\item\em fonction qui gère le debut de la partie \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{general_8h_a1faac25606ba09c4cdbcf54a142dbe0c}{nouvelle\+Partie}} (char $\ast$pseudo\mbox{[}$\,$\mbox{]}, Joueur utilisateur, int $\ast$p\+Statistique, int info\+Ecriture\+Ficher\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em lancement d\textquotesingle{}une nouvelle partie \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{general_8h_a82e65877686a049b4bee9160af15c97f}{manche}} (char $\ast$pseudo\mbox{[}$\,$\mbox{]}, int score\mbox{[}$\,$\mbox{]}, Joueur dealer, Joueur utilisateur, int $\ast$p\+Statistique)
+\begin{DoxyCompactList}\small\item\em lancement d\textquotesingle{}une manche \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{general_8h_a6eeea9d2fea8b2c504b0051af39f7c80}{annonce\+Contrat}} (char $\ast$pseudo\mbox{[}$\,$\mbox{]}, Joueur dealer, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main, Joueur utilisateur)
+\begin{DoxyCompactList}\small\item\em gère l\textquotesingle{}annonce et la surenchère des contats par les joueurs \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{general_8h_abde08a751131f9afc15de6fc616348f6}{propose\+Contrat}} (\mbox{\hyperlink{struct_contrat}{Contrat}} dernier\+Contrat, Joueur parle, char $\ast$pseudo\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main, Joueur utilisateur)
+\begin{DoxyCompactList}\small\item\em proposition d\textquotesingle{}un contrat par un joueur \end{DoxyCompactList}\item 
+Joueur \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}} (\mbox{\hyperlink{struct_contrat}{Contrat}} contrat, Joueur premier\+A\+Jouer, char $\ast$pseudo\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main, int point\+Manche\mbox{[}$\,$\mbox{]}, int point\+Anonce\mbox{[}$\,$\mbox{]}, char belote\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} carte\+Pli\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} carte\+Ancien\+Pli\mbox{[}$\,$\mbox{]}, int score\mbox{[}$\,$\mbox{]}, Joueur utilisateur, int num\+Pli)
+\begin{DoxyCompactList}\small\item\em fonction qui gère un pli \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{general_8h_a6c7b2721ebd2ba9c2cdd0d452f8cbe3f}{pose\+Carte}} (Joueur joueur, int num\+Carte, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Main\+Joueurs, \mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, int carte\+Restante)
+\begin{DoxyCompactList}\small\item\em fonction qui verifie la validité d\textquotesingle{}une carte est la pose \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{general_8h_ae2494afb9457cbcf96753839016abbb6}{calcul\+Point\+Manche}} (\mbox{\hyperlink{struct_contrat}{Contrat}} contrat, int point\+Manche\mbox{[}$\,$\mbox{]}, int point\+Anonce\mbox{[}$\,$\mbox{]}, int point\+Belote\mbox{[}$\,$\mbox{]}, int score\mbox{[}$\,$\mbox{]}, char $\ast$pseudo\mbox{[}$\,$\mbox{]}, Joueur utilisateur)
+\begin{DoxyCompactList}\small\item\em compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ficher header contenant les prototypes des fonctions les plus impotantes pour le jeu de la belote 
+
+\begin{DoxyAuthor}{Author}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{general_8h_a6eeea9d2fea8b2c504b0051af39f7c80}\label{general_8h_a6eeea9d2fea8b2c504b0051af39f7c80}} 
+\index{general.h@{general.h}!annonceContrat@{annonceContrat}}
+\index{annonceContrat@{annonceContrat}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{annonceContrat()}{annonceContrat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contrat}{Contrat}} annonce\+Contrat (\begin{DoxyParamCaption}\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{dealer,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main,  }\item[{Joueur}]{utilisateur }\end{DoxyParamCaption})}
+
+
+
+gère l\textquotesingle{}annonce et la surenchère des contats par les joueurs 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]}\+: tableau de pointeurs contenant les pseudos des différents joueurs \\
+\hline
+{\em Joueur} & dealer \+: joueur qui distibue les cartes \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le tableau qui stocke les cartes dans la main de chaque joueur \\
+\hline
+{\em Joueuer} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_contrat}{Contrat}} \+: contrat final qui a ete choisi pour la partie 
+\end{DoxyReturn}
+$<$ Affichage du choix du joueurHere is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{general_8h_ae2494afb9457cbcf96753839016abbb6}\label{general_8h_ae2494afb9457cbcf96753839016abbb6}} 
+\index{general.h@{general.h}!calculPointManche@{calculPointManche}}
+\index{calculPointManche@{calculPointManche}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{calculPointManche()}{calculPointManche()}}
+{\footnotesize\ttfamily char calcul\+Point\+Manche (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{contrat,  }\item[{int}]{point\+Manche\mbox{[}$\,$\mbox{]},  }\item[{int}]{point\+Anonce\mbox{[}$\,$\mbox{]},  }\item[{int}]{point\+Belote\mbox{[}$\,$\mbox{]},  }\item[{int}]{score\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{utilisateur }\end{DoxyParamCaption})}
+
+
+
+compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & contrat \+: contrat qui a été choisi durant la manche \\
+\hline
+{\em int} & point\+Manche\mbox{[}\mbox{]} \+: tableau qui contient les points de la manche \\
+\hline
+{\em int} & point\+Anonce\mbox{[}\mbox{]} \+: tableau qui contient les points d\textquotesingle{}anonce de la manche \\
+\hline
+{\em int} & point\+Belote\mbox{[}\mbox{]} \+: tableau contenant les point de belote rebelote de chaque joueur \\
+\hline
+{\em int} & score\mbox{[}\mbox{]} \+: tableau qui contient les score de la partie \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]}\+: tableau de pointeur contenant les pseudo des différents joueur \\
+\hline
+{\em Joueur} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char \+: 1 si le contrtat a été réussi et 0 si le contrat a échoué 
+\end{DoxyReturn}
+$<$ On reche si le contrat est rampli
+
+$<$ cas ou un des joueur a pris un capot
+
+$<$ cas ou un des joueur a pris une générale
+
+$<$ Le contrat est rempli si le les point de l\textquotesingle{}équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces
+
+$<$ on affiche ce qui c\textquotesingle{}est passéHere is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{general_8h_a7a3238715d030c42dde5f4539c9ca3b3}\label{general_8h_a7a3238715d030c42dde5f4539c9ca3b3}} 
+\index{general.h@{general.h}!initialisation@{initialisation}}
+\index{initialisation@{initialisation}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{initialisation()}{initialisation()}}
+{\footnotesize\ttfamily void initialisation (\begin{DoxyParamCaption}\item[{int}]{nb\+Ligne\+Fenetre,  }\item[{int}]{nb\+Collone\+Fenetre }\end{DoxyParamCaption})}
+
+
+
+fonction qui gère l\textquotesingle{}initialitation et le lancement du programme 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Ligne\+Fenetre} & \+: taille verticale de la fenêtre \\
+\hline
+{\em nb\+Collone\+Fenetre} & \+: taille horizonotale de la fenêtre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{general_8h_a82e65877686a049b4bee9160af15c97f}\label{general_8h_a82e65877686a049b4bee9160af15c97f}} 
+\index{general.h@{general.h}!manche@{manche}}
+\index{manche@{manche}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{manche()}{manche()}}
+{\footnotesize\ttfamily char manche (\begin{DoxyParamCaption}\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{int}]{score\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{dealer,  }\item[{Joueur}]{utilisateur,  }\item[{int $\ast$}]{p\+Statistique }\end{DoxyParamCaption})}
+
+
+
+lancement d\textquotesingle{}une manche 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]} \+: tableau de pointeurs contenant les pseudos des différents joueurs \\
+\hline
+{\em int} & score\mbox{[}\mbox{]} \+: tableau contenant les scores des joueur \\
+\hline
+{\em Joueur} & dealer \+: joueur qui distibue les cartes \\
+\hline
+{\em Joueuer} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+{\em int} & $\ast$p\+Statistique \+: pointeur sur un tableau 4$\ast$4 qui contient des statistique sur chaque joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char \+: 0 si tout le monde passe, 1 si la manche a bien lieu 
+\end{DoxyReturn}
+$<$ tableau qui stocke les anonce de chaque joueur, on y ajoute 1 pour le roi d\textquotesingle{}atout puis 1 pour la dame d\textquotesingle{}atout
+
+$<$ distribution des cartes
+
+$<$ On cherche si les joueurs on des anonce a faire
+
+$<$ On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche
+
+$<$ si un joueur a fait une belote rebelote il gagne 20 pointHere is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{general_8h_adfbaa271f44d828c6a42ce7e9affee88}\label{general_8h_adfbaa271f44d828c6a42ce7e9affee88}} 
+\index{general.h@{general.h}!menuPrincipal@{menuPrincipal}}
+\index{menuPrincipal@{menuPrincipal}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{menuPrincipal()}{menuPrincipal()}}
+{\footnotesize\ttfamily void menu\+Principal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+fonction qui gère le debut de la partie 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ contrôle d\textquotesingle{}acquisition avec réaffichage de l\textquotesingle{}interfface
+
+$<$executer la fonction nouvelle partieHere is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{general_8h_a1faac25606ba09c4cdbcf54a142dbe0c}\label{general_8h_a1faac25606ba09c4cdbcf54a142dbe0c}} 
+\index{general.h@{general.h}!nouvellePartie@{nouvellePartie}}
+\index{nouvellePartie@{nouvellePartie}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{nouvellePartie()}{nouvellePartie()}}
+{\footnotesize\ttfamily int nouvelle\+Partie (\begin{DoxyParamCaption}\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{utilisateur,  }\item[{int $\ast$}]{p\+Statistique,  }\item[{int}]{info\+Ecriture\+Ficher\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+lancement d\textquotesingle{}une nouvelle partie 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]} \+: tableau de pointeurs contenant les pseudos des différents joueurs \\
+\hline
+{\em Joueuer} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+{\em int} & $\ast$p\+Statistique \+: pointeur sur un tableau 4$\ast$4 qui contient des statistique sur chaque joueur \\
+\hline
+{\em int} & info\+Ecriture\+Fichier\mbox{[}\mbox{]} \+: tableau contenant les info qui devront etre écrite dans le fichier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: nombre de manche jusqu\textquotesingle{}a la victoir d\textquotesingle{}une équipe 
+\end{DoxyReturn}
+$<$ On change l\textquotesingle{}affichage pour avoir un affichage plus simple a lire lors d\textquotesingle{}une partie entre 4 ordinateur
+
+$<$ a suprimer une fois de debug fini
+
+$<$ Fin de partie
+
+$<$ affichage des resultat
+
+$<$ L\textquotesingle{}utilisatuer et nord gagnent
+
+$<$ est et touest gagnentHere is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}\label{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}} 
+\index{general.h@{general.h}!pli@{pli}}
+\index{pli@{pli}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{pli()}{pli()}}
+{\footnotesize\ttfamily Joueur pli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{contrat,  }\item[{Joueur}]{premier\+A\+Jouer,  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main,  }\item[{int}]{point\+Manche\mbox{[}$\,$\mbox{]},  }\item[{int}]{point\+Anonce\mbox{[}$\,$\mbox{]},  }\item[{char}]{belote\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Pli\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\+Ancien\+Pli\mbox{[}$\,$\mbox{]},  }\item[{int}]{score\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{utilisateur,  }\item[{int}]{num\+Pli }\end{DoxyParamCaption})}
+
+
+
+fonction qui gère un pli 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & contrat \+: contrat qui a été choisipour cette manche \\
+\hline
+{\em Joueur} & premier\+Ajouer \+: premier joueur a jouer dans le pli \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]}\+: tableau de pointeur contenant les pseudo des différents joueur \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le tableau qui stocke les carte dans la main de chaque joueur \\
+\hline
+{\em int} & point\+Manche\mbox{[}\mbox{]} \+: tableau contenant les point de chaque joueur dans la manche \\
+\hline
+{\em int} & point\+Anonce\mbox{[}\mbox{]} \+: tableau contenant les point d\textquotesingle{}anonce de chaque joueur \\
+\hline
+{\em char} & belote\mbox{[}\mbox{]} \+: tableau contenant les ancone belote rebelote de chaque joueur \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+Pli\mbox{[}\mbox{]} \+: tableau contenant les 4 carte du pli \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\+Ancien\+Pli\mbox{[}\mbox{]} \+: tableau contenant les carte du pli précédent \\
+\hline
+{\em int} & score\mbox{[}\mbox{]} \+: tableau qui contient les score de la partie \\
+\hline
+{\em Joueur} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Joueur \+: le vainceur du pli 
+\end{DoxyReturn}
+$<$ interface de pli Utilisateur
+
+$<$ interface de pli ordinateur
+
+$<$ on regarde si une dame ou un roi d\textquotesingle{}atout vien d\textquotesingle{}etre jouer pour ajouter au tableau belote\mbox{[}\mbox{]}
+
+$<$ affichage de la carte qui vien d\textquotesingle{}etre jouée
+
+$<$ 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pliHere is the call graph for this function\+:
+% FIG 7
+\mbox{\Hypertarget{general_8h_a6c7b2721ebd2ba9c2cdd0d452f8cbe3f}\label{general_8h_a6c7b2721ebd2ba9c2cdd0d452f8cbe3f}} 
+\index{general.h@{general.h}!poseCarte@{poseCarte}}
+\index{poseCarte@{poseCarte}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{poseCarte()}{poseCarte()}}
+{\footnotesize\ttfamily int pose\+Carte (\begin{DoxyParamCaption}\item[{Joueur}]{joueur,  }\item[{int}]{num\+Carte,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Main\+Joueurs,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{int}]{carte\+Restante }\end{DoxyParamCaption})}
+
+
+
+fonction qui verifie la validité d\textquotesingle{}une carte est la pose 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joueur} & variable qui defini la position du joueur qui effectue l\textquotesingle{}action \\
+\hline
+{\em num\+Carte} & variable qui defini la carte choisie par le joueur \\
+\hline
+{\em p\+Main\+Joueurs} & \+: pointeur qui renvoie vers le tableau de la main de tous les joueurs \\
+\hline
+{\em p\+Pli} & \+: pointeur qui renvoie vers le tableau des carte jouées dans le pli \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 8
+\mbox{\Hypertarget{general_8h_abde08a751131f9afc15de6fc616348f6}\label{general_8h_abde08a751131f9afc15de6fc616348f6}} 
+\index{general.h@{general.h}!proposeContrat@{proposeContrat}}
+\index{proposeContrat@{proposeContrat}!general.h@{general.h}}
+\doxysubsubsection{\texorpdfstring{proposeContrat()}{proposeContrat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contrat}{Contrat}} propose\+Contrat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{dernier\+Contrat,  }\item[{Joueur}]{parle,  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main,  }\item[{Joueur}]{utilisateur }\end{DoxyParamCaption})}
+
+
+
+proposition d\textquotesingle{}un contrat par un joueur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & dernier\+Contrat \+: dernier contrat proposé \\
+\hline
+{\em Joueur} & parle \+: joueur qui parle \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]}\+: tableau de pointeurs contenant les pseudos des différents joueurs \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le tableau qui stocke les cartes dans la main de chaque joueurs \\
+\hline
+{\em Joueur} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_contrat}{Contrat}} \+: nouveau contrat proposé par le joueur 
+\end{DoxyReturn}
+$<$ acquisition par l\textquotesingle{}utilisateur
+
+$<$ choix par l\textquotesingle{}ia d\textquotesingle{}un contratHere is the call graph for this function\+:
+% FIG 9
