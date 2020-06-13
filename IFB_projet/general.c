@@ -73,6 +73,8 @@ void menuPrincipal()
             break;
         default : /*executer la fonction quitter*/
             sortie = 0;
+            fclose(fichier);
+            fclose(fichier2);
             break;
         }
     }
