@@ -409,7 +409,6 @@ Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *p
             break;
 
         }
-
         return nouveauContrat;
 
 
