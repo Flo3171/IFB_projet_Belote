@@ -2,14 +2,16 @@
 
 Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
 {
-    float seuilMinPrise = 0.61, seuilMaxPrise = 1;
+    float seuilMinPrise = 0.61, seuilMaxPrise = 1, deltaCoinche = 10, seuilMiniCoinche = 110;
 
     /**< Permet de déterminer de manière euristique la meilleur valeur de seuilMinPrise et seuilMaxPrise */
     /*if (parle == NORD || parle == SUD){
-        seuilMaxPrise = 1;
+        deltaCoinche = 10;
+        seuilMiniCoinche = 100;
     }
     else{
-        seuilMaxPrise = 0.95;
+        deltaCoinche = 10;
+        seuilMiniCoinche = 110;
 
     }*/
 
@@ -30,7 +32,13 @@ Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat
             setContrat(&nouveauContrat, parle, enchereMax, meilleurCouleur, NORMAL);
         }
         else{
-            setContrat(&nouveauContrat, parle, ZERO, SANS_COULEUR, NORMAL);
+            if((dernierContrat.preneur == joueurSuivant(parle) || dernierContrat.preneur == joueurSuivant(joueurSuivant(joueurSuivant(parle)))) && (dernierContrat.nbPoint - enchereMax)<= deltaCoinche && dernierContrat.nbPoint >= seuilMiniCoinche){
+                setContrat(&nouveauContrat, dernierContrat.preneur, dernierContrat.nbPoint, dernierContrat.atout, COINCHE);/**< ON coinche ! */
+            }
+            else{
+                setContrat(&nouveauContrat, parle, ZERO, SANS_COULEUR, NORMAL);
+            }
+
         }
     }
     else {
