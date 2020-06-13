@@ -77,10 +77,10 @@ void menuPrincipal()
         }
     }
     while (sortie);
-    afficheMenuSelection("CREDITS", "Ce jeu a ete cree par Florian et Carlo dans le cadre du projet de l'uv IFB a l'UTBM;Ce projet est publie sous licence GNU et libre de droit;Voici le lien de notre GitHub ou le code source est accessible a tous :;https://github.com/Flo3171/ IFB_projet_Belote;Nous vous remercions d'avoir joué a notre jeu et nous esperons qu'il vous aura plu", 1);
+    afficheMenuSelection("CREDITS", "Ce jeu a ete cree par Florian et Carlo dans le cadre du projet de l'uv IFB a l'UTBM;Ce projet est publie sous licence GNU et libre de droit;Voici le lien de notre GitHub ou le code source est accessible a tous :;https://github.com/Flo3171/ IFB_projet_Belote;Nous vous remercions d'avoir joue a notre jeu et nous esperons qu'il vous aura plu", 1);
     printf("Appuyer sur une touche pour continuer\n");
     getch();
-    afficheMenuSelection("REMERCIMENTS", "Nous remercions les createurs du cours de programmation en C oppenclassroom's qui nous a grandement aides dans ce projet;Nous remercions egalement l'ensemble des forums qui nous a permit d'obtenir des reponses a nos problemes et de comprendre nos erreurs;Un grand merci au enseignant de l'uv IFB pour leurs cours et leurs execises formateurs;Des remerciments speciaux a V.G, C.H et L.H pour leurs conseils et les debats sans fin a propos de ce projet", 1);
+    afficheMenuSelection("REMERCIMENTS", "Nous remercions les createurs du cours de programmation en C oppenclassroom's qui nous a grandement aides dans ce projet;Nous remercions egalement l'ensemble des forums qui nous a permit d'obtenir des reponses a nos problemes et de comprendre nos erreurs;;Un grand merci au enseignant de l'uv IFB pour leurs cours et leurs execises formateurs;;Des remerciments speciaux a V.G, C.H et L.H pour leurs conseils et les debats sans fin a propos de ce projet", 0);
     printf("Appuyer sur une touche pour continuer\n");
     getch();
 
