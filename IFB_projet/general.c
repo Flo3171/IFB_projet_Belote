@@ -12,8 +12,8 @@ void menuPrincipal()
     int *pStatistique = &statistique[0][0];
 
     FILE *fichier=NULL, *fichier2=NULL;
-    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","a+");
-    fichier2= fopen("sauvegarde/leaderboard.csv","a+");
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
+    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
     if(fichier == NULL || fichier2 == NULL){
         fichier = NULL;
         fichier2 = NULL;
