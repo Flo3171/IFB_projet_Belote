@@ -7,6 +7,15 @@
  * \version v1.0
  * \date 12 juin 2020
 */
+
+/**
+ * \fn int main(int argc, char *argv[])
+ * \brief Entrée du programme
+ * \author Florian.C
+ *
+ * \return EXIT_SUCCESS - Arrêt normal du programme
+ */
+
 int main(int argc, char *argv[])
 {
     /**< CODE FINAL */
@@ -16,7 +25,7 @@ int main(int argc, char *argv[])
     }
     menuPrincipal();
     /**< FIN CODE FINAL */
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 
