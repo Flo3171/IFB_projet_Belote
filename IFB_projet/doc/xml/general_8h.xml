@@ -4,15 +4,39 @@
     <compoundname>general.h</compoundname>
     <includedby refid="main_8h" local="yes">main.h</includedby>
     <invincdepgraph>
+      <node id="4">
+        <label>affichage.c</label>
+        <link refid="affichage_8c"/>
+      </node>
+      <node id="5">
+        <label>autre.c</label>
+        <link refid="autre_8c"/>
+      </node>
       <node id="1">
         <label>general.h</label>
         <link refid="general_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
       <node id="2">
         <label>main.h</label>
         <link refid="main_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
@@ -56,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="11" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="3" bodyend="6" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="11" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="11" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="11" bodyend="14" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="11" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1adfbaa271f44d828c6a42ce7e9affee88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -75,7 +99,7 @@
 <para>&lt; contrôle d&apos;acquisition avec réaffichage de l&apos;interfface</para>
 <para>&lt;executer la fonction nouvelle partie</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="18" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="8" bodyend="89" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="18" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="18" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="16" bodyend="97" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="18" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1a1faac25606ba09c4cdbcf54a142dbe0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -149,7 +173,7 @@
 <para>&lt; L&apos;utilisatuer et nord gagnent</para>
 <para>&lt; est et touest gagnent</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="29" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="91" bodyend="178" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="29" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="29" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="99" bodyend="186" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="29" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1a82e65877686a049b4bee9160af15c97f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -234,7 +258,7 @@
 <para>&lt; On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche</para>
 <para>&lt; si un joueur a fait une belote rebelote il gagne 20 point</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="43" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="180" bodyend="277" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="43" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="43" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="188" bodyend="285" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="43" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1a6eeea9d2fea8b2c504b0051af39f7c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -302,7 +326,7 @@
         <inbodydescription>
 <para>&lt; Affichage du choix du joueur</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="56" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="279" bodyend="361" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="56" declcolumn="9"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="56" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="287" bodyend="369" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="56" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1abde08a751131f9afc15de6fc616348f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -383,7 +407,7 @@
 <para>&lt; acquisition par l&apos;utilisateur</para>
 <para>&lt; choix par l&apos;ia d&apos;un contrat</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="68" column="10" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="363" bodyend="379" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="68" declcolumn="10"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="68" column="10" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="371" bodyend="387" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="68" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1a09dedac7ae460c4fd07ebcc4af44568f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Joueur</type>
@@ -549,7 +573,7 @@
 <para>&lt; affichage de la carte qui vien d&apos;etre jouée</para>
 <para>&lt; 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="88" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="382" bodyend="453" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="88" declcolumn="8"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="88" column="8" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="390" bodyend="461" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="88" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1a6c7b2721ebd2ba9c2cdd0d452f8cbe3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -620,7 +644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="100" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="455" bodyend="465" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="100" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="100" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="463" bodyend="473" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="100" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="general_8h_1ae2494afb9457cbcf96753839016abbb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -732,7 +756,7 @@
 <para>&lt; Le contrat est rempli si le les point de l&apos;équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces</para>
 <para>&lt; on affiche ce qui c&apos;est passé</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="115" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="468" bodyend="568" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="115" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" line="115" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.c" bodystart="476" bodyend="576" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/general.h" declline="115" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

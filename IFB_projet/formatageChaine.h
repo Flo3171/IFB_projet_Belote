@@ -1,7 +1,18 @@
 #ifndef _FORMATAGE_CHAINE_H_
 #define _FORMATAGE_CHAINE_H_
 
-/** \brief transphorme une chaine de caractère de longeur inconue en une chaine de caratère fixé de tel sorte que le texte soit centré
+/**
+ * \file formatageChaine.h
+ * \brief ficher header contenant les prototypes des fonctions relative au formatage
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
+
+/**
+ * \brief transphorme une chaine de caractère de longeur inconue en une chaine de caratère fixé de tel sorte que le texte soit centré
+ * \fn int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
  *
  * \param char chaineInitial : chaine a modifier
  * \param char chaineFinal : pointeur vers la variable qui stocke la chainne final
@@ -12,7 +23,9 @@
 int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine);
 
 
-/** \brief transforme une chaine de cararactère en sa vertion centrée
+/**
+ * \brief transforme une chaine de cararactère en sa vertion centrée
+ * \fn int centreModifieChaine(char chaine[], int longeurChaine)
  *
  * \param char chaine : chaine a modifier
  * \param int longeurChaine
@@ -22,7 +35,9 @@ int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine);
 int centreModifieChaine(char chaine[], int longeurChaine);
 
 
-/** \brief fontion qui permet de découper une chaine de caracère en plusieur chaine de taille fixée en coupant sur un espace
+/**
+ * \brief fontion qui permet de découper une chaine de caracère en plusieur chaine de taille fixée en coupant sur un espace
+ * \fn int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int nbLigne)
  *
  * \param chaineInitiale[] : chaine a decouper
  * \param chaineFinale[][] : tableau contenant les chaine un fois découpé
@@ -33,7 +48,9 @@ int centreModifieChaine(char chaine[], int longeurChaine);
  */
 int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int nbLigne);
 
-/** \brief rempli une chaine de caractère de nbEspace caractère espace ' '
+/**
+ * \brief rempli une chaine de caractère de nbEspace caractère espace ' '
+ * \fn void rempliEspace(char *chaine,int nbEspace)
  *
  * \param chaine[] : chaine a remplir;
  * \param nbEspace[] : nombre d'espaca a placer dans la chaine
@@ -42,7 +59,9 @@ int decoupeChaine(char chaineInitiale[], char *chaineFinale,int tailleLigne,int 
  */
 void rempliEspace(char *chaine,int nbEspace);
 
-/** \brief formate les chaine de caracère qui affiche la valeur et la couleur des cartes
+/**
+ * \brief formate les chaine de caracère qui affiche la valeur et la couleur des cartes
+ * \fn void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version)
  *
  * \param chaineFinale[][][] tableau a trois dimention qui stocke les chaine de caracère de la valeur et la couleurs des cartes
  * \param carte[] : tableau de typpe Carte contenant les carte a afficher
@@ -55,7 +74,9 @@ void rempliEspace(char *chaine,int nbEspace);
 void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChaine, int version);
 
 
-/** \brief met dans une chaine de caractère la valeur et la couleur d'une carte
+/**
+ * \brief met dans une chaine de caractère la valeur et la couleur d'une carte
+ * \fn void stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine)
  *
  * \param carte : variable de type carte qui contient la carte a afficher
  * \param valeur : pointeur vers la chaine  qui stocke la valeur (ou la valeur et la couleur si mode court)
@@ -67,7 +88,9 @@ void formateCarte(Carte carte[], char *chaineFinale, int nbCarte, int tailleChai
  */
 void stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int tailleChaine);
 
-/** \brief stocke dans une chaine de caractère le pseudo d'un des joueur
+/**
+ * \brief stocke dans une chaine de caractère le pseudo d'un des joueur
+ * \fn void formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version)
  *
  * \param Joueur joueur : joueur dont on veut afficher le pseudo
  * \param char *pseudo[] : tableau contennant les pseudo des joueur
@@ -79,7 +102,9 @@ void stockeInfoCarte(Carte carte, char *valeur, char *couleur, int version, int 
  */
 void formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineFinal[], int version);
 
-/** \brief stocke dans des chaine de caractère les info du contrat
+/**
+ * \brief stocke dans des chaine de caractère les info du contrat
+ * \fn void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[])
  *
  * \param Contrat contrat : contrat a afficher
  * \param char *chainefinal : chaine final ou  on enregistre les info du contrat
@@ -90,7 +115,9 @@ void formatePseudo(Joueur joueur, char *pseudo[], int tailleChaine, char chaineF
  */
 void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *pseudo[]);
 
-/** \brief transforme une chaine de cararactère en sa vertion aligné a gauche
+/**
+ * \brief transforme une chaine de cararactère en sa vertion aligné a gauche
+ * \fn int aligneModifieChaine(char chaine[], int longeurChaine)
  *
  * \param char chaine : chaine a modifier
  * \param int longeurChaine
@@ -99,7 +126,9 @@ void formateContrat(Contrat contrat, char *chaineFinal, int tailleLigne, char *p
  */
 int aligneModifieChaine(char chaine[], int longeurChaine);
 
-/** \brief génere un message et l'enregistre dans une chaine de caractère
+/**
+ * \brief génere un message et l'enregistre dans une chaine de caractère
+ * \fn void genereMessage(char message[], Joueur parle, char *pseudo[], Carte carteJoue, int score, TypeMessage typeMessage)
  *
  * \param char message[] : tableau de char ou on enregistre le message
  * \param Joueur parle : joueur qui pose une carte

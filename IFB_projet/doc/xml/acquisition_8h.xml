@@ -4,9 +4,33 @@
     <compoundname>acquisition.h</compoundname>
     <includedby refid="main_8h" local="yes">main.h</includedby>
     <invincdepgraph>
+      <node id="4">
+        <label>affichage.c</label>
+        <link refid="affichage_8c"/>
+      </node>
+      <node id="5">
+        <label>autre.c</label>
+        <link refid="autre_8c"/>
+      </node>
+      <node id="6">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
       <node id="2">
         <label>main.h</label>
         <link refid="main_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
       </node>
       <node id="1">
         <label>acquisition.h</label>
@@ -56,7 +80,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="13" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="3" bodyend="14" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="13" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="13" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="11" bodyend="22" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="13" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
       </memberdef>
       <memberdef kind="function" id="acquisition_8h_1a18f937b66ed35b9776e797d80b5916cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -98,7 +123,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="24" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="16" bodyend="23" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="24" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="24" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="24" bodyend="31" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="24" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
       </memberdef>
       <memberdef kind="function" id="acquisition_8h_1a0daf819099ce021f9a1d0a8464212af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char</type>
@@ -115,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="33" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="25" bodyend="32" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="33" declcolumn="7"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="33" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="33" bodyend="40" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="33" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="acquisition_8h_1ac37f94c13b479302eb91f586007056ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -170,7 +196,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="44" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="34" bodyend="42" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="44" declcolumn="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="44" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="42" bodyend="50" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="44" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
       </memberdef>
       <memberdef kind="function" id="acquisition_8h_1afcd1bfa47bc634de2b8467f3191b8782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -225,7 +252,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="55" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="44" bodyend="84" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="55" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="55" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="52" bodyend="92" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="55" declcolumn="6"/>
+        <references refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" compoundref="affichage_8c" startline="186" endline="225">afficheSousMenus</references>
       </memberdef>
       <memberdef kind="function" id="acquisition_8h_1a29f102dc63957f1bd52030075bb9beef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -242,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="62" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="86" bodyend="101" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="62" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="62" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="94" bodyend="109" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="62" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -254,19 +282,19 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACQUISITION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acquisitionEntierAvecMessage(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="13"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" kindref="member">acquisitionEntierAvecMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acquisitionEntierSansMessage(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="24"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" kindref="member">acquisitionEntierSansMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>acquisitionOuiNonSansMessage();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" kindref="member">acquisitionOuiNonSansMessage</ref>();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acquisitionEntierSansMessageAvecConsigne(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[]);</highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1ac37f94c13b479302eb91f586007056ed" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[]);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>acquisitionPseudoAvecMessage(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="55"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acquisitionEntierSecurise();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ACQUISITION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>

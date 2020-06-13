@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="struct_contrat" kind="struct" language="C++" prot="public">
     <compoundname>Contrat</compoundname>
+    <includes refid="main_8h" local="no">main.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="struct_contrat_1a7fc9c43dd8964d4972fdfb3320398912" prot="public" static="no" mutable="no">
         <type>Joueur</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="88" column="12" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="88" bodyend="-1"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="144" column="12" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" prot="public" static="no" mutable="no">
         <type>NbPoint</type>
@@ -24,10 +25,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>type Joueur, joueur qui a pris le contrat </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="89" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="89" bodyend="-1"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="145" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" prot="public" static="no" mutable="no">
         <type>Couleur</type>
@@ -37,10 +39,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>type NbPoint, nombre de point du contrat </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="90" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="90" bodyend="-1"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="146" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" prot="public" static="no" mutable="no">
         <type>Coinche</type>
@@ -50,17 +53,20 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>type Couleur, couleur de l&apos;atout qui à été prise pour le contrat </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="91" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="91" bodyend="-1"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="147" column="13" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>represente un contrat à la belote coichée </para>
     </briefdescription>
     <detaileddescription>
+<para>Permet d&apos;avoir toutes les information concernant un contrat stocké dans une seuil et même variable </para>
     </detaileddescription>
-    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="86" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="87" bodyend="93"/>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="142" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="143" bodyend="149"/>
     <listofallmembers>
       <member refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" prot="public" virt="non-virtual"><scope>Contrat</scope><name>atout</name></member>
       <member refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" prot="public" virt="non-virtual"><scope>Contrat</scope><name>coinche</name></member>

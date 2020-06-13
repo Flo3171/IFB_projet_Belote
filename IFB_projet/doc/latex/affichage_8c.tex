@@ -1,0 +1,264 @@
+\hypertarget{affichage_8c}{}\doxysection{affichage.\+c File Reference}
+\label{affichage_8c}\index{affichage.c@{affichage.c}}
+
+
+ficher contenant les fonctions relative à l\textquotesingle{}affichage  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for affichage.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{affichage_8c_ac892324566767801d485fad58318f635}{affiche\+Menu\+Principal}} (int type)
+\begin{DoxyCompactList}\small\item\em affiche le logo du jeu puis le menu principal \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{affichage_8c_ac44981849d484a86a70107700d39d0d4}{affiche\+Interface\+Pli}} (\mbox{\hyperlink{struct_carte}{Carte}} dernier\+Pli\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} pli\mbox{[}$\,$\mbox{]}, char $\ast$pseudo\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_carte}{Carte}} cartes\+En\+Main\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{struct_contrat}{Contrat}} contrat\+Actuel, char message\mbox{[}$\,$\mbox{]}, Joueur utilisteur, Joueur dernier\+Vainqueur, int score\mbox{[}$\,$\mbox{]}, int point\+Manche\mbox{[}$\,$\mbox{]}, int type)
+\begin{DoxyCompactList}\small\item\em affiche l\textquotesingle{}interface de jeu durant un pli \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_a25cb786f432ed01160d9268cdccbe7dc}{modifie\+Taille\+Fenetre}} (int nb\+Ligne\+Fenetre, int nb\+Collone\+Fentre)
+\begin{DoxyCompactList}\small\item\em modifie la taille de la fenetre dans laquel le programme s\textquotesingle{}execute \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_a77a2c701d655e817f1fe4c56c883af3f}{affiche\+Sous\+Menus}} (char phrase\mbox{[}$\,$\mbox{]}, char intitule\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche les différents sous menus \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_ad4ca97b6626eb7557ec5c8e3ad795f95}{affiche\+Main}} (\mbox{\hyperlink{struct_carte}{Carte}} carte\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche les carte qu\textquotesingle{}un joueur a en main \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_abd791297578af449761083408a1b4462}{affiche\+Contrat}} (\mbox{\hyperlink{struct_contrat}{Contrat}} contrat, char $\ast$pseudo\mbox{[}$\,$\mbox{]}, int version)
+\begin{DoxyCompactList}\small\item\em affiche un contrat \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{affichage_8c_a978cd3d8ff9f4afa72856d33ad0dea81}{affiche\+Menu\+Selection}} (char intitule\mbox{[}$\,$\mbox{]}, char phrase\mbox{[}$\,$\mbox{]}, int saut\+De\+Ligne)
+\begin{DoxyCompactList}\small\item\em affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d\textquotesingle{}elles \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{affichage_8c_ae37357f1035df2f6d50afb1a1c5a9947}{propose\+Contrat\+Utilisateur}} (\mbox{\hyperlink{struct_contrat}{Contrat}} dernier\+Contrat, Joueur parle, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main)
+\begin{DoxyCompactList}\small\item\em gère le choix du contrat par l\textquotesingle{}utilisateur \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ficher contenant les fonctions relative à l\textquotesingle{}affichage 
+
+ficher contenant les fonctions relative à la gestion des tableau
+
+ficher contenant les fonctions des different sous menu disponible sur le menu principal
+
+ficher contenant les fonctions relative au inteligences artificielles
+
+ficher contenant les fonctions relative à la gestion des fichiers
+
+ficher contenant les fonctions relative a la gestion des cartes
+
+ficher contenant les fonctions les plus impotantes pour le jeu de la belote
+
+ficher contenant les fonctions relative au formatage
+
+\begin{DoxyAuthor}{Author}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{affichage_8c_abd791297578af449761083408a1b4462}\label{affichage_8c_abd791297578af449761083408a1b4462}} 
+\index{affichage.c@{affichage.c}!afficheContrat@{afficheContrat}}
+\index{afficheContrat@{afficheContrat}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheContrat()}{afficheContrat()}}
+{\footnotesize\ttfamily void affiche\+Contrat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{contrat,  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{int}]{version }\end{DoxyParamCaption})}
+
+
+
+affiche un contrat 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & contrat \+: contrat a afficher \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]}\+: tableau de pointeur contenant les pseudo des différents joueurs \\
+\hline
+{\em int} & version \+: 1 pour la version belle et de grande taille et 2 pour la version courte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{affichage_8c_ac44981849d484a86a70107700d39d0d4}\label{affichage_8c_ac44981849d484a86a70107700d39d0d4}} 
+\index{affichage.c@{affichage.c}!afficheInterfacePli@{afficheInterfacePli}}
+\index{afficheInterfacePli@{afficheInterfacePli}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheInterfacePli()}{afficheInterfacePli()}}
+{\footnotesize\ttfamily int affiche\+Interface\+Pli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{dernier\+Pli\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{cartes\+En\+Main\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{contrat\+Actuel,  }\item[{char}]{message\mbox{[}$\,$\mbox{]},  }\item[{Joueur}]{utilisteur,  }\item[{Joueur}]{dernier\+Vainqueur,  }\item[{int}]{score\mbox{[}$\,$\mbox{]},  }\item[{int}]{point\+Manche\mbox{[}$\,$\mbox{]},  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+affiche l\textquotesingle{}interface de jeu durant un pli 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & dernier\+Pli\mbox{[}\mbox{]} \+: tableau contenant les 4 cartes du dernier plis \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli\mbox{[}\mbox{]} \+: tableau contenant les cartes du pli en cours, mettre 0, 0 si il n\textquotesingle{}y a pas de carte \\
+\hline
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]} \+: tableau contenant les pseudo des 4 joueur \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & cartes\+En\+Main\mbox{[}\mbox{]} \+: tableau contenant les carte dans la main de l\textquotesingle{}utilisateur \\
+\hline
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & contrat\+Actuel \+: contrat qui est en cour dans cette manche \\
+\hline
+{\em char} & message\mbox{[}500\mbox{]} \\
+\hline
+{\em Joueur} & utilisateur \+: donne la position de l\textquotesingle{}utilisateur, mettre S\+A\+N\+S\+\_\+\+Joueur pour faire une partie avec uniquement des ordinateur \\
+\hline
+{\em Joueur} & dernier\+Vainqueur \+: joueur aylant gagné le dernier pli \\
+\hline
+{\em int} & score\mbox{[}\mbox{]} \+: tableau qui contient les score de la partie \\
+\hline
+{\em int} & point\+Manche\mbox{[}\mbox{]} \+: tableau qui contient les points de la manche \\
+\hline
+{\em int} & type \+: version de la fonction \+: 0 pour un affichage et une acquisition et 1 pour l\textquotesingle{}acquisition seulle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: valeur choisie par l\textquotesingle{}utilisateur 
+\end{DoxyReturn}
+$<$ Formatage des chaine de caracère relative aux pseudo
+
+$<$ Formatage des chaine de caractère relative au message
+
+$<$ Formatage des chaine de caractère relative aux cartes
+
+$<$ Formatage des chaine de caractère relative au contratHere is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{affichage_8c_ad4ca97b6626eb7557ec5c8e3ad795f95}\label{affichage_8c_ad4ca97b6626eb7557ec5c8e3ad795f95}} 
+\index{affichage.c@{affichage.c}!afficheMain@{afficheMain}}
+\index{afficheMain@{afficheMain}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheMain()}{afficheMain()}}
+{\footnotesize\ttfamily void affiche\+Main (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{carte\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affiche les carte qu\textquotesingle{}un joueur a en main 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & carte\mbox{[}\mbox{]} \+: tableau contanant les carte \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{affichage_8c_ac892324566767801d485fad58318f635}\label{affichage_8c_ac892324566767801d485fad58318f635}} 
+\index{affichage.c@{affichage.c}!afficheMenuPrincipal@{afficheMenuPrincipal}}
+\index{afficheMenuPrincipal@{afficheMenuPrincipal}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheMenuPrincipal()}{afficheMenuPrincipal()}}
+{\footnotesize\ttfamily int affiche\+Menu\+Principal (\begin{DoxyParamCaption}\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+affiche le logo du jeu puis le menu principal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & quel type de menu est souhaité \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la valeur de l\textquotesingle{}action que l\textquotesingle{}utilisateur decide de faire 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{affichage_8c_a978cd3d8ff9f4afa72856d33ad0dea81}\label{affichage_8c_a978cd3d8ff9f4afa72856d33ad0dea81}} 
+\index{affichage.c@{affichage.c}!afficheMenuSelection@{afficheMenuSelection}}
+\index{afficheMenuSelection@{afficheMenuSelection}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheMenuSelection()}{afficheMenuSelection()}}
+{\footnotesize\ttfamily void affiche\+Menu\+Selection (\begin{DoxyParamCaption}\item[{char}]{intitule\mbox{[}$\,$\mbox{]},  }\item[{char}]{phrase\mbox{[}$\,$\mbox{]},  }\item[{int}]{saut\+De\+Ligne }\end{DoxyParamCaption})}
+
+
+
+affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d\textquotesingle{}elles 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & intitule \mbox{[}\mbox{]}\+: titre du du cadre \\
+\hline
+{\em char} & phrase\mbox{[}\mbox{]} \+: les chaines de carractère séparés par des points virgules \\
+\hline
+{\em int} & saut\+De\+Ligne \+: nombre de lignes à sauter entre chaque chaine de carractères \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ contrôle le centrage du titre du sous-\/menu
+
+$<$ effacement de la chaine de carrateres
+
+$<$efface l\textquotesingle{}écran et affiche le sous-\/menu avec le texte correspondant\mbox{\Hypertarget{affichage_8c_a77a2c701d655e817f1fe4c56c883af3f}\label{affichage_8c_a77a2c701d655e817f1fe4c56c883af3f}} 
+\index{affichage.c@{affichage.c}!afficheSousMenus@{afficheSousMenus}}
+\index{afficheSousMenus@{afficheSousMenus}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{afficheSousMenus()}{afficheSousMenus()}}
+{\footnotesize\ttfamily void affiche\+Sous\+Menus (\begin{DoxyParamCaption}\item[{char}]{phrase\mbox{[}$\,$\mbox{]},  }\item[{char}]{intitule\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affiche les différents sous menus 
+
+
+\begin{DoxyParams}{Parameters}
+{\em phrase} & phrase correspondant au sous menu choisi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+$<$ contrôle le centrage du titre du sous-\/menu
+
+$<$ découpe la phrase pour pouvoir l\textquotesingle{}afficher ~\newline
+
+
+$<$efface l\textquotesingle{}écran et affiche le sous-\/menu avec le texte correspondant\mbox{\Hypertarget{affichage_8c_a25cb786f432ed01160d9268cdccbe7dc}\label{affichage_8c_a25cb786f432ed01160d9268cdccbe7dc}} 
+\index{affichage.c@{affichage.c}!modifieTailleFenetre@{modifieTailleFenetre}}
+\index{modifieTailleFenetre@{modifieTailleFenetre}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{modifieTailleFenetre()}{modifieTailleFenetre()}}
+{\footnotesize\ttfamily void modifie\+Taille\+Fenetre (\begin{DoxyParamCaption}\item[{int}]{nb\+Ligne\+Fenetre,  }\item[{int}]{nb\+Collone\+Fentre }\end{DoxyParamCaption})}
+
+
+
+modifie la taille de la fenetre dans laquel le programme s\textquotesingle{}execute 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+Linge\+Fenetre} & \+: nombre de ligne de la fenetre \\
+\hline
+{\em nb\+Collone\+Fenetre} & \+: nombre de collone de la fenetre \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{affichage_8c_ae37357f1035df2f6d50afb1a1c5a9947}\label{affichage_8c_ae37357f1035df2f6d50afb1a1c5a9947}} 
+\index{affichage.c@{affichage.c}!proposeContratUtilisateur@{proposeContratUtilisateur}}
+\index{proposeContratUtilisateur@{proposeContratUtilisateur}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{proposeContratUtilisateur()}{proposeContratUtilisateur()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contrat}{Contrat}} propose\+Contrat\+Utilisateur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{dernier\+Contrat,  }\item[{Joueur}]{parle,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main }\end{DoxyParamCaption})}
+
+
+
+gère le choix du contrat par l\textquotesingle{}utilisateur 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & dernier\+Contrat \+: dernier contrat proposé \\
+\hline
+{\em Joueur} & parle \+: joueur qui parle \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main \+: pointeur sur le tableau qui stocke les carte dans la main du joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_contrat}{Contrat}} \+: nouveau contrat proposé par le joueur 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em } & \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+% FIG 3

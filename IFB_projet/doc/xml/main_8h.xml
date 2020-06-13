@@ -125,6 +125,36 @@
         <link refid="acquisition_8h_source"/>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>affichage.c</label>
+        <link refid="affichage_8c"/>
+      </node>
+      <node id="4">
+        <label>autre.c</label>
+        <link refid="autre_8c"/>
+      </node>
+      <node id="5">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="1">
+        <label>main.h</label>
+        <link refid="main_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="struct_carte" prot="public">Carte</innerclass>
     <innerclass refid="struct_contrat" prot="public">Contrat</innerclass>
       <sectiondef kind="define">
@@ -278,7 +308,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>0 pour le mode normal, 1 pour le mode ou une partie est constitué d&apos;une uique manche Structure </para>
+<para>0 pour le mode normal, 1 pour le mode ou une partie est constitué d&apos;une uique manche Structure et énumérations </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -303,6 +333,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Couleur par défaut, pour une carte vide </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7a835c1d28b93fd71585c0bd8c629ea98a" prot="public">
@@ -311,6 +342,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Couleur coeur </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7aa8e960c091829457b4833077289e00a0" prot="public">
@@ -319,6 +351,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Couleur pique </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7aff50f65df1ad73caec3e886c499657ba" prot="public">
@@ -327,6 +360,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Couleur carreau </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7ae290acbfa912b09c0cef378a61628e8d" prot="public">
@@ -335,6 +369,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Couleur trefle </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1aa304d0ca681f782b1d7735da33037dd7a6a14acaec08fe6a02f30068425b0038d" prot="public">
@@ -343,15 +378,18 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Tout atout </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Les différentes couleur d&apos;atout possible a la belote coinchée. </para>
         </briefdescription>
         <detaileddescription>
+<para>toute les couleur disponible ainsi que tout atouts et sans atout sert a la fois pour le type <ref refid="struct_carte" kindref="compound">Carte</ref> et le type <ref refid="struct_contrat" kindref="compound">Contrat</ref> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="24" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="25" bodyend="34"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="33" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="34" bodyend="43"/>
       </memberdef>
       <memberdef kind="enum" id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2f" prot="public" static="no" strong="no">
         <type></type>
@@ -370,6 +408,8 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur par défaut, pour une carte vide <linebreak/>
+ </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa63afc18876b4864ae749c6343dae3ba0" prot="public">
@@ -378,6 +418,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur As </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa436250abd7e6692a3ab0983590128093" prot="public">
@@ -386,6 +427,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur Valet </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa630b67ff829a4c185e65091797e9a03c" prot="public">
@@ -394,6 +436,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur Dame </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa9a9953fcb482418f2a1fe258c4f46a70" prot="public">
@@ -402,6 +445,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur Roi </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa29ed9d7f614ba184a86644f1c9a03291" prot="public">
@@ -410,6 +454,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur 7 </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa79e4607adbe51052bdfebc8c55cc85c8" prot="public">
@@ -418,6 +463,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur 8 </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a44967720f2d16f8ec13b66b11ee4dd2fa1507d51307dbb0fbb3b438e591dc99e4" prot="public">
@@ -426,15 +472,18 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Valeur 9 </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Les différentes valeur possible des cartes d&apos;un jeu de 32 cartes. </para>
         </briefdescription>
         <detaileddescription>
+<para>Les valeurs associée on été placée de manière arbitraire et n&apos;ont pas d&apos;importance sur le programme Pour simplifier, le tout atout et le sans atout sont considéré comme des couleurs </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="36" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="37" bodyend="47"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="54" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="55" bodyend="65"/>
       </memberdef>
       <memberdef kind="enum" id="main_8h_1a9a527722d878ba01d077a448efebe469" prot="public" static="no" strong="no">
         <type></type>
@@ -453,6 +502,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Joueur par défaut, quand il n&apos;y a pas de joueur ou pour l&apos;initialitation </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469ab26f94a551dbfca6e0f4f6b5ad145c01" prot="public">
@@ -461,6 +511,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Joueur en haut </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469ad2d3ceab3fce63bbe07882ab5a4e991e" prot="public">
@@ -469,6 +520,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Joueur à gauche </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a9a527722d878ba01d077a448efebe469a564dddee8796eda21f35c76cb586aeb6" prot="public">
@@ -477,15 +529,18 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Joueur en bas </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Les différente joueur lors d&apos;une partie. </para>
         </briefdescription>
         <detaileddescription>
+<para>Les joueur sont nomé par les different point cardinaut correspondant à leur placement sur la table </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="49" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="50" bodyend="56"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="75" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="76" bodyend="82"/>
       </memberdef>
       <memberdef kind="enum" id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2" prot="public" static="no" strong="no">
         <type></type>
@@ -504,6 +559,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat n&apos;est pas coiché, par défaut </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a6ee25fdd9f0af14a18f005bebd9218a2a7d474fc11a1b42c2e48c320d5ea9d08b" prot="public">
@@ -512,15 +568,17 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat est Coinché </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>indique il un contrat est coinché ou surcoinché </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="58" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="59" bodyend="63"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="91" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="92" bodyend="96"/>
       </memberdef>
       <memberdef kind="enum" id="main_8h_1a069bf47271688902ffe3b7ea5bd77791" prot="public" static="no" strong="no">
         <type></type>
@@ -539,6 +597,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut zéro point, par défaut correspont a un joueur qui passe ou pour l&apos;initiatilation </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ae1834978d36fbcca2d6854b0c4417d4f" prot="public">
@@ -547,6 +606,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 80 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791af59ee3d128b9d3f5d89bc37bff97b5ab" prot="public">
@@ -555,6 +615,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 90 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791af3894ec5845c03aa9ed7521de8bace7e" prot="public">
@@ -563,6 +624,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 100 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ac6fa2e4ac9c470dbd87f350414fdabd0" prot="public">
@@ -571,6 +633,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 110 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb" prot="public">
@@ -579,6 +642,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 120 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8" prot="public">
@@ -587,6 +651,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 130 points </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5" prot="public">
@@ -595,22 +660,34 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 140 points </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76" prot="public">
-          <name>CAPOT</name>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791ac69a8807b8751bee686ae667923fd5b5" prot="public">
+          <name>CENT_SOIXANTE</name>
           <initializer>= 160</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 150 points </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716" prot="public">
-          <name>GENERALE</name>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76" prot="public">
+          <name>CAPOT</name>
           <initializer>= 170</initializer>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>Le contrat vaut 160 points </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="main_8h_1a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716" prot="public">
+          <name>GENERALE</name>
+          <initializer>= 180</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Le contrat est un capot </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
@@ -619,7 +696,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="65" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="66" bodyend="78"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="106" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="107" bodyend="120"/>
       </memberdef>
       <memberdef kind="enum" id="main_8h_1a5455a7020c511bffb5b2c664b746686d" prot="public" static="no" strong="no">
         <type></type>
@@ -636,6 +713,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>pas de message a afficher, par defaut </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa" prot="public">
@@ -643,6 +721,7 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
+<para>lorsqu&apos;un joueur vien de poser une carte </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8" prot="public">
@@ -650,36 +729,17 @@
           <briefdescription>
           </briefdescription>
           <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686da07eb5e74edeb9cdbf5546fe264a15228" prot="public">
-          <name>RESULTAT_PARTIE</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686da00a3a2419c480fddee84b1e62cae7e86" prot="public">
-          <name>PROPOSE_CONTRAT</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
-          </detaileddescription>
-        </enumvalue>
-        <enumvalue id="main_8h_1a5455a7020c511bffb5b2c664b746686daaa1ffce059c97b8d2d7fa9475279eb99" prot="public">
-          <name>CONTRAT_FINAL</name>
-          <briefdescription>
-          </briefdescription>
-          <detaileddescription>
+<para>anonce le vainceur d&apos;un plis </para>
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>contante à passer en paramètre à la fonction génèreMessage() pour donner le type de message a générer </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="95" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="96" bodyend="105"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="158" column="1" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" bodystart="159" bodyend="165"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -694,7 +754,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="34" column="8"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="43" column="8"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1aa426d41d865abab7356c475a678981d8" prot="public" static="no">
         <type>enum Valeur</type>
@@ -707,7 +767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="47" column="7"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="65" column="7"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1a05b3c314c9748336cf88af587ab5afc4" prot="public" static="no">
         <type>enum Joueur</type>
@@ -720,7 +780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="56" column="7"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="82" column="7"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1afd02ea287891c05b01211a7fcf6257a2" prot="public" static="no">
         <type>enum Coinche</type>
@@ -733,7 +793,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="63" column="8"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="96" column="8"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1a7f9ad56f7117778c67798b09b2c89951" prot="public" static="no">
         <type>enum NbPoint</type>
@@ -746,7 +806,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="78" column="8"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="120" column="8"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1abd96d4afde54ec0be90c0393c1bedc48" prot="public" static="no">
         <type>struct <ref refid="struct_carte" kindref="compound">Carte</ref></type>
@@ -759,7 +819,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="84" column="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="131" column="6"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1a8ee21120b5913e65570a4afc1afced74" prot="public" static="no">
         <type>struct <ref refid="struct_contrat" kindref="compound">Contrat</ref></type>
@@ -772,7 +832,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="93" column="8"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="149" column="8"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8h_1a1747b5ea476e8157aaa93f487d0b21d2" prot="public" static="no">
         <type>enum TypeMessage</type>
@@ -786,7 +846,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="115" column="5"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h" line="175" column="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -814,114 +874,109 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>POSITION_RECORD_VICTOIRE<sp/>21</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEBUG_MODE<sp/>0<sp/></highlight></codeline>
 <codeline lineno="20"><highlight class="preprocessor">#define<sp/>MODE_1_MANCHE<sp/>0<sp/></highlight></codeline>
-<codeline lineno="24"><highlight class="preprocessor">typedef<sp/>enum<sp/>Couleur</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_COULEUR<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>COEUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>PIQUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>CARREAU<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>TREFLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>TOUT_ATOUT<sp/><sp/><sp/>=<sp/>5,</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_ATOUT<sp/><sp/><sp/>=<sp/>6</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal">}Couleur;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Valeur</highlight></codeline>
-<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_VALEUR<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>AS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>VALET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>DAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>ROI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>SEPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>HUIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>NEUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>DIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10</highlight></codeline>
-<codeline lineno="47"><highlight class="normal">}Valeur;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Joueur</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_JOUEUR<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>NORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>EST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>SUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>OUEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">}Joueur;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Coinche</highlight></codeline>
-<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>NORMAL<sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>COINCHE<sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>SURCOINCHE<sp/>=<sp/>2</highlight></codeline>
-<codeline lineno="63"><highlight class="normal">}Coinche;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NbPoint</highlight></codeline>
-<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>ZERO<sp/>=<sp/>0,</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT<sp/>=<sp/>80,</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT_DIX<sp/>=<sp/>90,</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT<sp/>=<sp/>100,</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_DIX<sp/>=<sp/>110,</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_VINGT<sp/>=<sp/>120,</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_TRENTE<sp/>=<sp/>130,</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_QUARANTE<sp/>=<sp/>140,</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_CINQUANTE<sp/>=<sp/>150,</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>CAPOT<sp/>=<sp/>160,</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERALE<sp/>=<sp/>170</highlight></codeline>
-<codeline lineno="78"><highlight class="normal">}NbPoint;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="struct_carte" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_carte" kindref="compound">Carte</ref></highlight></codeline>
-<codeline lineno="81"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>couleur;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>Valeur<sp/>valeur;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal">}<ref refid="struct_carte" kindref="compound">Carte</ref>;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86" refid="struct_contrat" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref></highlight></codeline>
-<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>Joueur<sp/>preneur;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>NbPoint<sp/>nbPoint;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>atout;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>Coinche<sp/>coinche;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal">}<ref refid="struct_contrat" kindref="compound">Contrat</ref>;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TypeMessage</highlight></codeline>
-<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_MESSAGE,</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>POSE_CARTE,</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_PLI,</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_MANCHE,</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_PARTIE,</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>PROPOSE_CONTRAT,</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>CONTRAT_FINAL</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal">}TypeMessage;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;conio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="preprocessor">#include<sp/>&quot;tableau.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acquisition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;affichage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionCarte.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;general.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;formatageChaine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;autre.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ia.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sous-menus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionFichier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_MAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor">typedef<sp/>enum<sp/>Couleur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_COULEUR<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>COEUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>PIQUE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>CARREAU<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>TREFLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>TOUT_ATOUT<sp/><sp/><sp/>=<sp/>5,<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_ATOUT<sp/><sp/><sp/>=<sp/>6<sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}Couleur;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Valeur</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_VALEUR<sp/>=<sp/>0,<sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>AS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>VALET<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>DAME<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>ROI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>SEPT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>HUIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>NEUF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>DIX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10<sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}Valeur;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Joueur</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_JOUEUR<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>NORD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>EST<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>SUD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>OUEST<sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}Joueur;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Coinche</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>NORMAL<sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>COINCHE<sp/><sp/><sp/><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>SURCOINCHE<sp/>=<sp/>2<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}Coinche;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>NbPoint</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>ZERO<sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT<sp/>=<sp/>80,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>QUATRE_VINGT_DIX<sp/>=<sp/>90,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT<sp/>=<sp/>100,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_DIX<sp/>=<sp/>110,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_VINGT<sp/>=<sp/>120,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_TRENTE<sp/>=<sp/>130,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_QUARANTE<sp/>=<sp/>140,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_CINQUANTE<sp/>=<sp/>150,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>CENT_SOIXANTE<sp/>=<sp/>160,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>CAPOT<sp/>=<sp/>170,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>GENERALE<sp/>=<sp/>180</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}NbPoint;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="struct_carte" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_carte" kindref="compound">Carte</ref></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/>couleur;</highlight></codeline>
+<codeline lineno="130" refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Valeur<sp/><ref refid="struct_carte_1ac39ffe2f53ab343a8ca8d69f777ca4c9" kindref="member">valeur</ref>;<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}<ref refid="struct_carte" kindref="compound">Carte</ref>;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="struct_contrat" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_contrat" kindref="compound">Contrat</ref></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>Joueur<sp/>preneur;<sp/></highlight></codeline>
+<codeline lineno="145" refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>NbPoint<sp/><ref refid="struct_contrat_1a844fc99865705e23ec1eb56a03cb6d5b" kindref="member">nbPoint</ref>;</highlight></codeline>
+<codeline lineno="146" refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Couleur<sp/><ref refid="struct_contrat_1ae4200596d53e88a91ba06d992f4db7ee" kindref="member">atout</ref>;</highlight></codeline>
+<codeline lineno="147" refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Coinche<sp/><ref refid="struct_contrat_1a70b09721ab65e7043efbd56ab0da0a2f" kindref="member">coinche</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}<ref refid="struct_contrat" kindref="compound">Contrat</ref>;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TypeMessage</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>SANS_MESSAGE,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>POSE_CARTE,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_PLI,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>RESULTAT_MANCHE,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}TypeMessage;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;conio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="preprocessor">#include<sp/>&quot;tableau.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;acquisition.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;affichage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionCarte.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;general.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;formatageChaine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;autre.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ia.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;sous-menus.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gestionFichier.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_MAIN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/main.h"/>
   </compounddef>

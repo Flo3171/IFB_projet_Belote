@@ -2,7 +2,7 @@
 
 /**
  * \file acquisition.c
- * \brief ficher contenant les fonctions relative a l'acquisirion
+ * \brief ficher source contenant les fonctions relative a l'acquisirion
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020

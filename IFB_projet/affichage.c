@@ -2,7 +2,7 @@
 
 /**
  * \file affichage.c
- * \brief ficher contenant les fonctions relative à l'affichage
+ * \brief ficher source contenant les fonctions relative à l'affichage
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020

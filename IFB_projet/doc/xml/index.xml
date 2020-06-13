@@ -210,6 +210,7 @@
     <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb" kind="enumvalue"><name>CENT_TRENTE</name></member>
     <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8" kind="enumvalue"><name>CENT_QUARANTE</name></member>
     <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5" kind="enumvalue"><name>CENT_CINQUANTE</name></member>
+    <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791ac69a8807b8751bee686ae667923fd5b5" kind="enumvalue"><name>CENT_SOIXANTE</name></member>
     <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76" kind="enumvalue"><name>CAPOT</name></member>
     <member refid="main_8h_1a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716" kind="enumvalue"><name>GENERALE</name></member>
     <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686d" kind="enum"><name>TypeMessage</name></member>
@@ -217,9 +218,6 @@
     <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686dac7fd34218112a72b05ae3e4b190e9b6b" kind="enumvalue"><name>POSE_CARTE</name></member>
     <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa" kind="enumvalue"><name>RESULTAT_PLI</name></member>
     <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8" kind="enumvalue"><name>RESULTAT_MANCHE</name></member>
-    <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686da07eb5e74edeb9cdbf5546fe264a15228" kind="enumvalue"><name>RESULTAT_PARTIE</name></member>
-    <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686da00a3a2419c480fddee84b1e62cae7e86" kind="enumvalue"><name>PROPOSE_CONTRAT</name></member>
-    <member refid="main_8h_1a5455a7020c511bffb5b2c664b746686daaa1ffce059c97b8d2d7fa9475279eb99" kind="enumvalue"><name>CONTRAT_FINAL</name></member>
     <member refid="main_8h_1a297c7f13df924dd6c731cb40f9fff63c" kind="typedef"><name>Couleur</name></member>
     <member refid="main_8h_1aa426d41d865abab7356c475a678981d8" kind="typedef"><name>Valeur</name></member>
     <member refid="main_8h_1a05b3c314c9748336cf88af587ab5afc4" kind="typedef"><name>Joueur</name></member>

@@ -4,15 +4,39 @@
     <compoundname>ia.h</compoundname>
     <includedby refid="main_8h" local="yes">main.h</includedby>
     <invincdepgraph>
+      <node id="4">
+        <label>affichage.c</label>
+        <link refid="affichage_8c"/>
+      </node>
+      <node id="5">
+        <label>autre.c</label>
+        <link refid="autre_8c"/>
+      </node>
       <node id="1">
         <label>ia.h</label>
         <link refid="ia_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
+      <node id="6">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
       <node id="2">
         <label>main.h</label>
         <link refid="main_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="func">
@@ -70,7 +94,7 @@
 <para>&lt; Permet de déterminer de manière euristique la meilleur valeur de seuilMinPrise et seuilMaxPrise</para>
 <para>&lt; ON coinche !</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" line="13" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c" bodystart="3" bodyend="50" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" declline="13" declcolumn="9"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" line="13" column="9" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c" bodystart="11" bodyend="58" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" declline="13" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="ia_8h_1a4cc2fff930cb0207bf54b59dc2b6ee97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -163,7 +187,7 @@
 <para>debug for(int i=0;i&lt;nbCarteValide;i++){ printf(&quot;|%d| \n&quot;,numCarteValide[i]); } afficheMain(pCarteValidee);</para>
 <para>debug for(int i=0;i&lt;offset;i++){ printf(&quot;|%d|| \n&quot;,numCarteGagnante[i]); } afficheMain(pCarteGagante);</para>
         </inbodydescription>
-        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" line="27" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c" bodystart="52" bodyend="151" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" declline="27" declcolumn="6"/>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" line="27" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.c" bodystart="60" bodyend="159" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/ia.h" declline="27" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
