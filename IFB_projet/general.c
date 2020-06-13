@@ -12,8 +12,8 @@ void menuPrincipal()
     int *pStatistique = &statistique[0][0];
 
     FILE *fichier=NULL, *fichier2=NULL;
-    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","r+");
-    fichier2= fopen("sauvegarde/leaderboard.csv","r+");
+    fichier= fopen("sauvegarde/gestion_scores_joueurs.csv","a+");
+    fichier2= fopen("sauvegarde/leaderboard.csv","a+");
     if(fichier == NULL || fichier2 == NULL){
         fichier = NULL;
         fichier2 = NULL;
@@ -77,6 +77,13 @@ void menuPrincipal()
         }
     }
     while (sortie);
+    afficheMenuSelection("CREDITS", "Ce jeu a ete cree par Florian et Carlo dans le cardre du projet de l'uv IFB a l'UTBM;Ce projet est publie sous licence GNU et libre de droit;Voici le lien de notre GitHub ou le code source est accessible a tous :;https://github.com/Flo3171/ IFB_projet_Belote;Nous vous remercions d'avoir jouer a notre jeu et nous hesperons qu'il vous aura plu", 1);
+    printf("Appuyer sur une touche pour continuer\n");
+    getch();
+    afficheMenuSelection("REMERCIMENT", "Nous remercion les createurs du cour de programation en C oppenclassroom's qui nous a grandement aide dans ce projet;Nous remercions egalement l'ensemble des forum qui nous on permit d'obtenir des reponse a nos probleme et de comprendre nos erreur;Un grand merci au enseignant de l'uv IFB pour leur cours et leurs execises formateur;Des remesciment speciaux a V.G, C.H et L.H pour leurs conseils et les debats sans fin a propos de ce projet", 1);
+    printf("Appuyer sur une touche pour continuer\n");
+    getch();
+
 }
 
 int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])
@@ -128,7 +135,7 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int in
         if (utilisateur != SANS_JOUEUR)
         {
             sprintf(message, "Felicitations !! Vous remportez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
-            afficheSousMenus(message, "Gagne");
+            afficheMenuSelection("Gagne", message, 1);
             getch();
         }
         else if (DEBUG_MODE == 1)
@@ -146,7 +153,7 @@ int nouvellePartie(char *pseudo[], Joueur utilisateur, int *pStatistique, int in
         if (utilisateur != SANS_JOUEUR)
         {
             sprintf(message, "Dommage !! Vous perdez la partie avec %s, vous avez atteint un total de %d points et vos adversaires ont %d points", pseudo[NORD-1], score[NORD-1], score[EST-1]);
-            afficheSousMenus(message, "Defaite");
+            afficheMenuSelection("Defaite", message, 1);
             getch();
         }
         else if (DEBUG_MODE == 1)
