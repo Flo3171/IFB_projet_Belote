@@ -1,0 +1,106 @@
+\hypertarget{gestion_fichier_8c}{}\doxysection{gestion\+Fichier.\+c File Reference}
+\label{gestion_fichier_8c}\index{gestionFichier.c@{gestionFichier.c}}
+
+
+ficher source contenant les fonctions relative � la gestion des fichiers  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Include dependency graph for gestion\+Fichier.\+c\+:
+% FIG 0
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{gestion_fichier_8c_a90d5f557067c87ecf4dd33f4345f5f2e}{ecriture\+Pseudo}} (char $\ast$p\+Pseudo, F\+I\+LE $\ast$p\+Fichier)
+\begin{DoxyCompactList}\small\item\em fonction qui recherche dans un fichier si le joueur est deja enregistré au le rajoute à la fin si ce n\textquotesingle{}est pas le cas \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{gestion_fichier_8c_a72c9b768b73e0805b86215b86a67c8bd}{ecrire\+Statistique}} (F\+I\+LE $\ast$fichier, int ligne, int stat\+A\+Modifier, int type)
+\begin{DoxyCompactList}\small\item\em modifie la valeur d\textquotesingle{}une statistique dans le fichier de sauvegarde des scores \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{gestion_fichier_8c_a7e238d3b3fe49a72cf5deb9757d4466e}{ecrire\+Leaderboard}} (F\+I\+LE $\ast$fichier, char $\ast$pseudo, int scoreJ)
+\begin{DoxyCompactList}\small\item\em vérifie si un nouveau record à été battu et l\textquotesingle{}ajoute si c\textquotesingle{}est le cas \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+ficher source contenant les fonctions relative � la gestion des fichiers 
+
+\begin{DoxyAuthor}{Author}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gestion_fichier_8c_a7e238d3b3fe49a72cf5deb9757d4466e}\label{gestion_fichier_8c_a7e238d3b3fe49a72cf5deb9757d4466e}} 
+\index{gestionFichier.c@{gestionFichier.c}!ecrireLeaderboard@{ecrireLeaderboard}}
+\index{ecrireLeaderboard@{ecrireLeaderboard}!gestionFichier.c@{gestionFichier.c}}
+\doxysubsubsection{\texorpdfstring{ecrireLeaderboard()}{ecrireLeaderboard()}}
+{\footnotesize\ttfamily int ecrire\+Leaderboard (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fichier,  }\item[{char $\ast$}]{pseudo,  }\item[{int}]{score }\end{DoxyParamCaption})}
+
+
+
+vérifie si un nouveau record à été battu et l\textquotesingle{}ajoute si c\textquotesingle{}est le cas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\+I\+LE} & $\ast$fichier \+: pointeur vers fichier de meilleurs score \\
+\hline
+{\em char} & $\ast$p\+Pseudo \+: pointeur vers le pseudo du joueur \\
+\hline
+{\em int} & score \+: score a éventuellement enregistrer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 1
+\mbox{\Hypertarget{gestion_fichier_8c_a72c9b768b73e0805b86215b86a67c8bd}\label{gestion_fichier_8c_a72c9b768b73e0805b86215b86a67c8bd}} 
+\index{gestionFichier.c@{gestionFichier.c}!ecrireStatistique@{ecrireStatistique}}
+\index{ecrireStatistique@{ecrireStatistique}!gestionFichier.c@{gestionFichier.c}}
+\doxysubsubsection{\texorpdfstring{ecrireStatistique()}{ecrireStatistique()}}
+{\footnotesize\ttfamily int ecrire\+Statistique (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fichier,  }\item[{int}]{ligne,  }\item[{int}]{stat\+A\+Modifier,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+modifie la valeur d\textquotesingle{}une statistique dans le fichier de sauvegarde des scores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em F\+I\+LE} & $\ast$fichier \+: pointeur vers le fichier \\
+\hline
+{\em int} & ligne \+: ligne du fichier à laquelle sont sauvegardée les statistiques du joueur \\
+\hline
+{\em int} & stat\+A\+Modifier \+: la nouvelle statistique à enregistrer \\
+\hline
+{\em int} & type \+: vaut 1 pour mdifier le nombre de victoires, vaut 2 pour changer le score max, vaut 3 pour changer le nombre de manche min pour une victoire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valeur enregistrée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gestion_fichier_8c_a90d5f557067c87ecf4dd33f4345f5f2e}\label{gestion_fichier_8c_a90d5f557067c87ecf4dd33f4345f5f2e}} 
+\index{gestionFichier.c@{gestionFichier.c}!ecriturePseudo@{ecriturePseudo}}
+\index{ecriturePseudo@{ecriturePseudo}!gestionFichier.c@{gestionFichier.c}}
+\doxysubsubsection{\texorpdfstring{ecriturePseudo()}{ecriturePseudo()}}
+{\footnotesize\ttfamily int ecriture\+Pseudo (\begin{DoxyParamCaption}\item[{char $\ast$}]{p\+Pseudo,  }\item[{F\+I\+LE $\ast$}]{p\+Fichier }\end{DoxyParamCaption})}
+
+
+
+fonction qui recherche dans un fichier si le joueur est deja enregistré au le rajoute à la fin si ce n\textquotesingle{}est pas le cas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em char} & $\ast$p\+Pseudo\+: pointeur vers le nom du joueur \\
+\hline
+{\em F\+I\+LE} & $\ast$p\+Fichier \+: pointeur vers le fichier contenant les statistiques \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le numero de la ligne dans lequel est noté le pseudo 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+% FIG 2

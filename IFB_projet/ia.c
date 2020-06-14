@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file affichage.c
+ * \brief ficher contenant les fonctions relative au inteligences artificielles
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
 {
     float seuilMinPrise = 0.61, seuilMaxPrise = 1, deltaCoinche = 10, seuilMiniCoinche = 110;

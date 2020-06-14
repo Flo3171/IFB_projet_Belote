@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file acquisition.c
+ * \brief ficher source contenant les fonctions relative a l'acquisirion
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 int acquisitionEntierAvecMessage(int min, int max){
     int valeur;
     printf("Entrer un nombre entier entre %d et %d\n", min, max);

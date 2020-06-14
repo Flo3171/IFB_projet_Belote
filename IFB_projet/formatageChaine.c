@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * \file formatageChaine.c
+ * \brief ficher source contenant les fonctions relative au formatage
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
 
 int centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine)
 {

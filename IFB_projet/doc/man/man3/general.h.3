@@ -1,0 +1,320 @@
+.TH "general.h" 3 "Sun Jun 14 2020" "Version V1.0" "IFB_projet" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+general.h \- ficher header contenant les prototypes des fonctions les plus impotantes pour le jeu de la belote  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBinitialisation\fP (int nbLigneFenetre, int nbColloneFenetre)"
+.br
+.RI "fonction qui gère l'initialitation et le lancement du programme "
+.ti -1c
+.RI "void \fBmenuPrincipal\fP ()"
+.br
+.RI "fonction qui gère le debut de la partie "
+.ti -1c
+.RI "int \fBnouvellePartie\fP (char *pseudo[], Joueur utilisateur, int *pStatistique, int infoEcritureFicher[])"
+.br
+.RI "lancement d'une nouvelle partie "
+.ti -1c
+.RI "char \fBmanche\fP (char *pseudo[], int score[], Joueur dealer, Joueur utilisateur, int *pStatistique)"
+.br
+.RI "lancement d'une manche "
+.ti -1c
+.RI "\fBContrat\fP \fBannonceContrat\fP (char *pseudo[], Joueur dealer, \fBCarte\fP *pCarteMain, Joueur utilisateur)"
+.br
+.RI "gère l'annonce et la surenchère des contats par les joueurs "
+.ti -1c
+.RI "\fBContrat\fP \fBproposeContrat\fP (\fBContrat\fP dernierContrat, Joueur parle, char *pseudo[], \fBCarte\fP *pCarteMain, Joueur utilisateur)"
+.br
+.RI "proposition d'un contrat par un joueur "
+.ti -1c
+.RI "Joueur \fBpli\fP (\fBContrat\fP contrat, Joueur premierAJouer, char *pseudo[], \fBCarte\fP *pCarteMain, int pointManche[], int pointAnonce[], char belote[], \fBCarte\fP cartePli[], \fBCarte\fP carteAncienPli[], int score[], Joueur utilisateur, int numPli)"
+.br
+.RI "fonction qui gère un pli "
+.ti -1c
+.RI "int \fBposeCarte\fP (Joueur joueur, int numCarte, \fBCarte\fP *pMainJoueurs, \fBCarte\fP \fBpli\fP[], int carteRestante)"
+.br
+.RI "fonction qui verifie la validité d'une carte est la pose "
+.ti -1c
+.RI "char \fBcalculPointManche\fP (\fBContrat\fP contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur)"
+.br
+.RI "compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie "
+.in -1c
+.SH "Detailed Description"
+.PP 
+ficher header contenant les prototypes des fonctions les plus impotantes pour le jeu de la belote 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Carlo\&.A & Florian\&.C 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+v1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+12 juin 2020 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBContrat\fP annonceContrat (char * pseudo[], Joueur dealer, \fBCarte\fP * pCarteMain, Joueur utilisateur)"
+
+.PP
+gère l'annonce et la surenchère des contats par les joueurs 
+.PP
+\fBParameters\fP
+.RS 4
+\fIchar\fP *pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs 
+.br
+\fIJoueur\fP dealer : joueur qui distibue les cartes 
+.br
+\fI\fBCarte\fP\fP *pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueur 
+.br
+\fIJoueuer\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBContrat\fP : contrat final qui a ete choisi pour la partie 
+.RE
+.PP
+< Affichage du choix du joueur
+.SS "char calculPointManche (\fBContrat\fP contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char * pseudo[], Joueur utilisateur)"
+
+.PP
+compte les point gagné par chaque joueur au cour de la manche e fonction du contrat et ajoute ces point au tableau qui contient tout les score de la partie 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBContrat\fP\fP contrat : contrat qui a été choisi durant la manche 
+.br
+\fIint\fP pointManche[] : tableau qui contient les points de la manche 
+.br
+\fIint\fP pointAnonce[] : tableau qui contient les points d'anonce de la manche 
+.br
+\fIint\fP pointBelote[] : tableau contenant les point de belote rebelote de chaque joueur 
+.br
+\fIint\fP score[] : tableau qui contient les score de la partie 
+.br
+\fIchar\fP *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur 
+.br
+\fIJoueur\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+char : 1 si le contrtat a été réussi et 0 si le contrat a échoué 
+.RE
+.PP
+< On reche si le contrat est rampli
+.PP
+< cas ou un des joueur a pris un capot
+.PP
+< cas ou un des joueur a pris une générale
+.PP
+< Le contrat est rempli si le les point de l'équipe est suppérieur a ce qui anoncé et si il on 82 point sans les anonces
+.PP
+< on affiche ce qui c'est passé
+.SS "void initialisation (int nbLigneFenetre, int nbColloneFenetre)"
+
+.PP
+fonction qui gère l'initialitation et le lancement du programme 
+.PP
+\fBParameters\fP
+.RS 4
+\fInbLigneFenetre\fP : taille verticale de la fenêtre 
+.br
+\fInbColloneFenetre\fP : taille horizonotale de la fenêtre 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SS "char manche (char * pseudo[], int score[], Joueur dealer, Joueur utilisateur, int * pStatistique)"
+
+.PP
+lancement d'une manche 
+.PP
+\fBParameters\fP
+.RS 4
+\fIchar\fP *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs 
+.br
+\fIint\fP score[] : tableau contenant les scores des joueur 
+.br
+\fIJoueur\fP dealer : joueur qui distibue les cartes 
+.br
+\fIJoueuer\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.br
+\fIint\fP *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+char : 0 si tout le monde passe, 1 si la manche a bien lieu 
+.RE
+.PP
+< tableau qui stocke les anonce de chaque joueur, on y ajoute 1 pour le roi d'atout puis 1 pour la dame d'atout
+.PP
+< distribution des cartes
+.PP
+< On cherche si les joueurs on des anonce a faire
+.PP
+< On passe a la phase suivante uniquement si un contrat a ete pris sinon on relance une manche
+.PP
+< si un joueur a fait une belote rebelote il gagne 20 point
+.SS "void menuPrincipal ()"
+
+.PP
+fonction qui gère le debut de la partie 
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+< contrôle d'acquisition avec réaffichage de l'interfface
+.PP
+<executer la fonction nouvelle partie
+.SS "int nouvellePartie (char * pseudo[], Joueur utilisateur, int * pStatistique, int infoEcritureFicher[])"
+
+.PP
+lancement d'une nouvelle partie 
+.PP
+\fBParameters\fP
+.RS 4
+\fIchar\fP *pseudo[] : tableau de pointeurs contenant les pseudos des différents joueurs 
+.br
+\fIJoueuer\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.br
+\fIint\fP *pStatistique : pointeur sur un tableau 4*4 qui contient des statistique sur chaque joueur 
+.br
+\fIint\fP infoEcritureFichier[] : tableau contenant les info qui devront etre écrite dans le fichier 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int : nombre de manche jusqu'a la victoir d'une équipe 
+.RE
+.PP
+< On change l'affichage pour avoir un affichage plus simple a lire lors d'une partie entre 4 ordinateur
+.PP
+< a suprimer une fois de debug fini
+.PP
+< Fin de partie
+.PP
+< affichage des resultat
+.PP
+< L'utilisatuer et nord gagnent
+.PP
+< est et touest gagnent
+.SS "Joueur pli (\fBContrat\fP contrat, Joueur premierAJouer, char * pseudo[], \fBCarte\fP * pCarteMain, int pointManche[], int pointAnonce[], char belote[], \fBCarte\fP cartePli[], \fBCarte\fP carteAncienPli[], int score[], Joueur utilisateur, int numPli)"
+
+.PP
+fonction qui gère un pli 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBContrat\fP\fP contrat : contrat qui a été choisipour cette manche 
+.br
+\fIJoueur\fP premierAjouer : premier joueur a jouer dans le pli 
+.br
+\fIchar\fP *pseudo[]: tableau de pointeur contenant les pseudo des différents joueur 
+.br
+\fI\fBCarte\fP\fP *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur 
+.br
+\fIint\fP pointManche[] : tableau contenant les point de chaque joueur dans la manche 
+.br
+\fIint\fP pointAnonce[] : tableau contenant les point d'anonce de chaque joueur 
+.br
+\fIchar\fP belote[] : tableau contenant les ancone belote rebelote de chaque joueur 
+.br
+\fI\fBCarte\fP\fP cartePli[] : tableau contenant les 4 carte du pli 
+.br
+\fI\fBCarte\fP\fP carteAncienPli[] : tableau contenant les carte du pli précédent 
+.br
+\fIint\fP score[] : tableau qui contient les score de la partie 
+.br
+\fIJoueur\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+Joueur : le vainceur du pli 
+.RE
+.PP
+< interface de pli Utilisateur
+.PP
+< interface de pli ordinateur
+.PP
+< on regarde si une dame ou un roi d'atout vien d'etre jouer pour ajouter au tableau belote[]
+.PP
+< affichage de la carte qui vien d'etre jouée
+.PP
+< 10 de der, on ajoute 10 point au vainceur si on est dans le dernier pli
+.SS "int poseCarte (Joueur joueur, int numCarte, \fBCarte\fP * pMainJoueurs, \fBCarte\fP pli[], int carteRestante)"
+
+.PP
+fonction qui verifie la validité d'une carte est la pose 
+.PP
+\fBParameters\fP
+.RS 4
+\fIjoueur\fP variable qui defini la position du joueur qui effectue l'action 
+.br
+\fInumCarte\fP variable qui defini la carte choisie par le joueur 
+.br
+\fIpMainJoueurs\fP : pointeur qui renvoie vers le tableau de la main de tous les joueurs 
+.br
+\fIpPli\fP : pointeur qui renvoie vers le tableau des carte jouées dans le pli 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+.RE
+.PP
+
+.SS "\fBContrat\fP proposeContrat (\fBContrat\fP dernierContrat, Joueur parle, char * pseudo[], \fBCarte\fP * pCarteMain, Joueur utilisateur)"
+
+.PP
+proposition d'un contrat par un joueur 
+.PP
+\fBParameters\fP
+.RS 4
+\fI\fBContrat\fP\fP dernierContrat : dernier contrat proposé 
+.br
+\fIJoueur\fP parle : joueur qui parle 
+.br
+\fIchar\fP *pseudo[]: tableau de pointeurs contenant les pseudos des différents joueurs 
+.br
+\fI\fBCarte\fP\fP *pCarteMain : pointeur sur le tableau qui stocke les cartes dans la main de chaque joueurs 
+.br
+\fIJoueur\fP utilisateur : donne la position de l'utilisateur, mettre SANS_Joueur pour faire une partie avec uniquement des ordinateur 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBContrat\fP : nouveau contrat proposé par le joueur 
+.RE
+.PP
+< acquisition par l'utilisateur
+.PP
+< choix par l'ia d'un contrat
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for IFB_projet from the source code\&.

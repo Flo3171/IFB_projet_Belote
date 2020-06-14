@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['calculpointmanche_22',['calculPointManche',['../general_8c.html#ae2494afb9457cbcf96753839016abbb6',1,'calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur):&#160;general.c'],['../general_8h.html#ae2494afb9457cbcf96753839016abbb6',1,'calculPointManche(Contrat contrat, int pointManche[], int pointAnonce[], int pointBelote[], int score[], char *pseudo[], Joueur utilisateur):&#160;general.c']]],
+  ['carte_23',['Carte',['../struct_carte.html',1,'']]],
+  ['carteplaceavant_24',['cartePlaceAvant',['../gestion_carte_8c.html#ad5f137155414b037892fcefbb4659c38',1,'cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout):&#160;gestionCarte.c'],['../gestion_carte_8h.html#ad5f137155414b037892fcefbb4659c38',1,'cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout):&#160;gestionCarte.c']]],
+  ['cartevalide_25',['carteValide',['../gestion_carte_8c.html#a860c9426634ed327bf5ed8344ee582e3',1,'carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle):&#160;gestionCarte.c'],['../gestion_carte_8h.html#a860c9426634ed327bf5ed8344ee582e3',1,'carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle):&#160;gestionCarte.c']]],
+  ['centrechaine_26',['centreChaine',['../formatage_chaine_8c.html#ae9b1a537c2b31ecd1400d3644bb180af',1,'centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#ae9b1a537c2b31ecd1400d3644bb180af',1,'centreChaine(char chaineInitial[], char chaineFinal[], int longeurChaine):&#160;formatageChaine.c']]],
+  ['centremodifiechaine_27',['centreModifieChaine',['../formatage_chaine_8c.html#a3a016c722803925f63f13d6218d6d1de',1,'centreModifieChaine(char chaine[], int longeurChaine):&#160;formatageChaine.c'],['../formatage_chaine_8h.html#a3a016c722803925f63f13d6218d6d1de',1,'centreModifieChaine(char chaine[], int longeurChaine):&#160;formatageChaine.c']]],
+  ['coinche_28',['coinche',['../struct_contrat.html#a70b09721ab65e7043efbd56ab0da0a2f',1,'Contrat']]],
+  ['contrat_29',['Contrat',['../struct_contrat.html',1,'']]]
+];

@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * \file gestionCarte.c
+ * \brief ficher contenant les fonctions relative a la gestion des cartes
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
 
 void distribueCarte(Carte *pCarteMain)
 {

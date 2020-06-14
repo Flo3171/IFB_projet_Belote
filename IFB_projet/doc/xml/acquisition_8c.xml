@@ -1,0 +1,459 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="acquisition_8c" kind="file" language="C++">
+    <compoundname>acquisition.c</compoundname>
+    <includes refid="main_8h" local="yes">main.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>affichage.h</label>
+        <link refid="affichage_8h"/>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="17">
+        <label>sous-menus.h</label>
+        <link refid="sous-menus_8h_source"/>
+      </node>
+      <node id="5">
+        <label>conio.h</label>
+      </node>
+      <node id="15">
+        <label>autre.h</label>
+        <link refid="autre_8h"/>
+      </node>
+      <node id="13">
+        <label>general.h</label>
+        <link refid="general_8h"/>
+      </node>
+      <node id="18">
+        <label>gestionFichier.h</label>
+        <link refid="gestion_fichier_8h"/>
+      </node>
+      <node id="16">
+        <label>ia.h</label>
+        <link refid="ia_8h_source"/>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>string.h</label>
+      </node>
+      <node id="9">
+        <label>tableau.h</label>
+        <link refid="tableau_8h_source"/>
+      </node>
+      <node id="7">
+        <label>time.h</label>
+      </node>
+      <node id="6">
+        <label>math.h</label>
+      </node>
+      <node id="14">
+        <label>formatageChaine.h</label>
+        <link refid="formatage_chaine_8h"/>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="12">
+        <label>gestionCarte.h</label>
+        <link refid="gestion_carte_8h"/>
+      </node>
+      <node id="1">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>acquisition.h</label>
+        <link refid="acquisition_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="acquisition_8c_1af9aa780804fe8400546627dea47953a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierAvecMessage</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>acquisitionEntierAvecMessage</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>renvois au progammme un entier saisi par l&apos;utilisateur avec message d&apos;erreur entre 2 entiers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeur saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="11" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="11" bodyend="22"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierSansMessage</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>acquisitionEntierSansMessage</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>accisition d&apos;un entier saisi par l&apos;utilisateur sans message d&apos;erreur entre 2 entiers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeure entiere saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="24" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="24" bodyend="31"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char acquisitionOuiNonSansMessage</definition>
+        <argsstring>()</argsstring>
+        <name>acquisitionOuiNonSansMessage</name>
+        <briefdescription>
+<para>accisition O/N &apos;oui ou non&apos; saisi par l&apos;utilisateur sans message d&apos;erreur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>le caratere saisi par l&apos;utilisateur, &apos;O&apos; ou &apos;N&apos; qui a ete verifie </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="33" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="33" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>acquisitionEntierSansMessageAvecConsigne</definition>
+        <argsstring>(int min, int max, char consigne[])</argsstring>
+        <name>acquisitionEntierSansMessageAvecConsigne</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>consigne</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>accisition d&apos;un entier saisi par l&apos;utilisateur sans message d&apos;erreur entre 2 entiers avec une consigne paramétrable </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consigne</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: message affiché avant a l&apos;utilisateur pour lui indiquer ce qu&apos;il doit saisir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeure entiere saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="42" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="42" bodyend="50"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void acquisitionPseudoAvecMessage</definition>
+        <argsstring>(char *pointeurPseudo, char instruction[], int type)</argsstring>
+        <name>acquisitionPseudoAvecMessage</name>
+        <param>
+          <type>char *</type>
+          <declname>pointeurPseudo</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>instruction</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>acquisition d&apos;un pseudo saisi par l&apos;utilisateur avec message d&apos;erreur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PPseudo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointeur renvoyant vers le premier carractère du pseudo à modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instruction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phrase à affichier pour donner l&apos;instruction à l&apos;utilisateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vaut 1 si la fonction est appelée dans la fonction paramètre </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="52" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="52" bodyend="92"/>
+        <references refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" compoundref="affichage_8c" startline="186" endline="225">afficheSousMenus</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierSecurise</definition>
+        <argsstring>()</argsstring>
+        <name>acquisitionEntierSecurise</name>
+        <briefdescription>
+<para>fonction qui fait l&apos;acquisition securisée d&apos;un nombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>renvoie le nombre saisi par l&apos;utilisateur et -1 si aucun nombre a été saisi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" line="94" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="94" bodyend="109"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ficher source contenant les fonctions relative a l&apos;acquisirion </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;main.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="acquisition_8h_1af9aa780804fe8400546627dea47953a0" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1af9aa780804fe8400546627dea47953a0" kindref="member">acquisitionEntierAvecMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrer<sp/>un<sp/>nombre<sp/>entier<sp/>entre<sp/>%d<sp/>et<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>min,<sp/>max);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;valeur);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(valeur<sp/>&lt;<sp/>min<sp/>||<sp/>valeur<sp/>&gt;<sp/>max){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Ce<sp/>nombre<sp/>n&apos;est<sp/>pas<sp/>valide\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrer<sp/>un<sp/>nombre<sp/>entier<sp/>entre<sp/>%d<sp/>et<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>min,<sp/>max);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valeur=<sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="acquisition_8h_1a18f937b66ed35b9776e797d80b5916cc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a18f937b66ed35b9776e797d80b5916cc" kindref="member">acquisitionEntierSansMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Entrer<sp/>un<sp/>nombre<sp/>entier<sp/>entre<sp/>%d<sp/>et<sp/>%d\n&quot;</highlight><highlight class="normal">,<sp/>min,<sp/>max);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valeur<sp/>=<sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(valeur<sp/>&lt;<sp/>min<sp/>||<sp/>valeur<sp/>&gt;<sp/>max);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="acquisition_8h_1a0daf819099ce021f9a1d0a8464212af4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a0daf819099ce021f9a1d0a8464212af4" kindref="member">acquisitionOuiNonSansMessage</ref>(){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Voulez<sp/>vous<sp/>recomencer<sp/>O/N\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reponse<sp/>=<sp/>getch();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(reponse<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>reponse<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>reponse;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="acquisition_8h_1ac37f94c13b479302eb91f586007056ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1ad54a41d9f5d23da0cfe75569c1c58fd3" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[])</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s<sp/>&quot;</highlight><highlight class="normal">,<sp/>consigne);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valeur=<ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(valeur<sp/>&lt;<sp/>min<sp/>||<sp/>valeur<sp/>&gt;<sp/>max);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>valeur;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="acquisition_8h_1afcd1bfa47bc634de2b8467f3191b8782" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction<sp/>[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pseudo[100];</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>controle=0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(instruction,</highlight><highlight class="stringliteral">&quot;pseudo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(type==1){</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgets(pseudo,99,stdin);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fgets(pseudo,99,stdin);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controle=0<sp/>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;<sp/>strlen(pseudo)-1<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>TAILLE_MAXI_PESEUDO<sp/>;i++){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pseudo[i]&lt;</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>||<sp/>pseudo[i]&gt;</highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(pseudo[i]&lt;</highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>||<sp/>pseudo[i]&gt;</highlight><highlight class="charliteral">&apos;Z&apos;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(pseudo[i]&lt;</highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>||<sp/>pseudo[i]&gt;</highlight><highlight class="charliteral">&apos;z&apos;</highlight><highlight class="normal">)<sp/>){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controle=1;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(pseudo)&gt;<sp/>TAILLE_MAXI_PESEUDO+1<sp/>||<sp/>strlen(pseudo)&lt;<sp/>2){</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controle<sp/>=<sp/>controle<sp/>+2;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(controle)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1<sp/>:<sp/><ref refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(</highlight><highlight class="stringliteral">&quot;Votre<sp/>pseudo<sp/>possede<sp/>des<sp/>carracteres<sp/>interdis.<sp/>Choisisez<sp/>votre<sp/>pseudo:&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pseudo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2<sp/>:<sp/><ref refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(</highlight><highlight class="stringliteral">&quot;Votre<sp/>pseudo<sp/>n&apos;as<sp/>pas<sp/>le<sp/>nombre<sp/>de<sp/>carracteres<sp/>recquis.<sp/>Choisisez<sp/>votre<sp/>pseudo:&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pseudo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3<sp/>:<sp/><ref refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" kindref="member">afficheSousMenus</ref>(</highlight><highlight class="stringliteral">&quot;Votre<sp/>pseudo<sp/>ne<sp/>respecte<sp/>pas<sp/>les<sp/>criteres.<sp/>Choisisez<sp/>votre<sp/>pseudo:&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pseudo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(controle<sp/>!=<sp/>0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j=0;j&lt;strlen(pseudo);j++){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(j==strlen(pseudo)-1){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pointeurPseudo+j)=</highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*(pointeurPseudo+j)=pseudo[j];</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="acquisition_8h_1a29f102dc63957f1bd52030075bb9beef" refkind="member"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>num[50];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NB=0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>fgets(num,50,stdin);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(num[0]==</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NB=strtol(num,NULL,10);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NB=strtol(num,NULL,10);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(NB==0){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>NB=-1;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NB;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c"/>
+  </compounddef>
+</doxygen>

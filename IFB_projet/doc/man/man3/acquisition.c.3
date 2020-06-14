@@ -1,0 +1,165 @@
+.TH "acquisition.c" 3 "Sun Jun 14 2020" "Version V1.0" "IFB_projet" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+acquisition.c \- ficher source contenant les fonctions relative a l'acquisirion  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'main\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBacquisitionEntierAvecMessage\fP (int min, int max)"
+.br
+.RI "renvois au progammme un entier saisi par l'utilisateur avec message d'erreur entre 2 entiers "
+.ti -1c
+.RI "int \fBacquisitionEntierSansMessage\fP (int min, int max)"
+.br
+.RI "accisition d'un entier saisi par l'utilisateur sans message d'erreur entre 2 entiers "
+.ti -1c
+.RI "char \fBacquisitionOuiNonSansMessage\fP ()"
+.br
+.RI "accisition O/N 'oui ou non' saisi par l'utilisateur sans message d'erreur "
+.ti -1c
+.RI "int \fBacquisitionEntierSansMessageAvecConsigne\fP (int min, int max, char consigne[])"
+.br
+.RI "accisition d'un entier saisi par l'utilisateur sans message d'erreur entre 2 entiers avec une consigne paramétrable "
+.ti -1c
+.RI "void \fBacquisitionPseudoAvecMessage\fP (char *pointeurPseudo, char instruction[], int type)"
+.br
+.RI "acquisition d'un pseudo saisi par l'utilisateur avec message d'erreur "
+.ti -1c
+.RI "int \fBacquisitionEntierSecurise\fP ()"
+.br
+.RI "fonction qui fait l'acquisition securisée d'un nombre "
+.in -1c
+.SH "Detailed Description"
+.PP 
+ficher source contenant les fonctions relative a l'acquisirion 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Carlo\&.A & Florian\&.C 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+v1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+12 juin 2020 
+.RE
+.PP
+
+.SH "Function Documentation"
+.PP 
+.SS "int acquisitionEntierAvecMessage (int min, int max)"
+
+.PP
+renvois au progammme un entier saisi par l'utilisateur avec message d'erreur entre 2 entiers 
+.PP
+\fBParameters\fP
+.RS 4
+\fImin\fP : borne inférieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.br
+\fImax\fP : borne superieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la valeur saise par l'utilisateur et vérifier 
+.RE
+.PP
+
+.SS "int acquisitionEntierSansMessage (int min, int max)"
+
+.PP
+accisition d'un entier saisi par l'utilisateur sans message d'erreur entre 2 entiers 
+.PP
+\fBParameters\fP
+.RS 4
+\fImin\fP : borne inférieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.br
+\fImax\fP : borne superieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la valeure entiere saise par l'utilisateur et vérifier 
+.RE
+.PP
+
+.SS "acquisitionEntierSansMessageAvecConsigne (int min, int max, char consigne[])"
+
+.PP
+accisition d'un entier saisi par l'utilisateur sans message d'erreur entre 2 entiers avec une consigne paramétrable 
+.PP
+\fBParameters\fP
+.RS 4
+\fImin\fP : borne inférieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.br
+\fImax\fP : borne superieur de l'ensemble dans lequel la valeur saisi doit ce trouver 
+.br
+\fIconsigne\fP : message affiché avant a l'utilisateur pour lui indiquer ce qu'il doit saisir 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+la valeure entiere saise par l'utilisateur et vérifier 
+.RE
+.PP
+
+.SS "int acquisitionEntierSecurise ()"
+
+.PP
+fonction qui fait l'acquisition securisée d'un nombre 
+.PP
+\fBReturns\fP
+.RS 4
+renvoie le nombre saisi par l'utilisateur et -1 si aucun nombre a été saisi 
+.RE
+.PP
+
+.SS "char acquisitionOuiNonSansMessage ()"
+
+.PP
+accisition O/N 'oui ou non' saisi par l'utilisateur sans message d'erreur 
+.PP
+\fBReturns\fP
+.RS 4
+le caratere saisi par l'utilisateur, 'O' ou 'N' qui a ete verifie 
+.RE
+.PP
+
+.SS "void acquisitionPseudoAvecMessage (char * pointeurPseudo, char instruction[], int type)"
+
+.PP
+acquisition d'un pseudo saisi par l'utilisateur avec message d'erreur 
+.PP
+\fBParameters\fP
+.RS 4
+\fIPPseudo\fP pointeur renvoyant vers le premier carractère du pseudo à modifier 
+.br
+\fIinstruction\fP phrase à affichier pour donner l'instruction à l'utilisateur 
+.br
+\fItype\fP : vaut 1 si la fonction est appelée dans la fonction paramètre 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for IFB_projet from the source code\&.

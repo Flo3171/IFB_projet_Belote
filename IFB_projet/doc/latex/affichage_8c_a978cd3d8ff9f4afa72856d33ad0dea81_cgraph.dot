@@ -1,0 +1,19 @@
+digraph "afficheMenuSelection"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="afficheMenuSelection",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chac..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="centreChaine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$formatage_chaine_8c.html#ae9b1a537c2b31ecd1400d3644bb180af",tooltip="transphorme une chaine de caractère de longeur inconue en une chaine de caratère fixé de tel sorte que le t..."];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="rempliEspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$formatage_chaine_8c.html#acbb12af7b4e8b15a8d366abae8fe5ca3",tooltip="rempli une chaine de caractère de nbEspace caractère espace ' '"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="decoupeChaine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$formatage_chaine_8c.html#ad598bad9520e1d05637504cf2890a947",tooltip="fontion qui permet de découper une chaine de caracère en plusieur chaine de taille fixée en coupant sur un ..."];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="centreModifieChaine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$formatage_chaine_8c.html#a3a016c722803925f63f13d6218d6d1de",tooltip="transforme une chaine de cararactère en sa vertion centrée"];
+  Node5 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+}

@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="acquisition_8h" kind="file" language="C++">
+    <compoundname>acquisition.h</compoundname>
+    <includedby refid="main_8h" local="yes">main.h</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>affichage.c</label>
+        <link refid="affichage_8c"/>
+      </node>
+      <node id="5">
+        <label>autre.c</label>
+        <link refid="autre_8c"/>
+      </node>
+      <node id="7">
+        <label>general.c</label>
+        <link refid="general_8c"/>
+      </node>
+      <node id="9">
+        <label>gestionFichier.c</label>
+        <link refid="gestion_fichier_8c"/>
+      </node>
+      <node id="10">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="2">
+        <label>main.h</label>
+        <link refid="main_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>formatageChaine.c</label>
+        <link refid="formatage_chaine_8c"/>
+      </node>
+      <node id="8">
+        <label>gestionCarte.c</label>
+        <link refid="gestion_carte_8c"/>
+      </node>
+      <node id="3">
+        <label>acquisition.c</label>
+        <link refid="acquisition_8c"/>
+      </node>
+      <node id="1">
+        <label>acquisition.h</label>
+        <link refid="acquisition_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="acquisition_8h_1af9aa780804fe8400546627dea47953a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierAvecMessage</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>acquisitionEntierAvecMessage</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>renvois au progammme un entier saisi par l&apos;utilisateur avec message d&apos;erreur entre 2 entiers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeur saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="23" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="11" bodyend="22" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="23" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8h_1a18f937b66ed35b9776e797d80b5916cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierSansMessage</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>acquisitionEntierSansMessage</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>accisition d&apos;un entier saisi par l&apos;utilisateur sans message d&apos;erreur entre 2 entiers </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeure entiere saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="36" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="24" bodyend="31" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="36" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8h_1a0daf819099ce021f9a1d0a8464212af4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char acquisitionOuiNonSansMessage</definition>
+        <argsstring>()</argsstring>
+        <name>acquisitionOuiNonSansMessage</name>
+        <briefdescription>
+<para>accisition O/N &apos;oui ou non&apos; saisi par l&apos;utilisateur sans message d&apos;erreur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>le caratere saisi par l&apos;utilisateur, &apos;O&apos; ou &apos;N&apos; qui a ete verifie </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="47" column="7" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="33" bodyend="40" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="47" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8h_1ac37f94c13b479302eb91f586007056ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierSansMessageAvecConsigne</definition>
+        <argsstring>(int min, int max, char consigne[])</argsstring>
+        <name>acquisitionEntierSansMessageAvecConsigne</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>consigne</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+<para>accisition d&apos;un entier saisi par l&apos;utilisateur sans message d&apos;erreur entre 2 entiers avec une consigne paramétrable </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne inférieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: borne superieur de l&apos;ensemble dans lequel la valeur saisi doit ce trouver </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>consigne</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: message affiché avant a l&apos;utilisateur pour lui indiquer ce qu&apos;il doit saisir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>la valeure entiere saise par l&apos;utilisateur et vérifier </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="60" column="5" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="42" bodyend="50" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="60" declcolumn="5"/>
+        <references refid="acquisition_8c_1a29f102dc63957f1bd52030075bb9beef" compoundref="acquisition_8c" startline="94" endline="109">acquisitionEntierSecurise</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8h_1afcd1bfa47bc634de2b8467f3191b8782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void acquisitionPseudoAvecMessage</definition>
+        <argsstring>(char *pointeurPseudo, char instruction[], int type)</argsstring>
+        <name>acquisitionPseudoAvecMessage</name>
+        <param>
+          <type>char *</type>
+          <declname>pointeurPseudo</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>instruction</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>acquisition d&apos;un pseudo saisi par l&apos;utilisateur avec message d&apos;erreur </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>PPseudo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointeur renvoyant vers le premier carractère du pseudo à modifier </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>instruction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>phrase à affichier pour donner l&apos;instruction à l&apos;utilisateur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: vaut 1 si la fonction est appelée dans la fonction paramètre </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="73" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="52" bodyend="92" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="73" declcolumn="6"/>
+        <references refid="affichage_8c_1a77a2c701d655e817f1fe4c56c883af3f" compoundref="affichage_8c" startline="186" endline="225">afficheSousMenus</references>
+      </memberdef>
+      <memberdef kind="function" id="acquisition_8h_1a29f102dc63957f1bd52030075bb9beef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int acquisitionEntierSecurise</definition>
+        <argsstring>()</argsstring>
+        <name>acquisitionEntierSecurise</name>
+        <briefdescription>
+<para>fonction qui fait l&apos;acquisition securisée d&apos;un nombre </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>renvoie le nombre saisi par l&apos;utilisateur et -1 si aucun nombre a été saisi </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" line="82" column="6" bodyfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.c" bodystart="94" bodyend="109" declfile="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h" declline="82" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ficher header contenant les prototype des fonctions relative a l&apos;acquisirion </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlo.A &amp; Florian.C </para>
+</simplesect>
+<simplesect kind="version"><para>v1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>12 juin 2020 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ACQUISITION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACQUISITION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1af9aa780804fe8400546627dea47953a0" kindref="member">acquisitionEntierAvecMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1a18f937b66ed35b9776e797d80b5916cc" kindref="member">acquisitionEntierSansMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1a0daf819099ce021f9a1d0a8464212af4" kindref="member">acquisitionOuiNonSansMessage</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1ac37f94c13b479302eb91f586007056ed" kindref="member">acquisitionEntierSansMessageAvecConsigne</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>consigne[]);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1afcd1bfa47bc634de2b8467f3191b8782" kindref="member">acquisitionPseudoAvecMessage</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pointeurPseudo,</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>instruction[],</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="acquisition_8h_1a29f102dc63957f1bd52030075bb9beef" kindref="member">acquisitionEntierSecurise</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ACQUISITION_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/flocl/OneDrive - Universite De Technologie De Belfort-Montbeliard/UTBM/TC-02/IFB/projet belote/IFB_projet_Belote/IFB_projet/acquisition.h"/>
+  </compounddef>
+</doxygen>

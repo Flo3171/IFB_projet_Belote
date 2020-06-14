@@ -1,8 +1,19 @@
 #ifndef _GESTION_CARTE_H_
 #define _GESTION_CARTE_H_
-/* liste des fonction concerant la gestion des cartes */
 
-/** \brief distribue les cartes entre les différent joueur
+
+/**
+ * \file gestionCarte.h
+ * \brief ficher header contenant les protypes des fonctions relative a la gestion des cartes
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
+
+/**
+ * \brief distribue les cartes entre les différent joueur
+ * \fn void distribueCarte(Carte *pCarteMain)
  *
  * \param Carte *pCarteMain : pointeur sur le tableau qui stocke les carte dans la main de chaque joueur
  * \param
@@ -11,7 +22,9 @@
  */
 void distribueCarte(Carte *pCarteMain);
 
-/** \brief donne une valeur et une couleur a une carte
+/**
+ * \brief donne une valeur et une couleur a une carte
+ * \fn void setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte)
  *
  * \param Carte *carte : pointeur sur la carte a modifier
  * \param Valeur valeurCarte : valeur a donner a la carte
@@ -21,7 +34,9 @@ void distribueCarte(Carte *pCarteMain);
  */
 void setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte);
 
-/** \brief supprime une carte d'un tableau et réduit la taille de ce tableu par le bas
+/**
+ * \brief supprime une carte d'un tableau et réduit la taille de ce tableu par le bas
+ * \fn void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer)
  *
  * \param Carte carte[] : tableau conteneant les carte a modifier
  * \param int nbCarte : nombre total de carte
@@ -31,7 +46,9 @@ void setCarte(Carte *carte, Valeur valeurCarte, Couleur couleurCarte);
  */
 void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer);
 
-/** \brief donne le vainquer d'un pli
+/**
+ * \brief donne le vainquer d'un pli
+ * \fn Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer)
  *
  * \param Carte pli[] : tableau contenant les carte du pli
  * \param Couleur atout : couleur de l'atout durant cette manche
@@ -42,7 +59,9 @@ void supprimeCarte(Carte carte[], int nbCarte, int carteASupprimer);
 
 Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer);
 
-/** \brief calcul la force d'une carte, en faisant la probabilitée qu'elle a de gagné contre toutes les autres cartes
+/**
+ * \brief calcul la force d'une carte, en faisant la probabilitée qu'elle a de gagné contre toutes les autres cartes
+ * \fn float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame)
  *
  * \param Carte carteACalculer : carte dont on veut connaitre la force
  * \param Couleur atout : couleur de l'atout durant la partie
@@ -54,7 +73,9 @@ Joueur vainqueurPli(Carte pli[], Couleur atout, Joueur premierAJouer);
 float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame);
 
 
-/** \brief ddétermine si une carte peut etre posé par un joueur
+/**
+ * \brief ddétermine si une carte peut etre posé par un joueur
+ * \fn char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle)
  *
  * \param Carte cartPose : carte que l'on veut poser
  * \param Carte pli[] : tableau contenet les carte du pli
@@ -68,7 +89,9 @@ float forceCarte(Carte carteACalculer, Couleur atout, Couleur entame);
 
 char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJoueur, Joueur premierAJouer, Joueur parle);
 
-/** \brief cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux
+/**
+ * \brief cherche dans un tableau de carte si il y a une certaine couleur ou une certaine valeur ou les deux
+ * \fn char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche)
  *
  * \param Carte *pCarte : pointeur sur un tableau de carte
  * \param int nbCarte : nombre de carte dans le tableau
@@ -80,7 +103,9 @@ char carteValide(Carte cartePose, Carte pli[], Couleur atout, Carte *pCarteMainJ
 
 char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur valeurCherche);
 
-/** \brief cherche dans un tableau de carte si il y a une carte d'une force suppérieur a carteCherche
+/**
+ * \brief cherche dans un tableau de carte si il y a une carte d'une force suppérieur a carteCherche
+ * \fn char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame)
  *
  * \param Carte *pCarte : pointeur sur un tableau de carte
  * \param int nbCarte : nombre de carte dans le tableau
@@ -94,7 +119,9 @@ char rechercherCarte(Carte *pCarte, int nbCarte, Couleur couleurCherche, Valeur 
 char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Couleur atout, Couleur entame);
 
 
-/** \brief calucule la somme force des carte dans un tableau
+/**
+ * \brief calucule la somme force des carte dans un tableau
+ * \fn float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout)
  *
  * \param Carte tableauCarte : tableau de carte sur lequel on veut travailler
  * \param int nbCarte : nombre de carte dans le tableau
@@ -105,7 +132,9 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
  float sommeForceCarte(Carte *tableauCarte, int nbCarte, Couleur atout);
 
-/** \brief trie un tableau de cartes
+/**
+ * \brief trie un tableau de cartes
+ * \fn void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout)
  *
  * \param Carte tableauCarte[] : tableau contenant les cartes a trier
  * \param int nbCarte nombre de carte dans le tableau
@@ -116,7 +145,9 @@ char rechercherCarteSuperieur(Carte *pCarte, int nbCarte, Carte carteCherche, Co
 
  void trieCarte(Carte tableauCarte[], int nbCarte, Couleur atout);
 
- /** \brief permet de savoir si une carte doit etre placée avant lors du trie des cartes
+ /**
+  * \brief permet de savoir si une carte doit etre placée avant lors du trie des cartes
+  * \fn char cartePlaceAvant(Carte carteRefference, Carte carteCompare, Couleur atout)
   *
   * \param Carte carteRefference : carte par raport a laquelle on compare
   * \param Carte carteCompare : carte que l'on compare

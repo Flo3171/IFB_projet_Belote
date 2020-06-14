@@ -1,7 +1,17 @@
 #ifndef _AFFICHAGE_H_
 #define _AFFICHAGE_H_
 
-/** \brief affiche  le logo du jeu puis le menu principal
+/**
+ * \file affichage.h
+ * \brief ficher header contenant les prototypes des fonctions relative à l'affichage
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
+/**
+ *\brief affiche  le logo du jeu puis le menu principal
+ * \fn int afficheMenuPrincipal(int type)
  *
  * \param type: quel type de menu est souhaité
  * \return la valeur de l'action que l'utilisateur decide de faire
@@ -12,7 +22,9 @@ int afficheMenuPrincipal(int type);
 
 
 
-/** \brief affiche l'interface de jeu durant un pli
+/**
+ *\brief affiche l'interface de jeu durant un pli
+ * \fn afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int score[], int pointManche[], int type)
  *
  * \param Carte dernierPli[] : tableau contenant les 4 cartes du dernier plis
  * \param Carte pli[] : tableau contenant les cartes du pli en cours, mettre 0, 0 si il n'y a pas de carte
@@ -31,7 +43,9 @@ int afficheMenuPrincipal(int type);
 
 int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte cartesEnMain[], Contrat contratActuel, char message[],Joueur utilisteur, Joueur dernierVainqueur,int score[], int pointManche[], int type);
 
-/** \brief modifie la taille de la fenetre dans laquel le programme s'execute
+/**
+ * \brief modifie la taille de la fenetre dans laquel le programme s'execute
+ * \fn void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre)
  *
  * \param nbLingeFenetre : nombre de ligne de la fenetre
  * \param nbColloneFenetre : nombre de collone de la fenetre
@@ -40,7 +54,9 @@ int afficheInterfacePli(Carte dernierPli[], Carte pli[], char *pseudo[], Carte c
  */
 void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre);
 
-/** \brief affiche les différents sous menus
+/**
+ *\brief affiche les différents sous menus
+ * \fn void afficheSousMenus(char phrase[],char intitule[])
  *
  * \param phrase phrase correspondant au sous menu choisi
  * \return void
@@ -48,7 +64,9 @@ void modifieTailleFenetre(int nbLigneFenetre, int nbColloneFentre);
  */
 void afficheSousMenus(char phrase[],char intitule[]);
 
-/** \brief affiche les carte qu'un joueur a en main
+/**
+ *\brief affiche les carte qu'un joueur a en main
+ * \fn void afficheMain(Carte carte[])
  *
  * \param Carte carte[] : tableau contanant les carte
  * \return void
@@ -56,7 +74,9 @@ void afficheSousMenus(char phrase[],char intitule[]);
  */
 void afficheMain(Carte carte[]);
 
-/** \brief affiche un contrat
+/**
+ * \brief affiche un contrat
+ * \fn void afficheContrat(Contrat contrat, char *pseudo[], int version)
  *
  * \param Contrat contrat : contrat a afficher
  * \param char *pseudo[]: tableau de pointeur contenant les pseudo des différents joueurs
@@ -67,7 +87,9 @@ void afficheMain(Carte carte[]);
 
 void afficheContrat(Contrat contrat, char *pseudo[], int version);
 
-/** \brief affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d'elles
+/**
+ * \brief affiche dans un cadre plusieurs chaines de carractères avec un certain nombre de lignes sautée entre chacunes d'elles
+ * \fn void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne)
  *
  * \param char intitule []: titre du du cadre
  * \param char phrase[] : les chaines de carractère séparés par des points virgules
@@ -77,7 +99,9 @@ void afficheContrat(Contrat contrat, char *pseudo[], int version);
  */
 void afficheMenuSelection(char intitule [],char phrase[],int sautDeLigne);
 
-/** \brief gère le choix du contrat par l'utilisateur
+/**
+ * \brief gère le choix du contrat par l'utilisateur
+ * \fn Contrat proposeContratUtilisateur(Contrat dernierContrat, Joueur parle, Carte *pCarteMain)
  *
  * \param Contrat dernierContrat : dernier contrat proposé
  * \param Joueur parle : joueur qui parle
