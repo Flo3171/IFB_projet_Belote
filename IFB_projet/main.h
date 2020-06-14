@@ -150,7 +150,7 @@ typedef struct Contrat
     Joueur preneur; /*! type Joueur, joueur qui a pris le contrat */
     NbPoint nbPoint;/*! type NbPoint, nombre de point du contrat */
     Couleur atout;/*! type Couleur, couleur de l'atout qui à été prise pour le contrat*/
-    Coinche coinche;/*! type Coinche, deterine si le contrat été coinché ou surcoiché*/
+    Coinche coinche;/*! type Coinche, determine si le contrat été coinché ou surcoiché*/
 
 }Contrat;
 

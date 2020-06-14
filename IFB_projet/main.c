@@ -6,7 +6,7 @@
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020
-*/S
+*/
 
 /**
  * \fn int main(int argc, char *argv[])
