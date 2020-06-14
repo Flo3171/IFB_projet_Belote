@@ -35,13 +35,17 @@ int leaderboard(FILE *fichier)
     int acquisition=0,retour=0;
 
     for(int ligne=0 ; ligne<10 ; ligne++){
+        /** Ajout de la position du joueur **/
         strcat(listeDesScores,"#");
         itoa(ligne+1,score,10);
         strcat(listeDesScores,score);
         strcat(listeDesScores," ");
 
+        /** Récupération puis ajout du pseudo du joueur à la suite **/
         fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
         fscanf(fichier,"%20s",pseudo);
+
+        /** rajoute "..." à la fin du pseudo pour les pseudos les plus longs **/
         if(strlen(pseudo)>14){
             fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD,SEEK_SET);
             fscanf(fichier,"%14s",pseudo);
@@ -52,10 +56,12 @@ int leaderboard(FILE *fichier)
         }
         strcat(listeDesScores," score:");
 
+        /** Récupération et ajout du score du joueur **/
         fseek(fichier,ligne*NB_CARRACTERE_LEADERBOARD+POSITION_RECORD_VICTOIRE,SEEK_SET);
         fscanf(fichier,"%s",score);
         strcat(listeDesScores,score);
 
+        /** Ajout du carractère de saut de ligne **/
         listeDesScores[strlen(listeDesScores)]=';';
     }
 

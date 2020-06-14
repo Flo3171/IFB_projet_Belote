@@ -9,13 +9,13 @@
 #define NB_JOUEUR 4
 #define TAILLE_MAXI_MESSAGE 500
 #define NB_TOATAL_CARTE 32
-#define NIVEAU_IA 2
 #define NB_CARRACTERE_SCORE 33
 #define POSITION_NB_VICTOIRE 21
 #define POSITION_SCORE_MAX 25
 #define POSITION_NB_MANCHES_POUR_GAGNER 30
 #define NB_CARRACTERE_LEADERBOARD 26
 #define POSITION_RECORD_VICTOIRE 21
+#define NIVEAU_IA 2 /** Niveau de difficulté des l'IA en jeu **/
 #define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
 #define MODE_1_MANCHE 0 /**< 0 pour le mode normal, 1 pour le mode ou une partie est constitué d'une uique manche */
 

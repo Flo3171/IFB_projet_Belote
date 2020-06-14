@@ -95,11 +95,13 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[])
  {
      char num[50];
     int NB=0;
-
+/** Lecture de l'entrée du joueur de type char **/
     fgets(num,50,stdin);
+/** Test si le premier caractère est un 0 **/
     if(num[0]=='0'){
         NB=strtol(num,NULL,10);
     }else{
+/** Conversion du char en int **/
         NB=strtol(num,NULL,10);
         if(NB==0){
             NB=-1;
