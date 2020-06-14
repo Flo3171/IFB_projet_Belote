@@ -63,13 +63,10 @@ int acquisitionEntierSansMessageAvecConsigne(int min, int max, char consigne[]);
  * \brief acquisition d'un pseudo saisi par l'utilisateur avec message d'erreur
  * \fn void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction[],int type)
  *
- * \param PPseudo: pointeur renvoyant vers le premier carractère du pseudo à modifier
- * \param instruction: phrase à affichier pour donner l'instruction à l'utilisateur
- * \param type : vaut 1 si la fonction est appelée dans la fonction paramètre
+ * \param char *pointeurPseudo : pointeur renvoyant vers le premier caractère du pseudo à modifier
+ * \param char instruction[] : phrase à affichier pour donner l'instruction à l'utilisateur
  * \return void
- *
  */
-
 void acquisitionPseudoAvecMessage(char *pointeurPseudo,char instruction[],int type);
 
 /**

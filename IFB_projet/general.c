@@ -72,7 +72,7 @@ void menuPrincipal()
             joue1000Partie(1000);
             break;
         case 5 : /*executer la fonction changement d'utilisateur */
-            acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisissez un nouveau joueur",1);
+            acquisitionPseudoAvecMessage(pseudo[SUD-1],"Choisissez un nouveau joueur",0);
             ligne=ecriturePseudo(pseudo[SUD-1],fichier);
 
             break;

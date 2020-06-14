@@ -23,7 +23,7 @@
 #define POSITION_RECORD_VICTOIRE 21
 #define NIVEAU_IA 2 /** Niveau de difficulté des l'IA en jeu **/
 #define DEBUG_MODE 0 /**< 0 pour le mode normal, 1 pour le mode débug */
-#define MODE_1_MANCHE 0 /**< 0 pour le mode normal, 1 pour le mode ou une partie est constitué d'une uique manche */
+#define MODE_1_MANCHE 1 /**< 0 pour le mode normal, 1 pour le mode ou une partie est constitué d'une uique manche */
 
 /**< Structure et énumérations */
 

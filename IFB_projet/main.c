@@ -16,16 +16,17 @@
  * \return EXIT_SUCCESS - Arrêt normal du programme
  */
 
-int main(int argc, char *argv[])
-{
-    /**< CODE FINAL */
-    srand(time(NULL));
-    if(!DEBUG_MODE){
-            initialisation(48, 90); /**< definit la taille de la fennetre a 50 lignes et 91 colones */
-    }
-    menuPrincipal();
-    /**< FIN CODE FINAL */
-    return EXIT_SUCCESS;
-}
+        int main(int argc, char *argv[])
+        {
+        /**< CODE FINAL */
+            srand(time(NULL));
+            if(!DEBUG_MODE){
+        /**< definit la taille de la fennetre a 50 lignes et 91 colones */
+                    initialisation(48, 90);
+            }
+            menuPrincipal();
+        /**< FIN CODE FINAL */
+            return EXIT_SUCCESS;
+        }
 
 
