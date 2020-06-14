@@ -4,12 +4,18 @@ digraph "distribueCarte"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="distribueCarte",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="distribue les cartes entre les différent joueur"];
+  Node1 [label="distribueCarte",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="distribue les cartes entre les diffÃ©rent joueur"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="nbAleatoire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$autre_8c.html#a1fe3fe4b2fbc888f6af5db69f6cc72f6",tooltip="renvoit in nombre aléatoire entre deux bornes"];
-  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
-  Node3 [label="setCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#aa6ee6fa9bf13839d948e7df5f4199e0e",tooltip="donne une valeur et une couleur a une carte"];
-  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
-  Node4 [label="supprimeCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#a77b2ed8ac4298678feea52baa2e9cf0e",tooltip="supprime une carte d'un tableau et réduit la taille de ce tableu par le bas"];
-  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="nbAleatoire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$autre_8c.html#a1fe3fe4b2fbc888f6af5db69f6cc72f6",tooltip="renvoit in nombre alÃ©atoire entre deux bornes"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="maxi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tableau_8c.html#abb9a32acf6c0aa09923d2ebaeae71c7e",tooltip="trouve la valeur maximum d'un tableau"];
+  Node3 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="mini",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tableau_8c.html#aabc5dc617777ef63ecbd9748a76d0946",tooltip="trouve la valeur minimum d'un tableau"];
+  Node4 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="setCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#aa6ee6fa9bf13839d948e7df5f4199e0e",tooltip="donne une valeur et une couleur a une carte"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="supprimeCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#a77b2ed8ac4298678feea52baa2e9cf0e",tooltip="supprime une carte d'un tableau et rÃ©duit la taille de ce tableu par le bas"];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
 }

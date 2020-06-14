@@ -1,0 +1,19 @@
+digraph "trieCarte"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="trieCarte",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="trie un tableau de cartes"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="manche",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$general_8h.html#a82e65877686a049b4bee9160af15c97f",tooltip="lancement d'une manche"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="nouvellePartie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$general_8h.html#a1faac25606ba09c4cdbcf54a142dbe0c",tooltip="lancement d'une nouvelle partie"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="joue1000Partie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$autre_8h.html#ab8d4df8f4e03f038b98f6d96a2eaefd2",tooltip="joue n partie aves uniquement des ia pour controler si tout ce passe bien et reuceillir des statistiq..."];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="menuPrincipal",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$general_8h.html#adfbaa271f44d828c6a42ce7e9affee88",tooltip="fonction qui gÃ¨re le debut de la partie"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip="Entrée du programme."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

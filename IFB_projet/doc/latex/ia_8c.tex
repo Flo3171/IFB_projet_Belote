@@ -1,0 +1,104 @@
+\hypertarget{ia_8c}{}\doxysection{Référence du fichier ia.\+c}
+\label{ia_8c}\index{ia.c@{ia.c}}
+
+
+ficher source contenant les fonctions relative au inteligences artificielles  
+
+
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de ia.\+c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{ia_8c_ac4ece833f773f242d312062bf3869086}{propose\+Contrat\+Ia}} (\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} parle, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Carte\+Main, \mbox{\hyperlink{struct_contrat}{Contrat}} dernier\+Contrat)
+\begin{DoxyCompactList}\small\item\em proposition par l\textquotesingle{}ia d\textquotesingle{}un contrat \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ia_8c_a10983e601bfd34bbbefac689ef4c4b53}{choix\+Carte\+IA}} (\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} joueur, \mbox{\hyperlink{struct_carte}{Carte}} $\ast$p\+Main\+Joueur, \mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} premier\+Joueur, \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} atout, int carte\+Restante)
+\begin{DoxyCompactList}\small\item\em proposition de la pose d\textquotesingle{}une carte par l\textquotesingle{}IA \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+ficher source contenant les fonctions relative au inteligences artificielles 
+
+\begin{DoxyAuthor}{Auteur}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{ia_8c_a10983e601bfd34bbbefac689ef4c4b53}\label{ia_8c_a10983e601bfd34bbbefac689ef4c4b53}} 
+\index{ia.c@{ia.c}!choixCarteIA@{choixCarteIA}}
+\index{choixCarteIA@{choixCarteIA}!ia.c@{ia.c}}
+\doxysubsubsection{\texorpdfstring{choixCarteIA()}{choixCarteIA()}}
+{\footnotesize\ttfamily int choix\+Carte\+IA (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}]{joueur,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Main\+Joueur,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}]{dernier\+Vainqueur,  }\item[{\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{atout,  }\item[{int}]{carte\+Restante }\end{DoxyParamCaption})}
+
+
+
+proposition de la pose d\textquotesingle{}une carte par l\textquotesingle{}IA 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Joueur} & joueur \+: determine qu\textquotesingle{}elle IA doit jouer \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Main\+Joueur \+: pointeur vers le tableau qui enregistre la main de l\textquotesingle{}IA \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli\mbox{[}\mbox{]} \+: tableau qui enregistre les cartes jouées pendant le pli \\
+\hline
+{\em Joueur} & dernier\+Vainqueur \+: defini quel joueur à posé la première carte \\
+\hline
+{\em Couleur} & atout \+: defini quelle couleur est en atout \\
+\hline
+{\em int} & carte\+Restante \+: nombre de cartes resantes en main \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+
+\end{DoxyReturn}
+debug for(int i=0;i$<$nb\+Carte\+Valide;i++)\{ printf(\char`\"{}$\vert$\%d$\vert$ \textbackslash{}n\char`\"{},num\+Carte\+Valide\mbox{[}i\mbox{]}); \} affiche\+Main(p\+Carte\+Validee);
+
+debug for(int i=0;i$<$offset;i++)\{ printf(\char`\"{}$\vert$\%d$\vert$$\vert$ \textbackslash{}n\char`\"{},num\+Carte\+Gagnante\mbox{[}i\mbox{]}); \} affiche\+Main(p\+Carte\+Gagante);
+
+Définition à la ligne 60 du fichier ia.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 1
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
+\mbox{\Hypertarget{ia_8c_ac4ece833f773f242d312062bf3869086}\label{ia_8c_ac4ece833f773f242d312062bf3869086}} 
+\index{ia.c@{ia.c}!proposeContratIa@{proposeContratIa}}
+\index{proposeContratIa@{proposeContratIa}!ia.c@{ia.c}}
+\doxysubsubsection{\texorpdfstring{proposeContratIa()}{proposeContratIa()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_contrat}{Contrat}} propose\+Contrat\+Ia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}]{parle,  }\item[{\mbox{\hyperlink{struct_carte}{Carte}} $\ast$}]{p\+Carte\+Main,  }\item[{\mbox{\hyperlink{struct_contrat}{Contrat}}}]{dernier\+Contrat }\end{DoxyParamCaption})}
+
+
+
+proposition par l\textquotesingle{}ia d\textquotesingle{}un contrat 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em Joueur} & parle \+: joueur qui parle \\
+\hline
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & $\ast$p\+Carte\+Main pointeur sur le tableau qui contient les cartes du joueur \\
+\hline
+{\em \mbox{\hyperlink{struct_contrat}{Contrat}}} & dernier\+Contrat \+: dernier contrat qui a été proposé \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+\mbox{\hyperlink{struct_contrat}{Contrat}} 
+\end{DoxyReturn}
+$<$ Permet de dÃ©terminer de maniÃ¨re euristique la meilleur valeur de seuil\+Min\+Prise et seuil\+Max\+Prise
+
+$<$ ON coinche !
+
+Définition à la ligne 11 du fichier ia.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 3
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4

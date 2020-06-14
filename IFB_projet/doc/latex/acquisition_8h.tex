@@ -1,13 +1,13 @@
-\hypertarget{acquisition_8h}{}\doxysection{acquisition.\+h File Reference}
+\hypertarget{acquisition_8h}{}\doxysection{Référence du fichier acquisition.\+h}
 \label{acquisition_8h}\index{acquisition.h@{acquisition.h}}
 
 
 ficher header contenant les prototype des fonctions relative a l\textquotesingle{}acquisirion  
 
 
-This graph shows which files directly or indirectly include this file\+:
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
 % FIG 0
-\doxysubsection*{Functions}
+\doxysubsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{acquisition_8h_af9aa780804fe8400546627dea47953a0}{acquisition\+Entier\+Avec\+Message}} (int min, int max)
@@ -17,17 +17,17 @@ int \mbox{\hyperlink{acquisition_8h_a18f937b66ed35b9776e797d80b5916cc}{acquisiti
 char \mbox{\hyperlink{acquisition_8h_a0daf819099ce021f9a1d0a8464212af4}{acquisition\+Oui\+Non\+Sans\+Message}} ()
 \begin{DoxyCompactList}\small\item\em accisition O/N \textquotesingle{}oui ou non\textquotesingle{} saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{acquisition_8h_ac37f94c13b479302eb91f586007056ed}{acquisition\+Entier\+Sans\+Message\+Avec\+Consigne}} (int min, int max, char consigne\mbox{[}$\,$\mbox{]})
-\begin{DoxyCompactList}\small\item\em accisition d\textquotesingle{}un entier saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur entre 2 entiers avec une consigne param�trable \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em accisition d\textquotesingle{}un entier saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur entre 2 entiers avec une consigne paramétrable \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{acquisition_8h_afcd1bfa47bc634de2b8467f3191b8782}{acquisition\+Pseudo\+Avec\+Message}} (char $\ast$pointeur\+Pseudo, char instruction\mbox{[}$\,$\mbox{]}, int type)
 \begin{DoxyCompactList}\small\item\em acquisition d\textquotesingle{}un pseudo saisi par l\textquotesingle{}utilisateur avec message d\textquotesingle{}erreur \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{acquisition_8h_a29f102dc63957f1bd52030075bb9beef}{acquisition\+Entier\+Securise}} ()
-\begin{DoxyCompactList}\small\item\em fonction qui fait l\textquotesingle{}acquisition securis�e d\textquotesingle{}un nombre \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em fonction qui fait l\textquotesingle{}acquisition securisée d\textquotesingle{}un nombre \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
 ficher header contenant les prototype des fonctions relative a l\textquotesingle{}acquisirion 
 
-\begin{DoxyAuthor}{Author}
+\begin{DoxyAuthor}{Auteur}
 Carlo.\+A \& Florian.\+C 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -38,7 +38,7 @@ v1.\+0
 \end{DoxyDate}
 
 
-\doxysubsection{Function Documentation}
+\doxysubsection{Documentation des fonctions}
 \mbox{\Hypertarget{acquisition_8h_af9aa780804fe8400546627dea47953a0}\label{acquisition_8h_af9aa780804fe8400546627dea47953a0}} 
 \index{acquisition.h@{acquisition.h}!acquisitionEntierAvecMessage@{acquisitionEntierAvecMessage}}
 \index{acquisitionEntierAvecMessage@{acquisitionEntierAvecMessage}!acquisition.h@{acquisition.h}}
@@ -50,16 +50,20 @@ v1.\+0
 renvois au progammme un entier saisi par l\textquotesingle{}utilisateur avec message d\textquotesingle{}erreur entre 2 entiers 
 
 
-\begin{DoxyParams}{Parameters}
-{\em min} & \+: borne inf�rieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
+\begin{DoxyParams}{Paramètres}
+{\em min} & \+: borne inférieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
 {\em max} & \+: borne superieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-la valeur saise par l\textquotesingle{}utilisateur et v�rifier 
+\begin{DoxyReturn}{Renvoie}
+la valeur saise par l\textquotesingle{}utilisateur et vérifier 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
+
+
+Définition à la ligne 11 du fichier acquisition.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
 % FIG 1
 \mbox{\Hypertarget{acquisition_8h_a18f937b66ed35b9776e797d80b5916cc}\label{acquisition_8h_a18f937b66ed35b9776e797d80b5916cc}} 
 \index{acquisition.h@{acquisition.h}!acquisitionEntierSansMessage@{acquisitionEntierSansMessage}}
@@ -72,16 +76,20 @@ Here is the call graph for this function\+:
 accisition d\textquotesingle{}un entier saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur entre 2 entiers 
 
 
-\begin{DoxyParams}{Parameters}
-{\em min} & \+: borne inf�rieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
+\begin{DoxyParams}{Paramètres}
+{\em min} & \+: borne inférieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
 {\em max} & \+: borne superieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-la valeure entiere saise par l\textquotesingle{}utilisateur et v�rifier 
+\begin{DoxyReturn}{Renvoie}
+la valeure entiere saise par l\textquotesingle{}utilisateur et vérifier 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
+
+
+Définition à la ligne 24 du fichier acquisition.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
 % FIG 2
 \mbox{\Hypertarget{acquisition_8h_ac37f94c13b479302eb91f586007056ed}\label{acquisition_8h_ac37f94c13b479302eb91f586007056ed}} 
 \index{acquisition.h@{acquisition.h}!acquisitionEntierSansMessageAvecConsigne@{acquisitionEntierSansMessageAvecConsigne}}
@@ -91,22 +99,28 @@ Here is the call graph for this function\+:
 
 
 
-accisition d\textquotesingle{}un entier saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur entre 2 entiers avec une consigne param�trable 
+accisition d\textquotesingle{}un entier saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur entre 2 entiers avec une consigne paramétrable 
 
 
-\begin{DoxyParams}{Parameters}
-{\em min} & \+: borne inf�rieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
+\begin{DoxyParams}{Paramètres}
+{\em min} & \+: borne inférieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
 {\em max} & \+: borne superieur de l\textquotesingle{}ensemble dans lequel la valeur saisi doit ce trouver \\
 \hline
-{\em consigne} & \+: message affich� avant a l\textquotesingle{}utilisateur pour lui indiquer ce qu\textquotesingle{}il doit saisir \\
+{\em consigne} & \+: message affiché avant a l\textquotesingle{}utilisateur pour lui indiquer ce qu\textquotesingle{}il doit saisir \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-la valeure entiere saise par l\textquotesingle{}utilisateur et v�rifier 
+\begin{DoxyReturn}{Renvoie}
+la valeure entiere saise par l\textquotesingle{}utilisateur et vérifier 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
+
+
+Définition à la ligne 42 du fichier acquisition.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
 % FIG 3
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4
 \mbox{\Hypertarget{acquisition_8h_a29f102dc63957f1bd52030075bb9beef}\label{acquisition_8h_a29f102dc63957f1bd52030075bb9beef}} 
 \index{acquisition.h@{acquisition.h}!acquisitionEntierSecurise@{acquisitionEntierSecurise}}
 \index{acquisitionEntierSecurise@{acquisitionEntierSecurise}!acquisition.h@{acquisition.h}}
@@ -115,11 +129,17 @@ Here is the call graph for this function\+:
 
 
 
-fonction qui fait l\textquotesingle{}acquisition securis�e d\textquotesingle{}un nombre 
+fonction qui fait l\textquotesingle{}acquisition securisée d\textquotesingle{}un nombre 
 
-\begin{DoxyReturn}{Returns}
-renvoie le nombre saisi par l\textquotesingle{}utilisateur et -\/1 si aucun nombre a �t� saisi 
+\begin{DoxyReturn}{Renvoie}
+renvoie le nombre saisi par l\textquotesingle{}utilisateur et -\/1 si aucun nombre a été saisi 
 \end{DoxyReturn}
+
+
+Définition à la ligne 94 du fichier acquisition.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 5
 \mbox{\Hypertarget{acquisition_8h_a0daf819099ce021f9a1d0a8464212af4}\label{acquisition_8h_a0daf819099ce021f9a1d0a8464212af4}} 
 \index{acquisition.h@{acquisition.h}!acquisitionOuiNonSansMessage@{acquisitionOuiNonSansMessage}}
 \index{acquisitionOuiNonSansMessage@{acquisitionOuiNonSansMessage}!acquisition.h@{acquisition.h}}
@@ -130,9 +150,13 @@ renvoie le nombre saisi par l\textquotesingle{}utilisateur et -\/1 si aucun nomb
 
 accisition O/N \textquotesingle{}oui ou non\textquotesingle{} saisi par l\textquotesingle{}utilisateur sans message d\textquotesingle{}erreur 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 le caratere saisi par l\textquotesingle{}utilisateur, \textquotesingle{}O\textquotesingle{} ou \textquotesingle{}N\textquotesingle{} qui a ete verifie 
 \end{DoxyReturn}
+
+
+Définition à la ligne 33 du fichier acquisition.\+c.
+
 \mbox{\Hypertarget{acquisition_8h_afcd1bfa47bc634de2b8467f3191b8782}\label{acquisition_8h_afcd1bfa47bc634de2b8467f3191b8782}} 
 \index{acquisition.h@{acquisition.h}!acquisitionPseudoAvecMessage@{acquisitionPseudoAvecMessage}}
 \index{acquisitionPseudoAvecMessage@{acquisitionPseudoAvecMessage}!acquisition.h@{acquisition.h}}
@@ -144,16 +168,22 @@ le caratere saisi par l\textquotesingle{}utilisateur, \textquotesingle{}O\textqu
 acquisition d\textquotesingle{}un pseudo saisi par l\textquotesingle{}utilisateur avec message d\textquotesingle{}erreur 
 
 
-\begin{DoxyParams}{Parameters}
-{\em P\+Pseudo} & pointeur renvoyant vers le premier carract�re du pseudo � modifier \\
+\begin{DoxyParams}{Paramètres}
+{\em P\+Pseudo} & pointeur renvoyant vers le premier carractère du pseudo à modifier \\
 \hline
-{\em instruction} & phrase � affichier pour donner l\textquotesingle{}instruction � l\textquotesingle{}utilisateur \\
+{\em instruction} & phrase à affichier pour donner l\textquotesingle{}instruction à l\textquotesingle{}utilisateur \\
 \hline
-{\em type} & \+: vaut 1 si la fonction est appel�e dans la fonction param�tre \\
+{\em type} & \+: vaut 1 si la fonction est appelée dans la fonction paramètre \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 void 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-% FIG 4
+
+
+Définition à la ligne 52 du fichier acquisition.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 6
+Voici le graphe des appelants de cette fonction \+:
+% FIG 7

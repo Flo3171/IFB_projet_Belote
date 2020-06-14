@@ -1,7 +1,18 @@
 #ifndef _IA_H_
 #define _IA_H_
 
-/** \brief proposition par l'ia d'un contrat
+/**
+ * \file ia.h
+ * \brief ficher header contenant les prototypes des fonctions relative au inteligences artificielles
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
+
+/**
+ * \brief proposition par l'ia d'un contrat
+ * \fn Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat)
  *
  * \param Joueur parle : joueur qui parle
  * \param Carte *pCarteMain pointeur sur le tableau qui contient les cartes du joueur
@@ -12,7 +23,9 @@
 
 Contrat proposeContratIa(Joueur parle, Carte *pCarteMain, Contrat dernierContrat);
 
-/** \brief proposition de la pose d'une carte  par l'IA
+/**
+ * \brief proposition de la pose d'une carte  par l'IA
+ * \fn int choixCarteIA(Joueur joueur, Carte *pMainJoueur, Carte pli[], Joueur dernierVainqueur, Couleur atout, int carteRestante)
  *
  * \param Joueur joueur : determine qu'elle IA doit jouer
  * \param Carte *pMainJoueur : pointeur vers le tableau qui enregistre la main de l'IA

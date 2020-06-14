@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * \file affichage.c
- * \brief ficher contenant les fonctions relative à la gestion des tableau
+ * \file tableau.c
+ * \brief ficher source contenant les fonctions relative à la gestion des tableau
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020
