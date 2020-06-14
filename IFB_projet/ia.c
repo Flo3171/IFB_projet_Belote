@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * \file affichage.c
- * \brief ficher contenant les fonctions relative au inteligences artificielles
+ * \file ia.c
+ * \brief ficher source contenant les fonctions relative au inteligences artificielles
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020

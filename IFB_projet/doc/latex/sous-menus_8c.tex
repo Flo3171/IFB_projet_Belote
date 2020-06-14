@@ -1,0 +1,97 @@
+\hypertarget{sous-menus_8c}{}\doxysection{Référence du fichier sous-\/menus.c}
+\label{sous-menus_8c}\index{sous-\/menus.c@{sous-\/menus.c}}
+{\ttfamily \#include \char`\"{}main.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de sous-\/menus.c\+:
+% FIG 0
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{sous-menus_8c_a10bc1893d871aa90da78f2177d9ae053}{parametre}} (char $\ast$pseudo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em affiche le sous menu des paramètre, permet de changer le psedo de tout les ordinateur \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sous-menus_8c_aad28e5255a0adde0224260927ac30d19}{leaderboard}} (F\+I\+LE $\ast$fichier)
+\begin{DoxyCompactList}\small\item\em fonction qui recupère les meilleurs score dans un ficher et les affiche dans la console \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{sous-menus_8c_a86a9072cfc6c02fa5369bd70c7ccd89a}{statistique\+Joueur}} (F\+I\+LE $\ast$fichier, int ligne)
+\begin{DoxyCompactList}\small\item\em fonction qui recupère les statistiques du joueur et les affiches dans la console \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{sous-menus_8c_aad28e5255a0adde0224260927ac30d19}\label{sous-menus_8c_aad28e5255a0adde0224260927ac30d19}} 
+\index{sous-\/menus.c@{sous-\/menus.c}!leaderboard@{leaderboard}}
+\index{leaderboard@{leaderboard}!sous-\/menus.c@{sous-\/menus.c}}
+\doxysubsubsection{\texorpdfstring{leaderboard()}{leaderboard()}}
+{\footnotesize\ttfamily int leaderboard (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fichier }\end{DoxyParamCaption})}
+
+
+
+fonction qui recupère les meilleurs score dans un ficher et les affiche dans la console 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pointeur} & vers le fichier à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 
+\end{DoxyReturn}
+
+
+Définition à la ligne 32 du fichier sous-\/menus.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 1
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
+\mbox{\Hypertarget{sous-menus_8c_a10bc1893d871aa90da78f2177d9ae053}\label{sous-menus_8c_a10bc1893d871aa90da78f2177d9ae053}} 
+\index{sous-\/menus.c@{sous-\/menus.c}!parametre@{parametre}}
+\index{parametre@{parametre}!sous-\/menus.c@{sous-\/menus.c}}
+\doxysubsubsection{\texorpdfstring{parametre()}{parametre()}}
+{\footnotesize\ttfamily void parametre (\begin{DoxyParamCaption}\item[{char $\ast$}]{pseudo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+affiche le sous menu des paramètre, permet de changer le psedo de tout les ordinateur 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em char} & $\ast$pseudo\mbox{[}\mbox{]} \+: tableau de pointeurs contenant les pseudos des différents joueurs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+void 
+\end{DoxyReturn}
+
+
+Définition à la ligne 11 du fichier sous-\/menus.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 3
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4
+\mbox{\Hypertarget{sous-menus_8c_a86a9072cfc6c02fa5369bd70c7ccd89a}\label{sous-menus_8c_a86a9072cfc6c02fa5369bd70c7ccd89a}} 
+\index{sous-\/menus.c@{sous-\/menus.c}!statistiqueJoueur@{statistiqueJoueur}}
+\index{statistiqueJoueur@{statistiqueJoueur}!sous-\/menus.c@{sous-\/menus.c}}
+\doxysubsubsection{\texorpdfstring{statistiqueJoueur()}{statistiqueJoueur()}}
+{\footnotesize\ttfamily int statistique\+Joueur (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{fichier,  }\item[{int}]{ligne }\end{DoxyParamCaption})}
+
+
+
+fonction qui recupère les statistiques du joueur et les affiches dans la console 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em pointeur} & vers le fichier de sauvegarde des scores \\
+\hline
+{\em numero} & de la ligne à laquelle sont ecrites les statistiques du joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 
+\end{DoxyReturn}
+
+
+Définition à la ligne 85 du fichier sous-\/menus.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 5
+Voici le graphe des appelants de cette fonction \+:
+% FIG 6

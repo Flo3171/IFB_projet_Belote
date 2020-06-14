@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * \file affichage.c
- * \brief ficher contenant les fonctions des different sous menu disponible sur le menu principal
+ * \file sous-menue.c
+ * \brief ficher source contenant les fonctions des different sous menu disponible sur le menu principal
  * \author Carlo.A & Florian.C
  * \version v1.0
  * \date 12 juin 2020

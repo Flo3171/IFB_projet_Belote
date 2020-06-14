@@ -5,7 +5,7 @@ digraph "acquisition.c"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="acquisition.c",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="ficher source contenant les fonctions relative a l'acquisirion"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="main.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h_source.html",tooltip=" "];
+  Node2 [label="main.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$main_8h.html",tooltip="ficher la dÃ©claration des contrante, les Ã©numÃ©rations, les structe et l'inclusion des haeder du pr..."];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
   Node3 [label="stdio.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
@@ -19,11 +19,11 @@ digraph "acquisition.c"
   Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
   Node8 [label="string.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
   Node2 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
-  Node9 [label="tableau.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tableau_8h_source.html",tooltip=" "];
+  Node9 [label="tableau.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tableau_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative à la gestion des tableau"];
   Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
   Node10 [label="acquisition.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$acquisition_8h.html",tooltip="ficher header contenant les prototype des fonctions relative a l'acquisirion"];
   Node2 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
-  Node11 [label="affichage.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$affichage_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative � l'affichage"];
+  Node11 [label="affichage.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$affichage_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative à l'affichage"];
   Node2 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
   Node12 [label="gestionCarte.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8h.html",tooltip="ficher header contenant les protypes des fonctions relative a la gestion des cartes"];
   Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
@@ -33,9 +33,9 @@ digraph "acquisition.c"
   Node2 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node15 [label="autre.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$autre_8h.html",tooltip="ficher header contenant les prototype des fonctions qui n'allait dans aucun autre fichier"];
   Node2 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
-  Node16 [label="ia.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ia_8h_source.html",tooltip=" "];
+  Node16 [label="ia.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ia_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative au inteligences artificielles"];
   Node2 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
-  Node17 [label="sous-menus.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sous-menus_8h_source.html",tooltip=" "];
+  Node17 [label="sous-menus.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$sous-menus_8h.html",tooltip=" "];
   Node2 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
-  Node18 [label="gestionFichier.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_fichier_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative à la gestion des fichiers"];
+  Node18 [label="gestionFichier.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_fichier_8h.html",tooltip="ficher header contenant les prototypes des fonctions relative Ã&#160; la gestion des fichiers"];
 }

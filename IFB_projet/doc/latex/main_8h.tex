@@ -1,0 +1,613 @@
+\hypertarget{main_8h}{}\doxysection{Référence du fichier main.\+h}
+\label{main_8h}\index{main.h@{main.h}}
+
+
+ficher la dÃ©claration des contrante, les Ã©numÃ©rations, les structe et l\textquotesingle{}inclusion des haeder du projet  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$conio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}tableau.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}acquisition.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}affichage.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gestion\+Carte.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}general.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}formatage\+Chaine.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}autre.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ia.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sous-\/menus.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gestion\+Fichier.\+h\char`\"{}}\newline
+Graphe des dépendances par inclusion de main.\+h\+:
+% FIG 0
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
+% FIG 1
+\doxysubsection*{Structures de données}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_carte}{Carte}}
+\begin{DoxyCompactList}\small\item\em represente une carte d\textquotesingle{}un jeu de 32 cartes \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_contrat}{Contrat}}
+\begin{DoxyCompactList}\small\item\em represente un contrat Ã~ la belote coichÃ©e \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8h_aaf7d02a9ede3e3b63a2c50943a7ecc31}{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+P\+E\+S\+E\+U\+DO}}~20
+\item 
+\#define \mbox{\hyperlink{main_8h_a0dfaeaaa2aed63e74e28da9d81a8994f}{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+C\+O\+U\+L\+E\+UR}}~8
+\item 
+\#define \mbox{\hyperlink{main_8h_a6549522dc97ddb177422115c870f88c5}{N\+B\+\_\+\+J\+O\+U\+E\+UR}}~4
+\item 
+\#define \mbox{\hyperlink{main_8h_a76de9065470a5f029e28d37232e559c6}{T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+M\+E\+S\+S\+A\+GE}}~500
+\item 
+\#define \mbox{\hyperlink{main_8h_a626944165511c21519670751ef149477}{N\+B\+\_\+\+T\+O\+A\+T\+A\+L\+\_\+\+C\+A\+R\+TE}}~32
+\item 
+\#define \mbox{\hyperlink{main_8h_af76f640d79a38e651d7b6058f71f6394}{N\+I\+V\+E\+A\+U\+\_\+\+IA}}~2
+\item 
+\#define \mbox{\hyperlink{main_8h_af9dde9c40935b78c490d03d21db41565}{N\+B\+\_\+\+C\+A\+R\+R\+A\+C\+T\+E\+R\+E\+\_\+\+S\+C\+O\+RE}}~33
+\item 
+\#define \mbox{\hyperlink{main_8h_a913e650dfb78ea7034b399a7c72c3d21}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+N\+B\+\_\+\+V\+I\+C\+T\+O\+I\+RE}}~21
+\item 
+\#define \mbox{\hyperlink{main_8h_a9718e53886ba273a93f9d720fd659f2e}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+S\+C\+O\+R\+E\+\_\+\+M\+AX}}~25
+\item 
+\#define \mbox{\hyperlink{main_8h_a0ed282b22dde6608557dc871aea05b22}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+N\+B\+\_\+\+M\+A\+N\+C\+H\+E\+S\+\_\+\+P\+O\+U\+R\+\_\+\+G\+A\+G\+N\+ER}}~30
+\item 
+\#define \mbox{\hyperlink{main_8h_a0bf03abbface9eeac5a2b5494c9c9867}{N\+B\+\_\+\+C\+A\+R\+R\+A\+C\+T\+E\+R\+E\+\_\+\+L\+E\+A\+D\+E\+R\+B\+O\+A\+RD}}~26
+\item 
+\#define \mbox{\hyperlink{main_8h_add1753cf43e29dda2bf97e857d695e5f}{P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+V\+I\+C\+T\+O\+I\+RE}}~21
+\item 
+\#define \mbox{\hyperlink{main_8h_ac80a3592e72fd96b772ee47a7d8e0d0a}{D\+E\+B\+U\+G\+\_\+\+M\+O\+DE}}~0
+\item 
+\#define \mbox{\hyperlink{main_8h_a2c1f0982f539721030f4128a32d8a48e}{M\+O\+D\+E\+\_\+1\+\_\+\+M\+A\+N\+C\+HE}}~0
+\end{DoxyCompactItemize}
+\doxysubsection*{Définitions de type}
+\begin{DoxyCompactItemize}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{main_8h_a297c7f13df924dd6c731cb40f9fff63c}{Couleur}}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur}} \mbox{\hyperlink{main_8h_aa426d41d865abab7356c475a678981d8}{Valeur}}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} \mbox{\hyperlink{main_8h_a05b3c314c9748336cf88af587ab5afc4}{Joueur}}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}} \mbox{\hyperlink{main_8h_afd02ea287891c05b01211a7fcf6257a2}{Coinche}}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791}{Nb\+Point}} \mbox{\hyperlink{main_8h_a7f9ad56f7117778c67798b09b2c89951}{Nb\+Point}}
+\item 
+typedef struct \mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{main_8h_abd96d4afde54ec0be90c0393c1bedc48}{Carte}}
+\item 
+typedef struct \mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{main_8h_a8ee21120b5913e65570a4afc1afced74}{Contrat}}
+\item 
+typedef enum \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686d}{Type\+Message}} \mbox{\hyperlink{main_8h_a1747b5ea476e8157aaa93f487d0b21d2}{Type\+Message}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Énumérations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \{ \newline
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7a6c08e53dd32d8f237c48a1d06c28a70f}{S\+A\+N\+S\+\_\+\+C\+O\+U\+L\+E\+UR}} = 0, 
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7afe25ae4ef5c689f46e1c4c972243d4db}{C\+O\+E\+UR}} = 1, 
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7a835c1d28b93fd71585c0bd8c629ea98a}{P\+I\+Q\+UE}} = 2, 
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7aa8e960c091829457b4833077289e00a0}{C\+A\+R\+R\+E\+AU}} = 3, 
+\newline
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7aff50f65df1ad73caec3e886c499657ba}{T\+R\+E\+F\+LE}} = 4, 
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7ae290acbfa912b09c0cef378a61628e8d}{T\+O\+U\+T\+\_\+\+A\+T\+O\+UT}} = 5, 
+\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7a6a14acaec08fe6a02f30068425b0038d}{S\+A\+N\+S\+\_\+\+A\+T\+O\+UT}} = 6
+ \}
+\begin{DoxyCompactList}\small\item\em Les diffÃ©rentes couleur d\textquotesingle{}atout possible a la belote coinchÃ©e. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur}} \{ \newline
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa8b89c86ac4eb520fd7232afc0729d166}{S\+A\+N\+S\+\_\+\+V\+A\+L\+E\+UR}} = 0, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa0b84664ffa026b1a5f43c051cd6fe69f}{AS}} = 1, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa63afc18876b4864ae749c6343dae3ba0}{V\+A\+L\+ET}} = 11, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa436250abd7e6692a3ab0983590128093}{D\+A\+ME}} = 12, 
+\newline
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa630b67ff829a4c185e65091797e9a03c}{R\+OI}} = 13, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa9a9953fcb482418f2a1fe258c4f46a70}{S\+E\+PT}} = 7, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa29ed9d7f614ba184a86644f1c9a03291}{H\+U\+IT}} = 8, 
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa79e4607adbe51052bdfebc8c55cc85c8}{N\+E\+UF}} = 9, 
+\newline
+\mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa1507d51307dbb0fbb3b438e591dc99e4}{D\+IX}} = 10
+ \}
+\begin{DoxyCompactList}\small\item\em Les diffÃ©rentes valeur possible des cartes d\textquotesingle{}un jeu de 32 cartes. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} \{ \newline
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469a36235597ab9cf83f634e0e4fdb02f0b6}{S\+A\+N\+S\+\_\+\+J\+O\+U\+E\+UR}} = 0, 
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469aa1f529db9f2d334d9c41dcc5f6f6e2a7}{N\+O\+RD}} = 1, 
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469ab26f94a551dbfca6e0f4f6b5ad145c01}{E\+ST}} = 2, 
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469ad2d3ceab3fce63bbe07882ab5a4e991e}{S\+UD}} = 3, 
+\newline
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469a564dddee8796eda21f35c76cb586aeb6}{O\+U\+E\+ST}} = 4
+ \}
+\begin{DoxyCompactList}\small\item\em Les diffÃ©rente joueur lors d\textquotesingle{}une partie. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}} \{ \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a50d1448013c6f17125caee18aa418af7}{N\+O\+R\+M\+AL}} = 0, 
+\mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a970bdd144ee8eb80232c1a5487a3acd7}{C\+O\+I\+N\+C\+HE}} = 1, 
+\mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a7d474fc11a1b42c2e48c320d5ea9d08b}{S\+U\+R\+C\+O\+I\+N\+C\+HE}} = 2
+ \}
+\begin{DoxyCompactList}\small\item\em indique il un contrat est coinchÃ© ou surcoinchÃ© \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791}{Nb\+Point}} \{ \newline
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791ae117e3533122c80b262257b49b21cddf}{Z\+E\+RO}} = 0, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791adf5d02c8e96cb24a7ebac75c6c343ee4}{Q\+U\+A\+T\+R\+E\+\_\+\+V\+I\+N\+GT}} = 80, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791ae1834978d36fbcca2d6854b0c4417d4f}{Q\+U\+A\+T\+R\+E\+\_\+\+V\+I\+N\+G\+T\+\_\+\+D\+IX}} = 90, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791af59ee3d128b9d3f5d89bc37bff97b5ab}{C\+E\+NT}} = 100, 
+\newline
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791af3894ec5845c03aa9ed7521de8bace7e}{C\+E\+N\+T\+\_\+\+D\+IX}} = 110, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791ac6fa2e4ac9c470dbd87f350414fdabd0}{C\+E\+N\+T\+\_\+\+V\+I\+N\+GT}} = 120, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb}{C\+E\+N\+T\+\_\+\+T\+R\+E\+N\+TE}} = 130, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8}{C\+E\+N\+T\+\_\+\+Q\+U\+A\+R\+A\+N\+TE}} = 140, 
+\newline
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5}{C\+E\+N\+T\+\_\+\+C\+I\+N\+Q\+U\+A\+N\+TE}} = 150, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791ac69a8807b8751bee686ae667923fd5b5}{C\+E\+N\+T\+\_\+\+S\+O\+I\+X\+A\+N\+TE}} = 160, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76}{C\+A\+P\+OT}} = 170, 
+\mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716}{G\+E\+N\+E\+R\+A\+LE}} = 180
+ \}
+\item 
+enum \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686d}{Type\+Message}} \{ \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686dab52497a3e8db9c06f0c0199dc274c9b9}{S\+A\+N\+S\+\_\+\+M\+E\+S\+S\+A\+GE}}, 
+\mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686dac7fd34218112a72b05ae3e4b190e9b6b}{P\+O\+S\+E\+\_\+\+C\+A\+R\+TE}}, 
+\mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa}{R\+E\+S\+U\+L\+T\+A\+T\+\_\+\+P\+LI}}, 
+\mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8}{R\+E\+S\+U\+L\+T\+A\+T\+\_\+\+M\+A\+N\+C\+HE}}
+ \}
+\begin{DoxyCompactList}\small\item\em contante Ã~ passer en paramÃ¨tre Ã~ la fonction gÃ©nÃ¨re\+Message() pour donner le type de message a gÃ©nÃ©rer \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+ficher la dÃ©claration des contrante, les Ã©numÃ©rations, les structe et l\textquotesingle{}inclusion des haeder du projet 
+
+\begin{DoxyAuthor}{Auteur}
+Carlo.\+A \& Florian.\+C 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+v1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 juin 2020 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des macros}
+\mbox{\Hypertarget{main_8h_ac80a3592e72fd96b772ee47a7d8e0d0a}\label{main_8h_ac80a3592e72fd96b772ee47a7d8e0d0a}} 
+\index{main.h@{main.h}!DEBUG\_MODE@{DEBUG\_MODE}}
+\index{DEBUG\_MODE@{DEBUG\_MODE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{DEBUG\_MODE}{DEBUG\_MODE}}
+{\footnotesize\ttfamily \#define D\+E\+B\+U\+G\+\_\+\+M\+O\+DE~0}
+
+0 pour le mode normal, 1 pour le mode dÃ©bug 
+
+Définition à la ligne 26 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a2c1f0982f539721030f4128a32d8a48e}\label{main_8h_a2c1f0982f539721030f4128a32d8a48e}} 
+\index{main.h@{main.h}!MODE\_1\_MANCHE@{MODE\_1\_MANCHE}}
+\index{MODE\_1\_MANCHE@{MODE\_1\_MANCHE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{MODE\_1\_MANCHE}{MODE\_1\_MANCHE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+1\+\_\+\+M\+A\+N\+C\+HE~0}
+
+0 pour le mode normal, 1 pour le mode ou une partie est constituÃ© d\textquotesingle{}une uique manche Structure et Ã©numÃ©rations 
+
+Définition à la ligne 29 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a0bf03abbface9eeac5a2b5494c9c9867}\label{main_8h_a0bf03abbface9eeac5a2b5494c9c9867}} 
+\index{main.h@{main.h}!NB\_CARRACTERE\_LEADERBOARD@{NB\_CARRACTERE\_LEADERBOARD}}
+\index{NB\_CARRACTERE\_LEADERBOARD@{NB\_CARRACTERE\_LEADERBOARD}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NB\_CARRACTERE\_LEADERBOARD}{NB\_CARRACTERE\_LEADERBOARD}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+C\+A\+R\+R\+A\+C\+T\+E\+R\+E\+\_\+\+L\+E\+A\+D\+E\+R\+B\+O\+A\+RD~26}
+
+
+
+Définition à la ligne 24 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_af9dde9c40935b78c490d03d21db41565}\label{main_8h_af9dde9c40935b78c490d03d21db41565}} 
+\index{main.h@{main.h}!NB\_CARRACTERE\_SCORE@{NB\_CARRACTERE\_SCORE}}
+\index{NB\_CARRACTERE\_SCORE@{NB\_CARRACTERE\_SCORE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NB\_CARRACTERE\_SCORE}{NB\_CARRACTERE\_SCORE}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+C\+A\+R\+R\+A\+C\+T\+E\+R\+E\+\_\+\+S\+C\+O\+RE~33}
+
+
+
+Définition à la ligne 20 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a6549522dc97ddb177422115c870f88c5}\label{main_8h_a6549522dc97ddb177422115c870f88c5}} 
+\index{main.h@{main.h}!NB\_JOUEUR@{NB\_JOUEUR}}
+\index{NB\_JOUEUR@{NB\_JOUEUR}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NB\_JOUEUR}{NB\_JOUEUR}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+J\+O\+U\+E\+UR~4}
+
+
+
+Définition à la ligne 16 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a626944165511c21519670751ef149477}\label{main_8h_a626944165511c21519670751ef149477}} 
+\index{main.h@{main.h}!NB\_TOATAL\_CARTE@{NB\_TOATAL\_CARTE}}
+\index{NB\_TOATAL\_CARTE@{NB\_TOATAL\_CARTE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NB\_TOATAL\_CARTE}{NB\_TOATAL\_CARTE}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+T\+O\+A\+T\+A\+L\+\_\+\+C\+A\+R\+TE~32}
+
+
+
+Définition à la ligne 18 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_af76f640d79a38e651d7b6058f71f6394}\label{main_8h_af76f640d79a38e651d7b6058f71f6394}} 
+\index{main.h@{main.h}!NIVEAU\_IA@{NIVEAU\_IA}}
+\index{NIVEAU\_IA@{NIVEAU\_IA}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NIVEAU\_IA}{NIVEAU\_IA}}
+{\footnotesize\ttfamily \#define N\+I\+V\+E\+A\+U\+\_\+\+IA~2}
+
+
+
+Définition à la ligne 19 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a0ed282b22dde6608557dc871aea05b22}\label{main_8h_a0ed282b22dde6608557dc871aea05b22}} 
+\index{main.h@{main.h}!POSITION\_NB\_MANCHES\_POUR\_GAGNER@{POSITION\_NB\_MANCHES\_POUR\_GAGNER}}
+\index{POSITION\_NB\_MANCHES\_POUR\_GAGNER@{POSITION\_NB\_MANCHES\_POUR\_GAGNER}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_NB\_MANCHES\_POUR\_GAGNER}{POSITION\_NB\_MANCHES\_POUR\_GAGNER}}
+{\footnotesize\ttfamily \#define P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+N\+B\+\_\+\+M\+A\+N\+C\+H\+E\+S\+\_\+\+P\+O\+U\+R\+\_\+\+G\+A\+G\+N\+ER~30}
+
+
+
+Définition à la ligne 23 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a913e650dfb78ea7034b399a7c72c3d21}\label{main_8h_a913e650dfb78ea7034b399a7c72c3d21}} 
+\index{main.h@{main.h}!POSITION\_NB\_VICTOIRE@{POSITION\_NB\_VICTOIRE}}
+\index{POSITION\_NB\_VICTOIRE@{POSITION\_NB\_VICTOIRE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_NB\_VICTOIRE}{POSITION\_NB\_VICTOIRE}}
+{\footnotesize\ttfamily \#define P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+N\+B\+\_\+\+V\+I\+C\+T\+O\+I\+RE~21}
+
+
+
+Définition à la ligne 21 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_add1753cf43e29dda2bf97e857d695e5f}\label{main_8h_add1753cf43e29dda2bf97e857d695e5f}} 
+\index{main.h@{main.h}!POSITION\_RECORD\_VICTOIRE@{POSITION\_RECORD\_VICTOIRE}}
+\index{POSITION\_RECORD\_VICTOIRE@{POSITION\_RECORD\_VICTOIRE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_RECORD\_VICTOIRE}{POSITION\_RECORD\_VICTOIRE}}
+{\footnotesize\ttfamily \#define P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+R\+E\+C\+O\+R\+D\+\_\+\+V\+I\+C\+T\+O\+I\+RE~21}
+
+
+
+Définition à la ligne 25 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a9718e53886ba273a93f9d720fd659f2e}\label{main_8h_a9718e53886ba273a93f9d720fd659f2e}} 
+\index{main.h@{main.h}!POSITION\_SCORE\_MAX@{POSITION\_SCORE\_MAX}}
+\index{POSITION\_SCORE\_MAX@{POSITION\_SCORE\_MAX}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{POSITION\_SCORE\_MAX}{POSITION\_SCORE\_MAX}}
+{\footnotesize\ttfamily \#define P\+O\+S\+I\+T\+I\+O\+N\+\_\+\+S\+C\+O\+R\+E\+\_\+\+M\+AX~25}
+
+
+
+Définition à la ligne 22 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a0dfaeaaa2aed63e74e28da9d81a8994f}\label{main_8h_a0dfaeaaa2aed63e74e28da9d81a8994f}} 
+\index{main.h@{main.h}!TAILLE\_MAXI\_COULEUR@{TAILLE\_MAXI\_COULEUR}}
+\index{TAILLE\_MAXI\_COULEUR@{TAILLE\_MAXI\_COULEUR}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{TAILLE\_MAXI\_COULEUR}{TAILLE\_MAXI\_COULEUR}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+C\+O\+U\+L\+E\+UR~8}
+
+
+
+Définition à la ligne 15 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a76de9065470a5f029e28d37232e559c6}\label{main_8h_a76de9065470a5f029e28d37232e559c6}} 
+\index{main.h@{main.h}!TAILLE\_MAXI\_MESSAGE@{TAILLE\_MAXI\_MESSAGE}}
+\index{TAILLE\_MAXI\_MESSAGE@{TAILLE\_MAXI\_MESSAGE}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{TAILLE\_MAXI\_MESSAGE}{TAILLE\_MAXI\_MESSAGE}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+M\+E\+S\+S\+A\+GE~500}
+
+
+
+Définition à la ligne 17 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_aaf7d02a9ede3e3b63a2c50943a7ecc31}\label{main_8h_aaf7d02a9ede3e3b63a2c50943a7ecc31}} 
+\index{main.h@{main.h}!TAILLE\_MAXI\_PESEUDO@{TAILLE\_MAXI\_PESEUDO}}
+\index{TAILLE\_MAXI\_PESEUDO@{TAILLE\_MAXI\_PESEUDO}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{TAILLE\_MAXI\_PESEUDO}{TAILLE\_MAXI\_PESEUDO}}
+{\footnotesize\ttfamily \#define T\+A\+I\+L\+L\+E\+\_\+\+M\+A\+X\+I\+\_\+\+P\+E\+S\+E\+U\+DO~20}
+
+$<$ Constantes 
+
+Définition à la ligne 14 du fichier main.\+h.
+
+
+
+\doxysubsection{Documentation des définitions de type}
+\mbox{\Hypertarget{main_8h_abd96d4afde54ec0be90c0393c1bedc48}\label{main_8h_abd96d4afde54ec0be90c0393c1bedc48}} 
+\index{main.h@{main.h}!Carte@{Carte}}
+\index{Carte@{Carte}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Carte}{Carte}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{struct_carte}{Carte}}}
+
+\mbox{\Hypertarget{main_8h_afd02ea287891c05b01211a7fcf6257a2}\label{main_8h_afd02ea287891c05b01211a7fcf6257a2}} 
+\index{main.h@{main.h}!Coinche@{Coinche}}
+\index{Coinche@{Coinche}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Coinche}{Coinche}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}} \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}}}
+
+\mbox{\Hypertarget{main_8h_a8ee21120b5913e65570a4afc1afced74}\label{main_8h_a8ee21120b5913e65570a4afc1afced74}} 
+\index{main.h@{main.h}!Contrat@{Contrat}}
+\index{Contrat@{Contrat}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Contrat}{Contrat}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_contrat}{Contrat}} \mbox{\hyperlink{struct_contrat}{Contrat}}}
+
+\mbox{\Hypertarget{main_8h_a297c7f13df924dd6c731cb40f9fff63c}\label{main_8h_a297c7f13df924dd6c731cb40f9fff63c}} 
+\index{main.h@{main.h}!Couleur@{Couleur}}
+\index{Couleur@{Couleur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Couleur}{Couleur}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}
+
+\mbox{\Hypertarget{main_8h_a05b3c314c9748336cf88af587ab5afc4}\label{main_8h_a05b3c314c9748336cf88af587ab5afc4}} 
+\index{main.h@{main.h}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Joueur}{Joueur}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}
+
+\mbox{\Hypertarget{main_8h_a7f9ad56f7117778c67798b09b2c89951}\label{main_8h_a7f9ad56f7117778c67798b09b2c89951}} 
+\index{main.h@{main.h}!NbPoint@{NbPoint}}
+\index{NbPoint@{NbPoint}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NbPoint}{NbPoint}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791}{Nb\+Point}} \mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791}{Nb\+Point}}}
+
+\mbox{\Hypertarget{main_8h_a1747b5ea476e8157aaa93f487d0b21d2}\label{main_8h_a1747b5ea476e8157aaa93f487d0b21d2}} 
+\index{main.h@{main.h}!TypeMessage@{TypeMessage}}
+\index{TypeMessage@{TypeMessage}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{TypeMessage}{TypeMessage}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686d}{Type\+Message}} \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686d}{Type\+Message}}}
+
+Fontions standard Fontions crÃ©Ã©e dans le cardre du projet \mbox{\Hypertarget{main_8h_aa426d41d865abab7356c475a678981d8}\label{main_8h_aa426d41d865abab7356c475a678981d8}} 
+\index{main.h@{main.h}!Valeur@{Valeur}}
+\index{Valeur@{Valeur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Valeur}{Valeur}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur}} \mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur}}}
+
+
+
+\doxysubsection{Documentation du type de l\textquotesingle{}énumération}
+\mbox{\Hypertarget{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}\label{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}} 
+\index{main.h@{main.h}!Coinche@{Coinche}}
+\index{Coinche@{Coinche}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Coinche}{Coinche}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}}}
+
+
+
+indique il un contrat est coinchÃ© ou surcoinchÃ© 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORMAL@{NORMAL}!main.h@{main.h}}\index{main.h@{main.h}!NORMAL@{NORMAL}}}\mbox{\Hypertarget{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a50d1448013c6f17125caee18aa418af7}\label{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a50d1448013c6f17125caee18aa418af7}} 
+N\+O\+R\+M\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COINCHE@{COINCHE}!main.h@{main.h}}\index{main.h@{main.h}!COINCHE@{COINCHE}}}\mbox{\Hypertarget{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a970bdd144ee8eb80232c1a5487a3acd7}\label{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a970bdd144ee8eb80232c1a5487a3acd7}} 
+C\+O\+I\+N\+C\+HE&Le contrat n\textquotesingle{}est pas coichÃ©, par dÃ©faut \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SURCOINCHE@{SURCOINCHE}!main.h@{main.h}}\index{main.h@{main.h}!SURCOINCHE@{SURCOINCHE}}}\mbox{\Hypertarget{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a7d474fc11a1b42c2e48c320d5ea9d08b}\label{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2a7d474fc11a1b42c2e48c320d5ea9d08b}} 
+S\+U\+R\+C\+O\+I\+N\+C\+HE&Le contrat est CoinchÃ© \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 97 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7}} 
+\index{main.h@{main.h}!Couleur@{Couleur}}
+\index{Couleur@{Couleur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Couleur}{Couleur}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}
+
+
+
+Les diffÃ©rentes couleur d\textquotesingle{}atout possible a la belote coinchÃ©e. 
+
+toute les couleur disponible ainsi que tout atouts et sans atout sert a la fois pour le type \mbox{\hyperlink{struct_carte}{Carte}} et le type \mbox{\hyperlink{struct_contrat}{Contrat}} \begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SANS\_COULEUR@{SANS\_COULEUR}!main.h@{main.h}}\index{main.h@{main.h}!SANS\_COULEUR@{SANS\_COULEUR}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7a6c08e53dd32d8f237c48a1d06c28a70f}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7a6c08e53dd32d8f237c48a1d06c28a70f}} 
+S\+A\+N\+S\+\_\+\+C\+O\+U\+L\+E\+UR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COEUR@{COEUR}!main.h@{main.h}}\index{main.h@{main.h}!COEUR@{COEUR}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7afe25ae4ef5c689f46e1c4c972243d4db}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7afe25ae4ef5c689f46e1c4c972243d4db}} 
+C\+O\+E\+UR&Couleur par dÃ©faut, pour une carte vide \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PIQUE@{PIQUE}!main.h@{main.h}}\index{main.h@{main.h}!PIQUE@{PIQUE}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7a835c1d28b93fd71585c0bd8c629ea98a}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7a835c1d28b93fd71585c0bd8c629ea98a}} 
+P\+I\+Q\+UE&Couleur coeur \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CARREAU@{CARREAU}!main.h@{main.h}}\index{main.h@{main.h}!CARREAU@{CARREAU}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7aa8e960c091829457b4833077289e00a0}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7aa8e960c091829457b4833077289e00a0}} 
+C\+A\+R\+R\+E\+AU&Couleur pique \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TREFLE@{TREFLE}!main.h@{main.h}}\index{main.h@{main.h}!TREFLE@{TREFLE}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7aff50f65df1ad73caec3e886c499657ba}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7aff50f65df1ad73caec3e886c499657ba}} 
+T\+R\+E\+F\+LE&Couleur carreau \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TOUT\_ATOUT@{TOUT\_ATOUT}!main.h@{main.h}}\index{main.h@{main.h}!TOUT\_ATOUT@{TOUT\_ATOUT}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7ae290acbfa912b09c0cef378a61628e8d}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7ae290acbfa912b09c0cef378a61628e8d}} 
+T\+O\+U\+T\+\_\+\+A\+T\+O\+UT&Couleur trefle \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SANS\_ATOUT@{SANS\_ATOUT}!main.h@{main.h}}\index{main.h@{main.h}!SANS\_ATOUT@{SANS\_ATOUT}}}\mbox{\Hypertarget{main_8h_aa304d0ca681f782b1d7735da33037dd7a6a14acaec08fe6a02f30068425b0038d}\label{main_8h_aa304d0ca681f782b1d7735da33037dd7a6a14acaec08fe6a02f30068425b0038d}} 
+S\+A\+N\+S\+\_\+\+A\+T\+O\+UT&Tout atout \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 39 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469}\label{main_8h_a9a527722d878ba01d077a448efebe469}} 
+\index{main.h@{main.h}!Joueur@{Joueur}}
+\index{Joueur@{Joueur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Joueur}{Joueur}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}
+
+
+
+Les diffÃ©rente joueur lors d\textquotesingle{}une partie. 
+
+Les joueur sont nomÃ© par les different point cardinaut correspondant Ã~ leur placement sur la table \begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SANS\_JOUEUR@{SANS\_JOUEUR}!main.h@{main.h}}\index{main.h@{main.h}!SANS\_JOUEUR@{SANS\_JOUEUR}}}\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469a36235597ab9cf83f634e0e4fdb02f0b6}\label{main_8h_a9a527722d878ba01d077a448efebe469a36235597ab9cf83f634e0e4fdb02f0b6}} 
+S\+A\+N\+S\+\_\+\+J\+O\+U\+E\+UR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NORD@{NORD}!main.h@{main.h}}\index{main.h@{main.h}!NORD@{NORD}}}\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469aa1f529db9f2d334d9c41dcc5f6f6e2a7}\label{main_8h_a9a527722d878ba01d077a448efebe469aa1f529db9f2d334d9c41dcc5f6f6e2a7}} 
+N\+O\+RD&Joueur par dÃ©faut, quand il n\textquotesingle{}y a pas de joueur ou pour l\textquotesingle{}initialitation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EST@{EST}!main.h@{main.h}}\index{main.h@{main.h}!EST@{EST}}}\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469ab26f94a551dbfca6e0f4f6b5ad145c01}\label{main_8h_a9a527722d878ba01d077a448efebe469ab26f94a551dbfca6e0f4f6b5ad145c01}} 
+E\+ST&Joueur en haut \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUD@{SUD}!main.h@{main.h}}\index{main.h@{main.h}!SUD@{SUD}}}\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469ad2d3ceab3fce63bbe07882ab5a4e991e}\label{main_8h_a9a527722d878ba01d077a448efebe469ad2d3ceab3fce63bbe07882ab5a4e991e}} 
+S\+UD&Joueur Ã~ gauche \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OUEST@{OUEST}!main.h@{main.h}}\index{main.h@{main.h}!OUEST@{OUEST}}}\mbox{\Hypertarget{main_8h_a9a527722d878ba01d077a448efebe469a564dddee8796eda21f35c76cb586aeb6}\label{main_8h_a9a527722d878ba01d077a448efebe469a564dddee8796eda21f35c76cb586aeb6}} 
+O\+U\+E\+ST&Joueur en bas \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 81 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791}} 
+\index{main.h@{main.h}!NbPoint@{NbPoint}}
+\index{NbPoint@{NbPoint}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{NbPoint}{NbPoint}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_a069bf47271688902ffe3b7ea5bd77791}{Nb\+Point}}}
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ZERO@{ZERO}!main.h@{main.h}}\index{main.h@{main.h}!ZERO@{ZERO}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791ae117e3533122c80b262257b49b21cddf}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791ae117e3533122c80b262257b49b21cddf}} 
+Z\+E\+RO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUATRE\_VINGT@{QUATRE\_VINGT}!main.h@{main.h}}\index{main.h@{main.h}!QUATRE\_VINGT@{QUATRE\_VINGT}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791adf5d02c8e96cb24a7ebac75c6c343ee4}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791adf5d02c8e96cb24a7ebac75c6c343ee4}} 
+Q\+U\+A\+T\+R\+E\+\_\+\+V\+I\+N\+GT&Le contrat vaut zÃ©ro point, par dÃ©faut correspont a un joueur qui passe ou pour l\textquotesingle{}initiatilation \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUATRE\_VINGT\_DIX@{QUATRE\_VINGT\_DIX}!main.h@{main.h}}\index{main.h@{main.h}!QUATRE\_VINGT\_DIX@{QUATRE\_VINGT\_DIX}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791ae1834978d36fbcca2d6854b0c4417d4f}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791ae1834978d36fbcca2d6854b0c4417d4f}} 
+Q\+U\+A\+T\+R\+E\+\_\+\+V\+I\+N\+G\+T\+\_\+\+D\+IX&Le contrat vaut 80 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT@{CENT}!main.h@{main.h}}\index{main.h@{main.h}!CENT@{CENT}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791af59ee3d128b9d3f5d89bc37bff97b5ab}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791af59ee3d128b9d3f5d89bc37bff97b5ab}} 
+C\+E\+NT&Le contrat vaut 90 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_DIX@{CENT\_DIX}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_DIX@{CENT\_DIX}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791af3894ec5845c03aa9ed7521de8bace7e}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791af3894ec5845c03aa9ed7521de8bace7e}} 
+C\+E\+N\+T\+\_\+\+D\+IX&Le contrat vaut 100 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_VINGT@{CENT\_VINGT}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_VINGT@{CENT\_VINGT}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791ac6fa2e4ac9c470dbd87f350414fdabd0}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791ac6fa2e4ac9c470dbd87f350414fdabd0}} 
+C\+E\+N\+T\+\_\+\+V\+I\+N\+GT&Le contrat vaut 110 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_TRENTE@{CENT\_TRENTE}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_TRENTE@{CENT\_TRENTE}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791a09c62057f6cb3f4cb550c716252355eb}} 
+C\+E\+N\+T\+\_\+\+T\+R\+E\+N\+TE&Le contrat vaut 120 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_QUARANTE@{CENT\_QUARANTE}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_QUARANTE@{CENT\_QUARANTE}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791ad040fbf3a596fbb30914bc1da30fe8f8}} 
+C\+E\+N\+T\+\_\+\+Q\+U\+A\+R\+A\+N\+TE&Le contrat vaut 130 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_CINQUANTE@{CENT\_CINQUANTE}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_CINQUANTE@{CENT\_CINQUANTE}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791a4c9ef544ecd32b5f15920dc72a3177d5}} 
+C\+E\+N\+T\+\_\+\+C\+I\+N\+Q\+U\+A\+N\+TE&Le contrat vaut 140 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CENT\_SOIXANTE@{CENT\_SOIXANTE}!main.h@{main.h}}\index{main.h@{main.h}!CENT\_SOIXANTE@{CENT\_SOIXANTE}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791ac69a8807b8751bee686ae667923fd5b5}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791ac69a8807b8751bee686ae667923fd5b5}} 
+C\+E\+N\+T\+\_\+\+S\+O\+I\+X\+A\+N\+TE&Le contrat vaut 150 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CAPOT@{CAPOT}!main.h@{main.h}}\index{main.h@{main.h}!CAPOT@{CAPOT}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791a83a994d67d047047abf9738f61da8b76}} 
+C\+A\+P\+OT&Le contrat vaut 160 points \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GENERALE@{GENERALE}!main.h@{main.h}}\index{main.h@{main.h}!GENERALE@{GENERALE}}}\mbox{\Hypertarget{main_8h_a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716}\label{main_8h_a069bf47271688902ffe3b7ea5bd77791a584d2b8cab52b7d1d2d63990cd947716}} 
+G\+E\+N\+E\+R\+A\+LE&Le contrat est un capot \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 112 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a5455a7020c511bffb5b2c664b746686d}\label{main_8h_a5455a7020c511bffb5b2c664b746686d}} 
+\index{main.h@{main.h}!TypeMessage@{TypeMessage}}
+\index{TypeMessage@{TypeMessage}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{TypeMessage}{TypeMessage}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_a5455a7020c511bffb5b2c664b746686d}{Type\+Message}}}
+
+
+
+contante Ã~ passer en paramÃ¨tre Ã~ la fonction gÃ©nÃ¨re\+Message() pour donner le type de message a gÃ©nÃ©rer 
+
+\begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SANS\_MESSAGE@{SANS\_MESSAGE}!main.h@{main.h}}\index{main.h@{main.h}!SANS\_MESSAGE@{SANS\_MESSAGE}}}\mbox{\Hypertarget{main_8h_a5455a7020c511bffb5b2c664b746686dab52497a3e8db9c06f0c0199dc274c9b9}\label{main_8h_a5455a7020c511bffb5b2c664b746686dab52497a3e8db9c06f0c0199dc274c9b9}} 
+S\+A\+N\+S\+\_\+\+M\+E\+S\+S\+A\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POSE\_CARTE@{POSE\_CARTE}!main.h@{main.h}}\index{main.h@{main.h}!POSE\_CARTE@{POSE\_CARTE}}}\mbox{\Hypertarget{main_8h_a5455a7020c511bffb5b2c664b746686dac7fd34218112a72b05ae3e4b190e9b6b}\label{main_8h_a5455a7020c511bffb5b2c664b746686dac7fd34218112a72b05ae3e4b190e9b6b}} 
+P\+O\+S\+E\+\_\+\+C\+A\+R\+TE&pas de message a afficher, par defaut \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESULTAT\_PLI@{RESULTAT\_PLI}!main.h@{main.h}}\index{main.h@{main.h}!RESULTAT\_PLI@{RESULTAT\_PLI}}}\mbox{\Hypertarget{main_8h_a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa}\label{main_8h_a5455a7020c511bffb5b2c664b746686dabaebe9ba156ede8aa741182402becefa}} 
+R\+E\+S\+U\+L\+T\+A\+T\+\_\+\+P\+LI&lorsqu\textquotesingle{}un joueur vien de poser une carte \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESULTAT\_MANCHE@{RESULTAT\_MANCHE}!main.h@{main.h}}\index{main.h@{main.h}!RESULTAT\_MANCHE@{RESULTAT\_MANCHE}}}\mbox{\Hypertarget{main_8h_a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8}\label{main_8h_a5455a7020c511bffb5b2c664b746686dab03e54a11b4bbda9649570286edbf6b8}} 
+R\+E\+S\+U\+L\+T\+A\+T\+\_\+\+M\+A\+N\+C\+HE&anonce le vainceur d\textquotesingle{}un plis \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 164 du fichier main.\+h.
+
+\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}} 
+\index{main.h@{main.h}!Valeur@{Valeur}}
+\index{Valeur@{Valeur}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Valeur}{Valeur}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{main_8h_a44967720f2d16f8ec13b66b11ee4dd2f}{Valeur}}}
+
+
+
+Les diffÃ©rentes valeur possible des cartes d\textquotesingle{}un jeu de 32 cartes. 
+
+Les valeurs associÃ©e on Ã©tÃ© placÃ©e de maniÃ¨re arbitraire et n\textquotesingle{}ont pas d\textquotesingle{}importance sur le programme Pour simplifier, le tout atout et le sans atout sont considÃ©rÃ© comme des couleurs \begin{DoxyEnumFields}{Valeurs énumérées}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SANS\_VALEUR@{SANS\_VALEUR}!main.h@{main.h}}\index{main.h@{main.h}!SANS\_VALEUR@{SANS\_VALEUR}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa8b89c86ac4eb520fd7232afc0729d166}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa8b89c86ac4eb520fd7232afc0729d166}} 
+S\+A\+N\+S\+\_\+\+V\+A\+L\+E\+UR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AS@{AS}!main.h@{main.h}}\index{main.h@{main.h}!AS@{AS}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa0b84664ffa026b1a5f43c051cd6fe69f}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa0b84664ffa026b1a5f43c051cd6fe69f}} 
+AS&Valeur par dÃ©faut, pour une carte vide ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VALET@{VALET}!main.h@{main.h}}\index{main.h@{main.h}!VALET@{VALET}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa63afc18876b4864ae749c6343dae3ba0}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa63afc18876b4864ae749c6343dae3ba0}} 
+V\+A\+L\+ET&Valeur As \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DAME@{DAME}!main.h@{main.h}}\index{main.h@{main.h}!DAME@{DAME}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa436250abd7e6692a3ab0983590128093}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa436250abd7e6692a3ab0983590128093}} 
+D\+A\+ME&Valeur Valet \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ROI@{ROI}!main.h@{main.h}}\index{main.h@{main.h}!ROI@{ROI}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa630b67ff829a4c185e65091797e9a03c}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa630b67ff829a4c185e65091797e9a03c}} 
+R\+OI&Valeur Dame \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SEPT@{SEPT}!main.h@{main.h}}\index{main.h@{main.h}!SEPT@{SEPT}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa9a9953fcb482418f2a1fe258c4f46a70}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa9a9953fcb482418f2a1fe258c4f46a70}} 
+S\+E\+PT&Valeur Roi \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HUIT@{HUIT}!main.h@{main.h}}\index{main.h@{main.h}!HUIT@{HUIT}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa29ed9d7f614ba184a86644f1c9a03291}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa29ed9d7f614ba184a86644f1c9a03291}} 
+H\+U\+IT&Valeur 7 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NEUF@{NEUF}!main.h@{main.h}}\index{main.h@{main.h}!NEUF@{NEUF}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa79e4607adbe51052bdfebc8c55cc85c8}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa79e4607adbe51052bdfebc8c55cc85c8}} 
+N\+E\+UF&Valeur 8 \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIX@{DIX}!main.h@{main.h}}\index{main.h@{main.h}!DIX@{DIX}}}\mbox{\Hypertarget{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa1507d51307dbb0fbb3b438e591dc99e4}\label{main_8h_a44967720f2d16f8ec13b66b11ee4dd2fa1507d51307dbb0fbb3b438e591dc99e4}} 
+D\+IX&Valeur 9 \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Définition à la ligne 60 du fichier main.\+h.
+

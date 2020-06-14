@@ -1,9 +1,15 @@
-/*on regroupe dans ce ficher les include des bibliothèque et la declaration des constante*/
-
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
-/* Constantes */
+/**
+ * \file main.h
+ * \brief ficher la déclaration des contrante, les énumérations, les structe et l'inclusion des haeder du projet
+ * \author Carlo.A & Florian.C
+ * \version v1.0
+ * \date 12 juin 2020
+*/
+
+/**< Constantes */
 #define TAILLE_MAXI_PESEUDO 20
 #define TAILLE_MAXI_COULEUR 8
 #define NB_JOUEUR 4

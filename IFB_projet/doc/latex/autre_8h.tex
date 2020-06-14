@@ -1,22 +1,22 @@
-\hypertarget{autre_8h}{}\doxysection{autre.\+h File Reference}
+\hypertarget{autre_8h}{}\doxysection{Référence du fichier autre.\+h}
 \label{autre_8h}\index{autre.h@{autre.h}}
 
 
 ficher header contenant les prototype des fonctions qui n\textquotesingle{}allait dans aucun autre fichier  
 
 
-This graph shows which files directly or indirectly include this file\+:
+Ce graphe montre quels fichiers incluent directement ou indirectement ce fichier \+:
 % FIG 0
-\doxysubsection*{Functions}
+\doxysubsection*{Fonctions}
 \begin{DoxyCompactItemize}
 \item 
-Joueur \mbox{\hyperlink{autre_8h_a9028074829d59ddc4481ae51036fc9ef}{joueur\+Suivant}} (Joueur joueur)
+\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} \mbox{\hyperlink{autre_8h_a9028074829d59ddc4481ae51036fc9ef}{joueur\+Suivant}} (\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} joueur)
 \begin{DoxyCompactList}\small\item\em passe au joueur suivant \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{autre_8h_a1fe3fe4b2fbc888f6af5db69f6cc72f6}{nb\+Aleatoire}} (int mini, int maxi)
-\begin{DoxyCompactList}\small\item\em renvoit in nombre al�atoire entre deux bornes \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{autre_8h_a1613864902e98bd6d49e9d82bedcbe1c}{set\+Contrat}} (\mbox{\hyperlink{struct_contrat}{Contrat}} $\ast$contrat, Joueur preneur, int nb\+Point, Couleur atout, Coinche coinche)
-\begin{DoxyCompactList}\small\item\em d�finit un contrat \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{autre_8h_a4fab4a48512193a409dc541bb38a999c}{point\+Pli}} (\mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, Couleur atout, int nb\+Carte)
+int \mbox{\hyperlink{autre_8h_a1fe3fe4b2fbc888f6af5db69f6cc72f6}{nb\+Aleatoire}} (int \mbox{\hyperlink{tableau_8h_aabc5dc617777ef63ecbd9748a76d0946}{mini}}, int \mbox{\hyperlink{tableau_8h_abb9a32acf6c0aa09923d2ebaeae71c7e}{maxi}})
+\begin{DoxyCompactList}\small\item\em renvoit in nombre aléatoire entre deux bornes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{autre_8h_a1613864902e98bd6d49e9d82bedcbe1c}{set\+Contrat}} (\mbox{\hyperlink{struct_contrat}{Contrat}} $\ast$contrat, \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} preneur, int nb\+Point, \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} atout, \mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}} coinche)
+\begin{DoxyCompactList}\small\item\em définit un contrat \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{autre_8h_a4fab4a48512193a409dc541bb38a999c}{point\+Pli}} (\mbox{\hyperlink{struct_carte}{Carte}} \mbox{\hyperlink{general_8h_a09dedac7ae460c4fd07ebcc4af44568f}{pli}}\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}} atout, int nb\+Carte)
 \begin{DoxyCompactList}\small\item\em compte le nombre de points d\textquotesingle{}un pli \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{autre_8h_a9072ffa3adcb064e9794208ea50de40b}{ajuste\+Echelle}} (float valeur, float entre\+Min, float entre\+Max, float sortie\+Min, float sortie\+Max)
 \begin{DoxyCompactList}\small\item\em met a l\textquotesingle{}echelle la valeur d\textquotesingle{}une variable comprise entre deux bornes pour que la variable de retour soit compris entre deux autres bornes \end{DoxyCompactList}\item 
@@ -24,10 +24,10 @@ void \mbox{\hyperlink{autre_8h_ab8d4df8f4e03f038b98f6d96a2eaefd2}{joue1000\+Part
 \begin{DoxyCompactList}\small\item\em joue n partie aves uniquement des ia pour controler si tout ce passe bien et reuceillir des statistique \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
 ficher header contenant les prototype des fonctions qui n\textquotesingle{}allait dans aucun autre fichier 
 
-\begin{DoxyAuthor}{Author}
+\begin{DoxyAuthor}{Auteur}
 Carlo.\+A \& Florian.\+C 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
@@ -38,7 +38,7 @@ v1.\+0
 \end{DoxyDate}
 
 
-\doxysubsection{Function Documentation}
+\doxysubsection{Documentation des fonctions}
 \mbox{\Hypertarget{autre_8h_a9072ffa3adcb064e9794208ea50de40b}\label{autre_8h_a9072ffa3adcb064e9794208ea50de40b}} 
 \index{autre.h@{autre.h}!ajusteEchelle@{ajusteEchelle}}
 \index{ajusteEchelle@{ajusteEchelle}!autre.h@{autre.h}}
@@ -50,21 +50,27 @@ v1.\+0
 met a l\textquotesingle{}echelle la valeur d\textquotesingle{}une variable comprise entre deux bornes pour que la variable de retour soit compris entre deux autres bornes 
 
 
-\begin{DoxyParams}{Parameters}
-{\em float} & valeur \+: valeur a mettre � l\textquotesingle{}echelle \\
+\begin{DoxyParams}{Paramètres}
+{\em float} & valeur \+: valeur a mettre à l\textquotesingle{}echelle \\
 \hline
-{\em float} & entre\+Min \+: valeur minimum que peut prendre l\textquotesingle{}entr�e \\
+{\em float} & entre\+Min \+: valeur minimum que peut prendre l\textquotesingle{}entrée \\
 \hline
-{\em float} & entre\+Max \+: valeur maximum que peut prendre l\textquotesingle{}entr�e \\
+{\em float} & entre\+Max \+: valeur maximum que peut prendre l\textquotesingle{}entrée \\
 \hline
 {\em float} & sortie\+Min \+: valeur minimum que peut prendre la sortie \\
 \hline
 {\em float} & sortie\+Max \+: valeur maximum que peut prendre la sortie \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 float \+: la valeur de valeur une fois mise a l\textquotesingle{}echelle 
 \end{DoxyReturn}
+
+
+Définition à la ligne 147 du fichier autre.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 1
 \mbox{\Hypertarget{autre_8h_ab8d4df8f4e03f038b98f6d96a2eaefd2}\label{autre_8h_ab8d4df8f4e03f038b98f6d96a2eaefd2}} 
 \index{autre.h@{autre.h}!joue1000Partie@{joue1000Partie}}
 \index{joue1000Partie@{joue1000Partie}!autre.h@{autre.h}}
@@ -76,33 +82,45 @@ float \+: la valeur de valeur une fois mise a l\textquotesingle{}echelle
 joue n partie aves uniquement des ia pour controler si tout ce passe bien et reuceillir des statistique 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em int} & nb\+Partie nombre de partie que l\textquotesingle{}on veut jouer \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 voir 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-% FIG 1
+
+
+Définition à la ligne 153 du fichier autre.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 2
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
 \mbox{\Hypertarget{autre_8h_a9028074829d59ddc4481ae51036fc9ef}\label{autre_8h_a9028074829d59ddc4481ae51036fc9ef}} 
 \index{autre.h@{autre.h}!joueurSuivant@{joueurSuivant}}
 \index{joueurSuivant@{joueurSuivant}!autre.h@{autre.h}}
 \doxysubsubsection{\texorpdfstring{joueurSuivant()}{joueurSuivant()}}
-{\footnotesize\ttfamily Joueur joueur\+Suivant (\begin{DoxyParamCaption}\item[{Joueur}]{joueur }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}} joueur\+Suivant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}]{joueur }\end{DoxyParamCaption})}
 
 
 
 passe au joueur suivant 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em Joueur} & joueur \+: joueur actuel \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 Joueur \+: le joueur suivant 
 \end{DoxyReturn}
+
+
+Définition à la ligne 11 du fichier autre.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 4
 \mbox{\Hypertarget{autre_8h_a1fe3fe4b2fbc888f6af5db69f6cc72f6}\label{autre_8h_a1fe3fe4b2fbc888f6af5db69f6cc72f6}} 
 \index{autre.h@{autre.h}!nbAleatoire@{nbAleatoire}}
 \index{nbAleatoire@{nbAleatoire}!autre.h@{autre.h}}
@@ -111,54 +129,68 @@ Joueur \+: le joueur suivant
 
 
 
-renvoit in nombre al�atoire entre deux bornes 
+renvoit in nombre aléatoire entre deux bornes 
 
 
-\begin{DoxyParams}{Parameters}
-{\em int} & mini \+: borne inf�rieur \\
+\begin{DoxyParams}{Paramètres}
+{\em int} & mini \+: borne inférieur \\
 \hline
-{\em int} & maxi \+: borne surp�rieur \\
+{\em int} & maxi \+: borne surpérieur \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-int \+: le nombre al�atoire 
+\begin{DoxyReturn}{Renvoie}
+int \+: le nombre aléatoire 
 \end{DoxyReturn}
+
+
+Définition à la ligne 21 du fichier autre.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 5
+Voici le graphe des appelants de cette fonction \+:
+% FIG 6
 \mbox{\Hypertarget{autre_8h_a4fab4a48512193a409dc541bb38a999c}\label{autre_8h_a4fab4a48512193a409dc541bb38a999c}} 
 \index{autre.h@{autre.h}!pointPli@{pointPli}}
 \index{pointPli@{pointPli}!autre.h@{autre.h}}
 \doxysubsubsection{\texorpdfstring{pointPli()}{pointPli()}}
-{\footnotesize\ttfamily int point\+Pli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{Couleur}]{atout,  }\item[{int}]{nb\+Carte }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int point\+Pli (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_carte}{Carte}}}]{pli\mbox{[}$\,$\mbox{]},  }\item[{\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{atout,  }\item[{int}]{nb\+Carte }\end{DoxyParamCaption})}
 
 
 
 compte le nombre de points d\textquotesingle{}un pli 
 
 
-\begin{DoxyParams}{Parameters}
-{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli \mbox{[}\mbox{]}\+: tableau des cartes poss�es dont on doit faire la somme des points \\
+\begin{DoxyParams}{Paramètres}
+{\em \mbox{\hyperlink{struct_carte}{Carte}}} & pli \mbox{[}\mbox{]}\+: tableau des cartes possées dont on doit faire la somme des points \\
 \hline
-{\em Couleur} & atout\+: couleur de l\textquotesingle{}atout jou� dans la manche \\
+{\em Couleur} & atout\+: couleur de l\textquotesingle{}atout joué dans la manche \\
 \hline
-{\em nb\+Carte} & nombre de carte � compter \\
+{\em nb\+Carte} & nombre de carte à compter \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 points 
 \end{DoxyReturn}
-Here is the call graph for this function\+:
-% FIG 2
+
+
+Définition à la ligne 34 du fichier autre.\+c.
+
+Voici le graphe d\textquotesingle{}appel pour cette fonction \+:
+% FIG 7
+Voici le graphe des appelants de cette fonction \+:
+% FIG 8
 \mbox{\Hypertarget{autre_8h_a1613864902e98bd6d49e9d82bedcbe1c}\label{autre_8h_a1613864902e98bd6d49e9d82bedcbe1c}} 
 \index{autre.h@{autre.h}!setContrat@{setContrat}}
 \index{setContrat@{setContrat}!autre.h@{autre.h}}
 \doxysubsubsection{\texorpdfstring{setContrat()}{setContrat()}}
-{\footnotesize\ttfamily void set\+Contrat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}} $\ast$}]{contrat,  }\item[{Joueur}]{preneur,  }\item[{int}]{nb\+Point,  }\item[{Couleur}]{atout,  }\item[{Coinche}]{coinche }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void set\+Contrat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_contrat}{Contrat}} $\ast$}]{contrat,  }\item[{\mbox{\hyperlink{main_8h_a9a527722d878ba01d077a448efebe469}{Joueur}}}]{preneur,  }\item[{int}]{nb\+Point,  }\item[{\mbox{\hyperlink{main_8h_aa304d0ca681f782b1d7735da33037dd7}{Couleur}}}]{atout,  }\item[{\mbox{\hyperlink{main_8h_a6ee25fdd9f0af14a18f005bebd9218a2}{Coinche}}}]{coinche }\end{DoxyParamCaption})}
 
 
 
-d�finit un contrat 
+définit un contrat 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Paramètres}
 {\em Contat} & $\ast$contrat \+: pointeur sur le contrat a modifier \\
 \hline
 {\em Joueur} & preneur \+: preneur du contrat \\
@@ -167,9 +199,15 @@ d�finit un contrat
 \hline
 {\em Couleur} & atout \+: couleur de l\textquotesingle{}aout \\
 \hline
-{\em Coinche} & coinche \+: normal, coinch� , surcoinch� \\
+{\em Coinche} & coinche \+: normal, coinché , surcoinché \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Renvoie}
 void 
 \end{DoxyReturn}
+
+
+Définition à la ligne 26 du fichier autre.\+c.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 9

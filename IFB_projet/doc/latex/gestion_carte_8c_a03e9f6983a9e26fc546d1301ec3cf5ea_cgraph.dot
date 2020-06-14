@@ -4,7 +4,7 @@ digraph "rechercherCarteSuperieur"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node1 [label="rechercherCarteSuperieur",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="cherche dans un tableau de carte si il y a une carte d'une force suppérieur a carteCherche"];
+  Node1 [label="rechercherCarteSuperieur",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="cherche dans un tableau de carte si il y a une carte d'une force suppÃ©rieur a carteCherche"];
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="forceCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#af903ef331292d446d28bdcd7a13ce6d8",tooltip="calcul la force d'une carte, en faisant la probabilitée qu'elle a de gagné contre toutes les autres carte..."];
+  Node2 [label="forceCarte",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestion_carte_8c.html#af903ef331292d446d28bdcd7a13ce6d8",tooltip="calcul la force d'une carte, en faisant la probabilitÃ©e qu'elle a de gagnÃ© contre toutes les autres c..."];
 }
